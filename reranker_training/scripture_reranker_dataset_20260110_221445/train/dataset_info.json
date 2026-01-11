@@ -1,0 +1,36 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "query": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "document": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reference": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "raw_score": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "query_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reasoning": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

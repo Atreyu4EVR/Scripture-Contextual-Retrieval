@@ -25,9 +25,9 @@ TRAINING_DIR = Path(__file__).parent.parent / "reranker_training"
 OUTPUT_DIR = Path(__file__).parent.parent / "models" / "scripture-reranker"
 
 # Model options (uncomment one):
-# BASE_MODEL = "cross-encoder/ms-marco-MiniLM-L6-v2"  # Fast, good starting point
+BASE_MODEL = "cross-encoder/ms-marco-MiniLM-L6-v2"  # Fast, good starting point
 # BASE_MODEL = "BAAI/bge-reranker-base"  # Designed for RAG
-BASE_MODEL = "answerdotai/ModernBERT-base"  # Latest, 8K context
+# BASE_MODEL = "answerdotai/ModernBERT-base"  # Latest, 8K context (requires newer transformers)
 
 
 def load_training_data(data_path: Path) -> Dataset:
@@ -115,11 +115,13 @@ def create_hard_negatives_dataset(data_path: Path) -> Dataset:
         if "raw_score" in dataset.column_names:
             score_map = {0: 0.0, 1: 0.2, 2: 0.7, 3: 1.0}
             labels = [score_map.get(s, 0.0) for s in dataset["raw_score"]]
-            dataset = dataset.add_column("soft_label", labels)
+            # Remove existing label column if present, then add soft labels
+            if "label" in dataset.column_names:
+                dataset = dataset.remove_columns(["label"])
+            dataset = dataset.add_column("label", labels)
             dataset = dataset.rename_columns({
                 "query": "text1",
                 "document": "text2",
-                "soft_label": "label",
             })
             dataset = dataset.select_columns(["text1", "text2", "label"])
         return dataset
@@ -257,7 +259,7 @@ def main():
         save_steps=500,
         save_total_limit=3,
         load_best_model_at_end=True if evaluator else False,
-        metric_for_best_model="eval_ndcg@10" if evaluator else None,
+        metric_for_best_model="eval_scripture-rerank-eval_ndcg@10" if evaluator else None,
         logging_steps=100,
         report_to="none",  # Disable wandb/tensorboard
     )

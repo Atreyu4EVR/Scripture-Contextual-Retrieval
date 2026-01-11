@@ -23,6 +23,9 @@ build/
 
 # Agents
 *.claude
+*.agents*
+*models/*
+*models*
 
 # Local Results
 *evaluations/results*

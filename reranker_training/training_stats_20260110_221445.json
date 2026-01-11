@@ -1,0 +1,25 @@
+{
+  "total_examples": 10000,
+  "unique_queries": 165,
+  "train_examples": 9000,
+  "test_examples": 1000,
+  "score_distribution": {
+    "0": 1580,
+    "1": 2708,
+    "2": 2575,
+    "3": 3137
+  },
+  "query_type_distribution": {
+    "factual": 2400,
+    "person": 850,
+    "place": 600,
+    "specific-verse": 1150,
+    "cross-reference": 1400,
+    "cross_reference": 500,
+    "thematic": 2800,
+    "person_place": 150,
+    "specific_verse": 150
+  },
+  "timestamp": "20260110_221445",
+  "dataset_path": "/Users/ronvallejo86/standardworks-tokenizer/reranker_training/scripture_reranker_dataset_20260110_221445"
+}

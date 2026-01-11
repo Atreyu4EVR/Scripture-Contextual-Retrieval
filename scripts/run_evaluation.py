@@ -75,10 +75,15 @@ def run_retrieval(
         "legacy": [],
         "contextual": [],
         "contextual_rerank": [],
+        "contextual_custom_rerank": [],  # Custom scripture reranker
+        "hybrid_rrf": [],  # Hybrid sparse+dense with RRF
+        "hybrid_rerank": [],  # Hybrid + Pinecone reranking
     }
 
     print(f"\nRunning retrieval on {len(queries)} queries...")
     print(f"  Config: top_k={top_k}, rerank_initial_k={rerank_initial_k}, rerank_top_n={rerank_top_n}")
+    print(f"  Custom reranker: {'enabled' if pipeline.custom_reranker else 'disabled'}")
+    print(f"  Hybrid methods: enabled")
 
     for i, query_data in enumerate(queries):
         query = query_data["query"]
@@ -192,11 +197,11 @@ def run_statistical_comparisons(
     relevance_threshold = config.get("relevance_threshold", 2)
     calculator = MetricsCalculator(relevance_threshold=relevance_threshold)
 
-    legacy_metrics = []
-    contextual_metrics = []
-    rerank_metrics = []
+    # Collect metrics by method
+    method_metrics = {}
 
     for method, method_evals in evaluations.items():
+        method_metrics[method] = []
         for eval_item in method_evals:
             relevance_scores = [j["score"] for j in eval_item["judgments"]]
 
@@ -208,24 +213,30 @@ def run_statistical_comparisons(
                 latency_ms=eval_item["latency_ms"],
                 k_values=[1, 3, 5, 10],
             )
-
-            if method == "legacy":
-                legacy_metrics.append(qm)
-            elif method == "contextual":
-                contextual_metrics.append(qm)
-            elif method == "contextual_rerank":
-                rerank_metrics.append(qm)
+            method_metrics[method].append(qm)
 
     comparisons = []
-
     metrics_to_compare = ["avg_relevance", "reciprocal_rank", "precision_at_5", "ndcg_at_10"]
 
-    for metric in metrics_to_compare:
-        comp1 = calculator.compare_methods(legacy_metrics, contextual_metrics, metric)
-        comp2 = calculator.compare_methods(contextual_metrics, rerank_metrics, metric)
+    # Define comparison pairs (method_a vs method_b)
+    comparison_pairs = [
+        ("legacy", "contextual"),
+        ("contextual", "contextual_rerank"),
+        ("contextual_rerank", "hybrid_rrf"),
+        ("contextual_rerank", "hybrid_rerank"),
+        ("hybrid_rrf", "hybrid_rerank"),
+    ]
 
-        comparisons.append(asdict(comp1))
-        comparisons.append(asdict(comp2))
+    for metric in metrics_to_compare:
+        for method_a, method_b in comparison_pairs:
+            if method_a in method_metrics and method_b in method_metrics:
+                if method_metrics[method_a] and method_metrics[method_b]:
+                    comp = calculator.compare_methods(
+                        method_metrics[method_a],
+                        method_metrics[method_b],
+                        metric,
+                    )
+                    comparisons.append(asdict(comp))
 
     return comparisons
 

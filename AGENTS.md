@@ -9,6 +9,7 @@ Token counter for the LDS Standard Works using OpenAI's tiktoken library. Calcul
 ## Scripture Data Structure
 
 The `scriptures/` directory contains flat JSON files for each volume:
+
 - `book-of-mormon-flat.json`
 - `doctrine-and-covenants-flat.json`
 - `new-testament-flat.json`
@@ -16,6 +17,7 @@ The `scriptures/` directory contains flat JSON files for each volume:
 - `pearl-of-great-price-flat.json`
 
 Each JSON file follows this structure:
+
 ```json
 {
   "verses": [
@@ -61,3 +63,24 @@ python3 tokenizer.py
 
 - Console output with per-volume and grand total token counts
 - `token-counts.csv` - CSV export of results
+
+## Pinecone (Vector Database)
+
+**MANDATORY: If you need to help with Pinecone, vector databases, embeddings, semantic search, RAG, or recommendations, you MUST read `.agents/PINECONE.md` first** to determine:
+
+- What questions to ask the user
+- How to select the programming language
+- Which guide files to consult for implementation details
+
+Do not proceed with Pinecone-related tasks without consulting the appropriate guide files. Use `.agents/PINECONE.md` as your entry point and follow its "Choosing the Right Guide" section to navigate to the appropriate resources.
+
+### Pinecone Instructions Catalog
+
+@./.agents/PINECONE.md
+@./.agents/PINECONE-cli.md
+@./.agents/PINECONE-python.md
+@./.agents/PINECONE-typescript.md
+@./.agents/PINECONE-go.md
+@./.agents/PINECONE-java.md
+@./.agents/PINECONE-quickstart.md
+@./.agents/PINECONE-troubleshooting.md
