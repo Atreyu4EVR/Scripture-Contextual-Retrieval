@@ -34,7 +34,7 @@ INDEX_NAME = "standard-works"
 EMBEDDING_MODEL = "text-embedding-3-large"
 JUDGE_MODEL = "claude-sonnet-4-5-20250929"  # Claude Sonnet 4.5
 
-MAX_WORKERS = 5  # Lower for Anthropic rate limits
+MAX_WORKERS = 40  # Optimized for 4K RPM limit
 CANDIDATES_PER_QUERY = 50  # Retrieve this many candidates per query
 
 # Query generation prompts
