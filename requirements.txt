@@ -1,0 +1,11 @@
+tiktoken
+openai
+python-dotenv
+tenacity
+pinecone
+cohere
+scipy
+sentence-transformers
+torch
+datasets
+anthropic

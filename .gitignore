@@ -1,0 +1,31 @@
+# Virtual environment
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+*venv
+*venv/
+*venv/*
+
+# Agents
+*.claude
+
+# Local Results
+*evaluations/results*
+*evaluations/reports*
+response_w_rerank.json
+response_wo_rerank.json

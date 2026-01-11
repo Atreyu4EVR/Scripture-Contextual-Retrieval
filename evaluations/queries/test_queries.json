@@ -1,0 +1,216 @@
+{
+  "version": "1.0",
+  "description": "Curated test queries for RAG retrieval comparison evaluation",
+  "queries": [
+    {
+      "id": "F001",
+      "query": "Who was Nephi?",
+      "type": "factual",
+      "expected_volumes": ["Book of Mormon"],
+      "expected_topics": ["Nephi", "Lehi", "son", "prophet", "record keeper", "plates"]
+    },
+    {
+      "id": "F002",
+      "query": "Who was Nephi's father?",
+      "type": "factual",
+      "expected_volumes": ["Book of Mormon"],
+      "expected_topics": ["Lehi", "father", "Jerusalem", "prophet"]
+    },
+    {
+      "id": "F003",
+      "query": "What happened to the people of Ammonihah?",
+      "type": "factual",
+      "expected_volumes": ["Book of Mormon"],
+      "expected_topics": ["Ammonihah", "destruction", "Lamanites", "wicked"]
+    },
+    {
+      "id": "F004",
+      "query": "How many days was Jesus in the tomb?",
+      "type": "factual",
+      "expected_volumes": ["New Testament", "Book of Mormon"],
+      "expected_topics": ["three days", "resurrection", "tomb", "risen"]
+    },
+    {
+      "id": "F005",
+      "query": "Who was the first prophet of the Restoration?",
+      "type": "factual",
+      "expected_volumes": ["Doctrine and Covenants", "Pearl of Great Price"],
+      "expected_topics": ["Joseph Smith", "prophet", "restoration", "vision"]
+    },
+    {
+      "id": "F006",
+      "query": "Where did Lehi's family travel after leaving Jerusalem?",
+      "type": "factual",
+      "expected_volumes": ["Book of Mormon"],
+      "expected_topics": ["wilderness", "Red Sea", "promised land", "ship", "Bountiful"]
+    },
+    {
+      "id": "F007",
+      "query": "What are the names of the twelve apostles?",
+      "type": "factual",
+      "expected_volumes": ["New Testament"],
+      "expected_topics": ["Peter", "James", "John", "apostles", "disciples", "twelve"]
+    },
+    {
+      "id": "F008",
+      "query": "Who built the ark?",
+      "type": "factual",
+      "expected_volumes": ["Old Testament", "Pearl of Great Price"],
+      "expected_topics": ["Noah", "ark", "flood", "animals"]
+    },
+    {
+      "id": "F009",
+      "query": "What is the Word of Wisdom?",
+      "type": "factual",
+      "expected_volumes": ["Doctrine and Covenants"],
+      "expected_topics": ["health", "wine", "tobacco", "meat", "grains", "Section 89"]
+    },
+    {
+      "id": "F010",
+      "query": "Who translated the Book of Mormon?",
+      "type": "factual",
+      "expected_volumes": ["Doctrine and Covenants", "Pearl of Great Price"],
+      "expected_topics": ["Joseph Smith", "translate", "plates", "gift", "power of God"]
+    },
+    {
+      "id": "T001",
+      "query": "What does the Book of Mormon teach about faith?",
+      "type": "thematic",
+      "expected_volumes": ["Book of Mormon"],
+      "expected_topics": ["faith", "believe", "hope", "works", "miracles"]
+    },
+    {
+      "id": "T002",
+      "query": "What is the purpose of the Atonement?",
+      "type": "thematic",
+      "expected_volumes": ["Book of Mormon", "New Testament", "Doctrine and Covenants"],
+      "expected_topics": ["atonement", "redemption", "sins", "salvation", "mercy", "justice"]
+    },
+    {
+      "id": "T003",
+      "query": "How should we pray according to scripture?",
+      "type": "thematic",
+      "expected_volumes": ["New Testament", "Book of Mormon", "Doctrine and Covenants"],
+      "expected_topics": ["prayer", "Father", "name of Christ", "ask", "sincere"]
+    },
+    {
+      "id": "T004",
+      "query": "What does scripture say about repentance?",
+      "type": "thematic",
+      "expected_volumes": ["Book of Mormon", "New Testament", "Doctrine and Covenants"],
+      "expected_topics": ["repent", "sins", "forgiveness", "change", "turn"]
+    },
+    {
+      "id": "T005",
+      "query": "What is the role of the Holy Ghost?",
+      "type": "thematic",
+      "expected_volumes": ["New Testament", "Book of Mormon", "Doctrine and Covenants"],
+      "expected_topics": ["Holy Ghost", "Spirit", "comforter", "testify", "guide", "revelation"]
+    },
+    {
+      "id": "T006",
+      "query": "What does scripture teach about charity?",
+      "type": "thematic",
+      "expected_volumes": ["New Testament", "Book of Mormon"],
+      "expected_topics": ["charity", "love", "pure love of Christ", "kindness", "Moroni"]
+    },
+    {
+      "id": "T007",
+      "query": "How can we receive personal revelation?",
+      "type": "thematic",
+      "expected_volumes": ["Doctrine and Covenants", "Book of Mormon"],
+      "expected_topics": ["revelation", "Spirit", "pray", "study", "Oliver Cowdery", "burning"]
+    },
+    {
+      "id": "T008",
+      "query": "What is the covenant of baptism?",
+      "type": "thematic",
+      "expected_volumes": ["Book of Mormon", "Doctrine and Covenants", "New Testament"],
+      "expected_topics": ["baptism", "covenant", "water", "remission of sins", "witness"]
+    },
+    {
+      "id": "T009",
+      "query": "What does scripture say about obedience?",
+      "type": "thematic",
+      "expected_volumes": ["Book of Mormon", "Old Testament", "Doctrine and Covenants"],
+      "expected_topics": ["obey", "commandments", "blessings", "prosper", "hearken"]
+    },
+    {
+      "id": "T010",
+      "query": "What is the plan of salvation?",
+      "type": "thematic",
+      "expected_volumes": ["Book of Mormon", "Pearl of Great Price", "Doctrine and Covenants"],
+      "expected_topics": ["plan", "salvation", "redemption", "mortality", "eternal life", "fall"]
+    },
+    {
+      "id": "X001",
+      "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+      "type": "cross_reference",
+      "expected_volumes": ["Old Testament", "New Testament", "Book of Mormon"],
+      "expected_topics": ["Messiah", "Christ", "prophecy", "Isaiah", "Nephi", "Savior"]
+    },
+    {
+      "id": "X002",
+      "query": "What do different scriptures say about the Second Coming?",
+      "type": "cross_reference",
+      "expected_volumes": ["New Testament", "Doctrine and Covenants", "Book of Mormon"],
+      "expected_topics": ["Second Coming", "return", "clouds", "glory", "signs", "last days"]
+    },
+    {
+      "id": "X003",
+      "query": "How is the creation described in different volumes of scripture?",
+      "type": "cross_reference",
+      "expected_volumes": ["Old Testament", "Pearl of Great Price", "Book of Mormon"],
+      "expected_topics": ["creation", "earth", "Adam", "Eve", "Genesis", "Moses", "Abraham"]
+    },
+    {
+      "id": "X004",
+      "query": "What do scriptures say about prophets being rejected?",
+      "type": "cross_reference",
+      "expected_volumes": ["Old Testament", "New Testament", "Book of Mormon"],
+      "expected_topics": ["prophet", "rejected", "stoned", "killed", "persecution"]
+    },
+    {
+      "id": "X005",
+      "query": "How is the gathering of Israel described across scripture?",
+      "type": "cross_reference",
+      "expected_volumes": ["Old Testament", "Book of Mormon", "Doctrine and Covenants"],
+      "expected_topics": ["gather", "Israel", "scattered", "restored", "covenant"]
+    },
+    {
+      "id": "X006",
+      "query": "What do different scriptures teach about priesthood authority?",
+      "type": "cross_reference",
+      "expected_volumes": ["New Testament", "Doctrine and Covenants", "Old Testament"],
+      "expected_topics": ["priesthood", "authority", "Melchizedek", "Aaronic", "keys", "ordain"]
+    },
+    {
+      "id": "X007",
+      "query": "How do scriptures describe the resurrection of the dead?",
+      "type": "cross_reference",
+      "expected_volumes": ["New Testament", "Book of Mormon", "Doctrine and Covenants"],
+      "expected_topics": ["resurrection", "rise", "body", "spirit", "immortality", "Alma"]
+    },
+    {
+      "id": "X008",
+      "query": "What do scriptures say about caring for the poor?",
+      "type": "cross_reference",
+      "expected_volumes": ["Old Testament", "New Testament", "Book of Mormon", "Doctrine and Covenants"],
+      "expected_topics": ["poor", "needy", "consecration", "give", "alms", "Zion"]
+    },
+    {
+      "id": "X009",
+      "query": "How is the fall of Adam described in different scriptures?",
+      "type": "cross_reference",
+      "expected_volumes": ["Old Testament", "Pearl of Great Price", "Book of Mormon"],
+      "expected_topics": ["Adam", "fall", "Eve", "transgression", "mortality", "forbidden fruit"]
+    },
+    {
+      "id": "X010",
+      "query": "What do scriptures teach about the nature of God?",
+      "type": "cross_reference",
+      "expected_volumes": ["Old Testament", "New Testament", "Book of Mormon", "Doctrine and Covenants"],
+      "expected_topics": ["God", "Father", "eternal", "unchanging", "love", "omniscient"]
+    }
+  ]
+}

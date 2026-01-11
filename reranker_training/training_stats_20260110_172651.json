@@ -1,0 +1,19 @@
+{
+  "total_examples": 150,
+  "unique_queries": 30,
+  "train_examples": 135,
+  "test_examples": 15,
+  "score_distribution": {
+    "0": 1,
+    "1": 15,
+    "2": 21,
+    "3": 113
+  },
+  "query_type_distribution": {
+    "thematic": 50,
+    "cross_reference": 50,
+    "factual": 50
+  },
+  "timestamp": "20260110_172651",
+  "dataset_path": "/Users/ronvallejo86/standardworks-tokenizer/reranker_training/scripture_reranker_dataset_20260110_172651"
+}
