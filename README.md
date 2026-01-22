@@ -2,7 +2,8 @@
 
 A complete pipeline for building high-quality, IP-compliant scripture retrieval systems using Anthropic's Contextual Retrieval methodology. This repository contains the code, prompts, evaluation framework, and results for AI-augmented scripture study.
 
-> Note: "LDS" is a common abbreviation for "[The Church of Jesus Christ of Latter-day Saints](https://www.churchofjesuschrist.org/welcome)." The "Standard Works" refers to the four volumes of scripture accepted as canonical by the Church: the Bible (King James Version), the Book of Mormon, the Doctrine and Covenants, and the Pearl of Great Price.
+>[!NOTE]  
+>"LDS" is a common abbreviation for "[The Church of Jesus Christ of Latter-day Saints](https://www.churchofjesuschrist.org/welcome)." The "Standard Works" refers to the four volumes of scripture accepted as canonical by the Church: the Bible (King James Version), the Book of Mormon, the Doctrine and Covenants, and the Pearl of Great Price.
 
 ## Key Findings
 
