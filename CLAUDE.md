@@ -14,11 +14,11 @@ The key contribution is a clean-room approach: instead of using copyrighted Chur
 
 ```
 Scripture-Contextual-Retrieval/
-├── scriptures/                     # Source scripture data (JSON)
-│   ├── summaries/                  # Generated chapter summaries
-│   └── contextualized/             # Verses with context prepended
-├── prompts/
-│   └── chapter_summary_prompt.md   # GPT-5.2 context generation prompt
+├── scriptures/
+│   ├── source/                     # Original scripture JSON files
+│   ├── contextualized/             # Verses with AI-generated context
+│   │   └── summaries/              # Chapter summaries
+│   └── statistics/                 # Token count statistics
 ├── scripts/
 │   ├── generate_chapter_summaries.py   # Step 1: Generate chapter context
 │   ├── generate_contextualized_verses.py # Step 2: Combine context + verses
@@ -26,6 +26,7 @@ Scripture-Contextual-Retrieval/
 │   ├── upsert_to_pinecone.py           # Step 4: Upload to vector DB
 │   ├── run_evaluation.py               # Step 5: Full evaluation pipeline
 │   ├── retrieval_pipeline.py           # Core retrieval logic
+│   ├── hybrid_retrieval.py             # Hybrid search implementation
 │   ├── llm_judge.py                    # LLM-as-judge relevance scoring
 │   ├── metrics_calculator.py           # P@K, NDCG, MRR calculations
 │   └── tokenizer.py                    # Token counting utility
@@ -34,9 +35,10 @@ Scripture-Contextual-Retrieval/
 │   ├── config/evaluation_config.json   # Evaluation parameters
 │   ├── results/                        # Raw retrieval results by run
 │   └── reports/                        # Comparison reports (JSON + MD)
-├── articles/
-│   └── enhanced-scripture-rag.md       # Methodology writeup
-└── reranker_training/                  # Custom scripture reranker work
+├── prompts/
+│   └── chapter_summary_prompt.md       # GPT-5.2 context generation prompt
+├── models/                             # Custom reranker checkpoints
+└── reranker_training/                  # Training data for custom reranker
 ```
 
 ## Scripture Data Structure
@@ -89,11 +91,10 @@ source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env  # Add API keys
 
-# Full pipeline (in order)
-python scripts/generate_chapter_summaries.py    # ~1,582 API calls
-python scripts/generate_contextualized_verses.py
-python scripts/generate_embeddings.py
-python scripts/upsert_to_pinecone.py
+# Full pipeline (recommended)
+python scripts/run_pipeline.py                  # Runs all 4 steps
+python scripts/run_pipeline.py --dry-run        # Preview without executing
+python scripts/run_pipeline.py --start-from 3   # Resume from step N
 
 # Evaluation
 python scripts/run_evaluation.py                # Runs all 6 retrieval methods
@@ -105,13 +106,13 @@ python scripts/query_pinecone.py                # Test individual queries
 
 ## Environment Variables
 
-Required in `.env`:
+Required in `.env` (see `.env.example`):
 
 ```
-OPENAI_API_KEY=sk-...
-PINECONE_API_KEY=...
-PINECONE_INDEX_NAME=standard-works
-COHERE_API_KEY=...  # Optional, for reranking
+OPENAI_API_KEY=sk-...        # Required: embeddings, context generation, evaluation
+PINECONE_API_KEY=pcsk_...    # Required: vector database operations
+COHERE_API_KEY=...           # Optional: reranking in retrieval pipeline
+ANTHROPIC_API_KEY=sk-ant-... # Optional: reranker training data generation
 ```
 
 ## Pinecone Index Schema

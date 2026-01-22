@@ -53,24 +53,31 @@ We apply Anthropic's [Contextual Retrieval](https://www.anthropic.com/news/conte
 
 ```
 Scripture-Contextual-Retrieval/
-├── scriptures/                     # Source scripture data (JSON)
-├── prompts/
-│   └── chapter_summary_prompt.md   # Context generation prompt
+├── scriptures/
+│   ├── source/                     # Original scripture JSON files
+│   ├── contextualized/             # Verses with AI-generated context
+│   │   └── summaries/              # Chapter summaries
+│   └── statistics/                 # Token count statistics
 ├── scripts/
-│   ├── generate_chapter_summaries.py
+│   ├── generate_chapter_summaries.py   # Step 1: Generate context
 │   ├── generate_contextualized_verses.py
 │   ├── generate_embeddings.py
 │   ├── upsert_to_pinecone.py
 │   ├── run_evaluation.py           # Full evaluation pipeline
-│   ├── llm_judge.py                # LLM-as-judge relevance scoring
-│   └── metrics_calculator.py       # P@K, NDCG, MRR calculations
+│   ├── retrieval_pipeline.py       # Core retrieval module
+│   ├── hybrid_retrieval.py         # Hybrid search implementation
+│   ├── llm_judge.py                # LLM-as-judge scoring
+│   ├── metrics_calculator.py       # P@K, NDCG, MRR calculations
+│   └── tokenizer.py                # Token counting utility
 ├── evaluations/
 │   ├── queries/test_queries.json   # 30 curated test queries
 │   ├── config/evaluation_config.json
 │   ├── results/                    # Raw retrieval results
 │   └── reports/                    # Comparison reports (JSON + Markdown)
-└── articles/
-    └── enhanced-scripture-rag.md   # Detailed methodology writeup
+├── prompts/
+│   └── chapter_summary_prompt.md   # Context generation prompt
+├── models/                         # Custom reranker checkpoints
+└── reranker_training/              # Training data for custom reranker
 ```
 
 ## Quick Start
@@ -98,6 +105,22 @@ cp .env.example .env
 ### Run the Pipeline
 
 ```bash
+# Run the full pipeline (summaries → contextualize → embeddings → upsert)
+python scripts/run_pipeline.py
+
+# Or run with options:
+python scripts/run_pipeline.py --dry-run        # Preview without executing
+python scripts/run_pipeline.py --skip-summaries # Skip if summaries exist
+python scripts/run_pipeline.py --start-from 3   # Resume from step 3
+
+# Run evaluation after pipeline completes
+python scripts/run_evaluation.py
+```
+
+<details>
+<summary>Run steps individually</summary>
+
+```bash
 # 1. Generate chapter summaries (1,582 API calls to GPT-5.2)
 python scripts/generate_chapter_summaries.py
 
@@ -109,10 +132,9 @@ python scripts/generate_embeddings.py
 
 # 4. Upsert to Pinecone
 python scripts/upsert_to_pinecone.py
-
-# 5. Run evaluation
-python scripts/run_evaluation.py
 ```
+
+</details>
 
 ## Context Generation Prompt
 

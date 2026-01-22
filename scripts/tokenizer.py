@@ -11,14 +11,14 @@ from pathlib import Path
 import tiktoken
 
 
-SCRIPTURES_DIR = Path(__file__).parent / "scriptures"
+SCRIPTURES_DIR = Path(__file__).parent.parent / "scriptures" / "contextualized"
 
 SCRIPTURE_FILES = [
-    "book-of-mormon-flat.json",
-    "doctrine-and-covenants-flat.json",
-    "new-testament-flat.json",
-    "old-testament-flat.json",
-    "pearl-of-great-price-flat.json",
+    "book-of-mormon-contextualized.json",
+    "doctrine-and-covenants-contextualized.json",
+    "new-testament-contextualized.json",
+    "old-testament-contextualized.json",
+    "pearl-of-great-price-contextualized.json",
 ]
 
 
@@ -36,7 +36,7 @@ def count_tokens(text: str, encoder: tiktoken.Encoding) -> int:
 
 def get_volume_name(filename: str) -> str:
     """Convert filename to display name."""
-    name = filename.replace("-flat.json", "").replace("-", " ").title()
+    name = filename.replace("-contextualized.json", "").replace("-", " ").title()
     return name
 
 

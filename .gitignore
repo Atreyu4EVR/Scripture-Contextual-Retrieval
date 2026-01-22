@@ -29,3 +29,6 @@ build/
 
 # Large embedding files (regenerate with scripts/generate_embeddings.py)
 scriptures/embeddings/
+
+# Development notes (local only)
+NOTES.md
