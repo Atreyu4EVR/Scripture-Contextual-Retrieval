@@ -2,6 +2,8 @@
 
 A complete pipeline for building high-quality, IP-compliant scripture retrieval systems using Anthropic's Contextual Retrieval methodology. This repository contains the code, prompts, evaluation framework, and results for AI-augmented scripture study.
 
+> Note: "LDS" is a common abbreviation for "[The Church of Jesus Christ of Latter-day Saints](https://www.churchofjesuschrist.org/welcome)." The "Standard Works" refers to the four volumes of scripture accepted as canonical by the Church: the Bible (King James Version), the Book of Mormon, the Doctrine and Covenants, and the Pearl of Great Price.
+
 ## Key Findings
 
 We evaluated contextual retrieval against traditional RAG approaches across 30 scripture study queries. **AI-generated chapter context improves retrieval quality while maintaining complete intellectual property compliance.**
@@ -50,7 +52,7 @@ We apply Anthropic's [Contextual Retrieval](https://www.anthropic.com/news/conte
 ## Repository Structure
 
 ```
-standardworks-tokenizer/
+Scripture-Contextual-Retrieval/
 ├── scriptures/                     # Source scripture data (JSON)
 ├── prompts/
 │   └── chapter_summary_prompt.md   # Context generation prompt
@@ -82,8 +84,8 @@ standardworks-tokenizer/
 ### Installation
 
 ```bash
-git clone https://github.com/Atreyu4EVR/scripture-contextual-retrieval.git
-cd scripture-contextual-retrieval
+git clone https://github.com/Atreyu4EVR/Scripture-Contextual-Retrieval.git
+cd Scripture-Contextual-Retrieval
 
 python3 -m venv venv
 source venv/bin/activate
@@ -112,15 +114,59 @@ python scripts/upsert_to_pinecone.py
 python scripts/run_evaluation.py
 ```
 
-## Context Generation
+## Context Generation Prompt
 
-Our prompt is specifically designed for **retrieval optimization**, not human readability. Key constraints include objective/literal language (no theological interpretation), present tense, proper nouns over pronouns, and a 75–100 token limit. The full prompt is available in [`prompts/chapter_summary_prompt.md`](prompts/chapter_summary_prompt.md).
+Our prompt is specifically designed for **retrieval optimization**, not human readability. This is a key distinction from traditional chapter summaries—we're optimizing for embedding similarity rather than human scanning.
 
-This produces context optimized for embedding similarity rather than human scanning—a key distinction from traditional chapter summaries.
+### System Prompt
+
+```python
+You are a scripture indexer for retrieval.
+
+Task: Write a single, factual chapter synopsis that maximizes searchability by naming 
+concrete entities (people, groups, places, objects), events/actions, 
+commandments/laws/ordinances, and major topics explicitly stated or directly implied 
+by the text (no commentary).
+
+Hard rules:
+- Objective and literal: no opinions, praise, moralizing, or theological interpretation.
+- Present tense.
+- Prefer proper nouns over pronouns; minimize "they/he/it" when a name/title exists.
+- Include only what the chapter itself supports; do not add outside context.
+- Avoid vague filler (e.g., "various teachings," "many things," "powerfully").
+- 75–100 tokens total.
+
+Content priorities (in order):
+1. Setting markers: location(s), time markers, audience/speaker (if stated)
+2. Principal actors and groups (canonical names/titles)
+3. Key events/actions (who does what to whom)
+4. Commands/covenants/laws/ordinances (named explicitly)
+5. Named topics/themes (e.g., repentance, baptism, priesthood, resurrection)
+
+Output format (exact):
+"This chapter contains {verse_count} verses and {records/describes/covers} …"
+(One paragraph only.)
+```
+
+### User Prompt Template
+
+```python
+Summarize this chapter for a retrieval index.
+
+Volume: {volume}
+Book: {book}
+Chapter: {chapter}
+Reference: {reference}
+
+Chapter Text:
+{full_chapter_text}
+```
+
+The full prompt file is available at [`prompts/chapter_summary_prompt.md`](prompts/chapter_summary_prompt.md).
 
 ## Intellectual Property Compliance
 
-This methodology is designed for CES (Church Educational System) institutions that need to respect Church intellectual property.
+This methodology is designed to respect intellectual property.  
 
 **Indexed (public domain / freely available):**
 
@@ -151,7 +197,7 @@ Full evaluation results are available in [`evaluations/reports/`](evaluations/re
                   An {IP}-Compliant Methodology for Scripture Study},
   year         = {2026},
   publisher    = {GitHub},
-  howpublished = {\url{https://github.com/Atreyu4EVR/scripture-contextual-retrieval}}
+  howpublished = {\url{https://github.com/Atreyu4EVR/Scripture-Contextual-Retrieval}}
 }
 ```
 
