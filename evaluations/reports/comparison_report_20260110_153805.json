@@ -1,0 +1,82 @@
+{
+  "run_id": "run_20260110_153805",
+  "timestamp": "2026-01-10T15:45:14.113371",
+  "summary": {
+    "total_queries": 30
+  },
+  "results": {
+    "legacy": {
+      "method": "legacy",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9333333333333333,
+        "3": 0.9111111111111111,
+        "5": 0.8866666666666667,
+        "10": 0.88
+      },
+      "mrr": 0.9492063492063492,
+      "mean_ndcg_at_k": {
+        "1": 0.861904761904762,
+        "3": 0.8483414494147468,
+        "5": 0.8559933206555617,
+        "10": 0.9325383878793548
+      },
+      "mean_avg_relevance": 2.4566666666666666,
+      "mean_latency_ms": 378.3886860668038,
+      "std_latency_ms": 165.14912845570342,
+      "total_relevant": 264,
+      "total_retrieved": 300
+    },
+    "contextual": {
+      "method": "contextual",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9666666666666667,
+        "3": 0.9444444444444444,
+        "5": 0.92,
+        "10": 0.8933333333333333
+      },
+      "mrr": 0.9833333333333333,
+      "mean_ndcg_at_k": {
+        "1": 0.8190476190476191,
+        "3": 0.86586239707267,
+        "5": 0.8774720834843374,
+        "10": 0.9398341358236147
+      },
+      "mean_avg_relevance": 2.433333333333333,
+      "mean_latency_ms": 356.10059033109184,
+      "std_latency_ms": 100.1069538761071,
+      "total_relevant": 268,
+      "total_retrieved": 300
+    },
+    "contextual_rerank": {
+      "method": "contextual_rerank",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9,
+        "3": 0.9,
+        "5": 0.9133333333333333
+      },
+      "mrr": 0.9361111111111111,
+      "mean_ndcg_at_k": {
+        "1": 0.8968253968253969,
+        "3": 0.8898836529142845,
+        "5": 0.9501413969534427
+      },
+      "mean_avg_relevance": 2.546666666666667,
+      "mean_latency_ms": 554.5379860685595,
+      "std_latency_ms": 379.6198295576361,
+      "total_relevant": 137,
+      "total_retrieved": 150
+    }
+  },
+  "statistical_comparisons": [
+    {
+      "method_a": "legacy",
+      "method_b": "contextual",
+      "metric": "avg_relevance",
+      "mean_a": 2.4566666666666666,
+      "mean_b": 2.433333333333333,
+      "improvement_pct": -0.9497964721845357,
+      "p_value": 0.6780590420706974,
+      "significant": 

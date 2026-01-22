@@ -1,0 +1,155 @@
+{
+  "run_id": "run_20260110_160638",
+  "timestamp": "2026-01-10T16:13:58.905278",
+  "summary": {
+    "total_queries": 30
+  },
+  "results": {
+    "legacy": {
+      "method": "legacy",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9333333333333333,
+        "3": 0.8777777777777778,
+        "5": 0.9,
+        "10": 0.8433333333333334
+      },
+      "mrr": 0.9583333333333334,
+      "mean_ndcg_at_k": {
+        "1": 0.861904761904762,
+        "3": 0.8476061876241914,
+        "5": 0.8725768098900263,
+        "10": 0.9360665320749539
+      },
+      "mean_avg_relevance": 2.3266666666666667,
+      "mean_latency_ms": 338.41044716439984,
+      "std_latency_ms": 103.20049340015937,
+      "total_relevant": 253,
+      "total_retrieved": 300
+    },
+    "contextual": {
+      "method": "contextual",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9666666666666667,
+        "3": 0.9555555555555556,
+        "5": 0.9466666666666667,
+        "10": 0.88
+      },
+      "mrr": 0.9833333333333333,
+      "mean_ndcg_at_k": {
+        "1": 0.8380952380952381,
+        "3": 0.8670260115327018,
+        "5": 0.8785861184334879,
+        "10": 0.9408932663359543
+      },
+      "mean_avg_relevance": 2.4299999999999997,
+      "mean_latency_ms": 394.5576640010889,
+      "std_latency_ms": 215.25546030004722,
+      "total_relevant": 264,
+      "total_retrieved": 300
+    },
+    "contextual_rerank": {
+      "method": "contextual_rerank",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9333333333333333,
+        "3": 0.9333333333333333,
+        "5": 0.9333333333333333
+      },
+      "mrr": 0.9666666666666667,
+      "mean_ndcg_at_k": {
+        "1": 0.8857142857142858,
+        "3": 0.9122550581342391,
+        "5": 0.9593287093188482
+      },
+      "mean_avg_relevance": 2.566666666666667,
+      "mean_latency_ms": 672.7184958688061,
+      "std_latency_ms": 1402.9456286331344,
+      "total_relevant": 140,
+      "total_retrieved": 150
+    }
+  },
+  "statistical_comparisons": [
+    {
+      "method_a": "legacy",
+      "method_b": "contextual",
+      "metric": "avg_relevance",
+      "mean_a": 2.3266666666666667,
+      "mean_b": 2.4299999999999997,
+      "improvement_pct": 4.441260744985661,
+      "p_value": 0.06623036508564574,
+      "significant": false
+    },
+    {
+      "method_a": "contextual",
+      "method_b": "contextual_rerank",
+      "metric": "avg_relevance",
+      "mean_a": 2.4299999999999997,
+      "mean_b": 2.566666666666667,
+      "improvement_pct": 5.624142661179719,
+      "p_value": 0.014995453554894936,
+      "significant": true
+    },
+    {
+      "method_a": "legacy",
+      "method_b": "contextual",
+      "metric": "reciprocal_rank",
+      "mean_a": 0.9583333333333334,
+      "mean_b": 0.9833333333333333,
+      "improvement_pct": 2.6086956521739033,
+      "p_value": 0.3255819880161932,
+      "significant": false
+    },
+    {
+      "method_a": "contextual",
+      "method_b": "contextual_rerank",
+      "metric": "reciprocal_rank",
+      "mean_a": 0.9833333333333333,
+      "mean_b": 0.9666666666666667,
+      "improvement_pct": -1.6949152542372823,
+      "p_value": 0.3255819880161932,
+      "significant": false
+    },
+    {
+      "method_a": "legacy",
+      "method_b": "contextual",
+      "metric": "precision_at_5",
+      "mean_a": 0.9,
+      "mean_b": 0.9466666666666667,
+      "improvement_pct": 5.185185185185182,
+      "p_value": 0.18228925250955869,
+      "significant": false
+    },
+    {
+      "method_a": "contextual",
+      "method_b": "contextual_rerank",
+      "metric": "precision_at_5",
+      "mean_a": 0.9466666666666667,
+      "mean_b": 0.9333333333333333,
+      "improvement_pct": -1.4084507042253496,
+      "p_value": 0.6014762511281206,
+      "significant": false
+    },
+    {
+      "method_a": "legacy",
+      "method_b": "contextual",
+      "metric": "ndcg_at_10",
+      "mean_a": 0.9360665320749539,
+      "mean_b": 0.9408932663359543,
+      "improvement_pct": 0.5156400849308262,
+      "p_value": 0.7873544458861683,
+      "significant": false
+    },
+    {
+      "method_a": "contextual",
+      "method_b": "contextual_rerank",
+      "metric": "ndcg_at_10",
+      "mean_a": 0.9408932663359543,
+      "mean_b": 0.0,
+      "improvement_pct": -100.0,
+      "p_value": 2.9467831487953858e-34,
+      "significant": true
+    }
+  ]
+}

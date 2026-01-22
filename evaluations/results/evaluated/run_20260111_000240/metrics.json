@@ -1,0 +1,4490 @@
+{
+  "legacy": {
+    "query_metrics": [
+      {
+        "query_id": "F001",
+        "query": "Who was Nephi?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.8,
+          "20": 0.75
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.47078692139073114,
+          "5": 0.5047749132212612,
+          "10": 0.7200037137697972,
+          "20": 0.8332211091813873
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 893.6323749949224,
+        "num_relevant": 15,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F002",
+        "query": "Who was Nephi's father?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.4,
+          "10": 0.3,
+          "20": 0.4
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.39664163797074165,
+          "5": 0.4514753839233434,
+          "10": 0.4718728745649583,
+          "20": 0.7364656880073357
+        },
+        "avg_relevance": 1.55,
+        "latency_ms": 378.51095804944634,
+        "num_relevant": 8,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F003",
+        "query": "What happened to the people of Ammonihah?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.7,
+          "20": 0.55
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8415580415114009,
+          "10": 0.7982705097592879,
+          "20": 0.93021939884602
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 326.51512505253777,
+        "num_relevant": 11,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F004",
+        "query": "How many days was Jesus in the tomb?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.3333333333333333,
+          "5": 0.6,
+          "10": 0.6,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.5027986350243819,
+          "5": 0.6115344145790463,
+          "10": 0.6731065510497389,
+          "20": 0.8337406436411818
+        },
+        "avg_relevance": 1.35,
+        "latency_ms": 290.9652919624932,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F005",
+        "query": "Who was the first prophet of the Restoration?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.4,
+          "20": 0.4
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8435737579924145,
+          "5": 0.7994765465672333,
+          "10": 0.7022490641346028,
+          "20": 0.9035094441300672
+        },
+        "avg_relevance": 1.2,
+        "latency_ms": 296.06033297022805,
+        "num_relevant": 8,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F006",
+        "query": "Where did Lehi's family travel after leaving Jerusalem?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.4,
+          "10": 0.3,
+          "20": 0.2
+        },
+        "reciprocal_rank": 0.25,
+        "ndcg_at_k": {
+          "1": 0.0,
+          "3": 0.08755692556326256,
+          "5": 0.3515444816826323,
+          "10": 0.44157887838527293,
+          "20": 0.5656199191664335
+        },
+        "avg_relevance": 0.9,
+        "latency_ms": 292.5431670155376,
+        "num_relevant": 4,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F007",
+        "query": "What are the names of the twelve apostles?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8,
+          "20": 0.45
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9489244055493045,
+          "20": 0.9868861750095224
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 377.3773339926265,
+        "num_relevant": 9,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F008",
+        "query": "Who built the ark?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.8,
+          "20": 0.55
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.5977610919804944,
+          "5": 0.631430920078951,
+          "10": 0.7843492396890038,
+          "20": 0.8478847087941073
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 969.5574159850366,
+        "num_relevant": 11,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F009",
+        "query": "What is the Word of Wisdom?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.3,
+          "20": 0.15
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6861420524061792,
+          "5": 0.7858663548220763,
+          "10": 0.7630011359508455,
+          "20": 0.8110085528732986
+        },
+        "avg_relevance": 0.9,
+        "latency_ms": 316.45520799793303,
+        "num_relevant": 3,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F010",
+        "query": "Who translated the Book of Mormon?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.6,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8272858410866246,
+          "10": 0.8327780480106163,
+          "20": 0.9238916130522841
+        },
+        "avg_relevance": 1.65,
+        "latency_ms": 274.6877910103649,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T001",
+        "query": "What does the Book of Mormon teach about faith?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.8,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7988805459902473,
+          "5": 0.7421841313007286,
+          "10": 0.7136818389611385,
+          "20": 0.9173903516715727
+        },
+        "avg_relevance": 2.6,
+        "latency_ms": 279.28220795001835,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T002",
+        "query": "What is the purpose of the Atonement?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9603250160361273,
+          "20": 0.9909280579110565
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 256.4060000004247,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T003",
+        "query": "How should we pray according to scripture?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9458352203602566,
+          "20": 0.9816017739424721
+        },
+        "avg_relevance": 2.8,
+        "latency_ms": 452.21912499982864,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T004",
+        "query": "What does scripture say about repentance?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.9030970842075382,
+          "10": 0.9371166382005486,
+          "20": 0.977480007577063
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 268.6328749987297,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T005",
+        "query": "What is the role of the Holy Ghost?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.8281227542004858,
+          "10": 0.8735084415306729,
+          "20": 0.951303029260023
+        },
+        "avg_relevance": 2.35,
+        "latency_ms": 245.8347919746302,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T006",
+        "query": "What does scripture teach about charity?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9636452638863133,
+          "20": 0.9915478493560722
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 226.69254103675485,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T007",
+        "query": "How can we receive personal revelation?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.7318407279869963,
+          "5": 0.8061941684150765,
+          "10": 0.8174439420116207,
+          "20": 0.9122529677871961
+        },
+        "avg_relevance": 2.55,
+        "latency_ms": 359.5093329786323,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T008",
+        "query": "What is the covenant of baptism?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.9,
+          "20": 0.7
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.5977610919804944,
+          "5": 0.5133621291304895,
+          "10": 0.6609966994361892,
+          "20": 0.8256355791350694
+        },
+        "avg_relevance": 1.9,
+        "latency_ms": 296.41695896862075,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T009",
+        "query": "What does scripture say about obedience?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9132787479554083,
+          "20": 0.9780776978315601
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 283.10674999374896,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T010",
+        "query": "What is the plan of salvation?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8777221344374128,
+          "10": 0.863141020767592,
+          "20": 0.9433501634182079
+        },
+        "avg_relevance": 2.35,
+        "latency_ms": 326.6258329967968,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X001",
+        "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.9,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6283717105436262,
+          "10": 0.8008104904142245,
+          "20": 0.8690151465272048
+        },
+        "avg_relevance": 1.85,
+        "latency_ms": 348.2230830122717,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X002",
+        "query": "What do different scriptures say about the Second Coming?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8777221344374128,
+          "10": 0.8190616868378208,
+          "20": 0.9405406603919936
+        },
+        "avg_relevance": 2.5,
+        "latency_ms": 362.4196670134552,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X003",
+        "query": "How is the creation described in different volumes of scripture?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9510907186004267,
+          "20": 0.9891406851361148
+        },
+        "avg_relevance": 1.9,
+        "latency_ms": 306.3493749941699,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X004",
+        "query": "What do scriptures say about prophets being rejected?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.994020689325888
+        },
+        "avg_relevance": 2.55,
+        "latency_ms": 230.06829200312495,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X005",
+        "query": "How is the gathering of Israel described across scripture?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9603250160361273,
+          "20": 0.9862834447351114
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 292.20045800320804,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X006",
+        "query": "What do different scriptures teach about priesthood authority?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9984795574677618
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 443.57741699786857,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X007",
+        "query": "How do scriptures describe the resurrection of the dead?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8875385049894211,
+          "10": 0.9270201848786105,
+          "20": 0.9747448185311678
+        },
+        "avg_relevance": 2.8,
+        "latency_ms": 349.20291701564565,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X008",
+        "query": "What do scriptures say about caring for the poor?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "avg_relevance": 3.0,
+        "latency_ms": 293.8810840132646,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X009",
+        "query": "How is the fall of Adam described in different scriptures?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.7
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8415580415114009,
+          "10": 0.8433585885367348,
+          "20": 0.9443088146662691
+        },
+        "avg_relevance": 1.85,
+        "latency_ms": 314.4740000134334,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X010",
+        "query": "What do scriptures teach about the nature of God?",
+        "method": "legacy",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8537662720095992,
+          "20": 0.9650069224753596
+        },
+        "avg_relevance": 2.6,
+        "latency_ms": 277.9204580001533,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      }
+    ],
+    "aggregate": {
+      "method": "legacy",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9333333333333333,
+        "3": 0.8777777777777778,
+        "5": 0.86,
+        "10": 0.8200000000000001,
+        "20": 0.765
+      },
+      "mrr": 0.9583333333333334,
+      "mean_ndcg_at_k": {
+        "1": 0.8238095238095239,
+        "3": 0.8184377629019061,
+        "5": 0.8209117354054871,
+        "10": 0.8313513402440946,
+        "20": 0.9167851823282934
+      },
+      "mean_avg_relevance": 2.1550000000000002,
+      "mean_latency_ms": 354.3116055331969,
+      "std_latency_ms": 163.34587344933843,
+      "total_relevant": 459,
+      "total_retrieved": 600
+    }
+  },
+  "contextual": {
+    "query_metrics": [
+      {
+        "query_id": "F001",
+        "query": "Who was Nephi?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.6,
+          "20": 0.7
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.3400910809012201,
+          "5": 0.39505717158855047,
+          "10": 0.5184055042423702,
+          "20": 0.7275730274842322
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 628.2048330176622,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F002",
+        "query": "Who was Nephi's father?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.4,
+          "10": 0.6,
+          "20": 0.6
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.39664163797074165,
+          "5": 0.3637611062045498,
+          "10": 0.48849659200752654,
+          "20": 0.7497836968990139
+        },
+        "avg_relevance": 1.9,
+        "latency_ms": 357.5442080036737,
+        "num_relevant": 12,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F003",
+        "query": "What happened to the people of Ammonihah?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.7,
+          "20": 0.55
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.7998242272706277,
+          "10": 0.7738324339649587,
+          "20": 0.922813960588045
+        },
+        "avg_relevance": 1.6,
+        "latency_ms": 276.51666599558666,
+        "num_relevant": 11,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F004",
+        "query": "How many days was Jesus in the tomb?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.5,
+          "20": 0.3
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7988805459902473,
+          "5": 0.7827344880884942,
+          "10": 0.8822850604102704,
+          "20": 0.9268063274846318
+        },
+        "avg_relevance": 1.25,
+        "latency_ms": 325.52204199600965,
+        "num_relevant": 6,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F005",
+        "query": "Who was the first prophet of the Restoration?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.6,
+          "20": 0.45
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8435737579924145,
+          "5": 0.8869465982421278,
+          "10": 0.8177305323858041,
+          "20": 0.9422196539688975
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 220.01429100055248,
+        "num_relevant": 9,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F006",
+        "query": "Where did Lehi's family travel after leaving Jerusalem?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.6
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.8579514172105233,
+          "5": 0.8850729764703047,
+          "10": 0.8834752335283014,
+          "20": 0.916539001092252
+        },
+        "avg_relevance": 1.55,
+        "latency_ms": 257.33975000912324,
+        "num_relevant": 12,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F007",
+        "query": "What are the names of the twelve apostles?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8,
+          "20": 0.55
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8874699304014749,
+          "20": 0.9727700556274095
+        },
+        "avg_relevance": 1.35,
+        "latency_ms": 357.0776670239866,
+        "num_relevant": 11,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F008",
+        "query": "Who built the ark?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.5,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.4175113851126525,
+          "5": 0.5722117788980939,
+          "10": 0.5839201846566238,
+          "20": 0.7769042779798
+        },
+        "avg_relevance": 1.55,
+        "latency_ms": 289.6077499608509,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F009",
+        "query": "What is the Word of Wisdom?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.9840352219951628,
+          "10": 0.9874835786616503,
+          "20": 0.9890505930723967
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 333.3919590222649,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F010",
+        "query": "Who translated the Book of Mormon?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.5,
+          "20": 0.35
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7988805459902473,
+          "5": 0.7827344880884942,
+          "10": 0.8827812399563095,
+          "20": 0.9362257408160164
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 396.41724998364225,
+        "num_relevant": 7,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T001",
+        "query": "What does the Book of Mormon teach about faith?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8777221344374128,
+          "10": 0.9206500320722545,
+          "20": 0.9666529237044489
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 303.83925000205636,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T002",
+        "query": "What is the purpose of the Atonement?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9636452638863133,
+          "20": 0.988761497436833
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 302.5811659754254,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T003",
+        "query": "How should we pray according to scripture?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.9134872336594229,
+          "20": 0.9794003741836657
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 244.35795802855864,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T004",
+        "query": "What does scripture say about repentance?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9988810506997944
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 436.3607079721987,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T005",
+        "query": "What is the role of the Holy Ghost?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.918402774836493,
+          "20": 0.9812553739791255
+        },
+        "avg_relevance": 2.5,
+        "latency_ms": 333.40920897899196,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T006",
+        "query": "What does scripture teach about charity?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9981534671561055
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 247.36708303680643,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T007",
+        "query": "How can we receive personal revelation?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9934145920816121
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 269.1316250129603,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T008",
+        "query": "What is the covenant of baptism?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.9762940786437024,
+          "10": 0.9810450720877845,
+          "20": 0.9839130941034215
+        },
+        "avg_relevance": 2.1,
+        "latency_ms": 321.55220897402614,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T009",
+        "query": "What does scripture say about obedience?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9603250160361273,
+          "20": 0.9927399252197985
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 351.19787498842925,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T010",
+        "query": "What is the plan of salvation?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8415580415114009,
+          "10": 0.8461974713178115,
+          "20": 0.945618381054674
+        },
+        "avg_relevance": 2.25,
+        "latency_ms": 292.67933301161975,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X001",
+        "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6886039320648765,
+          "10": 0.7731227354521711,
+          "20": 0.8851856777416595
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 290.15158297261223,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X002",
+        "query": "What do different scriptures say about the Second Coming?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9188462530413559,
+          "20": 0.9829653520578252
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 334.9879590095952,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X003",
+        "query": "How is the creation described in different volumes of scripture?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6886039320648765,
+          "10": 0.8068816663335971,
+          "20": 0.8804212000796845
+        },
+        "avg_relevance": 2.0,
+        "latency_ms": 262.58450001478195,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X004",
+        "query": "What do scriptures say about prophets being rejected?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.8534435599300757,
+          "20": 0.9594527017109177
+        },
+        "avg_relevance": 2.45,
+        "latency_ms": 262.34670798294246,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X005",
+        "query": "How is the gathering of Israel described across scripture?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9636452638863133,
+          "20": 0.9907703620413859
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 331.91837498452514,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X006",
+        "query": "What do different scriptures teach about priesthood authority?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9552009891550426,
+          "20": 0.9853372116120634
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 318.43820901121944,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X007",
+        "query": "How do scriptures describe the resurrection of the dead?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8777221344374128,
+          "10": 0.9206500320722545,
+          "20": 0.9608567472044107
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 227.88324998691678,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X008",
+        "query": "What do scriptures say about caring for the poor?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9952110621637217
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 644.8914170032367,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X009",
+        "query": "How is the fall of Adam described in different scriptures?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.8,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7988805459902473,
+          "5": 0.7526317273206227,
+          "10": 0.7757836900322685,
+          "20": 0.9236823773815994
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 335.4546249611303,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X010",
+        "query": "What do scriptures teach about the nature of God?",
+        "method": "contextual",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.9065477790741163,
+          "20": 0.964292270238024
+        },
+        "avg_relevance": 2.6,
+        "latency_ms": 271.7587919905782,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      }
+    ],
+    "aggregate": {
+      "method": "contextual",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9333333333333333,
+        "3": 0.9111111111111111,
+        "5": 0.9066666666666666,
+        "10": 0.8733333333333333,
+        "20": 0.8200000000000001
+      },
+      "mrr": 0.9666666666666667,
+      "mean_ndcg_at_k": {
+        "1": 0.8666666666666667,
+        "3": 0.862536928011668,
+        "5": 0.8640699249610353,
+        "10": 0.8694585041029564,
+        "20": 0.9405883992287821
+      },
+      "mean_avg_relevance": 2.256666666666667,
+      "mean_latency_ms": 327.4842749970655,
+      "std_latency_ms": 95.38678408469069,
+      "total_relevant": 492,
+      "total_retrieved": 600
+    }
+  },
+  "contextual_rerank": {
+    "query_metrics": [
+      {
+        "query_id": "F001",
+        "query": "Who was Nephi?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8,
+          "20": 0.7
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9069212362975007,
+          "20": 0.9814761012038815
+        },
+        "avg_relevance": 1.65,
+        "latency_ms": 770.6544999964535,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F002",
+        "query": "Who was Nephi's father?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.6,
+          "10": 0.4,
+          "20": 0.4
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8241253048392847,
+          "10": 0.8468960777969065,
+          "20": 0.9421618071054003
+        },
+        "avg_relevance": 1.6,
+        "latency_ms": 569.4556669914164,
+        "num_relevant": 8,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F003",
+        "query": "What happened to the people of Ammonihah?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.55
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.7192801759488139,
+          "10": 0.9302321038491383,
+          "20": 0.9347780365156727
+        },
+        "avg_relevance": 1.7,
+        "latency_ms": 436.38087500585243,
+        "num_relevant": 11,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F004",
+        "query": "How many days was Jesus in the tomb?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.2,
+          "20": 0.4
+        },
+        "reciprocal_rank": 0.14285714285714285,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.1093372338555174,
+          "5": 0.10568842569459305,
+          "10": 0.23025318713022133,
+          "20": 0.5673490582719788
+        },
+        "avg_relevance": 1.3,
+        "latency_ms": 439.638624957297,
+        "num_relevant": 8,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F005",
+        "query": "Who was the first prophet of the Restoration?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.6,
+          "10": 0.6,
+          "20": 0.35
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.19393206556005033,
+          "5": 0.307752184827898,
+          "10": 0.5502289790750665,
+          "20": 0.6555443356651512
+        },
+        "avg_relevance": 1.25,
+        "latency_ms": 353.60862500965595,
+        "num_relevant": 7,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F006",
+        "query": "Where did Lehi's family travel after leaving Jerusalem?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.2,
+          "10": 0.3,
+          "20": 0.25
+        },
+        "reciprocal_rank": 0.2,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.12626707766897877,
+          "5": 0.20965219135747767,
+          "10": 0.408753215635068,
+          "20": 0.5727136736852856
+        },
+        "avg_relevance": 0.9,
+        "latency_ms": 392.82037498196587,
+        "num_relevant": 5,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F007",
+        "query": "What are the names of the twelve apostles?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.7,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.8075588805057204,
+          "5": 0.7772464726644945,
+          "10": 0.7462142743716167,
+          "20": 0.8630107066331462
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 540.4597919550724,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F008",
+        "query": "Who built the ark?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.3333333333333333,
+          "5": 0.2,
+          "10": 0.3,
+          "20": 0.15
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.6294990550432896,
+          "5": 0.5920276299307587,
+          "10": 0.7640147684923297,
+          "20": 0.8312267185537359
+        },
+        "avg_relevance": 0.9,
+        "latency_ms": 429.82095800107345,
+        "num_relevant": 3,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F009",
+        "query": "What is the Word of Wisdom?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.3,
+          "20": 0.2
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.6151177610114408,
+          "5": 0.6686457281614865,
+          "10": 0.685292912780093,
+          "20": 0.7635987719692661
+        },
+        "avg_relevance": 1.05,
+        "latency_ms": 704.8456249758601,
+        "num_relevant": 4,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F010",
+        "query": "Who translated the Book of Mormon?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.7,
+          "20": 0.65
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7462155048864012,
+          "5": 0.7820509230540151,
+          "10": 0.8267525234433839,
+          "20": 0.9045867090478447
+        },
+        "avg_relevance": 1.8,
+        "latency_ms": 441.8995839660056,
+        "num_relevant": 13,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T001",
+        "query": "What does the Book of Mormon teach about faith?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.8499120727736303,
+          "20": 0.962771650049744
+        },
+        "avg_relevance": 2.65,
+        "latency_ms": 516.6939999908209,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T002",
+        "query": "What is the purpose of the Atonement?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9621404437403491,
+          "20": 0.9875111538583498
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 445.11025003157556,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T003",
+        "query": "How should we pray according to scripture?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.9030970842075382,
+          "10": 0.8825845340300185,
+          "20": 0.9671410037713462
+        },
+        "avg_relevance": 2.5,
+        "latency_ms": 421.7443329980597,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T004",
+        "query": "What does scripture say about repentance?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9993600601150219
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 335.4153330437839,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T005",
+        "query": "What is the role of the Holy Ghost?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.6967307005844323,
+          "5": 0.7058448886378986,
+          "10": 0.8563193239234687,
+          "20": 0.920934478928745
+        },
+        "avg_relevance": 2.25,
+        "latency_ms": 374.354041996412,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T006",
+        "query": "What does scripture teach about charity?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9960451987888802
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 2235.406791965943,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T007",
+        "query": "How can we receive personal revelation?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.5,
+          "20": 0.7
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7988805459902473,
+          "5": 0.7294441835889875,
+          "10": 0.6096402896657663,
+          "20": 0.8856954413269318
+        },
+        "avg_relevance": 2.2,
+        "latency_ms": 357.76529199210927,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T008",
+        "query": "What is the covenant of baptism?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.8,
+          "20": 0.7
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.7906355891969594,
+          "10": 0.8105672071417644,
+          "20": 0.9291658795127353
+        },
+        "avg_relevance": 2.0,
+        "latency_ms": 460.20666701951995,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T009",
+        "query": "What does scripture say about obedience?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.5626510645779305,
+          "5": 0.6839163028524893,
+          "10": 0.7948833084733515,
+          "20": 0.8945609366341123
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 555.4159579914995,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T010",
+        "query": "What is the plan of salvation?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.7446551257189392,
+          "10": 0.796439092220228,
+          "20": 0.938401871819509
+        },
+        "avg_relevance": 2.45,
+        "latency_ms": 396.42354199895635,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X001",
+        "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6886039320648765,
+          "10": 0.8446945437582352,
+          "20": 0.8910010854760325
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 504.5085420133546,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X002",
+        "query": "What do different scriptures say about the Second Coming?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.8,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7462155048864012,
+          "5": 0.620654078163994,
+          "10": 0.6722332281837421,
+          "20": 0.8783363184173464
+        },
+        "avg_relevance": 2.3,
+        "latency_ms": 390.75424999464303,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X003",
+        "query": "How is the creation described in different volumes of scripture?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.8,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9125299483251055,
+          "10": 0.9008240627729516,
+          "20": 0.9785306831824713
+        },
+        "avg_relevance": 1.9,
+        "latency_ms": 356.1629999894649,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X004",
+        "query": "What do scriptures say about prophets being rejected?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.75
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.7591799226696627,
+          "20": 0.9308167044079593
+        },
+        "avg_relevance": 2.25,
+        "latency_ms": 530.8071250328794,
+        "num_relevant": 15,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X005",
+        "query": "How is the gathering of Israel described across scripture?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.9134872336594229,
+          "20": 0.9768198236516168
+        },
+        "avg_relevance": 2.8,
+        "latency_ms": 422.96454100869596,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X006",
+        "query": "What do different scriptures teach about priesthood authority?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "avg_relevance": 3.0,
+        "latency_ms": 428.7957499618642,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X007",
+        "query": "How do scriptures describe the resurrection of the dead?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8777221344374128,
+          "10": 0.8842952959585678,
+          "20": 0.9593883000810872
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 372.5879999692552,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X008",
+        "query": "What do scriptures say about caring for the poor?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.932801483732564,
+          "20": 0.9795806283959192
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 586.4880419685505,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X009",
+        "query": "How is the fall of Adam described in different scriptures?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.7,
+          "20": 0.7
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.7192801759488139,
+          "10": 0.6583458291313751,
+          "20": 0.8752746122361671
+        },
+        "avg_relevance": 1.95,
+        "latency_ms": 486.89549998380244,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X010",
+        "query": "What do scriptures teach about the nature of God?",
+        "method": "contextual_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8777221344374128,
+          "10": 0.8534515158048185,
+          "20": 0.9465467541747317
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 399.90324998507276,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      }
+    ],
+    "aggregate": {
+      "method": "contextual_rerank",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.8666666666666667,
+        "3": 0.8444444444444444,
+        "5": 0.8200000000000001,
+        "10": 0.7799999999999999,
+        "20": 0.745
+      },
+      "mrr": 0.9114285714285714,
+      "mean_ndcg_at_k": {
+        "1": 0.8285714285714286,
+        "3": 0.7856175197975361,
+        "5": 0.7669052775187866,
+        "10": 0.7959119555503748,
+        "20": 0.8971442834493357
+      },
+      "mean_avg_relevance": 2.111666666666667,
+      "mean_latency_ms": 521.9329611592306,
+      "std_latency_ms": 333.3765541727793,
+      "total_relevant": 447,
+      "total_retrieved": 600
+    }
+  },
+  "contextual_custom_rerank": {
+    "query_metrics": [
+      {
+        "query_id": "F001",
+        "query": "Who was Nephi?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.49493168932408493,
+          "5": 0.6762133787668818,
+          "10": 0.7530907137386353,
+          "20": 0.8474035524838611
+        },
+        "avg_relevance": 1.95,
+        "latency_ms": 872.4971669726074,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F002",
+        "query": "Who was Nephi's father?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.7,
+          "20": 0.6
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.42857142857142855,
+          "5": 0.4618119443377077,
+          "10": 0.5918700817319111,
+          "20": 0.7621391490262136
+        },
+        "avg_relevance": 1.8,
+        "latency_ms": 849.0204160334542,
+        "num_relevant": 12,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F003",
+        "query": "What happened to the people of Ammonihah?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.9,
+          "20": 0.65
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.7318407279869963,
+          "5": 0.6937326734044977,
+          "10": 0.8038199112089882,
+          "20": 0.8783061302490772
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 726.6490840120241,
+        "num_relevant": 13,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F004",
+        "query": "How many days was Jesus in the tomb?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.4,
+          "10": 0.3,
+          "20": 0.25
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.0,
+          "3": 0.2960819109658653,
+          "5": 0.2921183930407867,
+          "10": 0.40392458948406806,
+          "20": 0.6133815025312691
+        },
+        "avg_relevance": 1.05,
+        "latency_ms": 640.7160829985514,
+        "num_relevant": 5,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F005",
+        "query": "Who was the first prophet of the Restoration?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.4,
+          "20": 0.4
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.5520787508318572,
+          "5": 0.5732160188476014,
+          "10": 0.552484922662395,
+          "20": 0.7606189213087863
+        },
+        "avg_relevance": 1.25,
+        "latency_ms": 1191.1211250117049,
+        "num_relevant": 8,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F006",
+        "query": "Where did Lehi's family travel after leaving Jerusalem?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.7,
+          "20": 0.55
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7653606369886218,
+          "5": 0.7984926834847307,
+          "10": 0.845704212467821,
+          "20": 0.9253277830332443
+        },
+        "avg_relevance": 1.5,
+        "latency_ms": 804.1062920237891,
+        "num_relevant": 11,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F007",
+        "query": "What are the names of the twelve apostles?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.7,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8785831719004588,
+          "5": 0.9017654777972858,
+          "10": 0.8406009044828435,
+          "20": 0.94089068049841
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 871.4059579651803,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F008",
+        "query": "Who built the ark?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.3,
+          "20": 0.3
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.6580725857971756,
+          "5": 0.7492135925634431,
+          "10": 0.6879151181447916,
+          "20": 0.8457590644716406
+        },
+        "avg_relevance": 0.95,
+        "latency_ms": 659.9857080145739,
+        "num_relevant": 6,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F009",
+        "query": "What is the Word of Wisdom?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.6,
+          "10": 0.5,
+          "20": 0.45
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6903187831542703,
+          "5": 0.6081805076554174,
+          "10": 0.7003611906818497,
+          "20": 0.8269173112996848
+        },
+        "avg_relevance": 1.35,
+        "latency_ms": 743.6511249979958,
+        "num_relevant": 9,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F010",
+        "query": "Who translated the Book of Mormon?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.6,
+          "20": 0.45
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.8403080070928569,
+          "10": 0.8424139541438429,
+          "20": 0.9328494254101255
+        },
+        "avg_relevance": 1.35,
+        "latency_ms": 1091.4738340070471,
+        "num_relevant": 9,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T001",
+        "query": "What does the Book of Mormon teach about faith?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9061602363963839,
+          "20": 0.972962905358498
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 828.6800410132855,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T002",
+        "query": "What is the purpose of the Atonement?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9202182025407148,
+          "20": 0.9822286776874858
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 672.8783749858849,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T003",
+        "query": "How should we pray according to scripture?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9079756641006057,
+          "20": 0.9700940929529187
+        },
+        "avg_relevance": 2.55,
+        "latency_ms": 607.040542003233,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T004",
+        "query": "What does scripture say about repentance?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9552009891550426,
+          "20": 0.9893707871973795
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 720.5912909703329,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T005",
+        "query": "What is the role of the Holy Ghost?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.42857142857142855,
+          "5": 0.5120390570529751,
+          "10": 0.6952707817008899,
+          "20": 0.8302178659321789
+        },
+        "avg_relevance": 2.3,
+        "latency_ms": 756.547250028234,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T006",
+        "query": "What does scripture teach about charity?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.996479896486075
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 654.6778330230154,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T007",
+        "query": "How can we receive personal revelation?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.8660534229009714,
+          "20": 0.9646961401187748
+        },
+        "avg_relevance": 2.6,
+        "latency_ms": 803.8246670039371,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T008",
+        "query": "What is the covenant of baptism?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.7942545059558663,
+          "10": 0.8329791017922519,
+          "20": 0.9314636856045642
+        },
+        "avg_relevance": 2.2,
+        "latency_ms": 1447.052542003803,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T009",
+        "query": "What does scripture say about obedience?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8027478044303603,
+          "10": 0.8323218380274555,
+          "20": 0.9450551017613196
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 656.1644999892451,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T010",
+        "query": "What is the plan of salvation?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.6967307005844323,
+          "5": 0.6973515901634045,
+          "10": 0.7334538400571671,
+          "20": 0.8901259958164947
+        },
+        "avg_relevance": 2.4,
+        "latency_ms": 800.2703749807552,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X001",
+        "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 853.9222920080647,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X002",
+        "query": "What do different scriptures say about the Second Coming?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.9030970842075382,
+          "10": 0.9007619020868619,
+          "20": 0.9660141731799595
+        },
+        "avg_relevance": 2.55,
+        "latency_ms": 723.3139590243809,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X003",
+        "query": "How is the creation described in different volumes of scripture?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6886039320648765,
+          "10": 0.7403316169161733,
+          "20": 0.8733942700954795
+        },
+        "avg_relevance": 2.0,
+        "latency_ms": 747.761000005994,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X004",
+        "query": "What do scriptures say about prophets being rejected?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.9,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8747985572776802,
+          "10": 0.8790778465765123,
+          "20": 0.953481058360297
+        },
+        "avg_relevance": 2.4,
+        "latency_ms": 711.7782499990426,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X005",
+        "query": "How is the gathering of Israel described across scripture?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9458352203602566,
+          "20": 0.9796294942920565
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 780.9412089991383,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X006",
+        "query": "What do different scriptures teach about priesthood authority?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9458352203602566,
+          "20": 0.982062639501231
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 650.0193749670871,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X007",
+        "query": "How do scriptures describe the resurrection of the dead?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.9030970842075382,
+          "10": 0.9007619020868619,
+          "20": 0.9683439551553348
+        },
+        "avg_relevance": 2.8,
+        "latency_ms": 783.9903749991208,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X008",
+        "query": "What do scriptures say about caring for the poor?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9948028939236931
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 667.3945420188829,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X009",
+        "query": "How is the fall of Adam described in different scriptures?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.7,
+          "20": 0.75
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7653606369886218,
+          "5": 0.6813260918895631,
+          "10": 0.7209800146904202,
+          "20": 0.8927403635636725
+        },
+        "avg_relevance": 1.85,
+        "latency_ms": 708.86720798444,
+        "num_relevant": 15,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X010",
+        "query": "What do scriptures teach about the nature of God?",
+        "method": "contextual_custom_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.9,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7462155048864012,
+          "5": 0.8165832016561192,
+          "10": 0.8446203119946951,
+          "20": 0.9357253675385563
+        },
+        "avg_relevance": 2.45,
+        "latency_ms": 615.8553750137798,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      }
+    ],
+    "aggregate": {
+      "method": "contextual_custom_rerank",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9333333333333333,
+        "3": 0.9,
+        "5": 0.8733333333333333,
+        "10": 0.85,
+        "20": 0.7933333333333333
+      },
+      "mrr": 0.9666666666666667,
+      "mean_ndcg_at_k": {
+        "1": 0.8238095238095239,
+        "3": 0.800240582757515,
+        "5": 0.7950537814496467,
+        "10": 0.8183341236830223,
+        "20": 0.9117494294946094
+      },
+      "mean_avg_relevance": 2.18,
+      "mean_latency_ms": 788.0732597686196,
+      "std_latency_ms": 175.60296488348285,
+      "total_relevant": 476,
+      "total_retrieved": 600
+    }
+  },
+  "hybrid_rrf": {
+    "query_metrics": [
+      {
+        "query_id": "F001",
+        "query": "Who was Nephi?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.8,
+          "20": 0.75
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9026211001048622,
+          "10": 0.8845422444345159,
+          "20": 0.9642834884709411
+        },
+        "avg_relevance": 1.7,
+        "latency_ms": 849.8631250113249,
+        "num_relevant": 15,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F002",
+        "query": "Who was Nephi's father?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.6,
+          "20": 0.6
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.4636814559739926,
+          "5": 0.48718689410783317,
+          "10": 0.5525466893609351,
+          "20": 0.7611795644603636
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 349.5712080039084,
+        "num_relevant": 12,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F003",
+        "query": "What happened to the people of Ammonihah?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8,
+          "20": 0.65
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.8281227542004858,
+          "10": 0.80763623397052,
+          "20": 0.9309655442289105
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 629.4146250002086,
+        "num_relevant": 13,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F004",
+        "query": "How many days was Jesus in the tomb?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.2,
+          "10": 0.4,
+          "20": 0.4
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.39664163797074165,
+          "5": 0.3629066790594021,
+          "10": 0.5061088995817968,
+          "20": 0.6951854491155096
+        },
+        "avg_relevance": 1.3,
+        "latency_ms": 397.8875830071047,
+        "num_relevant": 8,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F005",
+        "query": "Who was the first prophet of the Restoration?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.6,
+          "20": 0.4
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.3333333333333333,
+          "3": 0.687147515984829,
+          "5": 0.6765142965891182,
+          "10": 0.7607515622016449,
+          "20": 0.8642522824838998
+        },
+        "avg_relevance": 1.3,
+        "latency_ms": 543.7007920118049,
+        "num_relevant": 8,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F006",
+        "query": "Where did Lehi's family travel after leaving Jerusalem?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.6,
+          "10": 0.4,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8046129061698147,
+          "5": 0.701384245878135,
+          "10": 0.6105432078747155,
+          "20": 0.857828782966379
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 325.82154200645164,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F007",
+        "query": "What are the names of the twelve apostles?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.6,
+          "10": 0.7,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8151510484299677,
+          "10": 0.8376318198599176,
+          "20": 0.9508068422033034
+        },
+        "avg_relevance": 1.25,
+        "latency_ms": 352.52349998336285,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F008",
+        "query": "Who built the ark?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.3333333333333333,
+          "5": 0.4,
+          "10": 0.4,
+          "20": 0.3
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.3198178381975599,
+          "5": 0.4901080899961126,
+          "10": 0.5943842826321069,
+          "20": 0.7228847128141482
+        },
+        "avg_relevance": 1.2,
+        "latency_ms": 403.9267080370337,
+        "num_relevant": 6,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F009",
+        "query": "What is the Word of Wisdom?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6903187831542703,
+          "5": 0.7397374638389677,
+          "10": 0.8423554305100279,
+          "20": 0.899890677878652
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 321.65920798433945,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F010",
+        "query": "Who translated the Book of Mormon?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.4,
+          "10": 0.5,
+          "20": 0.45
+        },
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.24239753398612743,
+          "5": 0.31295348268656914,
+          "10": 0.5385886040840095,
+          "20": 0.6856975693105
+        },
+        "avg_relevance": 1.4,
+        "latency_ms": 334.2358749941923,
+        "num_relevant": 9,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T001",
+        "query": "What does the Book of Mormon teach about faith?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.8281227542004858,
+          "10": 0.8884634281196222,
+          "20": 0.9590008566624327
+        },
+        "avg_relevance": 2.5,
+        "latency_ms": 412.3802909743972,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T002",
+        "query": "What is the purpose of the Atonement?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.6967307005844323,
+          "5": 0.7808192186449511,
+          "10": 0.8180916863089303,
+          "20": 0.9312742807516291
+        },
+        "avg_relevance": 2.6,
+        "latency_ms": 364.35733299003914,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T003",
+        "query": "How should we pray according to scripture?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.9065477790741163,
+          "20": 0.9698692973484078
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 362.6219169818796,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T004",
+        "query": "What does scripture say about repentance?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9982352186722974
+        },
+        "avg_relevance": 2.65,
+        "latency_ms": 896.8102500075474,
+        "num_relevant": 18,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T005",
+        "query": "What is the role of the Holy Ghost?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.7318407279869963,
+          "5": 0.6477522099264775,
+          "10": 0.6156037691435828,
+          "20": 0.8681414437583909
+        },
+        "avg_relevance": 2.45,
+        "latency_ms": 403.7424169946462,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T006",
+        "query": "What does scripture teach about charity?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9155260051911699,
+          "20": 0.9815478756103344
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 635.9752919524908,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T007",
+        "query": "How can we receive personal revelation?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.7318407279869963,
+          "5": 0.8061941684150765,
+          "10": 0.8363737201414462,
+          "20": 0.9192652119346684
+        },
+        "avg_relevance": 2.45,
+        "latency_ms": 391.8976249988191,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T008",
+        "query": "What is the covenant of baptism?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.3333333333333333,
+          "5": 0.6,
+          "10": 0.6,
+          "20": 0.6
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.2769367788636447,
+          "5": 0.4258858761227243,
+          "10": 0.6517642230290543,
+          "20": 0.7681565766778375
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 486.4630000083707,
+        "num_relevant": 12,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T009",
+        "query": "What does scripture say about obedience?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9603250160361273,
+          "20": 0.988694844085498
+        },
+        "avg_relevance": 2.55,
+        "latency_ms": 388.98745900951326,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T010",
+        "query": "What is the plan of salvation?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.9030970842075382,
+          "10": 0.8098043647669424,
+          "20": 0.9502718690136618
+        },
+        "avg_relevance": 2.1,
+        "latency_ms": 347.01274998951703,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X001",
+        "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6886039320648765,
+          "10": 0.7373368312991392,
+          "20": 0.8598252928538553
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 356.30858299555257,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X002",
+        "query": "What do different scriptures say about the Second Coming?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.6967307005844323,
+          "5": 0.7058448886378986,
+          "10": 0.8091134601918768,
+          "20": 0.9230722066573104
+        },
+        "avg_relevance": 2.45,
+        "latency_ms": 330.5990829830989,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X003",
+        "query": "How is the creation described in different volumes of scripture?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6886039320648765,
+          "10": 0.8387049725241668,
+          "20": 0.87319834570471
+        },
+        "avg_relevance": 1.8,
+        "latency_ms": 433.3648750325665,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X004",
+        "query": "What do scriptures say about prophets being rejected?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8308103365909342,
+          "5": 0.8777221344374128,
+          "10": 0.8611375561264454,
+          "20": 0.9479912710148584
+        },
+        "avg_relevance": 2.4,
+        "latency_ms": 350.37241695681587,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X005",
+        "query": "How is the gathering of Israel described across scripture?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9636452638863133,
+          "20": 0.9963269718284391
+        },
+        "avg_relevance": 2.65,
+        "latency_ms": 411.35466599371284,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X006",
+        "query": "What do different scriptures teach about priesthood authority?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8838634664270282,
+          "20": 0.9771523343924816
+        },
+        "avg_relevance": 2.75,
+        "latency_ms": 366.04666704079136,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X007",
+        "query": "How do scriptures describe the resurrection of the dead?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9458352203602566,
+          "20": 0.9796089990876246
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 483.31962496740744,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X008",
+        "query": "What do scriptures say about caring for the poor?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9920928724582485
+        },
+        "avg_relevance": 2.5,
+        "latency_ms": 373.9061660016887,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X009",
+        "query": "How is the fall of Adam described in different scriptures?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.7,
+          "20": 0.75
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.6884243782136499,
+          "10": 0.6997466357004691,
+          "20": 0.8948117099958895
+        },
+        "avg_relevance": 1.9,
+        "latency_ms": 396.58758300356567,
+        "num_relevant": 15,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X010",
+        "query": "What do scriptures teach about the nature of God?",
+        "method": "hybrid_rrf",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.8
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.940748440373248,
+          "20": 0.9758806017865462
+        },
+        "avg_relevance": 2.25,
+        "latency_ms": 323.718291008845,
+        "num_relevant": 16,
+        "num_retrieved": 20
+      }
+    ],
+    "aggregate": {
+      "method": "hybrid_rrf",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.8666666666666667,
+        "3": 0.888888888888889,
+        "5": 0.8533333333333334,
+        "10": 0.8366666666666667,
+        "20": 0.7583333333333333
+      },
+      "mrr": 0.9277777777777777,
+      "mean_ndcg_at_k": {
+        "1": 0.7587301587301588,
+        "3": 0.7754474874010548,
+        "5": 0.7708113447777257,
+        "10": 0.8005906937736709,
+        "20": 0.9029130998075909
+      },
+      "mean_avg_relevance": 2.1,
+      "mean_latency_ms": 434.1476818643666,
+      "std_latency_ms": 141.69266887427673,
+      "total_relevant": 455,
+      "total_retrieved": 600
+    }
+  },
+  "hybrid_rerank": {
+    "query_metrics": [
+      {
+        "query_id": "F001",
+        "query": "Who was Nephi?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 0.5,
+        "ndcg_at_k": {
+          "1": 0.14285714285714285,
+          "3": 0.5354781747314055,
+          "5": 0.7102894884903282,
+          "10": 0.7790760614294606,
+          "20": 0.8529838805290374
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 983.1752079771832,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F002",
+        "query": "Who was Nephi's father?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.4,
+          "10": 0.7,
+          "20": 0.7
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7462155048864012,
+          "5": 0.5789202639232207,
+          "10": 0.7366165269829664,
+          "20": 0.8772925181122485
+        },
+        "avg_relevance": 2.1,
+        "latency_ms": 934.5404999912716,
+        "num_relevant": 14,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F003",
+        "query": "What happened to the people of Ammonihah?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8,
+          "20": 0.6
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8659203639934981,
+          "5": 0.8196294557259916,
+          "10": 0.8619838477397518,
+          "20": 0.9363888711532775
+        },
+        "avg_relevance": 1.75,
+        "latency_ms": 783.9804580435157,
+        "num_relevant": 12,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F004",
+        "query": "How many days was Jesus in the tomb?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.6,
+          "10": 0.6,
+          "20": 0.45
+        },
+        "reciprocal_rank": 0.3333333333333333,
+        "ndcg_at_k": {
+          "1": 0.0,
+          "3": 0.2769367788636447,
+          "5": 0.4258858761227243,
+          "10": 0.5477893166658632,
+          "20": 0.6994714095219302
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 722.2414999851026,
+        "num_relevant": 9,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F005",
+        "query": "Who was the first prophet of the Restoration?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.4,
+          "10": 0.4,
+          "20": 0.35
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.8435737579924145,
+          "5": 0.7020976466720956,
+          "10": 0.7770594642268527,
+          "20": 0.9107965068878433
+        },
+        "avg_relevance": 1.15,
+        "latency_ms": 844.9487080215476,
+        "num_relevant": 7,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F006",
+        "query": "Where did Lehi's family travel after leaving Jerusalem?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9686951808740456,
+          "20": 0.9922480935095874
+        },
+        "avg_relevance": 1.6,
+        "latency_ms": 923.9500829717144,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F007",
+        "query": "What are the names of the twelve apostles?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.7,
+          "20": 0.5
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.8075588805057204,
+          "5": 0.8443019660324382,
+          "10": 0.779214162096871,
+          "20": 0.8791455095393963
+        },
+        "avg_relevance": 1.55,
+        "latency_ms": 821.0850839968771,
+        "num_relevant": 10,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F008",
+        "query": "Who built the ark?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.7,
+          "20": 0.45
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.7318407279869963,
+          "5": 0.8587958337793852,
+          "10": 0.8229599600806992,
+          "20": 0.8765660174309905
+        },
+        "avg_relevance": 1.45,
+        "latency_ms": 666.2190000060946,
+        "num_relevant": 9,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F009",
+        "query": "What is the Word of Wisdom?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.6,
+          "10": 0.3,
+          "20": 0.25
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.8451593915771352,
+          "5": 0.7634825989189028,
+          "10": 0.7660725019976854,
+          "20": 0.8500918193171997
+        },
+        "avg_relevance": 1.2,
+        "latency_ms": 715.0867090094835,
+        "num_relevant": 5,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "F010",
+        "query": "Who translated the Book of Mormon?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.6,
+          "10": 0.7,
+          "20": 0.55
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.7988805459902473,
+          "5": 0.7776883129849681,
+          "10": 0.8479016376133207,
+          "20": 0.9232028477016823
+        },
+        "avg_relevance": 1.6,
+        "latency_ms": 931.1415000120178,
+        "num_relevant": 11,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T001",
+        "query": "What does the Book of Mormon teach about faith?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9010362095152992,
+          "20": 0.9714624107117162
+        },
+        "avg_relevance": 2.8,
+        "latency_ms": 656.9656670326367,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T002",
+        "query": "What is the purpose of the Atonement?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9603250160361273,
+          "20": 0.9900640384484627
+        },
+        "avg_relevance": 2.55,
+        "latency_ms": 735.7353330007754,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T003",
+        "query": "How should we pray according to scripture?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "avg_relevance": 2.8,
+        "latency_ms": 779.1940830065869,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T004",
+        "query": "What does scripture say about repentance?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9165323715184533,
+          "10": 0.9458352203602566,
+          "20": 0.9825453454540758
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 753.4973750007339,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T005",
+        "query": "What is the role of the Holy Ghost?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8754191916957574,
+          "20": 0.9758746613048561
+        },
+        "avg_relevance": 2.6,
+        "latency_ms": 719.3114160327241,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T006",
+        "query": "What does scripture teach about charity?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9957001645712783
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 774.9227089807391,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T007",
+        "query": "How can we receive personal revelation?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.9065477790741163,
+          "20": 0.9699752425032142
+        },
+        "avg_relevance": 2.55,
+        "latency_ms": 706.7512079956941,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T008",
+        "query": "What is the covenant of baptism?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8,
+          "10": 0.6,
+          "20": 0.65
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.8040708765078748,
+          "10": 0.7583194759256195,
+          "20": 0.913784408663914
+        },
+        "avg_relevance": 1.9,
+        "latency_ms": 831.5911249956116,
+        "num_relevant": 13,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T009",
+        "query": "What does scripture say about obedience?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.5626510645779305,
+          "5": 0.6839163028524893,
+          "10": 0.7948833084733515,
+          "20": 0.9012022866980198
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 728.206624975428,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "T010",
+        "query": "What is the plan of salvation?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 0.6967307005844323,
+          "5": 0.7808192186449511,
+          "10": 0.7708126720132765,
+          "20": 0.9144703236724877
+        },
+        "avg_relevance": 2.3,
+        "latency_ms": 865.9030830021948,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X001",
+        "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9992510534070866
+        },
+        "avg_relevance": 1.95,
+        "latency_ms": 759.183208050672,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X002",
+        "query": "What do different scriptures say about the Second Coming?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.9996933741862307
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 834.7792910062708,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X003",
+        "query": "How is the creation described in different volumes of scripture?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.6151177610114408,
+          "5": 0.6886039320648765,
+          "10": 0.8446945437582352,
+          "20": 0.8910010854760325
+        },
+        "avg_relevance": 2.05,
+        "latency_ms": 807.5753329903819,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X004",
+        "query": "What do scriptures say about prophets being rejected?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.75
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.8791712690774832,
+          "20": 0.9670255868030523
+        },
+        "avg_relevance": 2.3,
+        "latency_ms": 778.5906660137698,
+        "num_relevant": 15,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X005",
+        "query": "How is the gathering of Israel described across scripture?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.7318407279869963,
+          "5": 0.8061941684150765,
+          "10": 0.874233276401097,
+          "20": 0.934176184192587
+        },
+        "avg_relevance": 2.9,
+        "latency_ms": 735.3271250030957,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X006",
+        "query": "What do different scriptures teach about priesthood authority?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 0.9250256699929476,
+          "10": 0.9513467899190737,
+          "20": 0.9842839306257136
+        },
+        "avg_relevance": 2.85,
+        "latency_ms": 885.6065000290982,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X007",
+        "query": "How do scriptures describe the resurrection of the dead?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9621404437403491,
+          "20": 0.9939336009453934
+        },
+        "avg_relevance": 2.95,
+        "latency_ms": 701.2164589832537,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X008",
+        "query": "What do scriptures say about caring for the poor?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 1.0
+        },
+        "avg_relevance": 3.0,
+        "latency_ms": 762.6974590239115,
+        "num_relevant": 20,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X009",
+        "query": "How is the fall of Adam described in different scriptures?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 0.6666666666666666,
+          "5": 0.8,
+          "10": 0.8,
+          "20": 0.85
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 0.42857142857142855,
+          "3": 0.3280117015665522,
+          "5": 0.5119891326334591,
+          "10": 0.651486605810136,
+          "20": 0.8034367981490875
+        },
+        "avg_relevance": 1.95,
+        "latency_ms": 730.2305420162156,
+        "num_relevant": 17,
+        "num_retrieved": 20
+      },
+      {
+        "query_id": "X010",
+        "query": "What do scriptures teach about the nature of God?",
+        "method": "hybrid_rerank",
+        "precision_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0,
+          "20": 0.95
+        },
+        "reciprocal_rank": 1.0,
+        "ndcg_at_k": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 0.9621404437403491,
+          "20": 0.9910506348618424
+        },
+        "avg_relevance": 2.7,
+        "latency_ms": 858.7718330090865,
+        "num_relevant": 19,
+        "num_retrieved": 20
+      }
+    ],
+    "aggregate": {
+      "method": "hybrid_rerank",
+      "num_queries": 30,
+      "mean_precision_at_k": {
+        "1": 0.9333333333333333,
+        "3": 0.9222222222222223,
+        "5": 0.9,
+        "10": 0.8666666666666667,
+        "20": 0.8116666666666668
+      },
+      "mrr": 0.961111111111111,
+      "mean_ndcg_at_k": {
+        "1": 0.8047619047619048,
+        "3": 0.8461972027418272,
+        "5": 0.8479933718930528,
+        "10": 0.8641920301749348,
+        "20": 0.9325706201459415
+      },
+      "mean_avg_relevance": 2.256666666666667,
+      "mean_latency_ms": 791.080859672123,
+      "std_latency_ms": 82.3799280845554,
+      "total_relevant": 487,
+      "total_retrieved": 600
+    }
+  }
+}

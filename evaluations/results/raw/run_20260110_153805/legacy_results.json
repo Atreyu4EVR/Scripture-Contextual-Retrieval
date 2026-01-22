@@ -1,0 +1,2642 @@
+[
+  {
+    "query_id": "F001",
+    "query": "Who was Nephi?",
+    "query_type": "factual",
+    "latency_ms": 1107.1712499833666,
+    "documents": [
+      {
+        "id": "b4be2037-422c-4bf3-bc50-d45f8d183cb1",
+        "rank": 1,
+        "score": 0.606500685,
+        "text": "And Nephi, who was the father of Nephi, who had the charge of the records, did not return to the land of Zarahemla, and could nowhere be found in all the land.",
+        "reference": "3 Nephi 2:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c8ba23fe-e3df-47d9-80c7-642c55dfd276",
+        "rank": 2,
+        "score": 0.606342256,
+        "text": "And Nephi, who was the father of Nephi, who had the charge of the records, did not return to the land of Zarahemla, and could nowhere be found in all the land.",
+        "reference": "3 Nephi 2:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "315d3b53-29cb-4760-b878-926d01be17cb",
+        "rank": 3,
+        "score": 0.604961395,
+        "text": "And Nephi, the son of Helaman, had departed out of the land of Zarahemla, giving charge unto his son Nephi, who was his eldest son, concerning the plates of brass, and all the records which had been kept, and all those things which had been kept sacred from the departure of Lehi out of Jerusalem.",
+        "reference": "3 Nephi 1:2",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "0cb0c7b6-81c3-4d37-8079-2d3ca77af54d",
+        "rank": 4,
+        "score": 0.604879379,
+        "text": "And Nephi, the son of Helaman, had departed out of the land of Zarahemla, giving charge unto his son Nephi, who was his eldest son, concerning the plates of brass, and all the records which had been kept, and all those things which had been kept sacred from the departure of Lehi out of Jerusalem.",
+        "reference": "3 Nephi 1:2",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "fc730faa-3552-4432-8e80-50a79edad109",
+        "rank": 5,
+        "score": 0.602909088,
+        "text": "Now this man's name was Nephihah, and he was appointed chief judge; and he sat in the judgment-seat to judge and to govern the people.",
+        "reference": "Alma 4:17",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "0d215084-4145-46c7-8f2b-87ee2b5cd19b",
+        "rank": 6,
+        "score": 0.60278511,
+        "text": "Now this man's name was Nephihah, and he was appointed chief judge; and he sat in the judgment-seat to judge and to govern the people.",
+        "reference": "Alma 4:17",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c796a66c-2016-4bfb-a4fa-f17d70a74dbd",
+        "rank": 7,
+        "score": 0.584072113,
+        "text": "And it came to pass that Nephi died.",
+        "reference": "Jacob 1:12",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "cc02a14c-c558-49c4-8862-b98d73a78e74",
+        "rank": 8,
+        "score": 0.584072113,
+        "text": "And it came to pass that Nephi died.",
+        "reference": "Jacob 1:12",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "a8783bd8-cd3d-409b-8953-1a5827e222e6",
+        "rank": 9,
+        "score": 0.579462051,
+        "text": "The people having loved Nephi exceedingly, he having been a great protector for them, having wielded the sword of Laban in their defence, and having labored in all his days for their welfare\u2014",
+        "reference": "Jacob 1:10",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "765d2fc3-1352-4a7c-b8fd-a9f513e947e5",
+        "rank": 10,
+        "score": 0.5794487,
+        "text": "The people having loved Nephi exceedingly, he having been a great protector for them, having wielded the sword of Laban in their defence, and having labored in all his days for their welfare\u2014",
+        "reference": "Jacob 1:10",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "F002",
+    "query": "Who was Nephi's father?",
+    "query_type": "factual",
+    "latency_ms": 277.7117920049932,
+    "documents": [
+      {
+        "id": "b4be2037-422c-4bf3-bc50-d45f8d183cb1",
+        "rank": 1,
+        "score": 0.625330031,
+        "text": "And Nephi, who was the father of Nephi, who had the charge of the records, did not return to the land of Zarahemla, and could nowhere be found in all the land.",
+        "reference": "3 Nephi 2:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c8ba23fe-e3df-47d9-80c7-642c55dfd276",
+        "rank": 2,
+        "score": 0.625181139,
+        "text": "And Nephi, who was the father of Nephi, who had the charge of the records, did not return to the land of Zarahemla, and could nowhere be found in all the land.",
+        "reference": "3 Nephi 2:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "3eae85f4-69ea-4d54-a7f4-1aebb3e28807",
+        "rank": 3,
+        "score": 0.610525131,
+        "text": "And now it came to pass that after I, Nephi, had made an end of teaching my brethren, our father, Lehi, also spake many things unto them, and rehearsed unto them, how great things the Lord had done for them in bringing them out of the land of Jerusalem.",
+        "reference": "2 Nephi 1:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "1dca3076-2dbc-4f98-afde-d7e987f1e878",
+        "rank": 4,
+        "score": 0.609605789,
+        "text": "And now it came to pass that after I, Nephi, had made an end of teaching my brethren, our father, Lehi, also spake many things unto them, and rehearsed unto them, how great things the Lord had done for them in bringing them out of the land of Jerusalem.",
+        "reference": "2 Nephi 1:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "67ffbafb-00af-4634-a0c8-546309711fc5",
+        "rank": 5,
+        "score": 0.586954176,
+        "text": "I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father; and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days; yea, having had a great knowledge of the goodness and the mysteries of God, therefore I make a record of my proceedings in my days.",
+        "reference": "1 Nephi 1:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "16c511bc-4c9e-4e16-ab73-fb466a67d854",
+        "rank": 6,
+        "score": 0.586380064,
+        "text": "I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father; and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days; yea, having had a great knowledge of the goodness and the mysteries of God, therefore I make a record of my proceedings in my days.",
+        "reference": "1 Nephi 1:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "2cc3a36e-eaa1-4afa-b95f-079657005dca",
+        "rank": 7,
+        "score": 0.577238083,
+        "text": "And it came to pass after my father, Lehi, had spoken unto all his household, according to the feelings of his heart and the Spirit of the Lord which was in him, he waxed old. And it came to pass that he died, and was buried.",
+        "reference": "2 Nephi 4:12",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "2eeb6348-848c-44a0-bcfd-8b1741a0fbc3",
+        "rank": 8,
+        "score": 0.577156067,
+        "text": "And it came to pass after my father, Lehi, had spoken unto all his household, according to the feelings of his heart and the Spirit of the Lord which was in him, he waxed old. And it came to pass that he died, and was buried.",
+        "reference": "2 Nephi 4:12",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "ead88c36-d060-482d-ba23-aab668bd72ef",
+        "rank": 9,
+        "score": 0.575126648,
+        "text": "And it came to pass that he had two sons. He gave unto the eldest the name of Nephi, and unto the youngest, the name of Lehi. And they began to grow up unto the Lord.",
+        "reference": "Helaman 3:21",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "765d4e3b-7116-4885-a61c-c810534c12e5",
+        "rank": 10,
+        "score": 0.575088501,
+        "text": "And it came to pass that he had two sons. He gave unto the eldest the name of Nephi, and unto the youngest, the name of Lehi. And they began to grow up unto the Lord.",
+        "reference": "Helaman 3:21",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "F003",
+    "query": "What happened to the people of Ammonihah?",
+    "query_type": "factual",
+    "latency_ms": 368.79758301074617,
+    "documents": [
+      {
+        "id": "0ba4c959-e0f9-42ac-bd03-f3e586fe7b75",
+        "rank": 1,
+        "score": 0.690322936,
+        "text": "And now it came to pass, before the Nephites could raise a sufficient army to drive them out of the land, they had destroyed the people who were in the city of Ammonihah, and also some around the borders of Noah, and taken others captive into the wilderness.",
+        "reference": "Alma 16:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "54f95867-c13c-4be9-8f4f-93c2f718fac8",
+        "rank": 2,
+        "score": 0.690322936,
+        "text": "And now it came to pass, before the Nephites could raise a sufficient army to drive them out of the land, they had destroyed the people who were in the city of Ammonihah, and also some around the borders of Noah, and taken others captive into the wilderness.",
+        "reference": "Alma 16:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "b8c949c4-0fef-4193-9285-086a8e2899f9",
+        "rank": 3,
+        "score": 0.68021208,
+        "text": "And thus ended the eleventh year of the judges, the Lamanites having been driven out of the land, and the people of Ammonihah were destroyed; yea, every living soul of the Ammonihahites was destroyed, and also their great city, which they said God could not destroy, because of its greatness.",
+        "reference": "Alma 16:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "542fbdfc-a8ca-43b0-9d30-4e39171ec6f1",
+        "rank": 4,
+        "score": 0.680162489,
+        "text": "And thus ended the eleventh year of the judges, the Lamanites having been driven out of the land, and the people of Ammonihah were destroyed; yea, every living soul of the Ammonihahites was destroyed, and also their great city, which they said God could not destroy, because of its greatness.",
+        "reference": "Alma 16:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "57de4fb9-75a2-4a90-92dc-d92087ee45de",
+        "rank": 5,
+        "score": 0.647161543,
+        "text": "But they took their armies and went over into the borders of the land of Zarahemla, and fell upon the people who were in the land of Ammonihah and destroyed them.",
+        "reference": "Alma 25:2",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "eadc8095-5512-4309-93b8-819e441db56d",
+        "rank": 6,
+        "score": 0.647013724,
+        "text": "But they took their armies and went over into the borders of the land of Zarahemla, and fell upon the people who were in the land of Ammonihah and destroyed them.",
+        "reference": "Alma 25:2",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "bca630a4-1c33-4a9e-a698-d539665f2d7d",
+        "rank": 7,
+        "score": 0.642908156,
+        "text": "But as to the people that were in the land of Ammonihah, they yet remained a hard-hearted and a stiffnecked people; and they repented not of their sins, ascribing all the power of Alma and Amulek to the devil; for they were of the profession of Nehor, and did not believe in the repentance of their sins.",
+        "reference": "Alma 15:15",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "bbaafb0f-4c12-4050-a872-ea706be9d8fa",
+        "rank": 8,
+        "score": 0.642845213,
+        "text": "But as to the people that were in the land of Ammonihah, they yet remained a hard-hearted and a stiffnecked people; and they repented not of their sins, ascribing all the power of Alma and Amulek to the devil; for they were of the profession of Nehor, and did not believe in the repentance of their sins.",
+        "reference": "Alma 15:15",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "bbd87c3c-5591-4e78-b142-bd32f7410786",
+        "rank": 9,
+        "score": 0.62496382,
+        "text": "Behold, I said that the city of Ammonihah had been rebuilt. I say unto you, yea, that it was in part rebuilt; and because the Lamanites had destroyed it once because of the iniquity of the people, they supposed that it would again become an easy prey for them.",
+        "reference": "Alma 49:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "e2bd63f7-197b-4b3e-87fc-421b60aa04ce",
+        "rank": 10,
+        "score": 0.624694943,
+        "text": "Behold, I said that the city of Ammonihah had been rebuilt. I say unto you, yea, that it was in part rebuilt; and because the Lamanites had destroyed it once because of the iniquity of the people, they supposed that it would again become an easy prey for them.",
+        "reference": "Alma 49:3",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "F004",
+    "query": "How many days was Jesus in the tomb?",
+    "query_type": "factual",
+    "latency_ms": 331.44937502220273,
+    "documents": [
+      {
+        "id": "1c6cadeb-1358-4dfe-8915-14730e0aefab",
+        "rank": 1,
+        "score": 0.531078398,
+        "text": "For as Jonas was three days and three nights in the whale's belly; so shall the Son of man be three days and three nights in the heart of the earth.",
+        "reference": "Matthew 12:40",
+        "volume": "New Testament"
+      },
+      {
+        "id": "a1ce5a71-b27a-46f1-90ae-366576bbc067",
+        "rank": 2,
+        "score": 0.531068861,
+        "text": "For as Jonas was three days and three nights in the whale's belly; so shall the Son of man be three days and three nights in the heart of the earth.",
+        "reference": "Matthew 12:40",
+        "volume": "New Testament"
+      },
+      {
+        "id": "9e74ceb8-dce7-461e-a57e-efa6248f9c38",
+        "rank": 3,
+        "score": 0.528064787,
+        "text": "And it came to pass that after two days and two nights they were about to take his body and lay it in a sepulchre, which they had made for the purpose of burying their dead.",
+        "reference": "Alma 19:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "6cafa874-f60a-45bf-a3cd-7d3ca9a6c811",
+        "rank": 4,
+        "score": 0.527814925,
+        "text": "And it came to pass that after two days and two nights they were about to take his body and lay it in a sepulchre, which they had made for the purpose of burying their dead.",
+        "reference": "Alma 19:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "28fa0654-b58b-4c89-9ed5-bed9652bfd78",
+        "rank": 5,
+        "score": 0.522066176,
+        "text": "Then when Jesus came, he found that he had lain in the grave four days already.",
+        "reference": "John 11:17",
+        "volume": "New Testament"
+      },
+      {
+        "id": "e1ae2f31-95d6-4469-85fe-5c798371ba4a",
+        "rank": 6,
+        "score": 0.522066176,
+        "text": "Then when Jesus came, he found that he had lain in the grave four days already.",
+        "reference": "John 11:17",
+        "volume": "New Testament"
+      },
+      {
+        "id": "d19df633-17f3-4da3-bc74-8dcce824ac87",
+        "rank": 7,
+        "score": 0.514125884,
+        "text": "He was crucified, died, and rose again the third day;",
+        "reference": "D&C 20:23",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "ec7452e4-d15a-4450-a884-6372e6c35dfd",
+        "rank": 8,
+        "score": 0.514022887,
+        "text": "He was crucified, died, and rose again the third day;",
+        "reference": "D&C 20:23",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "66726a4e-d628-4cdd-b1bd-febdf29a7883",
+        "rank": 9,
+        "score": 0.484653503,
+        "text": "And it came to pass that thus did the three days pass away. And it was in the morning, and the darkness dispersed from off the face of the land, and the earth did cease to tremble, and the rocks did cease to rend, and the dreadful groanings did cease, and all the tumultuous noises did pass away.",
+        "reference": "3 Nephi 10:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "8d2eebb5-f14a-4464-b3d3-f2e07a6392c9",
+        "rank": 10,
+        "score": 0.484500915,
+        "text": "And it came to pass that thus did the three days pass away. And it was in the morning, and the darkness dispersed from off the face of the land, and the earth did cease to tremble, and the rocks did cease to rend, and the dreadful groanings did cease, and all the tumultuous noises did pass away.",
+        "reference": "3 Nephi 10:9",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "F005",
+    "query": "Who was the first prophet of the Restoration?",
+    "query_type": "factual",
+    "latency_ms": 434.98266601818614,
+    "documents": [
+      {
+        "id": "45b50a3c-490f-4739-b924-65873ec2d94b",
+        "rank": 1,
+        "score": 0.551098824,
+        "text": "Joseph Smith, the Prophet and Seer of the Lord, has done more, save Jesus only, for the salvation of men in this world, than any other man that ever lived in it. In the short space of twenty years, he has brought forth the Book of Mormon, which he translated by the gift and power of God, and has been the means of publishing it on two continents; has sent the fulness of the everlasting gospel, which it contained, to the four quarters of the earth; has brought forth the revelations and commandments which compose this book of Doctrine and Covenants, and many other wise documents and instructions for the benefit of the children of men; gathered many thousands of the Latter-day Saints, founded a great city, and left a fame and name that cannot be slain. He lived great, and he died great in the eyes of God and his people; and like most of the Lord's anointed in ancient times, has sealed his mission and his works with his own blood; and so has his brother Hyrum. In life they were not divided, and in death they were not separated!",
+        "reference": "D&C 135:3",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "51ce0dfb-5bf2-46ee-88ab-e8ce06b5675f",
+        "rank": 2,
+        "score": 0.550937653,
+        "text": "Joseph Smith, the Prophet and Seer of the Lord, has done more, save Jesus only, for the salvation of men in this world, than any other man that ever lived in it. In the short space of twenty years, he has brought forth the Book of Mormon, which he translated by the gift and power of God, and has been the means of publishing it on two continents; has sent the fulness of the everlasting gospel, which it contained, to the four quarters of the earth; has brought forth the revelations and commandments which compose this book of Doctrine and Covenants, and many other wise documents and instructions for the benefit of the children of men; gathered many thousands of the Latter-day Saints, founded a great city, and left a fame and name that cannot be slain. He lived great, and he died great in the eyes of God and his people; and like most of the Lord's anointed in ancient times, has sealed his mission and his works with his own blood; and so has his brother Hyrum. In life they were not divided, and in death they were not separated!",
+        "reference": "D&C 135:3",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "861698d9-9f40-4a6a-b1e8-06013b046e7e",
+        "rank": 3,
+        "score": 0.541696548,
+        "text": "Which commandments were given to Joseph Smith, Jun., who was called of God, and ordained an apostle of Jesus Christ, to be the first elder of this church;",
+        "reference": "D&C 20:2",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "11b8aaa6-44fa-4802-8683-5a7d025c3957",
+        "rank": 4,
+        "score": 0.541651726,
+        "text": "Which commandments were given to Joseph Smith, Jun., who was called of God, and ordained an apostle of Jesus Christ, to be the first elder of this church;",
+        "reference": "D&C 20:2",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "617d44c6-fb9b-4609-965f-82694694f83c",
+        "rank": 5,
+        "score": 0.529129088,
+        "text": "The messenger who visited us on this occasion and conferred this Priesthood upon us, said that his name was John, the same that is called John the Baptist in the New Testament, and that he acted under the direction of Peter, James and John, who held the keys of the Priesthood of Melchizedek, which Priesthood, he said, would in due time be conferred on us, and that I should be called the first Elder of the Church, and he (Oliver Cowdery) the second. It was on the fifteenth day of May, 1829, that we were ordained under the hand of this messenger, and baptized.",
+        "reference": "Joseph Smith\u2014History 1:72",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "f4c04c54-38eb-448a-bb1b-77cf3dc2ceb0",
+        "rank": 6,
+        "score": 0.528575897,
+        "text": "The Prophet Joseph Smith, and my father, Hyrum Smith, Brigham Young, John Taylor, Wilford Woodruff, and other choice spirits who were reserved to come forth in the fulness of times to take part in laying the foundations of the great latter-day work,",
+        "reference": "D&C 138:53",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "23a778f4-f90c-4d98-bbb5-4a096e1b4ec2",
+        "rank": 7,
+        "score": 0.527557433,
+        "text": "The Prophet Joseph Smith, and my father, Hyrum Smith, Brigham Young, John Taylor, Wilford Woodruff, and other choice spirits who were reserved to come forth in the fulness of times to take part in laying the foundations of the great latter-day work,",
+        "reference": "D&C 138:53",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "30b5dc56-1008-4021-907d-882e4fa29a04",
+        "rank": 8,
+        "score": 0.517543793,
+        "text": "And Malachi, the prophet who testified of the coming of Elijah\u2014of whom also Moroni spake to the Prophet Joseph Smith, declaring that he should come before the ushering in of the great and dreadful day of the Lord\u2014were also there.",
+        "reference": "D&C 138:46",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "33fdd08c-9b3c-48b9-bcc6-8cefa78284be",
+        "rank": 9,
+        "score": 0.517467499,
+        "text": "And Malachi, the prophet who testified of the coming of Elijah\u2014of whom also Moroni spake to the Prophet Joseph Smith, declaring that he should come before the ushering in of the great and dreadful day of the Lord\u2014were also there.",
+        "reference": "D&C 138:46",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "0173d73f-7ff5-47b1-abc1-f0956dd3bbaa",
+        "rank": 10,
+        "score": 0.513922691,
+        "text": "A revelation of Jesus Christ unto his servant Joseph Smith, Jun., and six elders, as they united their hearts and lifted their voices on high.",
+        "reference": "D&C 84:1",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "F006",
+    "query": "Where did Lehi's family travel after leaving Jerusalem?",
+    "query_type": "factual",
+    "latency_ms": 331.2757079838775,
+    "documents": [
+      {
+        "id": "2c03cad9-0fa0-4009-81c2-2c5b670b0d1b",
+        "rank": 1,
+        "score": 0.632395744,
+        "text": "And it came to pass that Nephi and Lehi did proceed from thence to go to the land of Nephi.",
+        "reference": "Helaman 5:20",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "eee39271-f6f6-455b-8d49-99b1f3ebe1d7",
+        "rank": 2,
+        "score": 0.632089615,
+        "text": "And it came to pass that Nephi and Lehi did proceed from thence to go to the land of Nephi.",
+        "reference": "Helaman 5:20",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "ec81dd58-4758-49fb-83e1-4a131677933a",
+        "rank": 3,
+        "score": 0.600826263,
+        "text": "And I, Nephi, and my brethren took our journey in the wilderness, with our tents, to go up to the land of Jerusalem.",
+        "reference": "1 Nephi 3:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "5dd0d694-bcd5-44e0-921d-294a3230de90",
+        "rank": 4,
+        "score": 0.600826263,
+        "text": "And I, Nephi, and my brethren took our journey in the wilderness, with our tents, to go up to the land of Jerusalem.",
+        "reference": "1 Nephi 3:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "6dcd6787-51ca-4cce-a37d-5e8645c9d3d6",
+        "rank": 5,
+        "score": 0.589481354,
+        "text": "Now the land south was called Lehi, and the land north was called Mulek, which was after the son of Zedekiah; for the Lord did bring Mulek into the land north, and Lehi into the land south.",
+        "reference": "Helaman 6:10",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "007e0b24-29ef-4fdf-be8c-197c12667a91",
+        "rank": 6,
+        "score": 0.589477599,
+        "text": "Now the land south was called Lehi, and the land north was called Mulek, which was after the son of Zedekiah; for the Lord did bring Mulek into the land north, and Lehi into the land south.",
+        "reference": "Helaman 6:10",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "f1d7d62d-7536-4d47-b099-a50a40909fa5",
+        "rank": 7,
+        "score": 0.582235336,
+        "text": "Do ye not remember that our father, Lehi, was brought out of Jerusalem by the hand of God? Do ye not remember that they were all led by him through the wilderness?",
+        "reference": "Alma 9:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "4a9e02f7-1639-4083-a880-9c661a7de206",
+        "rank": 8,
+        "score": 0.582183838,
+        "text": "Do ye not remember that our father, Lehi, was brought out of Jerusalem by the hand of God? Do ye not remember that they were all led by him through the wilderness?",
+        "reference": "Alma 9:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "2f501792-aae2-4693-9c77-580e3f424849",
+        "rank": 9,
+        "score": 0.573307037,
+        "text": "And he came down by the borders near the shore of the Red Sea; and he traveled in the wilderness in the borders which are nearer the Red Sea; and he did travel in the wilderness with his family, which consisted of my mother, Sariah, and my elder brothers, who were Laman, Lemuel, and Sam.",
+        "reference": "1 Nephi 2:5",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "f9ea98b6-a290-4952-9a1d-a0e7faf6dea0",
+        "rank": 10,
+        "score": 0.572673798,
+        "text": "And he came down by the borders near the shore of the Red Sea; and he traveled in the wilderness in the borders which are nearer the Red Sea; and he did travel in the wilderness with his family, which consisted of my mother, Sariah, and my elder brothers, who were Laman, Lemuel, and Sam.",
+        "reference": "1 Nephi 2:5",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "F007",
+    "query": "What are the names of the twelve apostles?",
+    "query_type": "factual",
+    "latency_ms": 380.8603340003174,
+    "documents": [
+      {
+        "id": "fdc20bcb-b843-4f2b-822a-f342b61e4a42",
+        "rank": 1,
+        "score": 0.74952507,
+        "text": "Now the names of the twelve apostles are these; The first, Simon, who is called Peter, and Andrew his brother; James the son of Zebedee, and John his brother;",
+        "reference": "Matthew 10:2",
+        "volume": "New Testament"
+      },
+      {
+        "id": "1915cf2c-c612-4c8e-91a3-524e28316ff8",
+        "rank": 2,
+        "score": 0.749368668,
+        "text": "Now the names of the twelve apostles are these; The first, Simon, who is called Peter, and Andrew his brother; James the son of Zebedee, and John his brother;",
+        "reference": "Matthew 10:2",
+        "volume": "New Testament"
+      },
+      {
+        "id": "febdf814-3b79-49b0-995b-ab06ba882934",
+        "rank": 3,
+        "score": 0.650836945,
+        "text": "Philip, and Bartholomew; Thomas, and Matthew the publican; James the son of Alph\u00e6us, and Lebb\u00e6us, whose surname was Thadd\u00e6us;",
+        "reference": "Matthew 10:3",
+        "volume": "New Testament"
+      },
+      {
+        "id": "227acc9e-2002-4d32-9b57-6e6ae68cc0e2",
+        "rank": 4,
+        "score": 0.650686264,
+        "text": "Philip, and Bartholomew; Thomas, and Matthew the publican; James the son of Alph\u00e6us, and Lebb\u00e6us, whose surname was Thadd\u00e6us;",
+        "reference": "Matthew 10:3",
+        "volume": "New Testament"
+      },
+      {
+        "id": "cfdba58d-2e2e-482d-90dd-004219f1b973",
+        "rank": 5,
+        "score": 0.627906799,
+        "text": "And Andrew, and Philip, and Bartholomew, and Matthew, and Thomas, and James the son of Alph\u00e6us, and Thadd\u00e6us, and Simon the Canaanite,",
+        "reference": "Mark 3:18",
+        "volume": "New Testament"
+      },
+      {
+        "id": "a2dfcced-a8ba-42a5-b5f9-3c4633afca63",
+        "rank": 6,
+        "score": 0.627901137,
+        "text": "And Andrew, and Philip, and Bartholomew, and Matthew, and Thomas, and James the son of Alph\u00e6us, and Thadd\u00e6us, and Simon the Canaanite,",
+        "reference": "Mark 3:18",
+        "volume": "New Testament"
+      },
+      {
+        "id": "8a340985-5968-487a-b114-79f47549c131",
+        "rank": 7,
+        "score": 0.610048294,
+        "text": "Simon, (whom he also named Peter,) and Andrew his brother, James and John, Philip and Bartholomew,",
+        "reference": "Luke 6:14",
+        "volume": "New Testament"
+      },
+      {
+        "id": "7ebb98d8-df7b-4f9b-acf4-d11120008e24",
+        "rank": 8,
+        "score": 0.609987259,
+        "text": "Simon, (whom he also named Peter,) and Andrew his brother, James and John, Philip and Bartholomew,",
+        "reference": "Luke 6:14",
+        "volume": "New Testament"
+      },
+      {
+        "id": "4cd4cb0a-6621-4d34-b3e9-338a6a4115b8",
+        "rank": 9,
+        "score": 0.580356598,
+        "text": "And when it was day, he called unto him his disciples: and of them he chose twelve, whom also he named apostles;",
+        "reference": "Luke 6:13",
+        "volume": "New Testament"
+      },
+      {
+        "id": "3a1cc456-0f37-4833-a079-b8e3ab4438b0",
+        "rank": 10,
+        "score": 0.58024025,
+        "text": "And when it was day, he called unto him his disciples: and of them he chose twelve, whom also he named apostles;",
+        "reference": "Luke 6:13",
+        "volume": "New Testament"
+      }
+    ]
+  },
+  {
+    "query_id": "F008",
+    "query": "Who built the ark?",
+    "query_type": "factual",
+    "latency_ms": 281.0000829922501,
+    "documents": [
+      {
+        "id": "58c34609-62a0-4ce9-86d5-bf4d7183655c",
+        "rank": 1,
+        "score": 0.565231323,
+        "text": "Make thee an ark of gopher wood; rooms shalt thou make in the ark, and shalt pitch it within and without with pitch.",
+        "reference": "Genesis 6:14",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "51ebf7f2-5339-4043-b621-1784b2821b22",
+        "rank": 2,
+        "score": 0.565063536,
+        "text": "Make thee an ark of gopher wood; rooms shalt thou make in the ark, and shalt pitch it within and without with pitch.",
+        "reference": "Genesis 6:14",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "6ef127f3-46da-4fb3-b8c4-b3f09e1c775e",
+        "rank": 3,
+        "score": 0.516004562,
+        "text": "Wherefore Enoch saw that Noah built an ark; and that the Lord smiled upon it, and held it in his own hand; but upon the residue of the wicked the floods came and swallowed them up.",
+        "reference": "Moses 7:43",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "9603bf29-6ac5-47f8-9088-5c6a86b7a862",
+        "rank": 4,
+        "score": 0.512611389,
+        "text": "And they shall make an ark of shittim wood: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof, and a cubit and a half the height thereof.",
+        "reference": "Exodus 25:10",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "d99c7db4-b157-4f6e-99fc-9a6a07b4add7",
+        "rank": 5,
+        "score": 0.512441635,
+        "text": "And they shall make an ark of shittim wood: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof, and a cubit and a half the height thereof.",
+        "reference": "Exodus 25:10",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "167e6bdd-8c9a-4c0b-b700-91d5f92cdf82",
+        "rank": 6,
+        "score": 0.505224228,
+        "text": "A window shalt thou make to the ark, and in a cubit shalt thou finish it above; and the door of the ark shalt thou set in the side thereof; with lower, second, and third stories shalt thou make it.",
+        "reference": "Genesis 6:16",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "001bad27-5a53-4951-833c-c4cf0de0ef27",
+        "rank": 7,
+        "score": 0.504844666,
+        "text": "A window shalt thou make to the ark, and in a cubit shalt thou finish it above; and the door of the ark shalt thou set in the side thereof; with lower, second, and third stories shalt thou make it.",
+        "reference": "Genesis 6:16",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "0950fb99-93c0-4bb4-903f-6fab086e6753",
+        "rank": 8,
+        "score": 0.487941742,
+        "text": "Thus did Noah; according to all that God commanded him, so did he.",
+        "reference": "Genesis 6:22",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "f6ccc1d0-edd0-4ad9-8074-79d70c899270",
+        "rank": 9,
+        "score": 0.487827331,
+        "text": "Thus did Noah; according to all that God commanded him, so did he.",
+        "reference": "Genesis 6:22",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "deec2ffe-8bd8-47cd-ae3d-20f29f571fef",
+        "rank": 10,
+        "score": 0.483890563,
+        "text": "And this is the fashion which thou shalt make it of: The length of the ark shall be three hundred cubits, the breadth of it fifty cubits, and the height of it thirty cubits.",
+        "reference": "Genesis 6:15",
+        "volume": "Old Testament"
+      }
+    ]
+  },
+  {
+    "query_id": "F009",
+    "query": "What is the Word of Wisdom?",
+    "query_type": "factual",
+    "latency_ms": 293.9273329975549,
+    "documents": [
+      {
+        "id": "e8206a2a-c325-4c89-9bd0-61cf49284fa3",
+        "rank": 1,
+        "score": 0.51105696,
+        "text": "Behold, verily, thus saith the Lord unto you: In consequence of evils and designs which do and will exist in the hearts of conspiring men in the last days, I have warned you, and forewarn you, by giving unto you this word of wisdom by revelation\u2014",
+        "reference": "D&C 89:4",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "ffd712a7-9de3-4425-b619-7453c604c281",
+        "rank": 2,
+        "score": 0.510721147,
+        "text": "Behold, verily, thus saith the Lord unto you: In consequence of evils and designs which do and will exist in the hearts of conspiring men in the last days, I have warned you, and forewarn you, by giving unto you this word of wisdom by revelation\u2014",
+        "reference": "D&C 89:4",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "07d79c83-843d-45c4-ae59-b213ade217fd",
+        "rank": 3,
+        "score": 0.50784111,
+        "text": "For behold, to one is given by the Spirit of God, that he may teach the word of wisdom;",
+        "reference": "Moroni 10:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "d508d579-980f-4cd5-9708-43dabbef7d9c",
+        "rank": 4,
+        "score": 0.507782042,
+        "text": "For behold, to one is given by the Spirit of God, that he may teach the word of wisdom;",
+        "reference": "Moroni 10:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "35dd4930-6eba-4a8f-b630-6a22c8e1fd62",
+        "rank": 5,
+        "score": 0.48875621,
+        "text": "To be sent greeting; not by commandment or constraint, but by revelation and the word of wisdom, showing forth the order and will of God in the temporal salvation of all saints in the last days\u2014",
+        "reference": "D&C 89:2",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "0e641bf1-6554-49c8-a39a-579ab1d5f5cc",
+        "rank": 6,
+        "score": 0.488067657,
+        "text": "To be sent greeting; not by commandment or constraint, but by revelation and the word of wisdom, showing forth the order and will of God in the temporal salvation of all saints in the last days\u2014",
+        "reference": "D&C 89:2",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "d02806f9-bf9f-4789-8775-6d99f76fb390",
+        "rank": 7,
+        "score": 0.476520538,
+        "text": "A WORD OF WISDOM, for the benefit of the council of high priests, assembled in Kirtland, and the church, and also the saints in Zion\u2014",
+        "reference": "D&C 89:1",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "fc784d2d-b554-4268-a2cb-66ced9d9a377",
+        "rank": 8,
+        "score": 0.476343155,
+        "text": "A WORD OF WISDOM, for the benefit of the council of high priests, assembled in Kirtland, and the church, and also the saints in Zion\u2014",
+        "reference": "D&C 89:1",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "037b8687-d041-4bd3-a435-54450f18b2cd",
+        "rank": 9,
+        "score": 0.463096619,
+        "text": "And again, verily I say unto you, to some is given, by the Spirit of God, the word of wisdom.",
+        "reference": "D&C 46:17",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "a786e232-8348-450d-a8c3-11649d90c75a",
+        "rank": 10,
+        "score": 0.462774217,
+        "text": "And again, verily I say unto you, to some is given, by the Spirit of God, the word of wisdom.",
+        "reference": "D&C 46:17",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "F010",
+    "query": "Who translated the Book of Mormon?",
+    "query_type": "factual",
+    "latency_ms": 657.9337500152178,
+    "documents": [
+      {
+        "id": "36694ce4-68d7-406a-a759-75c8145fd832",
+        "rank": 1,
+        "score": 0.582977295,
+        "text": "And after having received the record of the Nephites, yea, even my servant Joseph Smith, Jun., might have power to translate through the mercy of God, by the power of God, the Book of Mormon.",
+        "reference": "D&C 1:29",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "1442baf5-11cb-4c50-b35f-df85a689aa79",
+        "rank": 2,
+        "score": 0.582962036,
+        "text": "And after having received the record of the Nephites, yea, even my servant Joseph Smith, Jun., might have power to translate through the mercy of God, by the power of God, the Book of Mormon.",
+        "reference": "D&C 1:29",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "69912f1f-8314-435c-8b8a-b2f8975ea661",
+        "rank": 3,
+        "score": 0.555961668,
+        "text": "And gave him power from on high, by the means which were before prepared, to translate the Book of Mormon;",
+        "reference": "D&C 20:8",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "60abbaaa-26e4-41f8-845e-5b307ea2e85d",
+        "rank": 4,
+        "score": 0.555858612,
+        "text": "And gave him power from on high, by the means which were before prepared, to translate the Book of Mormon;",
+        "reference": "D&C 20:8",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "52c75f32-cd45-444d-be75-c628ce9cf43e",
+        "rank": 5,
+        "score": 0.529653549,
+        "text": "Two days after the arrival of Mr. Cowdery (being the 7th of April) I commenced to translate the Book of Mormon, and he began to write for me.",
+        "reference": "Joseph Smith\u2014History 1:67",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "b6bfb903-622f-45ef-955b-b1b34fdfb613",
+        "rank": 6,
+        "score": 0.499649078,
+        "text": "By this timely aid was I enabled to reach the place of my destination in Pennsylvania; and immediately after my arrival there I commenced copying the characters off the plates. I copied a considerable number of them, and by means of the Urim and Thummim I translated some of them, which I did between the time I arrived at the house of my wife's father, in the month of December, and the February following.",
+        "reference": "Joseph Smith\u2014History 1:62",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "85273ce0-b81e-40bb-b3da-04ef5c55a9a3",
+        "rank": 7,
+        "score": 0.472641,
+        "text": "\"He then said to me, 'Let me see that certificate.' I accordingly took it out of my pocket and gave it to him, when he took it and tore it to pieces, saying that there was no such thing now as ministering of angels, and that if I would bring the plates to him he would translate them. I informed him that part of the plates were sealed, and that I was forbidden to bring them. He replied, 'I cannot read a sealed book.' I left him and went to Dr. Mitchell, who sanctioned what Professor Anthon had said respecting both the characters and the translation.\"",
+        "reference": "Joseph Smith\u2014History 1:65",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "3efdfc14-8de9-4cd2-be9e-5b7f5304d035",
+        "rank": 8,
+        "score": 0.470695496,
+        "text": "We believe the Bible to be the word of God as far as it is translated correctly; we also believe the Book of Mormon to be the word of God.",
+        "reference": "Articles of Faith 1:8",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "01368e34-5bcf-48e7-884f-1d9a4df0fba4",
+        "rank": 9,
+        "score": 0.461544037,
+        "text": "Now, verily I say unto you my servants, Joseph Smith, Jun., and Sidney Rigdon, saith the Lord, it is expedient to translate again;",
+        "reference": "D&C 73:3",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "1df7845f-a908-4ebd-a7a6-5246d698cc36",
+        "rank": 10,
+        "score": 0.461481094,
+        "text": "Now, verily I say unto you my servants, Joseph Smith, Jun., and Sidney Rigdon, saith the Lord, it is expedient to translate again;",
+        "reference": "D&C 73:3",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "T001",
+    "query": "What does the Book of Mormon teach about faith?",
+    "query_type": "thematic",
+    "latency_ms": 250.07862501661293,
+    "documents": [
+      {
+        "id": "ba78721a-c258-49c9-8a23-eb8de94e7735",
+        "rank": 1,
+        "score": 0.55645752,
+        "text": "And now, I, Moroni, would speak somewhat concerning these things; I would show unto the world that faith is things which are hoped for and not seen; wherefore, dispute not because ye see not, for ye receive no witness until after the trial of your faith.",
+        "reference": "Ether 12:6",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "af5bab90-71f2-4dd3-a8bf-02fa98b35fd6",
+        "rank": 2,
+        "score": 0.556173325,
+        "text": "And now, I, Moroni, would speak somewhat concerning these things; I would show unto the world that faith is things which are hoped for and not seen; wherefore, dispute not because ye see not, for ye receive no witness until after the trial of your faith.",
+        "reference": "Ether 12:6",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "923b9b7b-9662-47ac-bd86-68236fabd813",
+        "rank": 3,
+        "score": 0.534179688,
+        "text": "Preach unto them repentance, and faith on the Lord Jesus Christ; teach them to humble themselves and to be meek and lowly in heart; teach them to withstand every temptation of the devil, with their faith on the Lord Jesus Christ.",
+        "reference": "Alma 37:33",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "23724a1a-fb9c-4e09-8d0e-059d5e6806d5",
+        "rank": 4,
+        "score": 0.533784926,
+        "text": "Preach unto them repentance, and faith on the Lord Jesus Christ; teach them to humble themselves and to be meek and lowly in heart; teach them to withstand every temptation of the devil, with their faith on the Lord Jesus Christ.",
+        "reference": "Alma 37:33",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "7888653d-1e54-4b02-88f7-7ce015344a4a",
+        "rank": 5,
+        "score": 0.531196594,
+        "text": "And as all have not faith, seek ye diligently and teach one another words of wisdom; yea, seek ye out of the best books words of wisdom; seek learning, even by study and also by faith.",
+        "reference": "D&C 88:118",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "34834da3-0d27-4474-af98-54b3ac7f70e6",
+        "rank": 6,
+        "score": 0.531099379,
+        "text": "And as all have not faith, seek ye diligently and teach one another words of wisdom; yea, seek ye out of the best books words of wisdom; seek learning, even by study and also by faith.",
+        "reference": "D&C 88:118",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "6f077dfe-bfa3-4ca1-8387-7e2c03544beb",
+        "rank": 7,
+        "score": 0.520748138,
+        "text": "And now I, Moroni, write a few of the words of my father Mormon, which he spake concerning faith, hope, and charity; for after this manner did he speak unto the people, as he taught them in the synagogue which they had built for the place of worship.",
+        "reference": "Moroni 7:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c99c9f0d-7c72-4f66-91d7-edd5ecdc4464",
+        "rank": 8,
+        "score": 0.520616531,
+        "text": "And now I, Moroni, write a few of the words of my father Mormon, which he spake concerning faith, hope, and charity; for after this manner did he speak unto the people, as he taught them in the synagogue which they had built for the place of worship.",
+        "reference": "Moroni 7:1",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "40e12909-2151-4d89-94bc-d95dff4e6c1f",
+        "rank": 9,
+        "score": 0.518964767,
+        "text": "And as all have not faith, seek ye diligently and teach one another words of wisdom; yea, seek ye out of the best books words of wisdom, seek learning even by study and also by faith;",
+        "reference": "D&C 109:7",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "2b2fb347-595c-4468-9ae6-a17f99c6a0a2",
+        "rank": 10,
+        "score": 0.518762648,
+        "text": "And as all have not faith, seek ye diligently and teach one another words of wisdom; yea, seek ye out of the best books words of wisdom, seek learning even by study and also by faith;",
+        "reference": "D&C 109:7",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "T002",
+    "query": "What is the purpose of the Atonement?",
+    "query_type": "thematic",
+    "latency_ms": 409.8506250011269,
+    "documents": [
+      {
+        "id": "99095a3c-d282-467c-9c5a-66f7f8ec18f4",
+        "rank": 1,
+        "score": 0.584308624,
+        "text": "That through his atonement, and by obedience to the principles of the gospel, mankind might be saved.",
+        "reference": "D&C 138:4",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "e66f3ea4-5528-45cb-b8c4-f7bc2c3aaa6e",
+        "rank": 2,
+        "score": 0.584074,
+        "text": "That through his atonement, and by obedience to the principles of the gospel, mankind might be saved.",
+        "reference": "D&C 138:4",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "13193daa-0a5b-4a7c-8d4f-75d0e202e953",
+        "rank": 3,
+        "score": 0.574401855,
+        "text": "For the atonement satisfieth the demands of his justice upon all those who have not the law given to them, that they are delivered from that awful monster, death and hell, and the devil, and the lake of fire and brimstone, which is endless torment; and they are restored to that God who gave them breath, which is the Holy One of Israel.",
+        "reference": "2 Nephi 9:26",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "d81569f5-63e2-4924-a5c6-91bc827aa448",
+        "rank": 4,
+        "score": 0.574209273,
+        "text": "For the atonement satisfieth the demands of his justice upon all those who have not the law given to them, that they are delivered from that awful monster, death and hell, and the devil, and the lake of fire and brimstone, which is endless torment; and they are restored to that God who gave them breath, which is the Holy One of Israel.",
+        "reference": "2 Nephi 9:26",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "b17c5c46-d658-4b5f-bca8-57a8552c078a",
+        "rank": 5,
+        "score": 0.553199828,
+        "text": "For it is expedient that an atonement should be made; for according to the great plan of the Eternal God there must be an atonement made, or else all mankind must unavoidably perish; yea, all are hardened; yea, all are fallen and are lost, and must perish except it be through the atonement which it is expedient should be made.",
+        "reference": "Alma 34:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "1e38ccc7-fe0e-4a31-ab0c-cea9b369d438",
+        "rank": 6,
+        "score": 0.553199828,
+        "text": "For it is expedient that an atonement should be made; for according to the great plan of the Eternal God there must be an atonement made, or else all mankind must unavoidably perish; yea, all are hardened; yea, all are fallen and are lost, and must perish except it be through the atonement which it is expedient should be made.",
+        "reference": "Alma 34:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "16822ad2-ab27-4fc1-9f6e-d2b361170ded",
+        "rank": 7,
+        "score": 0.547250807,
+        "text": "And now, the plan of mercy could not be brought about except an atonement should be made; therefore God himself atoneth for the sins of the world, to bring about the plan of mercy, to appease the demands of justice, that God might be a perfect, just God, and a merciful God also.",
+        "reference": "Alma 42:15",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "98e25b9c-5a44-4634-9160-e551f1bc12c6",
+        "rank": 8,
+        "score": 0.547004759,
+        "text": "And now, the plan of mercy could not be brought about except an atonement should be made; therefore God himself atoneth for the sins of the world, to bring about the plan of mercy, to appease the demands of justice, that God might be a perfect, just God, and a merciful God also.",
+        "reference": "Alma 42:15",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "cf7a662c-29e5-49d9-aa17-54710f8602f1",
+        "rank": 9,
+        "score": 0.51544,
+        "text": "Wherefore, it must needs be an infinite atonement\u2014save it should be an infinite atonement this corruption could not put on incorruption. Wherefore, the first judgment which came upon man must needs have remained to an endless duration. And if so, this flesh must have laid down to rot and to crumble to its mother earth, to rise no more.",
+        "reference": "2 Nephi 9:7",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "3d9a78d9-594f-437a-8dbc-ecf4edbe05ed",
+        "rank": 10,
+        "score": 0.515281737,
+        "text": "Wherefore, it must needs be an infinite atonement\u2014save it should be an infinite atonement this corruption could not put on incorruption. Wherefore, the first judgment which came upon man must needs have remained to an endless duration. And if so, this flesh must have laid down to rot and to crumble to its mother earth, to rise no more.",
+        "reference": "2 Nephi 9:7",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "T003",
+    "query": "How should we pray according to scripture?",
+    "query_type": "thematic",
+    "latency_ms": 375.97716599702835,
+    "documents": [
+      {
+        "id": "be9d996d-dd93-4654-ba89-83e28872ccac",
+        "rank": 1,
+        "score": 0.58902365,
+        "text": "After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name.",
+        "reference": "Matthew 6:9",
+        "volume": "New Testament"
+      },
+      {
+        "id": "915cf5a0-8d11-46a3-a6d9-3f10531f2d2c",
+        "rank": 2,
+        "score": 0.589010298,
+        "text": "After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name.",
+        "reference": "Matthew 6:9",
+        "volume": "New Testament"
+      },
+      {
+        "id": "276af21f-6dce-47ad-946c-9b9c9f75a55c",
+        "rank": 3,
+        "score": 0.580734313,
+        "text": "After this manner therefore pray ye: Our Father who art in heaven, hallowed be thy name.",
+        "reference": "3 Nephi 13:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "99598327-7d64-4ccf-ad65-7a2eeff17b3b",
+        "rank": 4,
+        "score": 0.579357207,
+        "text": "After this manner therefore pray ye: Our Father who art in heaven, hallowed be thy name.",
+        "reference": "3 Nephi 13:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "5d16c96e-baa1-4be6-b54f-aa31d4d7e7f4",
+        "rank": 5,
+        "score": 0.540239394,
+        "text": "And he said unto them, When ye pray, say, Our Father which art in heaven, Hallowed be thy name. Thy kingdom come. Thy will be done, as in heaven, so in earth.",
+        "reference": "Luke 11:2",
+        "volume": "New Testament"
+      },
+      {
+        "id": "eb58962d-0107-4d9c-859c-f49349330012",
+        "rank": 6,
+        "score": 0.540094435,
+        "text": "And he said unto them, When ye pray, say, Our Father which art in heaven, Hallowed be thy name. Thy kingdom come. Thy will be done, as in heaven, so in earth.",
+        "reference": "Luke 11:2",
+        "volume": "New Testament"
+      },
+      {
+        "id": "42d2cf01-0576-4a89-a55d-fadb829404f2",
+        "rank": 7,
+        "score": 0.525920928,
+        "text": "And it came to pass, that, as he was praying in a certain place, when he ceased, one of his disciples said unto him, Lord, teach us to pray, as John also taught his disciples.",
+        "reference": "Luke 11:1",
+        "volume": "New Testament"
+      },
+      {
+        "id": "c1fcc1fd-a088-40d4-954b-bbed4b930646",
+        "rank": 8,
+        "score": 0.52569586,
+        "text": "And it came to pass, that, as he was praying in a certain place, when he ceased, one of his disciples said unto him, Lord, teach us to pray, as John also taught his disciples.",
+        "reference": "Luke 11:1",
+        "volume": "New Testament"
+      },
+      {
+        "id": "e94c0666-9164-4dfe-af0f-f757e10ec962",
+        "rank": 9,
+        "score": 0.502756178,
+        "text": "And it came to pass that when Jesus had thus prayed unto the Father, he came unto his disciples, and behold, they did still continue, without ceasing, to pray unto him; and they did not multiply many words, for it was given unto them what they should pray, and they were filled with desire.",
+        "reference": "3 Nephi 19:24",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "de47b09d-6926-41db-8097-13fc48c96105",
+        "rank": 10,
+        "score": 0.501285613,
+        "text": "And it came to pass that when Jesus had thus prayed unto the Father, he came unto his disciples, and behold, they did still continue, without ceasing, to pray unto him; and they did not multiply many words, for it was given unto them what they should pray, and they were filled with desire.",
+        "reference": "3 Nephi 19:24",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "T004",
+    "query": "What does scripture say about repentance?",
+    "query_type": "thematic",
+    "latency_ms": 302.2312499815598,
+    "documents": [
+      {
+        "id": "737835de-7aaa-4577-bc5a-3fd5c74da843",
+        "rank": 1,
+        "score": 0.502872467,
+        "text": "Know ye that ye must come unto repentance, or ye cannot be saved.",
+        "reference": "Mormon 7:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "186b9a51-5b8e-48f3-8bd7-7c1ab9c58c50",
+        "rank": 2,
+        "score": 0.502363205,
+        "text": "Know ye that ye must come unto repentance, or ye cannot be saved.",
+        "reference": "Mormon 7:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "f1a71693-9b98-4879-bf4d-09a671b1be1f",
+        "rank": 3,
+        "score": 0.5003739,
+        "text": "Repent and be baptized in the name of Jesus Christ, according to the holy commandment, for the remission of sins;",
+        "reference": "D&C 49:13",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "00c62e97-b205-4083-b1a1-60d38b6b94dd",
+        "rank": 4,
+        "score": 0.500267,
+        "text": "Repent and be baptized in the name of Jesus Christ, according to the holy commandment, for the remission of sins;",
+        "reference": "D&C 49:13",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "f5242315-dfd2-41c5-9b4c-1aef3cae1a89",
+        "rank": 5,
+        "score": 0.49873355,
+        "text": "And him that repenteth not of his sins, and confesseth them not, ye shall bring before the church, and do with him as the scripture saith unto you, either by commandment or by revelation.",
+        "reference": "D&C 64:12",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "0cfbcded-0633-41be-9c67-1d36486acafb",
+        "rank": 6,
+        "score": 0.49858,
+        "text": "And him that repenteth not of his sins, and confesseth them not, ye shall bring before the church, and do with him as the scripture saith unto you, either by commandment or by revelation.",
+        "reference": "D&C 64:12",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "d2f0d373-5bba-4c30-ad19-bb528fcf2322",
+        "rank": 7,
+        "score": 0.495099097,
+        "text": "But God hath made known unto our fathers that all men must repent.",
+        "reference": "Moses 6:50",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "3b568ed2-c249-4479-a8aa-8e5fefb3104b",
+        "rank": 8,
+        "score": 0.494319916,
+        "text": "Repent ye therefore, and be converted, that your sins may be blotted out, when the times of refreshing shall come from the presence of the Lord;",
+        "reference": "Acts 3:19",
+        "volume": "New Testament"
+      },
+      {
+        "id": "a2664515-7456-47e7-b0a0-14c10120aca0",
+        "rank": 9,
+        "score": 0.494319916,
+        "text": "Repent ye therefore, and be converted, that your sins may be blotted out, when the times of refreshing shall come from the presence of the Lord;",
+        "reference": "Acts 3:19",
+        "volume": "New Testament"
+      },
+      {
+        "id": "dc5e8a7c-9388-4057-8175-46913f5c0b4c",
+        "rank": 10,
+        "score": 0.493940383,
+        "text": "Repent therefore of this thy wickedness, and pray God, if perhaps the thought of thine heart may be forgiven thee.",
+        "reference": "Acts 8:22",
+        "volume": "New Testament"
+      }
+    ]
+  },
+  {
+    "query_id": "T005",
+    "query": "What is the role of the Holy Ghost?",
+    "query_type": "thematic",
+    "latency_ms": 267.0624169986695,
+    "documents": [
+      {
+        "id": "8463d353-ff5f-459b-9df5-b9e2df3b0aa7",
+        "rank": 1,
+        "score": 0.488229781,
+        "text": "And the Holy Ghost beareth record of the Father and me; and the Father giveth the Holy Ghost unto the children of men, because of me.",
+        "reference": "3 Nephi 28:11",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "b4e86bfc-6715-472a-826c-e8db3e1633cd",
+        "rank": 2,
+        "score": 0.488021851,
+        "text": "And the Holy Ghost beareth record of the Father and me; and the Father giveth the Holy Ghost unto the children of men, because of me.",
+        "reference": "3 Nephi 28:11",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "d9e532b1-cdb3-4e63-b1d4-eaab8555c0b5",
+        "rank": 3,
+        "score": 0.487752944,
+        "text": "But the Comforter, which is the Holy Ghost, whom the Father will send in my name, he shall teach you all things, and bring all things to your remembrance, whatsoever I have said unto you.",
+        "reference": "John 14:26",
+        "volume": "New Testament"
+      },
+      {
+        "id": "73d77b87-206d-4e9d-866f-559e6d3c16ee",
+        "rank": 4,
+        "score": 0.487663299,
+        "text": "But the Comforter, which is the Holy Ghost, whom the Father will send in my name, he shall teach you all things, and bring all things to your remembrance, whatsoever I have said unto you.",
+        "reference": "John 14:26",
+        "volume": "New Testament"
+      },
+      {
+        "id": "baae1a2c-c641-4ba6-ab78-b78677127bfa",
+        "rank": 5,
+        "score": 0.486818343,
+        "text": "The Father has a body of flesh and bones as tangible as man's; the Son also; but the Holy Ghost has not a body of flesh and bones, but is a personage of Spirit. Were it not so, the Holy Ghost could not dwell in us.",
+        "reference": "D&C 130:22",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "09c077c3-3929-4ec4-8846-f3fcf0f7bebe",
+        "rank": 6,
+        "score": 0.486717224,
+        "text": "The Father has a body of flesh and bones as tangible as man's; the Son also; but the Holy Ghost has not a body of flesh and bones, but is a personage of Spirit. Were it not so, the Holy Ghost could not dwell in us.",
+        "reference": "D&C 130:22",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "7fbe8ed1-c2d0-49ea-b901-5dc85048d9a8",
+        "rank": 7,
+        "score": 0.47577095,
+        "text": "For the Holy Ghost shall teach you in the same hour what ye ought to say.",
+        "reference": "Luke 12:12",
+        "volume": "New Testament"
+      },
+      {
+        "id": "a5eb2c4a-a2ec-4ca6-b997-303049d4925f",
+        "rank": 8,
+        "score": 0.475740433,
+        "text": "For the Holy Ghost shall teach you in the same hour what ye ought to say.",
+        "reference": "Luke 12:12",
+        "volume": "New Testament"
+      },
+      {
+        "id": "110ffe8b-3fcc-4eca-a5e0-033e5b653c36",
+        "rank": 9,
+        "score": 0.462844849,
+        "text": "Wherefore, watch over him that his faith fail not, and it shall be given by the Comforter, the Holy Ghost, that knoweth all things.",
+        "reference": "D&C 35:19",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "e3649b94-d3ae-41f2-bc17-85030e3ef38f",
+        "rank": 10,
+        "score": 0.462791443,
+        "text": "Wherefore, watch over him that his faith fail not, and it shall be given by the Comforter, the Holy Ghost, that knoweth all things.",
+        "reference": "D&C 35:19",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "T006",
+    "query": "What does scripture teach about charity?",
+    "query_type": "thematic",
+    "latency_ms": 243.45050001284108,
+    "documents": [
+      {
+        "id": "8793427a-425d-4ea7-aaef-5ae318082c62",
+        "rank": 1,
+        "score": 0.594482481,
+        "text": "But charity is the pure love of Christ, and it endureth forever; and whoso is found possessed of it at the last day, it shall be well with him.",
+        "reference": "Moroni 7:47",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "5ef482b2-0b9f-4b2d-888f-57d48b5bb6d1",
+        "rank": 2,
+        "score": 0.59441,
+        "text": "But charity is the pure love of Christ, and it endureth forever; and whoso is found possessed of it at the last day, it shall be well with him.",
+        "reference": "Moroni 7:47",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "433ba859-bf49-47d4-a4d2-374d62b321fa",
+        "rank": 3,
+        "score": 0.568218291,
+        "text": "Behold, the Lord hath forbidden this thing; wherefore, the Lord God hath given a commandment that all men should have charity, which charity is love. And except they should have charity they were nothing. Wherefore, if they should have charity they would not suffer the laborer in Zion to perish.",
+        "reference": "2 Nephi 26:30",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "58a232c0-94b1-4e2d-8814-54f097b809d8",
+        "rank": 4,
+        "score": 0.567800522,
+        "text": "Behold, the Lord hath forbidden this thing; wherefore, the Lord God hath given a commandment that all men should have charity, which charity is love. And except they should have charity they were nothing. Wherefore, if they should have charity they would not suffer the laborer in Zion to perish.",
+        "reference": "2 Nephi 26:30",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "03f4ddc6-d34d-4155-8835-f706c5ce0315",
+        "rank": 5,
+        "score": 0.532013,
+        "text": "Wherefore, my beloved brethren, if ye have not charity, ye are nothing, for charity never faileth. Wherefore, cleave unto charity, which is the greatest of all, for all things must fail\u2014",
+        "reference": "Moroni 7:46",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "507c6dd3-1dec-4b95-ad82-97154dcea4e3",
+        "rank": 6,
+        "score": 0.531984389,
+        "text": "Wherefore, my beloved brethren, if ye have not charity, ye are nothing, for charity never faileth. Wherefore, cleave unto charity, which is the greatest of all, for all things must fail\u2014",
+        "reference": "Moroni 7:46",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "7107f972-984f-40b7-a547-b72b21cc13da",
+        "rank": 7,
+        "score": 0.520805418,
+        "text": "And above all things have fervent charity among yourselves: for charity shall cover the multitude of sins.",
+        "reference": "1 Peter 4:8",
+        "volume": "New Testament"
+      },
+      {
+        "id": "f6f98e17-cc1d-4e59-a083-b94efc498649",
+        "rank": 8,
+        "score": 0.520521224,
+        "text": "And above all things have fervent charity among yourselves: for charity shall cover the multitude of sins.",
+        "reference": "1 Peter 4:8",
+        "volume": "New Testament"
+      },
+      {
+        "id": "ea904d71-7707-49d1-a1ff-db99baa5c4fa",
+        "rank": 9,
+        "score": 0.51829344,
+        "text": "Let all your things be done with charity.",
+        "reference": "1 Corinthians 16:14",
+        "volume": "New Testament"
+      },
+      {
+        "id": "52d5553c-418e-41ca-a4fd-6af84a052db4",
+        "rank": 10,
+        "score": 0.518131316,
+        "text": "Let all your things be done with charity.",
+        "reference": "1 Corinthians 16:14",
+        "volume": "New Testament"
+      }
+    ]
+  },
+  {
+    "query_id": "T007",
+    "query": "How can we receive personal revelation?",
+    "query_type": "thematic",
+    "latency_ms": 245.23579099331982,
+    "documents": [
+      {
+        "id": "48f92228-9f4a-4316-918f-7acad36d4479",
+        "rank": 1,
+        "score": 0.544786513,
+        "text": "In case of difficulty respecting doctrine or principle, if there is not a sufficiency written to make the case clear to the minds of the council, the president may inquire and obtain the mind of the Lord by revelation.",
+        "reference": "D&C 102:23",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "3c3ff19e-fc53-49df-8873-dc0f5f298e73",
+        "rank": 2,
+        "score": 0.544622421,
+        "text": "In case of difficulty respecting doctrine or principle, if there is not a sufficiency written to make the case clear to the minds of the council, the president may inquire and obtain the mind of the Lord by revelation.",
+        "reference": "D&C 102:23",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "ebc77286-7e65-4012-bd5f-35e29df97143",
+        "rank": 3,
+        "score": 0.537845671,
+        "text": "Behold, I say unto you they are made known unto me by the Holy Spirit of God. Behold, I have fasted and prayed many days that I might know these things of myself. And now I do know of myself that they are true; for the Lord God hath made them manifest unto me by his Holy Spirit; and this is the spirit of revelation which is in me.",
+        "reference": "Alma 5:46",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "63afaae0-16a6-4849-a395-fcff57a160b9",
+        "rank": 4,
+        "score": 0.537761748,
+        "text": "Behold, I say unto you they are made known unto me by the Holy Spirit of God. Behold, I have fasted and prayed many days that I might know these things of myself. And now I do know of myself that they are true; for the Lord God hath made them manifest unto me by his Holy Spirit; and this is the spirit of revelation which is in me.",
+        "reference": "Alma 5:46",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "a29fa959-e7f6-451e-9404-ed365dcf2676",
+        "rank": 5,
+        "score": 0.530994415,
+        "text": "If thou shalt ask, thou shalt receive revelation upon revelation, knowledge upon knowledge, that thou mayest know the mysteries and peaceable things\u2014that which bringeth joy, that which bringeth life eternal.",
+        "reference": "D&C 42:61",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "a954f6a5-a209-4847-9fc0-ae5885e2f756",
+        "rank": 6,
+        "score": 0.530973434,
+        "text": "If thou shalt ask, thou shalt receive revelation upon revelation, knowledge upon knowledge, that thou mayest know the mysteries and peaceable things\u2014that which bringeth joy, that which bringeth life eternal.",
+        "reference": "D&C 42:61",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "6959d85d-6a02-4abe-a4e1-8f347b2a01c5",
+        "rank": 7,
+        "score": 0.477243423,
+        "text": "And when ye shall receive these things, I would exhort you that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true; and if ye shall ask with a sincere heart, with real intent, having faith in Christ, he will manifest the truth of it unto you, by the power of the Holy Ghost.",
+        "reference": "Moroni 10:4",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "2db0cbdb-f75b-43ba-918a-2c0d270a876d",
+        "rank": 8,
+        "score": 0.477157593,
+        "text": "And when ye shall receive these things, I would exhort you that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true; and if ye shall ask with a sincere heart, with real intent, having faith in Christ, he will manifest the truth of it unto you, by the power of the Holy Ghost.",
+        "reference": "Moroni 10:4",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "cafa56e7-33fc-4269-9ea6-b83158a15a50",
+        "rank": 9,
+        "score": 0.475877792,
+        "text": "Draw near unto me and I will draw near unto you; seek me diligently and ye shall find me; ask, and ye shall receive; knock, and it shall be opened unto you.",
+        "reference": "D&C 88:63",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "42143770-2952-4866-82f9-407d216fc612",
+        "rank": 10,
+        "score": 0.475765228,
+        "text": "Draw near unto me and I will draw near unto you; seek me diligently and ye shall find me; ask, and ye shall receive; knock, and it shall be opened unto you.",
+        "reference": "D&C 88:63",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "T008",
+    "query": "What is the covenant of baptism?",
+    "query_type": "thematic",
+    "latency_ms": 345.8322499936912,
+    "documents": [
+      {
+        "id": "8dcf4eee-499a-4465-a280-40c1911a8f15",
+        "rank": 1,
+        "score": 0.513851225,
+        "text": "Herein is glory and honor, and immortality and eternal life\u2014The ordinance of baptism by water, to be immersed therein in order to answer to the likeness of the dead, that one principle might accord with the other; to be immersed in the water and come forth out of the water is in the likeness of the resurrection of the dead in coming forth out of their graves; hence, this ordinance was instituted to form a relationship with the ordinance of baptism for the dead, being in likeness of the dead.",
+        "reference": "D&C 128:12",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "68097390-70f9-4273-ad79-65b68ea16c02",
+        "rank": 2,
+        "score": 0.513637543,
+        "text": "Herein is glory and honor, and immortality and eternal life\u2014The ordinance of baptism by water, to be immersed therein in order to answer to the likeness of the dead, that one principle might accord with the other; to be immersed in the water and come forth out of the water is in the likeness of the resurrection of the dead in coming forth out of their graves; hence, this ordinance was instituted to form a relationship with the ordinance of baptism for the dead, being in likeness of the dead.",
+        "reference": "D&C 128:12",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "7a8ccd6d-7982-46b1-9c99-7487d8a0322d",
+        "rank": 3,
+        "score": 0.483757019,
+        "text": "Now I say unto you, if this be the desire of your hearts, what have you against being baptized in the name of the Lord, as a witness before him that ye have entered into a covenant with him, that ye will serve him and keep his commandments, that he may pour out his Spirit more abundantly upon you?",
+        "reference": "Mosiah 18:10",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "8762631a-8689-49b7-b8af-dbd1e1c6f33f",
+        "rank": 4,
+        "score": 0.482400894,
+        "text": "Now I say unto you, if this be the desire of your hearts, what have you against being baptized in the name of the Lord, as a witness before him that ye have entered into a covenant with him, that ye will serve him and keep his commandments, that he may pour out his Spirit more abundantly upon you?",
+        "reference": "Mosiah 18:10",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "37ec2f01-a13b-46c9-8437-c0a2b1f7ac9b",
+        "rank": 5,
+        "score": 0.464097977,
+        "text": "Behold I say unto you, that he that supposeth that little children need baptism is in the gall of bitterness and in the bonds of iniquity; for he hath neither faith, hope, nor charity; wherefore, should he be cut off while in the thought, he must go down to hell.",
+        "reference": "Moroni 8:14",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "2996f4ee-061e-4e55-8d1c-5e5e3f95fa5b",
+        "rank": 6,
+        "score": 0.463996887,
+        "text": "Behold I say unto you, that he that supposeth that little children need baptism is in the gall of bitterness and in the bonds of iniquity; for he hath neither faith, hope, nor charity; wherefore, should he be cut off while in the thought, he must go down to hell.",
+        "reference": "Moroni 8:14",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "4d51072d-15d9-47bd-9792-25e74bd3a5af",
+        "rank": 7,
+        "score": 0.463750839,
+        "text": "The person who is called of God and has authority from Jesus Christ to baptize, shall go down into the water with the person who has presented himself or herself for baptism, and shall say, calling him or her by name: Having been commissioned of Jesus Christ, I baptize you in the name of the Father, and of the Son, and of the Holy Ghost. Amen.",
+        "reference": "D&C 20:73",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "4ff25fc5-e230-45d5-bfab-2c9412496ffb",
+        "rank": 8,
+        "score": 0.463750839,
+        "text": "The person who is called of God and has authority from Jesus Christ to baptize, shall go down into the water with the person who has presented himself or herself for baptism, and shall say, calling him or her by name: Having been commissioned of Jesus Christ, I baptize you in the name of the Father, and of the Son, and of the Holy Ghost. Amen.",
+        "reference": "D&C 20:73",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "0f03e61a-b85b-4fc5-8343-96134a68d1b6",
+        "rank": 9,
+        "score": 0.463003159,
+        "text": "For awful is the wickedness to suppose that God saveth one child because of baptism, and the other must perish because he hath no baptism.",
+        "reference": "Moroni 8:15",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "656bf6df-92fe-49d7-9101-e1c21ac88f35",
+        "rank": 10,
+        "score": 0.4628582,
+        "text": "For awful is the wickedness to suppose that God saveth one child because of baptism, and the other must perish because he hath no baptism.",
+        "reference": "Moroni 8:15",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "T009",
+    "query": "What does scripture say about obedience?",
+    "query_type": "thematic",
+    "latency_ms": 378.1814169778954,
+    "documents": [
+      {
+        "id": "c20f4a5a-fcfe-4a4e-b5a6-8700ce2a1d65",
+        "rank": 1,
+        "score": 0.511879,
+        "text": "Know ye not, that to whom ye yield yourselves servants to obey, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness?",
+        "reference": "Romans 6:16",
+        "volume": "New Testament"
+      },
+      {
+        "id": "4c54aa0d-d2c5-4e9a-8efb-24e625a3dbb2",
+        "rank": 2,
+        "score": 0.511457503,
+        "text": "Know ye not, that to whom ye yield yourselves servants to obey, his servants ye are to whom ye obey; whether of sin unto death, or of obedience unto righteousness?",
+        "reference": "Romans 6:16",
+        "volume": "New Testament"
+      },
+      {
+        "id": "caa1186a-ab1f-49e1-9cb5-272c0cce388f",
+        "rank": 3,
+        "score": 0.487285644,
+        "text": "And Samuel said, Hath the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to hearken than the fat of rams.",
+        "reference": "1 Samuel 15:22",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "37112f31-0661-4d87-98e2-928a4d4c7771",
+        "rank": 4,
+        "score": 0.487159759,
+        "text": "And Samuel said, Hath the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to hearken than the fat of rams.",
+        "reference": "1 Samuel 15:22",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "124fcee5-f3a6-4de0-945d-b74d43069522",
+        "rank": 5,
+        "score": 0.485061705,
+        "text": "Whether it be good, or whether it be evil, we will obey the voice of the LORD our God, to whom we send thee; that it may be well with us, when we obey the voice of the LORD our God.",
+        "reference": "Jeremiah 42:6",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "bc38fc87-3850-4346-8ef8-b8dd2ee515da",
+        "rank": 6,
+        "score": 0.485035,
+        "text": "Whether it be good, or whether it be evil, we will obey the voice of the LORD our God, to whom we send thee; that it may be well with us, when we obey the voice of the LORD our God.",
+        "reference": "Jeremiah 42:6",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "884b779d-4797-4868-9479-cd9cc6b23264",
+        "rank": 7,
+        "score": 0.483717024,
+        "text": "If ye be willing and obedient, ye shall eat the good of the land:",
+        "reference": "Isaiah 1:19",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "bf18a857-9c0e-4647-891b-d1dce75399cc",
+        "rank": 8,
+        "score": 0.483631164,
+        "text": "If ye be willing and obedient, ye shall eat the good of the land:",
+        "reference": "Isaiah 1:19",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "08952f1c-daf9-4886-b65d-7f161d7e26cc",
+        "rank": 9,
+        "score": 0.47256282,
+        "text": "And it came to pass that he was obedient unto the word of the Lord, wherefore he did as the Lord commanded him.",
+        "reference": "1 Nephi 2:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "63ecc9c1-b0f7-4f17-9b5c-7c52d1ec676d",
+        "rank": 10,
+        "score": 0.47256282,
+        "text": "And it came to pass that he was obedient unto the word of the Lord, wherefore he did as the Lord commanded him.",
+        "reference": "1 Nephi 2:3",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "T010",
+    "query": "What is the plan of salvation?",
+    "query_type": "thematic",
+    "latency_ms": 370.76945800799876,
+    "documents": [
+      {
+        "id": "ea717714-6426-4533-9005-71a217faec57",
+        "rank": 1,
+        "score": 0.555534363,
+        "text": "And now, behold, I say unto you: This is the plan of salvation unto all men, through the blood of mine Only Begotten, who shall come in the meridian of time.",
+        "reference": "Moses 6:62",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "99095a3c-d282-467c-9c5a-66f7f8ec18f4",
+        "rank": 2,
+        "score": 0.534870148,
+        "text": "That through his atonement, and by obedience to the principles of the gospel, mankind might be saved.",
+        "reference": "D&C 138:4",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "e66f3ea4-5528-45cb-b8c4-f7bc2c3aaa6e",
+        "rank": 3,
+        "score": 0.534637451,
+        "text": "That through his atonement, and by obedience to the principles of the gospel, mankind might be saved.",
+        "reference": "D&C 138:4",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "9541b8b7-2cd5-4bed-a43f-cb23b6d9ff45",
+        "rank": 4,
+        "score": 0.526826918,
+        "text": "We believe that through the Atonement of Christ, all mankind may be saved, by obedience to the laws and ordinances of the Gospel.",
+        "reference": "Articles of Faith 1:3",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "f63f8334-719f-4420-a3cc-1f28ac8a7148",
+        "rank": 5,
+        "score": 0.489822388,
+        "text": "But this is not all; for he expounded unto them the plan of redemption, which was prepared from the foundation of the world; and he also made known unto them concerning the coming of Christ, and all the works of the Lord did he make known unto them.",
+        "reference": "Alma 18:39",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "46dad6fb-c55d-4948-8889-fda7544444fc",
+        "rank": 6,
+        "score": 0.489822388,
+        "text": "But this is not all; for he expounded unto them the plan of redemption, which was prepared from the foundation of the world; and he also made known unto them concerning the coming of Christ, and all the works of the Lord did he make known unto them.",
+        "reference": "Alma 18:39",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "7d4ead4f-1cfe-4077-85e8-cca76c2b2135",
+        "rank": 7,
+        "score": 0.481201172,
+        "text": "Now, if it had not been for the plan of redemption, which was laid from the foundation of the world, there could have been no resurrection of the dead; but there was a plan of redemption laid, which shall bring to pass the resurrection of the dead, of which has been spoken.",
+        "reference": "Alma 12:25",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "14f7cdbe-a290-488a-9a6e-2d40c95ff230",
+        "rank": 8,
+        "score": 0.481088638,
+        "text": "Now, if it had not been for the plan of redemption, which was laid from the foundation of the world, there could have been no resurrection of the dead; but there was a plan of redemption laid, which shall bring to pass the resurrection of the dead, of which has been spoken.",
+        "reference": "Alma 12:25",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "dcdac8ac-1410-4668-858f-749f496acd3c",
+        "rank": 9,
+        "score": 0.474765778,
+        "text": "For as death hath passed upon all men, to fulfil the merciful plan of the great Creator, there must needs be a power of resurrection, and the resurrection must needs come unto man by reason of the fall; and the fall came by reason of transgression; and because man became fallen they were cut off from the presence of the Lord.",
+        "reference": "2 Nephi 9:6",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "7a32b736-c294-4b64-8840-fe257880309f",
+        "rank": 10,
+        "score": 0.474571258,
+        "text": "For as death hath passed upon all men, to fulfil the merciful plan of the great Creator, there must needs be a power of resurrection, and the resurrection must needs come unto man by reason of the fall; and the fall came by reason of transgression; and because man became fallen they were cut off from the presence of the Lord.",
+        "reference": "2 Nephi 9:6",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "X001",
+    "query": "How do the Bible and Book of Mormon both describe the Messiah?",
+    "query_type": "cross_reference",
+    "latency_ms": 287.3994580004364,
+    "documents": [
+      {
+        "id": "abc95ef0-6fe5-4c44-a532-a386dbf23e84",
+        "rank": 1,
+        "score": 0.553627074,
+        "text": "For behold, did not Moses prophesy unto them concerning the coming of the Messiah, and that God should redeem his people? Yea, and even all the prophets who have prophesied ever since the world began\u2014have they not spoken more or less concerning these things?",
+        "reference": "Mosiah 13:33",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "dfd78234-d85f-477b-bf18-278b5ce707cb",
+        "rank": 2,
+        "score": 0.553461134,
+        "text": "For behold, did not Moses prophesy unto them concerning the coming of the Messiah, and that God should redeem his people? Yea, and even all the prophets who have prophesied ever since the world began\u2014have they not spoken more or less concerning these things?",
+        "reference": "Mosiah 13:33",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "395c8206-98ab-411d-891f-75bfb51fc4fa",
+        "rank": 3,
+        "score": 0.548585951,
+        "text": "For according to the words of the prophets, the Messiah cometh in six hundred years from the time that my father left Jerusalem; and according to the words of the prophets, and also the word of the angel of God, his name shall be Jesus Christ, the Son of God.",
+        "reference": "2 Nephi 25:19",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "8e03918f-7fe6-4acf-9272-4238d73bcc91",
+        "rank": 4,
+        "score": 0.548561096,
+        "text": "For according to the words of the prophets, the Messiah cometh in six hundred years from the time that my father left Jerusalem; and according to the words of the prophets, and also the word of the angel of God, his name shall be Jesus Christ, the Son of God.",
+        "reference": "2 Nephi 25:19",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "a32aabcb-bddc-4800-82d9-a871df56ce6b",
+        "rank": 5,
+        "score": 0.512991,
+        "text": "And he also spake concerning the prophets, how great a number had testified of these things, concerning this Messiah, of whom he had spoken, or this Redeemer of the world.",
+        "reference": "1 Nephi 10:5",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "4c0a71ff-1eb2-48cd-b353-531c6d378d9a",
+        "rank": 6,
+        "score": 0.512891829,
+        "text": "And he also spake concerning the prophets, how great a number had testified of these things, concerning this Messiah, of whom he had spoken, or this Redeemer of the world.",
+        "reference": "1 Nephi 10:5",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "2315d6e7-c55c-4717-a03f-b990230771b9",
+        "rank": 7,
+        "score": 0.508050919,
+        "text": "Wherefore, he shall bring forth his words unto them, which words shall judge them at the last day, for they shall be given them for the purpose of convincing them of the true Messiah, who was rejected by them; and unto the convincing of them that they need not look forward any more for a Messiah to come, for there should not any come, save it should be a false Messiah which should deceive the people; for there is save one Messiah spoken of by the prophets, and that Messiah is he who should be rejected of the Jews.",
+        "reference": "2 Nephi 25:18",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "7ea1f73b-e43d-4612-aeb7-050667137fd2",
+        "rank": 8,
+        "score": 0.507919312,
+        "text": "Wherefore, he shall bring forth his words unto them, which words shall judge them at the last day, for they shall be given them for the purpose of convincing them of the true Messiah, who was rejected by them; and unto the convincing of them that they need not look forward any more for a Messiah to come, for there should not any come, save it should be a false Messiah which should deceive the people; for there is save one Messiah spoken of by the prophets, and that Messiah is he who should be rejected of the Jews.",
+        "reference": "2 Nephi 25:18",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "bfc87e11-bebb-4e77-898d-befee0866451",
+        "rank": 9,
+        "score": 0.506549835,
+        "text": "And the Lord said: Blessed is he through whose seed Messiah shall come; for he saith\u2014I am Messiah, the King of Zion, the Rock of Heaven, which is broad as eternity; whoso cometh in at the gate and climbeth up by me shall never fall; wherefore, blessed are they of whom I have spoken, for they shall come forth with songs of everlasting joy.",
+        "reference": "Moses 7:53",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "5f624907-6e7c-40ea-b91c-3d072af129af",
+        "rank": 10,
+        "score": 0.501497269,
+        "text": "And behold, according to the words of the prophet, the Messiah will set himself again the second time to recover them; wherefore, he will manifest himself unto them in power and great glory, unto the destruction of their enemies, when that day cometh when they shall believe in him; and none will he destroy that believe in him.",
+        "reference": "2 Nephi 6:14",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "X002",
+    "query": "What do different scriptures say about the Second Coming?",
+    "query_type": "cross_reference",
+    "latency_ms": 339.2557910119649,
+    "documents": [
+      {
+        "id": "9710dd87-4cfd-4208-878c-ca0e9a5bd337",
+        "rank": 1,
+        "score": 0.500224054,
+        "text": "For behold, verily, verily, I say unto you, the time is soon at hand that I shall come in a cloud with power and great glory.",
+        "reference": "D&C 34:7",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "cdd71102-2941-4da6-b4b7-48442f99469d",
+        "rank": 2,
+        "score": 0.500187874,
+        "text": "For behold, verily, verily, I say unto you, the time is soon at hand that I shall come in a cloud with power and great glory.",
+        "reference": "D&C 34:7",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "c95147a5-d4f5-41be-88d3-585aa35edde0",
+        "rank": 3,
+        "score": 0.486104965,
+        "text": "And behold, according to the words of the prophet, the Messiah will set himself again the second time to recover them; wherefore, he will manifest himself unto them in power and great glory, unto the destruction of their enemies, when that day cometh when they shall believe in him; and none will he destroy that believe in him.",
+        "reference": "2 Nephi 6:14",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "5f624907-6e7c-40ea-b91c-3d072af129af",
+        "rank": 4,
+        "score": 0.485963821,
+        "text": "And behold, according to the words of the prophet, the Messiah will set himself again the second time to recover them; wherefore, he will manifest himself unto them in power and great glory, unto the destruction of their enemies, when that day cometh when they shall believe in him; and none will he destroy that believe in him.",
+        "reference": "2 Nephi 6:14",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c5012f9d-1815-4f10-aaeb-0b3a9c128dd1",
+        "rank": 5,
+        "score": 0.484116554,
+        "text": "For I say unto you, that ye shall not see me henceforth and know that I am he of whom it is written by the prophets, until ye shall say: Blessed is he who cometh in the name of the Lord, in the clouds of heaven, and all the holy angels with him. Then understood his disciples that he should come again on the earth, after that he was glorified and crowned on the right hand of God.",
+        "reference": "Joseph Smith\u2014Matthew 1:1",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "535dd3f6-0fe4-4741-84dd-362dc17d720f",
+        "rank": 6,
+        "score": 0.476421356,
+        "text": "And, as I said before, after the tribulation of those days, and the powers of the heavens shall be shaken, then shall appear the sign of the Son of Man in heaven, and then shall all the tribes of the earth mourn; and they shall see the Son of Man coming in the clouds of heaven, with power and great glory;",
+        "reference": "Joseph Smith\u2014Matthew 1:36",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "22bdb926-76a9-4d62-8afa-e18ba8e93e78",
+        "rank": 7,
+        "score": 0.473625183,
+        "text": "Behold, he cometh with clouds; and every eye shall see him, and they also which pierced him: and all kindreds of the earth shall wail because of him. Even so, Amen.",
+        "reference": "Revelation 1:7",
+        "volume": "New Testament"
+      },
+      {
+        "id": "91e983ee-4010-4ecc-aee0-f81b35340b8d",
+        "rank": 8,
+        "score": 0.473367691,
+        "text": "Behold, he cometh with clouds; and every eye shall see him, and they also which pierced him: and all kindreds of the earth shall wail because of him. Even so, Amen.",
+        "reference": "Revelation 1:7",
+        "volume": "New Testament"
+      },
+      {
+        "id": "f1e3d1b0-3b11-4490-9fb7-b9d7911dca7c",
+        "rank": 9,
+        "score": 0.472322494,
+        "text": "He also quoted the second chapter of Joel, from the twenty-eighth verse to the last. He also said that this was not yet fulfilled, but was soon to be. And he further stated that the fulness of the Gentiles was soon to come in. He quoted many other passages of scripture, and offered many explanations which cannot be mentioned here.",
+        "reference": "Joseph Smith\u2014History 1:41",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "7ad705e9-6c4a-4fdb-b6cd-7e300b5be82a",
+        "rank": 10,
+        "score": 0.466241837,
+        "text": "Yea, thus saith the Spirit: Repent, all ye ends of the earth, for the kingdom of heaven is soon at hand; yea, the Son of God cometh in his glory, in his might, majesty, power, and dominion. Yea, my beloved brethren, I say unto you, that the Spirit saith: Behold the glory of the King of all the earth; and also the King of heaven shall very soon shine forth among all the children of men.",
+        "reference": "Alma 5:50",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "X003",
+    "query": "How is the creation described in different volumes of scripture?",
+    "query_type": "cross_reference",
+    "latency_ms": 472.7562920015771,
+    "documents": [
+      {
+        "id": "6ca625a6-ea52-4543-9ea5-fe9c3d05bfc7",
+        "rank": 1,
+        "score": 0.494571716,
+        "text": "In the beginning God created the heaven and the earth.",
+        "reference": "Genesis 1:1",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "7084899b-3cb6-4e2a-86ae-8d41268cc4a4",
+        "rank": 2,
+        "score": 0.494335175,
+        "text": "In the beginning God created the heaven and the earth.",
+        "reference": "Genesis 1:1",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "4ee8a1dd-50f8-43c6-a8fe-a99a8b55c875",
+        "rank": 3,
+        "score": 0.490283966,
+        "text": "These are the generations of the heavens and of the earth when they were created, in the day that the LORD God made the earth and the heavens,",
+        "reference": "Genesis 2:4",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "831dc424-6559-42bc-8411-16f75d7c22ee",
+        "rank": 4,
+        "score": 0.490283966,
+        "text": "These are the generations of the heavens and of the earth when they were created, in the day that the LORD God made the earth and the heavens,",
+        "reference": "Genesis 2:4",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "41d9651b-d076-4ef1-832f-5fd2e4551f01",
+        "rank": 5,
+        "score": 0.465394974,
+        "text": "And now, behold, I say unto you, that these are the generations of the heaven and of the earth, when they were created, in the day that I, the Lord God, made the heaven and the earth,",
+        "reference": "Moses 3:4",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "f058dcd4-d579-4910-a648-0eb3f516eefe",
+        "rank": 6,
+        "score": 0.456342697,
+        "text": "And I, the Lord God, formed man from the dust of the ground, and breathed into his nostrils the breath of life; and man became a living soul, the first flesh upon the earth, the first man also; nevertheless, all things were before created; but spiritually were they created and made according to my word.",
+        "reference": "Moses 3:7",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "56109c60-383e-4a7e-9bd0-a9bbf9a6ba2a",
+        "rank": 7,
+        "score": 0.443645477,
+        "text": "And the Gods took counsel among themselves and said: Let us go down and form man in our image, after our likeness; and we will give them dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping thing that creepeth upon the earth.",
+        "reference": "Abraham 4:26",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "59db2528-89b7-477a-8acf-dfc6849ae8e1",
+        "rank": 8,
+        "score": 0.44364357,
+        "text": "And I, God, said unto mine Only Begotten, which was with me from the beginning: Let us make man in our image, after our likeness; and it was so. And I, God, said: Let them have dominion over the fishes of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping thing that creepeth upon the earth.",
+        "reference": "Moses 2:26",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "404057eb-b2bf-4765-a5ee-f2b180fb43b0",
+        "rank": 9,
+        "score": 0.439395905,
+        "text": "So God created man in his own image, in the image of God created he him; male and female created he them.",
+        "reference": "Genesis 1:27",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "2de1afb3-42ba-4b88-be48-fc053661519d",
+        "rank": 10,
+        "score": 0.439395905,
+        "text": "So God created man in his own image, in the image of God created he him; male and female created he them.",
+        "reference": "Genesis 1:27",
+        "volume": "Old Testament"
+      }
+    ]
+  },
+  {
+    "query_id": "X004",
+    "query": "What do scriptures say about prophets being rejected?",
+    "query_type": "cross_reference",
+    "latency_ms": 318.9654170128051,
+    "documents": [
+      {
+        "id": "232ccedd-999b-4dbf-b6cb-11bd757bdf23",
+        "rank": 1,
+        "score": 0.576681197,
+        "text": "And he said, Verily I say unto you, No prophet is accepted in his own country.",
+        "reference": "Luke 4:24",
+        "volume": "New Testament"
+      },
+      {
+        "id": "acffb6e5-e637-4ce5-84d7-740683e9eb74",
+        "rank": 2,
+        "score": 0.576625884,
+        "text": "And he said, Verily I say unto you, No prophet is accepted in his own country.",
+        "reference": "Luke 4:24",
+        "volume": "New Testament"
+      },
+      {
+        "id": "7d98e4a6-2b92-45a5-97c5-ef8736832dc0",
+        "rank": 3,
+        "score": 0.569618225,
+        "text": "Behold ye are worse than they; for as the Lord liveth, if a prophet come among you and declareth unto you the word of the Lord, which testifieth of your sins and iniquities, ye are angry with him, and cast him out and seek all manner of ways to destroy him; yea, you will say that he is a false prophet, and that he is a sinner, and of the devil, because he testifieth that your deeds are evil.",
+        "reference": "Helaman 13:26",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "affda7fc-e029-498c-b23a-074a6c0d5638",
+        "rank": 4,
+        "score": 0.569618225,
+        "text": "Behold ye are worse than they; for as the Lord liveth, if a prophet come among you and declareth unto you the word of the Lord, which testifieth of your sins and iniquities, ye are angry with him, and cast him out and seek all manner of ways to destroy him; yea, you will say that he is a false prophet, and that he is a sinner, and of the devil, because he testifieth that your deeds are evil.",
+        "reference": "Helaman 13:26",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "3ebe6038-8189-4f9c-bb2d-d2a02e9f047f",
+        "rank": 5,
+        "score": 0.558807313,
+        "text": "And it came to pass that the prophets were rejected by the people, and they fled unto Com for protection, for the people sought to destroy them.",
+        "reference": "Ether 11:2",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "17618e8f-8725-484a-977f-91aab6d44525",
+        "rank": 6,
+        "score": 0.558168411,
+        "text": "And it came to pass that the prophets were rejected by the people, and they fled unto Com for protection, for the people sought to destroy them.",
+        "reference": "Ether 11:2",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "bb134327-4adb-4016-82e9-1e33b9bf2c22",
+        "rank": 7,
+        "score": 0.545875549,
+        "text": "For Jesus himself testified, that a prophet hath no honour in his own country.",
+        "reference": "John 4:44",
+        "volume": "New Testament"
+      },
+      {
+        "id": "67ed6186-a168-48d2-bf54-4690becf65e5",
+        "rank": 8,
+        "score": 0.545827925,
+        "text": "For Jesus himself testified, that a prophet hath no honour in his own country.",
+        "reference": "John 4:44",
+        "volume": "New Testament"
+      },
+      {
+        "id": "d4ddf198-4720-4212-8d5c-0adf798d9c94",
+        "rank": 9,
+        "score": 0.532442153,
+        "text": "Behold, will ye reject these words? Will ye reject the words of the prophets; and will ye reject all the words which have been spoken concerning Christ, after so many have spoken concerning him; and deny the good word of Christ, and the power of God, and the gift of the Holy Ghost, and quench the Holy Spirit, and make a mock of the great plan of redemption, which hath been laid for you?",
+        "reference": "Jacob 6:8",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "27189810-120e-49dd-98f5-eea9629a386f",
+        "rank": 10,
+        "score": 0.530515671,
+        "text": "But Jesus said unto them, A prophet is not without honour, but in his own country, and among his own kin, and in his own house.",
+        "reference": "Mark 6:4",
+        "volume": "New Testament"
+      }
+    ]
+  },
+  {
+    "query_id": "X005",
+    "query": "How is the gathering of Israel described across scripture?",
+    "query_type": "cross_reference",
+    "latency_ms": 584.1982089914382,
+    "documents": [
+      {
+        "id": "9487ed09-d15f-46c7-921f-0fa9206c8322",
+        "rank": 1,
+        "score": 0.613565505,
+        "text": "And it shall come to pass that they shall be gathered in from their long dispersion, from the isles of the sea, and from the four parts of the earth; and the nations of the Gentiles shall be great in the eyes of me, saith God, in carrying them forth to the lands of their inheritance.",
+        "reference": "2 Nephi 10:8",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c979ee93-86b8-4f6d-ab12-4c7818c92147",
+        "rank": 2,
+        "score": 0.613519728,
+        "text": "And it shall come to pass that they shall be gathered in from their long dispersion, from the isles of the sea, and from the four parts of the earth; and the nations of the Gentiles shall be great in the eyes of me, saith God, in carrying them forth to the lands of their inheritance.",
+        "reference": "2 Nephi 10:8",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "ae29ea20-2a8f-44a1-aa94-b1638ef473b1",
+        "rank": 3,
+        "score": 0.578384459,
+        "text": "And as surely as the Lord liveth, will he gather in from the four quarters of the earth all the remnant of the seed of Jacob, who are scattered abroad upon all the face of the earth.",
+        "reference": "3 Nephi 5:24",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "fd397ce1-675f-4102-b18a-b442fcd34981",
+        "rank": 4,
+        "score": 0.578214765,
+        "text": "And as surely as the Lord liveth, will he gather in from the four quarters of the earth all the remnant of the seed of Jacob, who are scattered abroad upon all the face of the earth.",
+        "reference": "3 Nephi 5:24",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "5b30ac3c-a50e-43e2-b1cd-cf946b2758ef",
+        "rank": 5,
+        "score": 0.577152312,
+        "text": "And then will I gather them in from the four quarters of the earth; and then will I fulfil the covenant which the Father hath made unto all the people of the house of Israel.",
+        "reference": "3 Nephi 16:5",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "d74516bf-60bc-41a4-9f73-65dba836ff17",
+        "rank": 6,
+        "score": 0.576084197,
+        "text": "And then will I gather them in from the four quarters of the earth; and then will I fulfil the covenant which the Father hath made unto all the people of the house of Israel.",
+        "reference": "3 Nephi 16:5",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "d1c91728-1f6b-4e7b-8f8f-d2f1a6777bea",
+        "rank": 7,
+        "score": 0.569238722,
+        "text": "Yea, then will he remember the isles of the sea; yea, and all the people who are of the house of Israel, will I gather in, saith the Lord, according to the words of the prophet Zenos, from the four quarters of the earth.",
+        "reference": "1 Nephi 19:16",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "979973bb-0cf6-472c-9fa0-d71fc2c062d8",
+        "rank": 8,
+        "score": 0.56898123,
+        "text": "Yea, then will he remember the isles of the sea; yea, and all the people who are of the house of Israel, will I gather in, saith the Lord, according to the words of the prophet Zenos, from the four quarters of the earth.",
+        "reference": "1 Nephi 19:16",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "876e63a2-e0e9-41d6-ae84-e7a567ca3ad4",
+        "rank": 9,
+        "score": 0.568269789,
+        "text": "And then shall the remnants, which shall be scattered abroad upon the face of the earth, be gathered in from the east and from the west, and from the south and from the north; and they shall be brought to the knowledge of the Lord their God, who hath redeemed them.",
+        "reference": "3 Nephi 20:13",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "ed7e2c69-1ffa-490f-b37a-c92adef68970",
+        "rank": 10,
+        "score": 0.567892075,
+        "text": "And then shall the remnants, which shall be scattered abroad upon the face of the earth, be gathered in from the east and from the west, and from the south and from the north; and they shall be brought to the knowledge of the Lord their God, who hath redeemed them.",
+        "reference": "3 Nephi 20:13",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "X006",
+    "query": "What do different scriptures teach about priesthood authority?",
+    "query_type": "cross_reference",
+    "latency_ms": 272.6332909951452,
+    "documents": [
+      {
+        "id": "399b462c-c3a3-4762-8a62-2cfcf70b4afb",
+        "rank": 1,
+        "score": 0.570926666,
+        "text": "High priests after the order of the Melchizedek Priesthood have a right to officiate in their own standing, under the direction of the presidency, in administering spiritual things, and also in the office of an elder, priest (of the Levitical order), teacher, deacon, and member.",
+        "reference": "D&C 107:10",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "663d3ec2-8cd1-4a25-a241-313a0c717a83",
+        "rank": 2,
+        "score": 0.570407867,
+        "text": "High priests after the order of the Melchizedek Priesthood have a right to officiate in their own standing, under the direction of the presidency, in administering spiritual things, and also in the office of an elder, priest (of the Levitical order), teacher, deacon, and member.",
+        "reference": "D&C 107:10",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "49e80976-6056-4738-853e-a74661e6d4e2",
+        "rank": 3,
+        "score": 0.566432953,
+        "text": "But, as a high priest of the Melchizedek Priesthood has authority to officiate in all the lesser offices he may officiate in the office of bishop when no literal descendant of Aaron can be found, provided he is called and set apart and ordained unto this power, under the hands of the First Presidency of the Melchizedek Priesthood.",
+        "reference": "D&C 68:19",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "3f8212a3-f481-4a76-9072-c4fd2b7d12ca",
+        "rank": 4,
+        "score": 0.565567,
+        "text": "The Melchizedek Priesthood holds the right of presidency, and has power and authority over all the offices in the church in all ages of the world, to administer in spiritual things.",
+        "reference": "D&C 107:8",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "cd85a603-24bb-4ecf-88cf-c646ca572d46",
+        "rank": 5,
+        "score": 0.565534651,
+        "text": "The Melchizedek Priesthood holds the right of presidency, and has power and authority over all the offices in the church in all ages of the world, to administer in spiritual things.",
+        "reference": "D&C 107:8",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "619e947d-d90d-45ca-9f91-d158729b2ab5",
+        "rank": 6,
+        "score": 0.562717378,
+        "text": "But, as a high priest of the Melchizedek Priesthood has authority to officiate in all the lesser offices he may officiate in the office of bishop when no literal descendant of Aaron can be found, provided he is called and set apart and ordained unto this power, under the hands of the First Presidency of the Melchizedek Priesthood.",
+        "reference": "D&C 68:19",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "24e3615e-469f-4628-8690-1514b11530e1",
+        "rank": 7,
+        "score": 0.557924271,
+        "text": "But as a high priest of the Melchizedek Priesthood has authority to officiate in all the lesser offices, he may officiate in the office of bishop when no literal descendant of Aaron can be found, provided he is called and set apart and ordained unto this power by the hands of the Presidency of the Melchizedek Priesthood.",
+        "reference": "D&C 107:17",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "4b1990d4-b4b0-4c45-8ced-dcd1a522c053",
+        "rank": 8,
+        "score": 0.557760239,
+        "text": "But as a high priest of the Melchizedek Priesthood has authority to officiate in all the lesser offices, he may officiate in the office of bishop when no literal descendant of Aaron can be found, provided he is called and set apart and ordained unto this power by the hands of the Presidency of the Melchizedek Priesthood.",
+        "reference": "D&C 107:17",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "acbdae9f-68d0-4552-b724-a4654012e17b",
+        "rank": 9,
+        "score": 0.539611816,
+        "text": "And it came to pass that none received authority to preach or to teach except it were by him from God. Therefore he consecrated all their priests and all their teachers; and none were consecrated except they were just men.",
+        "reference": "Mosiah 23:17",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "ded88e53-6e6a-4f7f-af36-feb356322215",
+        "rank": 10,
+        "score": 0.53903389,
+        "text": "And it came to pass that none received authority to preach or to teach except it were by him from God. Therefore he consecrated all their priests and all their teachers; and none were consecrated except they were just men.",
+        "reference": "Mosiah 23:17",
+        "volume": "Book of Mormon"
+      }
+    ]
+  },
+  {
+    "query_id": "X007",
+    "query": "How do scriptures describe the resurrection of the dead?",
+    "query_type": "cross_reference",
+    "latency_ms": 330.11424998403527,
+    "documents": [
+      {
+        "id": "72731b77-2273-4e2d-89f2-b3281448499d",
+        "rank": 1,
+        "score": 0.593969345,
+        "text": "But some man will say, How are the dead raised up? and with what body do they come?",
+        "reference": "1 Corinthians 15:35",
+        "volume": "New Testament"
+      },
+      {
+        "id": "b7708d9f-5281-4b22-a145-dbf94b06fc42",
+        "rank": 2,
+        "score": 0.593650877,
+        "text": "But some man will say, How are the dead raised up? and with what body do they come?",
+        "reference": "1 Corinthians 15:35",
+        "volume": "New Testament"
+      },
+      {
+        "id": "730f8f6c-f575-42c4-b495-d470dc98c247",
+        "rank": 3,
+        "score": 0.572683334,
+        "text": "Behold, he bringeth to pass the resurrection of the dead. But behold, my son, the resurrection is not yet. Now, I unfold unto you a mystery; nevertheless, there are many mysteries which are kept, that no one knoweth them save God himself. But I show unto you one thing which I have inquired diligently of God that I might know\u2014that is concerning the resurrection.",
+        "reference": "Alma 40:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "cfabc2c2-0314-41fb-a8d4-0c3bdcf8f913",
+        "rank": 4,
+        "score": 0.572673798,
+        "text": "Behold, he bringeth to pass the resurrection of the dead. But behold, my son, the resurrection is not yet. Now, I unfold unto you a mystery; nevertheless, there are many mysteries which are kept, that no one knoweth them save God himself. But I show unto you one thing which I have inquired diligently of God that I might know\u2014that is concerning the resurrection.",
+        "reference": "Alma 40:3",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "abd05cad-c591-44b3-87e0-da21159e966f",
+        "rank": 5,
+        "score": 0.556568146,
+        "text": "For notwithstanding they die, they also shall rise again, a spiritual body.",
+        "reference": "D&C 88:27",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "7640a9b3-1e49-478e-ad89-67cd165c0416",
+        "rank": 6,
+        "score": 0.556568146,
+        "text": "For notwithstanding they die, they also shall rise again, a spiritual body.",
+        "reference": "D&C 88:27",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "466ebed6-a5db-4c7e-ae4c-c63a81bd0260",
+        "rank": 7,
+        "score": 0.555101395,
+        "text": "So also is the resurrection of the dead. It is sown in corruption; it is raised in incorruption:",
+        "reference": "1 Corinthians 15:42",
+        "volume": "New Testament"
+      },
+      {
+        "id": "d9a36a71-33be-457d-ae62-fec3259efa56",
+        "rank": 8,
+        "score": 0.555101395,
+        "text": "So also is the resurrection of the dead. It is sown in corruption; it is raised in incorruption:",
+        "reference": "1 Corinthians 15:42",
+        "volume": "New Testament"
+      },
+      {
+        "id": "b3ed66bc-fcc4-43f7-a3af-bec7acc7330b",
+        "rank": 9,
+        "score": 0.545562744,
+        "text": "Speaking of the resurrection of the dead, concerning those who shall hear the voice of the Son of Man:",
+        "reference": "D&C 76:16",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "61db32f5-b6df-40bb-8c91-777f57918f97",
+        "rank": 10,
+        "score": 0.545480728,
+        "text": "Speaking of the resurrection of the dead, concerning those who shall hear the voice of the Son of Man:",
+        "reference": "D&C 76:16",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "X008",
+    "query": "What do scriptures say about caring for the poor?",
+    "query_type": "cross_reference",
+    "latency_ms": 301.1425419826992,
+    "documents": [
+      {
+        "id": "666c0f6e-0a82-43b1-8fc2-8f41a68c301e",
+        "rank": 1,
+        "score": 0.561416686,
+        "text": "Behold, I say unto you, that ye must visit the poor and the needy and administer to their relief, that they may be kept until all things may be done according to my law which ye have received. Amen.",
+        "reference": "D&C 44:6",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "0f70facd-b5a2-43a9-b0e0-5eb125cc772d",
+        "rank": 2,
+        "score": 0.561163962,
+        "text": "Behold, I say unto you, that ye must visit the poor and the needy and administer to their relief, that they may be kept until all things may be done according to my law which ye have received. Amen.",
+        "reference": "D&C 44:6",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "6ec1d043-bf5b-41d8-9b8b-98f7a596b323",
+        "rank": 3,
+        "score": 0.543029845,
+        "text": "For the poor shall never cease out of the land: therefore I command thee, saying, Thou shalt open thine hand wide unto thy brother, to thy poor, and to thy needy, in thy land.",
+        "reference": "Deuteronomy 15:11",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "88389873-64d1-4724-8ed9-fd30c2e7a266",
+        "rank": 4,
+        "score": 0.542866766,
+        "text": "For the poor shall never cease out of the land: therefore I command thee, saying, Thou shalt open thine hand wide unto thy brother, to thy poor, and to thy needy, in thy land.",
+        "reference": "Deuteronomy 15:11",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "35eca088-1742-4f3c-b3fa-17dbc71d457d",
+        "rank": 5,
+        "score": 0.528970778,
+        "text": "Blessed is he that considereth the poor: the LORD will deliver him in time of trouble.",
+        "reference": "Psalms 41:1",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "1f451b49-0514-4694-bd5f-aee440659fd3",
+        "rank": 6,
+        "score": 0.528535903,
+        "text": "Blessed is he that considereth the poor: the LORD will deliver him in time of trouble.",
+        "reference": "Psalms 41:1",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "74410d5d-74bf-45cb-8f01-2e55eda9931d",
+        "rank": 7,
+        "score": 0.522206366,
+        "text": "He that hath pity upon the poor lendeth unto the LORD; and that which he hath given will he pay him again.",
+        "reference": "Proverbs 19:17",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "98569a04-e554-456f-9f60-97e8fd467d78",
+        "rank": 8,
+        "score": 0.522116721,
+        "text": "He that hath pity upon the poor lendeth unto the LORD; and that which he hath given will he pay him again.",
+        "reference": "Proverbs 19:17",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "86ba6a39-1e91-4119-b3b9-220e617ab7b0",
+        "rank": 9,
+        "score": 0.517220557,
+        "text": "Is it not to deal thy bread to the hungry, and that thou bring the poor that are cast out to thy house? when thou seest the naked, that thou cover him; and that thou hide not thyself from thine own flesh?",
+        "reference": "Isaiah 58:7",
+        "volume": "Old Testament"
+      },
+      {
+        "id": "1370bfae-4a49-40f3-8d10-4a02ac8e5812",
+        "rank": 10,
+        "score": 0.517220557,
+        "text": "Is it not to deal thy bread to the hungry, and that thou bring the poor that are cast out to thy house? when thou seest the naked, that thou cover him; and that thou hide not thyself from thine own flesh?",
+        "reference": "Isaiah 58:7",
+        "volume": "Old Testament"
+      }
+    ]
+  },
+  {
+    "query_id": "X009",
+    "query": "How is the fall of Adam described in different scriptures?",
+    "query_type": "cross_reference",
+    "latency_ms": 488.1337500119116,
+    "documents": [
+      {
+        "id": "a1b194c4-890e-434b-8f19-61f844fde1d8",
+        "rank": 1,
+        "score": 0.601503372,
+        "text": "Now Alma said unto him: This is the thing which I was about to explain. Now we see that Adam did fall by the partaking of the forbidden fruit, according to the word of God; and thus we see, that by his fall, all mankind became a lost and fallen people.",
+        "reference": "Alma 12:22",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "14ebd086-79fb-4dfe-a4b2-f89c1348f2f1",
+        "rank": 2,
+        "score": 0.601013243,
+        "text": "Now Alma said unto him: This is the thing which I was about to explain. Now we see that Adam did fall by the partaking of the forbidden fruit, according to the word of God; and thus we see, that by his fall, all mankind became a lost and fallen people.",
+        "reference": "Alma 12:22",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "fe4807e2-db3a-4d8d-8b16-8f94331ec259",
+        "rank": 3,
+        "score": 0.548923552,
+        "text": "And he said unto them: Because that Adam fell, we are; and by his fall came death; and we are made partakers of misery and woe.",
+        "reference": "Moses 6:48",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "750c2327-7820-411d-ba54-476c52a37e62",
+        "rank": 4,
+        "score": 0.537231445,
+        "text": "Wherefore, it came to pass that the devil tempted Adam, and he partook of the forbidden fruit and transgressed the commandment, wherein he became subject to the will of the devil, because he yielded unto temptation.",
+        "reference": "D&C 29:40",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "daee253d-4e15-4ffd-97ce-d3db2b6e6b26",
+        "rank": 5,
+        "score": 0.537004471,
+        "text": "Wherefore, it came to pass that the devil tempted Adam, and he partook of the forbidden fruit and transgressed the commandment, wherein he became subject to the will of the devil, because he yielded unto temptation.",
+        "reference": "D&C 29:40",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "2953c9bc-4919-44a7-b883-1ac5ef7e5429",
+        "rank": 6,
+        "score": 0.525491714,
+        "text": "And in that day Adam blessed God and was filled, and began to prophesy concerning all the families of the earth, saying: Blessed be the name of God, for because of my transgression my eyes are opened, and in this life I shall have joy, and again in the flesh I shall see God.",
+        "reference": "Moses 5:10",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "561451aa-a30b-47db-9bbf-53dd91dd165a",
+        "rank": 7,
+        "score": 0.519441605,
+        "text": "Behold, he created Adam, and by Adam came the fall of man. And because of the fall of man came Jesus Christ, even the Father and the Son; and because of Jesus Christ came the redemption of man.",
+        "reference": "Mormon 9:12",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c92133e9-a9b1-41bc-adb5-8572f0b42b05",
+        "rank": 8,
+        "score": 0.519292831,
+        "text": "Behold, he created Adam, and by Adam came the fall of man. And because of the fall of man came Jesus Christ, even the Father and the Son; and because of Jesus Christ came the redemption of man.",
+        "reference": "Mormon 9:12",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "c65bd7e0-f7ca-45f4-8c68-e5ff2ba27274",
+        "rank": 9,
+        "score": 0.504024506,
+        "text": "And in that day the Holy Ghost fell upon Adam, which beareth record of the Father and the Son, saying: I am the Only Begotten of the Father from the beginning, henceforth and forever, that as thou hast fallen thou mayest be redeemed, and all mankind, even as many as will.",
+        "reference": "Moses 5:9",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "8a13bcd4-7467-4865-a046-3c090a197135",
+        "rank": 10,
+        "score": 0.503526688,
+        "text": "And it came to pass that Adam, being tempted of the devil\u2014for, behold, the devil was before Adam, for he rebelled against me, saying, Give me thine honor, which is my power; and also a third part of the hosts of heaven turned he away from me because of their agency;",
+        "reference": "D&C 29:36",
+        "volume": "Doctrine and Covenants"
+      }
+    ]
+  },
+  {
+    "query_id": "X010",
+    "query": "What do scriptures teach about the nature of God?",
+    "query_type": "cross_reference",
+    "latency_ms": 303.2822090026457,
+    "documents": [
+      {
+        "id": "ef2eb4de-0ad4-494c-aafe-49b26f4e3b08",
+        "rank": 1,
+        "score": 0.438142806,
+        "text": "We believe in God, the Eternal Father, and in His Son, Jesus Christ, and in the Holy Ghost.",
+        "reference": "Articles of Faith 1:1",
+        "volume": "Pearl of Great Price"
+      },
+      {
+        "id": "5d3addb2-a01d-4acb-b073-1a1fa9a835e7",
+        "rank": 2,
+        "score": 0.425619155,
+        "text": "Holy, holy God; we believe that thou art God, and we believe that thou art holy, and that thou wast a spirit, and that thou art a spirit, and that thou wilt be a spirit forever.",
+        "reference": "Alma 31:15",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "2a902377-9b08-4341-b4de-2e2b3b005905",
+        "rank": 3,
+        "score": 0.425619155,
+        "text": "Holy, holy God; we believe that thou art God, and we believe that thou art holy, and that thou wast a spirit, and that thou art a spirit, and that thou wilt be a spirit forever.",
+        "reference": "Alma 31:15",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "45b277eb-bd21-48ba-861e-d9439ef1ab6a",
+        "rank": 4,
+        "score": 0.417642534,
+        "text": "For do we not read that God is the same yesterday, today, and forever, and in him there is no variableness neither shadow of changing?",
+        "reference": "Mormon 9:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "6d5cfc08-d5ca-4db8-ac17-2d808cb08321",
+        "rank": 5,
+        "score": 0.417585373,
+        "text": "For do we not read that God is the same yesterday, today, and forever, and in him there is no variableness neither shadow of changing?",
+        "reference": "Mormon 9:9",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "a025e2f1-0563-4ec3-9af5-670d96a01e32",
+        "rank": 6,
+        "score": 0.416479111,
+        "text": "And they are one God, yea, the very Eternal Father of heaven and of earth.",
+        "reference": "Mosiah 15:4",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "fa9fc2e1-96fb-4468-bbeb-f90152652adb",
+        "rank": 7,
+        "score": 0.415687561,
+        "text": "And they are one God, yea, the very Eternal Father of heaven and of earth.",
+        "reference": "Mosiah 15:4",
+        "volume": "Book of Mormon"
+      },
+      {
+        "id": "cb9bd567-e239-4572-a325-d28fcced8591",
+        "rank": 8,
+        "score": 0.412975311,
+        "text": "Wherefore, the Almighty God gave his Only Begotten Son, as it is written in those scriptures which have been given of him.",
+        "reference": "D&C 20:21",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "26ef5231-15a4-47ce-a741-9d2ba795aabd",
+        "rank": 9,
+        "score": 0.412879944,
+        "text": "Wherefore, the Almighty God gave his Only Begotten Son, as it is written in those scriptures which have been given of him.",
+        "reference": "D&C 20:21",
+        "volume": "Doctrine and Covenants"
+      },
+      {
+        "id": "833c30a5-c319-44ac-ad79-6f4c5feb7569",
+        "rank": 10,
+        "score": 0.412670135,
+        "text": "Forasmuch then as we are the offspring of God, we ought not to think that the Godhead is like unto gold, or silver, or stone, graven by art and man's device.",
+        "reference": "Acts 17:29",
+        "volume": "New Testament"
+      }
+    ]
+  }
+]

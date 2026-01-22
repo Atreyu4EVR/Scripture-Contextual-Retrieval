@@ -27,11 +27,5 @@ build/
 *models/*
 *models*
 
-# Local Results
-*evaluations/results*
-*evaluations/reports*
-response_w_rerank.json
-response_wo_rerank.json
-
 # Large embedding files (regenerate with scripts/generate_embeddings.py)
 scriptures/embeddings/
