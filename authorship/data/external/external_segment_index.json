@@ -1,0 +1,63 @@
+{
+  "window_size": 1000,
+  "max_per_author": 45,
+  "authors": {
+    "joseph_smith": {
+      "display": "Joseph Smith",
+      "role": "candidate",
+      "register": "dictated_revelation",
+      "total_words": 111930,
+      "windows": 45,
+      "low_support": false
+    },
+    "ethan_smith": {
+      "display": "Ethan Smith",
+      "role": "candidate",
+      "register": "written_treatise",
+      "total_words": 104292,
+      "windows": 45,
+      "low_support": false
+    },
+    "solomon_spalding": {
+      "display": "Solomon Spalding",
+      "role": "candidate",
+      "register": "written_narrative",
+      "total_words": 41391,
+      "windows": 41,
+      "low_support": false
+    },
+    "jonathan_edwards": {
+      "display": "Jonathan Edwards",
+      "role": "distractor",
+      "register": "sermon",
+      "total_words": 70610,
+      "windows": 45,
+      "low_support": false
+    },
+    "john_bunyan": {
+      "display": "John Bunyan",
+      "role": "distractor",
+      "register": "religious_allegory",
+      "total_words": 56569,
+      "windows": 45,
+      "low_support": false
+    },
+    "washington_irving": {
+      "display": "Washington Irving",
+      "role": "distractor",
+      "register": "literary_prose",
+      "total_words": 127321,
+      "windows": 45,
+      "low_support": false
+    },
+    "kjv_bible": {
+      "display": "KJV Bible (translation control)",
+      "role": "translation_control",
+      "register": "early_modern_translation",
+      "total_words": 180382,
+      "windows": 45,
+      "low_support": false
+    }
+  },
+  "total_segments": 311
+}

@@ -1,0 +1,54 @@
+{
+  "fetched": [
+    {
+      "key": "ethan_smith",
+      "bytes": 633089,
+      "role": "candidate",
+      "provenance": "archive.org/details/viewofhebrewsort00smit — View of the Hebrews, 2nd ed., 1825"
+    },
+    {
+      "key": "solomon_spalding",
+      "bytes": 278963,
+      "role": "candidate",
+      "provenance": "archive.org/details/manuscriptfoundm00spau — 'The Manuscript Found' (Manuscript Story)"
+    },
+    {
+      "key": "jonathan_edwards",
+      "bytes": 425293,
+      "role": "distractor",
+      "provenance": "gutenberg.org/ebooks/34632 — Selected Sermons of Jonathan Edwards"
+    },
+    {
+      "key": "john_bunyan",
+      "bytes": 331509,
+      "role": "distractor",
+      "provenance": "gutenberg.org/ebooks/131 — The Pilgrim's Progress"
+    },
+    {
+      "key": "washington_irving",
+      "bytes": 780447,
+      "role": "distractor",
+      "provenance": "gutenberg.org/ebooks/2048 — The Sketch-Book of Geoffrey Crayon"
+    }
+  ],
+  "in_repo": [
+    {
+      "key": "joseph_smith",
+      "volume": "Doctrine and Covenants",
+      "role": "candidate",
+      "license": "public domain"
+    },
+    {
+      "key": "kjv_bible",
+      "volume": "New Testament",
+      "role": "translation_control",
+      "license": "public domain"
+    }
+  ],
+  "gaps": [
+    {
+      "display": "Sidney Rigdon",
+      "reason": "No clean public-domain prose corpus readily fetchable from Gutenberg/archive.org full-text endpoints; excluded rather than approximated."
+    }
+  ]
+}

@@ -6,11 +6,16 @@ features of the Book of Mormon?* It tests four hypotheses — H1 single-author 1
 composition, H2 19th-century source/collaboration, H3 internal multi-voice, H4
 translation-mediated text.
 
-**Phase one (this directory)** addresses the **internal** hypotheses **H3 and H4** using
-only texts already in the repository (the Book of Mormon plus the KJV Old/New Testament as
-a biblical-quotation control and as a known-authorship calibration corpus). It deliberately
-does **not** address H1/H2 — comparison against Joseph Smith, Rigdon, Spalding, Ethan Smith,
-and distractor authors requires an external corpus and is reserved for phase two.
+**Phase one** addresses the **internal** hypotheses **H3 and H4** using only texts already
+in the repository (the Book of Mormon plus the KJV Old/New Testament as a biblical-quotation
+control and as a known-authorship calibration corpus).
+
+**Phase two** addresses the **external** hypotheses **H1 and H2** by fetching public-domain
+candidate corpora (Joseph Smith via the in-repo Doctrine and Covenants, Ethan Smith's *View
+of the Hebrews*, Solomon Spalding's *Manuscript Found*), distractor authors (Edwards, Bunyan,
+Irving), and a KJV translation control, then running **open-set** attribution (with an
+explicit *none of the above*) of the Book of Mormon against them. Sidney Rigdon is documented
+as a corpus gap (no clean public-domain prose readily fetchable).
 
 ## What it does
 
@@ -62,6 +67,19 @@ python authorship/scripts/run_authorship_pipeline.py --start-from 6 --run-id run
 ```
 
 Individual steps can also be run directly (see each script's docstring).
+
+### Phase two (external authors, H1/H2)
+
+Requires phase one to have run first (it reuses the BoM rolling windows) and network
+access (Gutenberg + archive.org).
+
+```bash
+python authorship/scripts/run_external_pipeline.py            # fetch -> clean -> segment -> features -> open-set -> report
+python authorship/scripts/run_external_pipeline.py --dry-run
+python authorship/scripts/run_external_pipeline.py --start-from D   # reuse cached downloads
+```
+
+Output: `authorship/results/reports/authorship_h1h2_report_<ts>.md`.
 
 ## Layout
 

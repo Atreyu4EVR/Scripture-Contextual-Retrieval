@@ -1,0 +1,27 @@
+{
+  "ethan_smith": {
+    "words": 104292,
+    "dropped_line_fraction": 0.097,
+    "raw_bytes": 633089
+  },
+  "john_bunyan": {
+    "words": 56569,
+    "dropped_line_fraction": 0.064,
+    "raw_bytes": 331509
+  },
+  "jonathan_edwards": {
+    "words": 70610,
+    "dropped_line_fraction": 0.036,
+    "raw_bytes": 425293
+  },
+  "solomon_spalding": {
+    "words": 41391,
+    "dropped_line_fraction": 0.058,
+    "raw_bytes": 278963
+  },
+  "washington_irving": {
+    "words": 127321,
+    "dropped_line_fraction": 0.039,
+    "raw_bytes": 780447
+  }
+}

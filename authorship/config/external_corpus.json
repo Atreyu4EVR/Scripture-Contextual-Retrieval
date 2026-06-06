@@ -1,0 +1,76 @@
+{
+  "description": "Phase-two external comparison corpus for the Book of Mormon authorship study (H1/H2). All sources are public domain. In-repo sources are reused directly; external sources are fetched and cleaned with provenance recorded. Sidney Rigdon is documented as a GAP: no clean public-domain prose corpus was readily fetchable; he is intentionally excluded rather than approximated.",
+  "fetch": {
+    "archive_txt_url": "https://archive.org/download/{id}/{id}_djvu.txt",
+    "gutenberg_url": "https://www.gutenberg.org/cache/epub/{id}/pg{id}.txt"
+  },
+  "authors": [
+    {
+      "key": "joseph_smith",
+      "display": "Joseph Smith",
+      "role": "candidate",
+      "register": "dictated_revelation",
+      "source": {"type": "in_repo_volume", "volume": "Doctrine and Covenants"},
+      "license": "public domain",
+      "provenance": "in-repo scriptures/source/doctrine-and-covenants.json (JS dictated revelations)",
+      "note": "Closest available Joseph Smith sample; shares the dictated-revelation register with the Book of Mormon (a confound to flag, but the relevant H1 comparison)."
+    },
+    {
+      "key": "ethan_smith",
+      "display": "Ethan Smith",
+      "role": "candidate",
+      "register": "written_treatise",
+      "source": {"type": "archive_txt", "id": "viewofhebrewsort00smit"},
+      "license": "public domain (1825)",
+      "provenance": "archive.org/details/viewofhebrewsort00smit — View of the Hebrews, 2nd ed., 1825"
+    },
+    {
+      "key": "solomon_spalding",
+      "display": "Solomon Spalding",
+      "role": "candidate",
+      "register": "written_narrative",
+      "source": {"type": "archive_txt", "id": "manuscriptfoundm00spau"},
+      "license": "public domain (1886 printing of the c.1812 manuscript)",
+      "provenance": "archive.org/details/manuscriptfoundm00spau — 'The Manuscript Found' (Manuscript Story)"
+    },
+    {
+      "key": "jonathan_edwards",
+      "display": "Jonathan Edwards",
+      "role": "distractor",
+      "register": "sermon",
+      "source": {"type": "gutenberg", "id": 34632},
+      "license": "public domain",
+      "provenance": "gutenberg.org/ebooks/34632 — Selected Sermons of Jonathan Edwards"
+    },
+    {
+      "key": "john_bunyan",
+      "display": "John Bunyan",
+      "role": "distractor",
+      "register": "religious_allegory",
+      "source": {"type": "gutenberg", "id": 131},
+      "license": "public domain",
+      "provenance": "gutenberg.org/ebooks/131 — The Pilgrim's Progress"
+    },
+    {
+      "key": "washington_irving",
+      "display": "Washington Irving",
+      "role": "distractor",
+      "register": "literary_prose",
+      "source": {"type": "gutenberg", "id": 2048},
+      "license": "public domain",
+      "provenance": "gutenberg.org/ebooks/2048 — The Sketch-Book of Geoffrey Crayon"
+    },
+    {
+      "key": "kjv_bible",
+      "display": "KJV Bible (translation control)",
+      "role": "translation_control",
+      "register": "early_modern_translation",
+      "source": {"type": "in_repo_volume", "volume": "New Testament"},
+      "license": "public domain",
+      "provenance": "in-repo scriptures/source/new-testament.json (KJV); a known translation register"
+    }
+  ],
+  "gaps": [
+    {"display": "Sidney Rigdon", "reason": "No clean public-domain prose corpus readily fetchable from Gutenberg/archive.org full-text endpoints; excluded rather than approximated."}
+  ]
+}

@@ -37,6 +37,11 @@ authorship/data/segments/segments_*.jsonl
 authorship/data/validation/*.jsonl
 authorship/features/*.parquet
 authorship/results/raw/
+# Phase two: fetched/cleaned third-party public-domain text (regenerate via fetch+clean).
+# Provenance manifests, the H1/H2 report, and figures ARE tracked.
+authorship/data/external/raw/
+authorship/data/external/clean/
+authorship/data/external/segments_external.jsonl
 
 # Development notes (local only)
 NOTES.md
