@@ -9,3 +9,16 @@ sentence-transformers
 torch
 datasets
 anthropic
+
+# Authorship study (phase one): stylometry + ML stack
+# After install, run: python -m spacy download en_core_web_sm
+spacy
+scikit-learn
+nltk
+textstat
+pandas
+numpy
+matplotlib
+plotly
+umap-learn
+pyarrow

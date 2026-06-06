@@ -1,0 +1,19 @@
+{
+  "description": "Unambiguous embedded-speaker spans in the Book of Mormon. An embedded span overrides the host book's claimed_narrator for the 'speaker' and 'genre' fields, but RETAINS the host 'editorial_layer' (e.g. Abinadi's words still sit inside Mormon's abridgement). Spans are inclusive [start_verse, end_verse] within the named book/chapter range. Spans listed here are well-attested and used for the by-speaker analyses; secondary/optional spans are flagged 'rely=false' and reported descriptively only.",
+  "spans": [
+    {"speaker": "Benjamin", "book": "Mosiah", "start": "2:1", "end": "5:15", "genre": "sermon_discourse", "rely": true},
+    {"speaker": "Abinadi", "book": "Mosiah", "start": "12:1", "end": "17:20", "genre": "sermon_discourse", "rely": true},
+    {"speaker": "Alma the Younger", "book": "Alma", "start": "5:1", "end": "5:62", "genre": "sermon_discourse", "rely": true},
+    {"speaker": "Alma the Younger", "book": "Alma", "start": "7:1", "end": "7:27", "genre": "sermon_discourse", "rely": true},
+    {"speaker": "Amulek", "book": "Alma", "start": "34:1", "end": "34:41", "genre": "sermon_discourse", "rely": true},
+    {"speaker": "Alma the Younger", "book": "Alma", "start": "36:1", "end": "42:31", "genre": "sermon_discourse", "rely": true},
+    {"speaker": "Jesus Christ", "book": "3 Nephi", "start": "11:1", "end": "28:12", "genre": "sermon_discourse", "rely": true},
+    {"speaker": "Mormon", "book": "Moroni", "start": "8:1", "end": "8:30", "genre": "epistle", "editorial_layer": "embedded_epistle", "rely": true},
+    {"speaker": "Mormon", "book": "Moroni", "start": "9:1", "end": "9:26", "genre": "epistle", "editorial_layer": "embedded_epistle", "rely": true},
+    {"speaker": "Moroni", "book": "Moroni", "start": "10:1", "end": "10:34", "genre": "sermon_discourse", "rely": true},
+
+    {"speaker": "Nephi", "book": "2 Nephi", "start": "4:15", "end": "4:35", "genre": "poetic_lament", "rely": false},
+    {"speaker": "Jacob", "book": "Jacob", "start": "2:1", "end": "3:14", "genre": "sermon_discourse", "rely": false},
+    {"speaker": "Samuel the Lamanite", "book": "Helaman", "start": "13:1", "end": "15:17", "genre": "prophecy_revelation", "rely": false}
+  ]
+}

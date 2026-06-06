@@ -30,5 +30,13 @@ build/
 # Large embedding files (regenerate with scripts/generate_embeddings.py)
 scriptures/embeddings/
 
+# Authorship study: large/regenerable artifacts (regenerate with the authorship pipeline).
+# The small findings (segment_index.json, quote spans/fractions, reports, figures) ARE tracked.
+authorship/data/quotes/*.pkl
+authorship/data/segments/segments_*.jsonl
+authorship/data/validation/*.jsonl
+authorship/features/*.parquet
+authorship/results/raw/
+
 # Development notes (local only)
 NOTES.md

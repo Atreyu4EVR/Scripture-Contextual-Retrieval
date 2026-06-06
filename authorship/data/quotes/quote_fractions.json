@@ -1,0 +1,3109 @@
+{
+  "BoM:1 Nephi:1": {
+    "book": "1 Nephi",
+    "chapter": 1,
+    "quote_fraction": 0.1026,
+    "covered": 93,
+    "total": 906,
+    "sources": [
+      "Jeremiah 28",
+      "Mark 2",
+      "Exodus 33",
+      "Genesis 38",
+      "Exodus 16"
+    ]
+  },
+  "BoM:1 Nephi:2": {
+    "book": "1 Nephi",
+    "chapter": 2,
+    "quote_fraction": 0.1604,
+    "covered": 141,
+    "total": 879,
+    "sources": [
+      "Joshua 1",
+      "Mark 2",
+      "Jeremiah 42",
+      "Luke 16",
+      "Ezekiel 10"
+    ]
+  },
+  "BoM:1 Nephi:3": {
+    "book": "1 Nephi",
+    "chapter": 3,
+    "quote_fraction": 0.1042,
+    "covered": 111,
+    "total": 1065,
+    "sources": [
+      "Genesis 12",
+      "Exodus 16",
+      "Mark 2",
+      "Luke 16",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:1 Nephi:4": {
+    "book": "1 Nephi",
+    "chapter": 4,
+    "quote_fraction": 0.073,
+    "covered": 92,
+    "total": 1261,
+    "sources": [
+      "Joshua 24",
+      "Genesis 12",
+      "Luke 19",
+      "Deuteronomy 28",
+      "Luke 16"
+    ]
+  },
+  "BoM:1 Nephi:5": {
+    "book": "1 Nephi",
+    "chapter": 5,
+    "quote_fraction": 0.1209,
+    "covered": 92,
+    "total": 761,
+    "sources": [
+      "Acts 12",
+      "Jeremiah 28",
+      "1 Chronicles 20",
+      "Acts 21",
+      "Judges 8"
+    ]
+  },
+  "BoM:1 Nephi:6": {
+    "book": "1 Nephi",
+    "chapter": 6,
+    "quote_fraction": 0.0941,
+    "covered": 19,
+    "total": 202,
+    "sources": [
+      "Exodus 3",
+      "Matthew 22",
+      "Genesis 31"
+    ]
+  },
+  "BoM:1 Nephi:7": {
+    "book": "1 Nephi",
+    "chapter": 7,
+    "quote_fraction": 0.1885,
+    "covered": 187,
+    "total": 992,
+    "sources": [
+      "Joshua 1",
+      "1 Samuel 11",
+      "Luke 16",
+      "Numbers 16",
+      "Mark 3"
+    ]
+  },
+  "BoM:1 Nephi:8": {
+    "book": "1 Nephi",
+    "chapter": 8,
+    "quote_fraction": 0.0753,
+    "covered": 92,
+    "total": 1221,
+    "sources": [
+      "1 Samuel 11",
+      "Deuteronomy 10",
+      "Luke 1",
+      "Mark 2",
+      "2 Chronicles 12"
+    ]
+  },
+  "BoM:1 Nephi:9": {
+    "book": "1 Nephi",
+    "chapter": 9,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 259,
+    "sources": []
+  },
+  "BoM:1 Nephi:10": {
+    "book": "1 Nephi",
+    "chapter": 10,
+    "quote_fraction": 0.1046,
+    "covered": 96,
+    "total": 918,
+    "sources": [
+      "John 1",
+      "Isaiah 40",
+      "Ezekiel 34",
+      "Acts 26",
+      "1 Thessalonians 4"
+    ]
+  },
+  "BoM:1 Nephi:11": {
+    "book": "1 Nephi",
+    "chapter": 11,
+    "quote_fraction": 0.0875,
+    "covered": 115,
+    "total": 1314,
+    "sources": [
+      "Acts 8",
+      "Luke 16",
+      "2 Chronicles 12",
+      "Luke 9",
+      "Exodus 16"
+    ]
+  },
+  "BoM:1 Nephi:12": {
+    "book": "1 Nephi",
+    "chapter": 12,
+    "quote_fraction": 0.0628,
+    "covered": 54,
+    "total": 860,
+    "sources": [
+      "Genesis 7",
+      "Luke 16",
+      "Psalms 78",
+      "Revelation 7",
+      "2 Chronicles 6"
+    ]
+  },
+  "BoM:1 Nephi:13": {
+    "book": "1 Nephi",
+    "chapter": 13,
+    "quote_fraction": 0.0983,
+    "covered": 186,
+    "total": 1892,
+    "sources": [
+      "Revelation 21",
+      "Luke 16",
+      "Genesis 16",
+      "Ezekiel 34",
+      "Matthew 20"
+    ]
+  },
+  "BoM:1 Nephi:14": {
+    "book": "1 Nephi",
+    "chapter": 14,
+    "quote_fraction": 0.1326,
+    "covered": 170,
+    "total": 1282,
+    "sources": [
+      "Ezekiel 34",
+      "Luke 16",
+      "Amos 5",
+      "Genesis 41",
+      "Genesis 4"
+    ]
+  },
+  "BoM:1 Nephi:15": {
+    "book": "1 Nephi",
+    "chapter": 15,
+    "quote_fraction": 0.0497,
+    "covered": 74,
+    "total": 1488,
+    "sources": [
+      "Acts 3",
+      "Mark 8",
+      "1 Chronicles 20",
+      "Matthew 16",
+      "Matthew 19"
+    ]
+  },
+  "BoM:1 Nephi:16": {
+    "book": "1 Nephi",
+    "chapter": 16,
+    "quote_fraction": 0.1244,
+    "covered": 203,
+    "total": 1632,
+    "sources": [
+      "Luke 16",
+      "Deuteronomy 10",
+      "Numbers 16",
+      "1 Samuel 11",
+      "1 Samuel 13"
+    ]
+  },
+  "BoM:1 Nephi:17": {
+    "book": "1 Nephi",
+    "chapter": 17,
+    "quote_fraction": 0.0856,
+    "covered": 216,
+    "total": 2523,
+    "sources": [
+      "Exodus 20",
+      "Joshua 1",
+      "Luke 16",
+      "Judges 6",
+      "Deuteronomy 2"
+    ]
+  },
+  "BoM:1 Nephi:18": {
+    "book": "1 Nephi",
+    "chapter": 18,
+    "quote_fraction": 0.1086,
+    "covered": 132,
+    "total": 1216,
+    "sources": [
+      "1 Chronicles 20",
+      "1 Samuel 11",
+      "Exodus 16",
+      "Luke 19",
+      "Numbers 3"
+    ]
+  },
+  "BoM:1 Nephi:19": {
+    "book": "1 Nephi",
+    "chapter": 19,
+    "quote_fraction": 0.0287,
+    "covered": 37,
+    "total": 1290,
+    "sources": [
+      "Acts 3",
+      "Luke 16",
+      "Joshua 1",
+      "Exodus 3",
+      "Isaiah 52"
+    ]
+  },
+  "BoM:1 Nephi:20": {
+    "book": "1 Nephi",
+    "chapter": 20,
+    "quote_fraction": 0.8156,
+    "covered": 566,
+    "total": 694,
+    "sources": [
+      "Isaiah 48",
+      "Deuteronomy 28",
+      "Isaiah 47",
+      "Isaiah 44",
+      "Psalms 102"
+    ]
+  },
+  "BoM:1 Nephi:21": {
+    "book": "1 Nephi",
+    "chapter": 21,
+    "quote_fraction": 0.9212,
+    "covered": 877,
+    "total": 952,
+    "sources": [
+      "Isaiah 49",
+      "Exodus 7",
+      "1 Samuel 26",
+      "Acts 13",
+      "Isaiah 28"
+    ]
+  },
+  "BoM:1 Nephi:22": {
+    "book": "1 Nephi",
+    "chapter": 22,
+    "quote_fraction": 0.1235,
+    "covered": 186,
+    "total": 1506,
+    "sources": [
+      "Acts 3",
+      "Isaiah 49",
+      "John 10",
+      "Ezekiel 34",
+      "Isaiah 52"
+    ]
+  },
+  "BoM:2 Nephi:1": {
+    "book": "2 Nephi",
+    "chapter": 1,
+    "quote_fraction": 0.0221,
+    "covered": 34,
+    "total": 1540,
+    "sources": [
+      "1 Kings 2",
+      "Leviticus 22",
+      "Genesis 34"
+    ]
+  },
+  "BoM:2 Nephi:2": {
+    "book": "2 Nephi",
+    "chapter": 2,
+    "quote_fraction": 0.0192,
+    "covered": 28,
+    "total": 1456,
+    "sources": [
+      "Daniel 2",
+      "Ezekiel 38",
+      "Job 12",
+      "Genesis 3"
+    ]
+  },
+  "BoM:2 Nephi:3": {
+    "book": "2 Nephi",
+    "chapter": 3,
+    "quote_fraction": 0.0395,
+    "covered": 46,
+    "total": 1166,
+    "sources": [
+      "2 Chronicles 6",
+      "2 Chronicles 20",
+      "Jeremiah 3",
+      "Luke 1",
+      "Isaiah 10"
+    ]
+  },
+  "BoM:2 Nephi:4": {
+    "book": "2 Nephi",
+    "chapter": 4,
+    "quote_fraction": 0.077,
+    "covered": 100,
+    "total": 1298,
+    "sources": [
+      "1 Samuel 18",
+      "Psalms 89",
+      "Leviticus 22",
+      "1 Chronicles 20",
+      "Genesis 12"
+    ]
+  },
+  "BoM:2 Nephi:5": {
+    "book": "2 Nephi",
+    "chapter": 5,
+    "quote_fraction": 0.0582,
+    "covered": 68,
+    "total": 1168,
+    "sources": [
+      "Luke 16",
+      "Joshua 1",
+      "Luke 2",
+      "1 Samuel 11",
+      "Genesis 4"
+    ]
+  },
+  "BoM:2 Nephi:6": {
+    "book": "2 Nephi",
+    "chapter": 6,
+    "quote_fraction": 0.2257,
+    "covered": 202,
+    "total": 895,
+    "sources": [
+      "Isaiah 49",
+      "Exodus 7",
+      "Isaiah 30",
+      "Isaiah 28",
+      "1 Kings 20"
+    ]
+  },
+  "BoM:2 Nephi:7": {
+    "book": "2 Nephi",
+    "chapter": 7,
+    "quote_fraction": 0.737,
+    "covered": 297,
+    "total": 403,
+    "sources": [
+      "Isaiah 50"
+    ]
+  },
+  "BoM:2 Nephi:8": {
+    "book": "2 Nephi",
+    "chapter": 8,
+    "quote_fraction": 0.9455,
+    "covered": 764,
+    "total": 808,
+    "sources": [
+      "Isaiah 51",
+      "Isaiah 52",
+      "Isaiah 35",
+      "2 Kings 22"
+    ]
+  },
+  "BoM:2 Nephi:9": {
+    "book": "2 Nephi",
+    "chapter": 9,
+    "quote_fraction": 0.039,
+    "covered": 93,
+    "total": 2384,
+    "sources": [
+      "Isaiah 55",
+      "Isaiah 30",
+      "Luke 1",
+      "Genesis 4",
+      "Genesis 24"
+    ]
+  },
+  "BoM:2 Nephi:10": {
+    "book": "2 Nephi",
+    "chapter": 10,
+    "quote_fraction": 0.0229,
+    "covered": 22,
+    "total": 962,
+    "sources": [
+      "Ezekiel 22",
+      "Genesis 4"
+    ]
+  },
+  "BoM:2 Nephi:11": {
+    "book": "2 Nephi",
+    "chapter": 11,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 338,
+    "sources": []
+  },
+  "BoM:2 Nephi:12": {
+    "book": "2 Nephi",
+    "chapter": 12,
+    "quote_fraction": 0.8678,
+    "covered": 558,
+    "total": 643,
+    "sources": [
+      "Isaiah 2",
+      "Genesis 47",
+      "Judges 9",
+      "Zechariah 14",
+      "Genesis 4"
+    ]
+  },
+  "BoM:2 Nephi:13": {
+    "book": "2 Nephi",
+    "chapter": 13,
+    "quote_fraction": 0.9058,
+    "covered": 529,
+    "total": 584,
+    "sources": [
+      "Isaiah 3"
+    ]
+  },
+  "BoM:2 Nephi:14": {
+    "book": "2 Nephi",
+    "chapter": 14,
+    "quote_fraction": 0.9257,
+    "covered": 187,
+    "total": 202,
+    "sources": [
+      "Isaiah 4"
+    ]
+  },
+  "BoM:2 Nephi:15": {
+    "book": "2 Nephi",
+    "chapter": 15,
+    "quote_fraction": 0.9824,
+    "covered": 838,
+    "total": 853,
+    "sources": [
+      "Isaiah 5",
+      "Psalms 106"
+    ]
+  },
+  "BoM:2 Nephi:16": {
+    "book": "2 Nephi",
+    "chapter": 16,
+    "quote_fraction": 0.9647,
+    "covered": 355,
+    "total": 368,
+    "sources": [
+      "Isaiah 6",
+      "John 12"
+    ]
+  },
+  "BoM:2 Nephi:17": {
+    "book": "2 Nephi",
+    "chapter": 17,
+    "quote_fraction": 0.9897,
+    "covered": 674,
+    "total": 681,
+    "sources": [
+      "Isaiah 7",
+      "2 Kings 15",
+      "Genesis 47",
+      "Genesis 14",
+      "2 Kings 18"
+    ]
+  },
+  "BoM:2 Nephi:18": {
+    "book": "2 Nephi",
+    "chapter": 18,
+    "quote_fraction": 0.9893,
+    "covered": 555,
+    "total": 561,
+    "sources": [
+      "Isaiah 8",
+      "Genesis 30",
+      "Genesis 4",
+      "Genesis 24",
+      "Joshua 6"
+    ]
+  },
+  "BoM:2 Nephi:19": {
+    "book": "2 Nephi",
+    "chapter": 19,
+    "quote_fraction": 0.9966,
+    "covered": 584,
+    "total": 586,
+    "sources": [
+      "Isaiah 9",
+      "Isaiah 5",
+      "Numbers 14",
+      "Joshua 17",
+      "2 Kings 19"
+    ]
+  },
+  "BoM:2 Nephi:20": {
+    "book": "2 Nephi",
+    "chapter": 20,
+    "quote_fraction": 0.9892,
+    "covered": 917,
+    "total": 927,
+    "sources": [
+      "Isaiah 10",
+      "Isaiah 5",
+      "Isaiah 7",
+      "Genesis 24",
+      "Genesis 47"
+    ]
+  },
+  "BoM:2 Nephi:21": {
+    "book": "2 Nephi",
+    "chapter": 21,
+    "quote_fraction": 0.9942,
+    "covered": 516,
+    "total": 519,
+    "sources": [
+      "Isaiah 11",
+      "Isaiah 7",
+      "Genesis 47",
+      "Judges 19",
+      "Exodus 32"
+    ]
+  },
+  "BoM:2 Nephi:22": {
+    "book": "2 Nephi",
+    "chapter": 22,
+    "quote_fraction": 1.0,
+    "covered": 134,
+    "total": 134,
+    "sources": [
+      "Isaiah 12",
+      "Exodus 15"
+    ]
+  },
+  "BoM:2 Nephi:23": {
+    "book": "2 Nephi",
+    "chapter": 23,
+    "quote_fraction": 0.93,
+    "covered": 545,
+    "total": 586,
+    "sources": [
+      "Isaiah 13",
+      "Isaiah 9"
+    ]
+  },
+  "BoM:2 Nephi:24": {
+    "book": "2 Nephi",
+    "chapter": 24,
+    "quote_fraction": 0.9809,
+    "covered": 871,
+    "total": 888,
+    "sources": [
+      "Isaiah 14",
+      "Isaiah 7",
+      "Genesis 47",
+      "Micah 5",
+      "Deuteronomy 33"
+    ]
+  },
+  "BoM:2 Nephi:25": {
+    "book": "2 Nephi",
+    "chapter": 25,
+    "quote_fraction": 0.0141,
+    "covered": 24,
+    "total": 1698,
+    "sources": [
+      "Isaiah 11",
+      "Exodus 32",
+      "Genesis 21"
+    ]
+  },
+  "BoM:2 Nephi:26": {
+    "book": "2 Nephi",
+    "chapter": 26,
+    "quote_fraction": 0.0722,
+    "covered": 107,
+    "total": 1481,
+    "sources": [
+      "Malachi 4",
+      "Isaiah 29",
+      "Isaiah 7",
+      "Genesis 4",
+      "Numbers 33"
+    ]
+  },
+  "BoM:2 Nephi:27": {
+    "book": "2 Nephi",
+    "chapter": 27,
+    "quote_fraction": 0.3612,
+    "covered": 527,
+    "total": 1459,
+    "sources": [
+      "Isaiah 29",
+      "Numbers 17",
+      "Genesis 4",
+      "Leviticus 4",
+      "Isaiah 10"
+    ]
+  },
+  "BoM:2 Nephi:28": {
+    "book": "2 Nephi",
+    "chapter": 28,
+    "quote_fraction": 0.0752,
+    "covered": 93,
+    "total": 1236,
+    "sources": [
+      "Isaiah 7",
+      "Isaiah 29",
+      "Jeremiah 30",
+      "Romans 3",
+      "2 Chronicles 6"
+    ]
+  },
+  "BoM:2 Nephi:29": {
+    "book": "2 Nephi",
+    "chapter": 29,
+    "quote_fraction": 0.0698,
+    "covered": 56,
+    "total": 802,
+    "sources": [
+      "Genesis 4",
+      "Isaiah 11",
+      "Esther 10",
+      "Judges 1",
+      "Numbers 17"
+    ]
+  },
+  "BoM:2 Nephi:30": {
+    "book": "2 Nephi",
+    "chapter": 30,
+    "quote_fraction": 0.2938,
+    "covered": 208,
+    "total": 708,
+    "sources": [
+      "Isaiah 11",
+      "Genesis 4",
+      "Numbers 17",
+      "2 Chronicles 6"
+    ]
+  },
+  "BoM:2 Nephi:31": {
+    "book": "2 Nephi",
+    "chapter": 31,
+    "quote_fraction": 0.0395,
+    "covered": 39,
+    "total": 987,
+    "sources": [
+      "Matthew 28",
+      "Matthew 24",
+      "Revelation 9"
+    ]
+  },
+  "BoM:2 Nephi:32": {
+    "book": "2 Nephi",
+    "chapter": 32,
+    "quote_fraction": 0.0258,
+    "covered": 11,
+    "total": 426,
+    "sources": [
+      "Matthew 18"
+    ]
+  },
+  "BoM:2 Nephi:33": {
+    "book": "2 Nephi",
+    "chapter": 33,
+    "quote_fraction": 0.0342,
+    "covered": 22,
+    "total": 644,
+    "sources": [
+      "2 Chronicles 6",
+      "Ezekiel 14"
+    ]
+  },
+  "BoM:Jacob:1": {
+    "book": "Jacob",
+    "chapter": 1,
+    "quote_fraction": 0.0181,
+    "covered": 13,
+    "total": 718,
+    "sources": [
+      "Numbers 15"
+    ]
+  },
+  "BoM:Jacob:2": {
+    "book": "Jacob",
+    "chapter": 2,
+    "quote_fraction": 0.0242,
+    "covered": 33,
+    "total": 1363,
+    "sources": [
+      "Joshua 8",
+      "Daniel 9",
+      "Malachi 1"
+    ]
+  },
+  "BoM:Jacob:3": {
+    "book": "Jacob",
+    "chapter": 3,
+    "quote_fraction": 0.021,
+    "covered": 13,
+    "total": 618,
+    "sources": [
+      "Revelation 21"
+    ]
+  },
+  "BoM:Jacob:4": {
+    "book": "Jacob",
+    "chapter": 4,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 928,
+    "sources": []
+  },
+  "BoM:Jacob:5": {
+    "book": "Jacob",
+    "chapter": 5,
+    "quote_fraction": 0.1166,
+    "covered": 438,
+    "total": 3757,
+    "sources": [
+      "Luke 16",
+      "Joshua 1",
+      "1 Samuel 11",
+      "Matthew 3",
+      "Acts 11"
+    ]
+  },
+  "BoM:Jacob:6": {
+    "book": "Jacob",
+    "chapter": 6,
+    "quote_fraction": 0.0784,
+    "covered": 40,
+    "total": 510,
+    "sources": [
+      "Isaiah 11",
+      "Psalms 95",
+      "Hebrews 3",
+      "Hebrews 4",
+      "Matthew 3"
+    ]
+  },
+  "BoM:Jacob:7": {
+    "book": "Jacob",
+    "chapter": 7,
+    "quote_fraction": 0.1088,
+    "covered": 135,
+    "total": 1241,
+    "sources": [
+      "Mark 2",
+      "Exodus 16",
+      "Genesis 12",
+      "Ezekiel 10",
+      "Luke 14"
+    ]
+  },
+  "BoM:Enos:1": {
+    "book": "Enos",
+    "chapter": 1,
+    "quote_fraction": 0.0588,
+    "covered": 68,
+    "total": 1156,
+    "sources": [
+      "Ephesians 6",
+      "Jeremiah 41",
+      "Acts 22",
+      "1 Chronicles 20",
+      "Isaiah 18"
+    ]
+  },
+  "BoM:Jarom:1": {
+    "book": "Jarom",
+    "chapter": 1,
+    "quote_fraction": 0.0807,
+    "covered": 59,
+    "total": 731,
+    "sources": [
+      "Acts 15",
+      "Genesis 12",
+      "1 Samuel 11",
+      "Exodus 31",
+      "Isaiah 28"
+    ]
+  },
+  "BoM:Omni:1": {
+    "book": "Omni",
+    "chapter": 1,
+    "quote_fraction": 0.0629,
+    "covered": 88,
+    "total": 1398,
+    "sources": [
+      "Deuteronomy 15",
+      "Genesis 14",
+      "Mark 2",
+      "Exodus 34",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:Words of Mormon:1": {
+    "book": "Words of Mormon",
+    "chapter": 1,
+    "quote_fraction": 0.0257,
+    "covered": 22,
+    "total": 856,
+    "sources": [
+      "1 Samuel 11",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:Mosiah:1": {
+    "book": "Mosiah",
+    "chapter": 1,
+    "quote_fraction": 0.0652,
+    "covered": 63,
+    "total": 966,
+    "sources": [
+      "1 Chronicles 20",
+      "Nehemiah 6",
+      "Mark 2",
+      "Isaiah 1",
+      "John 20"
+    ]
+  },
+  "BoM:Mosiah:2": {
+    "book": "Mosiah",
+    "chapter": 2,
+    "quote_fraction": 0.037,
+    "covered": 78,
+    "total": 2107,
+    "sources": [
+      "Judges 8",
+      "1 Chronicles 20",
+      "Leviticus 23",
+      "Genesis 12",
+      "Amos 7"
+    ]
+  },
+  "BoM:Mosiah:3": {
+    "book": "Mosiah",
+    "chapter": 3,
+    "quote_fraction": 0.0295,
+    "covered": 33,
+    "total": 1117,
+    "sources": [
+      "2 Chronicles 6",
+      "Revelation 4",
+      "Deuteronomy 5"
+    ]
+  },
+  "BoM:Mosiah:4": {
+    "book": "Mosiah",
+    "chapter": 4,
+    "quote_fraction": 0.0631,
+    "covered": 101,
+    "total": 1601,
+    "sources": [
+      "2 Chronicles 14",
+      "Jeremiah 41",
+      "1 Chronicles 20",
+      "Judges 3",
+      "Matthew 17"
+    ]
+  },
+  "BoM:Mosiah:5": {
+    "book": "Mosiah",
+    "chapter": 5,
+    "quote_fraction": 0.0758,
+    "covered": 56,
+    "total": 739,
+    "sources": [
+      "Deuteronomy 18",
+      "Jeremiah 41",
+      "1 Kings 13",
+      "Jeremiah 4",
+      "Genesis 4"
+    ]
+  },
+  "BoM:Mosiah:6": {
+    "book": "Mosiah",
+    "chapter": 6,
+    "quote_fraction": 0.0358,
+    "covered": 11,
+    "total": 307,
+    "sources": [
+      "Exodus 16"
+    ]
+  },
+  "BoM:Mosiah:7": {
+    "book": "Mosiah",
+    "chapter": 7,
+    "quote_fraction": 0.0801,
+    "covered": 124,
+    "total": 1548,
+    "sources": [
+      "Exodus 6",
+      "Genesis 19",
+      "Exodus 16",
+      "Acts 12",
+      "Amos 7"
+    ]
+  },
+  "BoM:Mosiah:8": {
+    "book": "Mosiah",
+    "chapter": 8,
+    "quote_fraction": 0.0459,
+    "covered": 43,
+    "total": 937,
+    "sources": [
+      "1 Chronicles 20",
+      "1 Samuel 24",
+      "Mark 2"
+    ]
+  },
+  "BoM:Mosiah:9": {
+    "book": "Mosiah",
+    "chapter": 9,
+    "quote_fraction": 0.0256,
+    "covered": 22,
+    "total": 858,
+    "sources": [
+      "Acts 21",
+      "1 Samuel 11"
+    ]
+  },
+  "BoM:Mosiah:10": {
+    "book": "Mosiah",
+    "chapter": 10,
+    "quote_fraction": 0.0357,
+    "covered": 34,
+    "total": 953,
+    "sources": [
+      "Exodus 34",
+      "Luke 1",
+      "1 Samuel 11"
+    ]
+  },
+  "BoM:Mosiah:11": {
+    "book": "Mosiah",
+    "chapter": 11,
+    "quote_fraction": 0.1491,
+    "covered": 189,
+    "total": 1268,
+    "sources": [
+      "Mark 2",
+      "Genesis 4",
+      "Exodus 29",
+      "Joshua 9",
+      "Daniel 11"
+    ]
+  },
+  "BoM:Mosiah:12": {
+    "book": "Mosiah",
+    "chapter": 12,
+    "quote_fraction": 0.2258,
+    "covered": 291,
+    "total": 1289,
+    "sources": [
+      "Isaiah 52",
+      "Exodus 20",
+      "Genesis 4",
+      "1 Chronicles 20",
+      "Hosea 2"
+    ]
+  },
+  "BoM:Mosiah:13": {
+    "book": "Mosiah",
+    "chapter": 13,
+    "quote_fraction": 0.2526,
+    "covered": 269,
+    "total": 1065,
+    "sources": [
+      "Exodus 20",
+      "Deuteronomy 5",
+      "Acts 4",
+      "Exodus 23",
+      "Exodus 31"
+    ]
+  },
+  "BoM:Mosiah:14": {
+    "book": "Mosiah",
+    "chapter": 14,
+    "quote_fraction": 0.9898,
+    "covered": 387,
+    "total": 391,
+    "sources": [
+      "Isaiah 53",
+      "Psalms 52"
+    ]
+  },
+  "BoM:Mosiah:15": {
+    "book": "Mosiah",
+    "chapter": 15,
+    "quote_fraction": 0.1374,
+    "covered": 145,
+    "total": 1055,
+    "sources": [
+      "Isaiah 52",
+      "Isaiah 53",
+      "Luke 1",
+      "Psalms 67",
+      "Isaiah 49"
+    ]
+  },
+  "BoM:Mosiah:16": {
+    "book": "Mosiah",
+    "chapter": 16,
+    "quote_fraction": 0.0232,
+    "covered": 13,
+    "total": 560,
+    "sources": [
+      "Deuteronomy 28",
+      "Deuteronomy 15",
+      "Psalms 106"
+    ]
+  },
+  "BoM:Mosiah:17": {
+    "book": "Mosiah",
+    "chapter": 17,
+    "quote_fraction": 0.0846,
+    "covered": 55,
+    "total": 650,
+    "sources": [
+      "Jeremiah 41",
+      "Genesis 24",
+      "Luke 16",
+      "2 Kings 4",
+      "Matthew 26"
+    ]
+  },
+  "BoM:Mosiah:18": {
+    "book": "Mosiah",
+    "chapter": 18,
+    "quote_fraction": 0.0725,
+    "covered": 100,
+    "total": 1380,
+    "sources": [
+      "2 Samuel 2",
+      "Acts 1",
+      "1 Samuel 13",
+      "1 Kings 18",
+      "Acts 28"
+    ]
+  },
+  "BoM:Mosiah:19": {
+    "book": "Mosiah",
+    "chapter": 19,
+    "quote_fraction": 0.1217,
+    "covered": 119,
+    "total": 978,
+    "sources": [
+      "Luke 16",
+      "Numbers 22",
+      "2 Kings 22",
+      "1 Samuel 11",
+      "2 Samuel 1"
+    ]
+  },
+  "BoM:Mosiah:20": {
+    "book": "Mosiah",
+    "chapter": 20,
+    "quote_fraction": 0.1405,
+    "covered": 135,
+    "total": 961,
+    "sources": [
+      "Luke 16",
+      "1 Samuel 11",
+      "Genesis 12",
+      "Genesis 15",
+      "Mark 1"
+    ]
+  },
+  "BoM:Mosiah:21": {
+    "book": "Mosiah",
+    "chapter": 21,
+    "quote_fraction": 0.07,
+    "covered": 93,
+    "total": 1328,
+    "sources": [
+      "Luke 16",
+      "2 Samuel 19",
+      "Genesis 26",
+      "1 Chronicles 20",
+      "Nehemiah 5"
+    ]
+  },
+  "BoM:Mosiah:22": {
+    "book": "Mosiah",
+    "chapter": 22,
+    "quote_fraction": 0.1099,
+    "covered": 68,
+    "total": 619,
+    "sources": [
+      "Luke 16",
+      "1 Samuel 11",
+      "Genesis 47",
+      "Esther 8",
+      "Joshua 9"
+    ]
+  },
+  "BoM:Mosiah:23": {
+    "book": "Mosiah",
+    "chapter": 23,
+    "quote_fraction": 0.0667,
+    "covered": 79,
+    "total": 1185,
+    "sources": [
+      "1 Samuel 11",
+      "Luke 16",
+      "2 Kings 3",
+      "1 Kings 12",
+      "Mark 2"
+    ]
+  },
+  "BoM:Mosiah:24": {
+    "book": "Mosiah",
+    "chapter": 24,
+    "quote_fraction": 0.0601,
+    "covered": 57,
+    "total": 949,
+    "sources": [
+      "Numbers 16",
+      "Luke 1",
+      "Luke 16",
+      "Acts 9",
+      "Acts 7"
+    ]
+  },
+  "BoM:Mosiah:25": {
+    "book": "Mosiah",
+    "chapter": 25,
+    "quote_fraction": 0.0263,
+    "covered": 22,
+    "total": 837,
+    "sources": [
+      "Jeremiah 41",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:Mosiah:26": {
+    "book": "Mosiah",
+    "chapter": 26,
+    "quote_fraction": 0.0942,
+    "covered": 113,
+    "total": 1199,
+    "sources": [
+      "Matthew 25",
+      "Ezekiel 32",
+      "Exodus 29",
+      "Luke 9",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Mosiah:27": {
+    "book": "Mosiah",
+    "chapter": 27,
+    "quote_fraction": 0.0375,
+    "covered": 60,
+    "total": 1598,
+    "sources": [
+      "Luke 17",
+      "Joshua 11",
+      "Luke 1",
+      "Matthew 1",
+      "Exodus 3"
+    ]
+  },
+  "BoM:Mosiah:28": {
+    "book": "Mosiah",
+    "chapter": 28,
+    "quote_fraction": 0.0542,
+    "covered": 44,
+    "total": 812,
+    "sources": [
+      "1 Chronicles 20",
+      "1 Samuel 11",
+      "Genesis 11",
+      "Genesis 1",
+      "Revelation 22"
+    ]
+  },
+  "BoM:Mosiah:29": {
+    "book": "Mosiah",
+    "chapter": 29,
+    "quote_fraction": 0.0358,
+    "covered": 67,
+    "total": 1874,
+    "sources": [
+      "Luke 16",
+      "Proverbs 30",
+      "Isaiah 11",
+      "1 Samuel 11",
+      "Genesis 12"
+    ]
+  },
+  "BoM:Alma:1": {
+    "book": "Alma",
+    "chapter": 1,
+    "quote_fraction": 0.0603,
+    "covered": 90,
+    "total": 1493,
+    "sources": [
+      "Genesis 29",
+      "Mark 2",
+      "Genesis 38",
+      "2 Kings 8",
+      "1 Samuel 25"
+    ]
+  },
+  "BoM:Alma:2": {
+    "book": "Alma",
+    "chapter": 2,
+    "quote_fraction": 0.0795,
+    "covered": 114,
+    "total": 1434,
+    "sources": [
+      "Luke 16",
+      "Exodus 16",
+      "Genesis 12",
+      "Amos 7",
+      "Genesis 8"
+    ]
+  },
+  "BoM:Alma:3": {
+    "book": "Alma",
+    "chapter": 3,
+    "quote_fraction": 0.0306,
+    "covered": 31,
+    "total": 1014,
+    "sources": [
+      "Luke 16",
+      "2 Chronicles 12",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Alma:4": {
+    "book": "Alma",
+    "chapter": 4,
+    "quote_fraction": 0.0486,
+    "covered": 50,
+    "total": 1028,
+    "sources": [
+      "Genesis 8",
+      "Ezekiel 8",
+      "Ezra 6",
+      "Ruth 1",
+      "2 Kings 25"
+    ]
+  },
+  "BoM:Alma:5": {
+    "book": "Alma",
+    "chapter": 5,
+    "quote_fraction": 0.0442,
+    "covered": 123,
+    "total": 2782,
+    "sources": [
+      "John 1",
+      "Matthew 19",
+      "Matthew 3",
+      "Exodus 2",
+      "Matthew 7"
+    ]
+  },
+  "BoM:Alma:6": {
+    "book": "Alma",
+    "chapter": 6,
+    "quote_fraction": 0.1186,
+    "covered": 46,
+    "total": 388,
+    "sources": [
+      "Deuteronomy 20",
+      "1 Samuel 18",
+      "Acts 13",
+      "Jeremiah 41",
+      "Mark 1"
+    ]
+  },
+  "BoM:Alma:7": {
+    "book": "Alma",
+    "chapter": 7,
+    "quote_fraction": 0.0396,
+    "covered": 57,
+    "total": 1439,
+    "sources": [
+      "Matthew 3",
+      "Matthew 4",
+      "Matthew 26",
+      "Exodus 33",
+      "Romans 15"
+    ]
+  },
+  "BoM:Alma:8": {
+    "book": "Alma",
+    "chapter": 8,
+    "quote_fraction": 0.083,
+    "covered": 102,
+    "total": 1229,
+    "sources": [
+      "Luke 16",
+      "Luke 1",
+      "Genesis 8",
+      "Genesis 12",
+      "Exodus 3"
+    ]
+  },
+  "BoM:Alma:9": {
+    "book": "Alma",
+    "chapter": 9,
+    "quote_fraction": 0.0718,
+    "covered": 108,
+    "total": 1505,
+    "sources": [
+      "Matthew 11",
+      "John 1",
+      "Genesis 7",
+      "Matthew 3",
+      "Matthew 10"
+    ]
+  },
+  "BoM:Alma:10": {
+    "book": "Alma",
+    "chapter": 10,
+    "quote_fraction": 0.0472,
+    "covered": 68,
+    "total": 1440,
+    "sources": [
+      "Matthew 3",
+      "1 Peter 4",
+      "1 Samuel 11",
+      "Matthew 4",
+      "Jeremiah 41"
+    ]
+  },
+  "BoM:Alma:11": {
+    "book": "Alma",
+    "chapter": 11,
+    "quote_fraction": 0.0404,
+    "covered": 59,
+    "total": 1461,
+    "sources": [
+      "Revelation 22",
+      "Luke 22",
+      "Exodus 1",
+      "Matthew 4",
+      "Mark 9"
+    ]
+  },
+  "BoM:Alma:12": {
+    "book": "Alma",
+    "chapter": 12,
+    "quote_fraction": 0.0285,
+    "covered": 53,
+    "total": 1857,
+    "sources": [
+      "1 Samuel 24",
+      "Jeremiah 41",
+      "Genesis 37",
+      "Genesis 3",
+      "Leviticus 5"
+    ]
+  },
+  "BoM:Alma:13": {
+    "book": "Alma",
+    "chapter": 13,
+    "quote_fraction": 0.0536,
+    "covered": 72,
+    "total": 1343,
+    "sources": [
+      "Matthew 25",
+      "Jeremiah 41",
+      "John 7",
+      "2 Chronicles 36",
+      "Genesis 11"
+    ]
+  },
+  "BoM:Alma:14": {
+    "book": "Alma",
+    "chapter": 14,
+    "quote_fraction": 0.0925,
+    "covered": 141,
+    "total": 1525,
+    "sources": [
+      "1 Samuel 11",
+      "1 Kings 13",
+      "1 Samuel 18",
+      "Deuteronomy 20",
+      "Numbers 16"
+    ]
+  },
+  "BoM:Alma:15": {
+    "book": "Alma",
+    "chapter": 15,
+    "quote_fraction": 0.0493,
+    "covered": 35,
+    "total": 710,
+    "sources": [
+      "2 Chronicles 12",
+      "1 Samuel 11",
+      "Luke 8"
+    ]
+  },
+  "BoM:Alma:16": {
+    "book": "Alma",
+    "chapter": 16,
+    "quote_fraction": 0.0447,
+    "covered": 45,
+    "total": 1007,
+    "sources": [
+      "Ezekiel 26",
+      "Genesis 8",
+      "Numbers 1",
+      "Exodus 33",
+      "Numbers 22"
+    ]
+  },
+  "BoM:Alma:17": {
+    "book": "Alma",
+    "chapter": 17,
+    "quote_fraction": 0.0444,
+    "covered": 82,
+    "total": 1845,
+    "sources": [
+      "1 Samuel 11",
+      "Luke 16",
+      "Mark 2",
+      "Joshua 1",
+      "Luke 9"
+    ]
+  },
+  "BoM:Alma:18": {
+    "book": "Alma",
+    "chapter": 18,
+    "quote_fraction": 0.0722,
+    "covered": 117,
+    "total": 1621,
+    "sources": [
+      "Mark 10",
+      "2 Kings 1",
+      "1 Samuel 10",
+      "Genesis 12",
+      "Luke 8"
+    ]
+  },
+  "BoM:Alma:19": {
+    "book": "Alma",
+    "chapter": 19,
+    "quote_fraction": 0.0777,
+    "covered": 132,
+    "total": 1698,
+    "sources": [
+      "Daniel 2",
+      "Genesis 12",
+      "Exodus 16",
+      "1 Chronicles 20",
+      "Nehemiah 8"
+    ]
+  },
+  "BoM:Alma:20": {
+    "book": "Alma",
+    "chapter": 20,
+    "quote_fraction": 0.0258,
+    "covered": 33,
+    "total": 1278,
+    "sources": [
+      "Amos 7",
+      "Genesis 12",
+      "Jeremiah 41",
+      "1 Samuel 13"
+    ]
+  },
+  "BoM:Alma:21": {
+    "book": "Alma",
+    "chapter": 21,
+    "quote_fraction": 0.0472,
+    "covered": 45,
+    "total": 954,
+    "sources": [
+      "Genesis 38",
+      "1 Samuel 11",
+      "Luke 16",
+      "Joshua 1",
+      "Mark 2"
+    ]
+  },
+  "BoM:Alma:22": {
+    "book": "Alma",
+    "chapter": 22,
+    "quote_fraction": 0.0767,
+    "covered": 143,
+    "total": 1864,
+    "sources": [
+      "Genesis 12",
+      "Mark 2",
+      "Mark 10",
+      "Numbers 22",
+      "Luke 16"
+    ]
+  },
+  "BoM:Alma:23": {
+    "book": "Alma",
+    "chapter": 23,
+    "quote_fraction": 0.0736,
+    "covered": 56,
+    "total": 761,
+    "sources": [
+      "Jeremiah 41",
+      "Genesis 15",
+      "Acts 18",
+      "Genesis 25",
+      "2 Timothy 3"
+    ]
+  },
+  "BoM:Alma:24": {
+    "book": "Alma",
+    "chapter": 24,
+    "quote_fraction": 0.0461,
+    "covered": 69,
+    "total": 1497,
+    "sources": [
+      "Luke 16",
+      "Deuteronomy 5",
+      "Genesis 24",
+      "Jeremiah 41",
+      "Genesis 15"
+    ]
+  },
+  "BoM:Alma:25": {
+    "book": "Alma",
+    "chapter": 25,
+    "quote_fraction": 0.0455,
+    "covered": 34,
+    "total": 748,
+    "sources": [
+      "Acts 12",
+      "Genesis 12",
+      "Genesis 15",
+      "Deuteronomy 28"
+    ]
+  },
+  "BoM:Alma:26": {
+    "book": "Alma",
+    "chapter": 26,
+    "quote_fraction": 0.0144,
+    "covered": 24,
+    "total": 1662,
+    "sources": [
+      "Luke 8",
+      "Exodus 16",
+      "Genesis 12"
+    ]
+  },
+  "BoM:Alma:27": {
+    "book": "Alma",
+    "chapter": 27,
+    "quote_fraction": 0.0927,
+    "covered": 116,
+    "total": 1252,
+    "sources": [
+      "Luke 16",
+      "Genesis 12",
+      "Jeremiah 41",
+      "Genesis 25",
+      "2 Samuel 21"
+    ]
+  },
+  "BoM:Alma:28": {
+    "book": "Alma",
+    "chapter": 28,
+    "quote_fraction": 0.0576,
+    "covered": 33,
+    "total": 573,
+    "sources": [
+      "2 Chronicles 15",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:Alma:29": {
+    "book": "Alma",
+    "chapter": 29,
+    "quote_fraction": 0.0876,
+    "covered": 62,
+    "total": 708,
+    "sources": [
+      "Exodus 3",
+      "Ezekiel 34",
+      "Isaiah 26",
+      "Isaiah 45",
+      "Judges 8"
+    ]
+  },
+  "BoM:Alma:30": {
+    "book": "Alma",
+    "chapter": 30,
+    "quote_fraction": 0.058,
+    "covered": 154,
+    "total": 2656,
+    "sources": [
+      "Genesis 12",
+      "Deuteronomy 10",
+      "Genesis 29",
+      "Luke 16",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:Alma:31": {
+    "book": "Alma",
+    "chapter": 31,
+    "quote_fraction": 0.0143,
+    "covered": 21,
+    "total": 1473,
+    "sources": [
+      "1 Chronicles 20",
+      "Jeremiah 41"
+    ]
+  },
+  "BoM:Alma:32": {
+    "book": "Alma",
+    "chapter": 32,
+    "quote_fraction": 0.0175,
+    "covered": 32,
+    "total": 1830,
+    "sources": [
+      "Matthew 24",
+      "1 Samuel 11",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:Alma:33": {
+    "book": "Alma",
+    "chapter": 33,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 855,
+    "sources": []
+  },
+  "BoM:Alma:34": {
+    "book": "Alma",
+    "chapter": 34,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 1574,
+    "sources": []
+  },
+  "BoM:Alma:35": {
+    "book": "Alma",
+    "chapter": 35,
+    "quote_fraction": 0.0501,
+    "covered": 35,
+    "total": 699,
+    "sources": [
+      "1 Chronicles 20",
+      "2 Chronicles 35"
+    ]
+  },
+  "BoM:Alma:36": {
+    "book": "Alma",
+    "chapter": 36,
+    "quote_fraction": 0.0726,
+    "covered": 89,
+    "total": 1226,
+    "sources": [
+      "Exodus 3",
+      "Matthew 22",
+      "John 13",
+      "Genesis 31",
+      "2 Chronicles 14"
+    ]
+  },
+  "BoM:Alma:37": {
+    "book": "Alma",
+    "chapter": 37,
+    "quote_fraction": 0.0188,
+    "covered": 38,
+    "total": 2024,
+    "sources": [
+      "Genesis 7",
+      "Exodus 33",
+      "2 Peter 1"
+    ]
+  },
+  "BoM:Alma:38": {
+    "book": "Alma",
+    "chapter": 38,
+    "quote_fraction": 0.0185,
+    "covered": 12,
+    "total": 648,
+    "sources": [
+      "Matthew 12"
+    ]
+  },
+  "BoM:Alma:39": {
+    "book": "Alma",
+    "chapter": 39,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 793,
+    "sources": []
+  },
+  "BoM:Alma:40": {
+    "book": "Alma",
+    "chapter": 40,
+    "quote_fraction": 0.014,
+    "covered": 16,
+    "total": 1146,
+    "sources": [
+      "Matthew 8"
+    ]
+  },
+  "BoM:Alma:41": {
+    "book": "Alma",
+    "chapter": 41,
+    "quote_fraction": 0.0172,
+    "covered": 12,
+    "total": 698,
+    "sources": [
+      "Acts 8"
+    ]
+  },
+  "BoM:Alma:42": {
+    "book": "Alma",
+    "chapter": 42,
+    "quote_fraction": 0.0704,
+    "covered": 86,
+    "total": 1222,
+    "sources": [
+      "Genesis 3",
+      "Genesis 4"
+    ]
+  },
+  "BoM:Alma:43": {
+    "book": "Alma",
+    "chapter": 43,
+    "quote_fraction": 0.0733,
+    "covered": 162,
+    "total": 2209,
+    "sources": [
+      "Luke 16",
+      "2 Chronicles 35",
+      "Genesis 15",
+      "Genesis 46",
+      "Genesis 24"
+    ]
+  },
+  "BoM:Alma:44": {
+    "book": "Alma",
+    "chapter": 44,
+    "quote_fraction": 0.0612,
+    "covered": 76,
+    "total": 1241,
+    "sources": [
+      "1 Samuel 11",
+      "1 Samuel 24",
+      "Jeremiah 41",
+      "Luke 16",
+      "2 Chronicles 35"
+    ]
+  },
+  "BoM:Alma:45": {
+    "book": "Alma",
+    "chapter": 45,
+    "quote_fraction": 0.0725,
+    "covered": 66,
+    "total": 910,
+    "sources": [
+      "Judges 8",
+      "Genesis 8",
+      "1 Kings 20",
+      "Mark 2",
+      "Ruth 1"
+    ]
+  },
+  "BoM:Alma:46": {
+    "book": "Alma",
+    "chapter": 46,
+    "quote_fraction": 0.0561,
+    "covered": 101,
+    "total": 1800,
+    "sources": [
+      "Genesis 12",
+      "2 Samuel 2",
+      "Jeremiah 41",
+      "Mark 2",
+      "Ezekiel 10"
+    ]
+  },
+  "BoM:Alma:47": {
+    "book": "Alma",
+    "chapter": 47,
+    "quote_fraction": 0.1035,
+    "covered": 163,
+    "total": 1575,
+    "sources": [
+      "Genesis 12",
+      "1 Samuel 11",
+      "Numbers 22",
+      "2 Chronicles 12",
+      "Ezekiel 10"
+    ]
+  },
+  "BoM:Alma:48": {
+    "book": "Alma",
+    "chapter": 48,
+    "quote_fraction": 0.042,
+    "covered": 45,
+    "total": 1072,
+    "sources": [
+      "1 Samuel 13",
+      "1 Samuel 11",
+      "John 8",
+      "2 Chronicles 6"
+    ]
+  },
+  "BoM:Alma:49": {
+    "book": "Alma",
+    "chapter": 49,
+    "quote_fraction": 0.0759,
+    "covered": 102,
+    "total": 1344,
+    "sources": [
+      "Luke 16",
+      "Genesis 15",
+      "Exodus 16",
+      "Ruth 1",
+      "Ezekiel 26"
+    ]
+  },
+  "BoM:Alma:50": {
+    "book": "Alma",
+    "chapter": 50,
+    "quote_fraction": 0.0791,
+    "covered": 137,
+    "total": 1731,
+    "sources": [
+      "Judges 18",
+      "Genesis 29",
+      "Genesis 12",
+      "Luke 16",
+      "Genesis 4"
+    ]
+  },
+  "BoM:Alma:51": {
+    "book": "Alma",
+    "chapter": 51,
+    "quote_fraction": 0.0878,
+    "covered": 147,
+    "total": 1674,
+    "sources": [
+      "1 Samuel 11",
+      "Luke 16",
+      "Genesis 12",
+      "Genesis 15",
+      "Mark 2"
+    ]
+  },
+  "BoM:Alma:52": {
+    "book": "Alma",
+    "chapter": 52,
+    "quote_fraction": 0.0809,
+    "covered": 142,
+    "total": 1755,
+    "sources": [
+      "Luke 16",
+      "1 Kings 16",
+      "1 Kings 15",
+      "Mark 2",
+      "Acts 19"
+    ]
+  },
+  "BoM:Alma:53": {
+    "book": "Alma",
+    "chapter": 53,
+    "quote_fraction": 0.0508,
+    "covered": 55,
+    "total": 1083,
+    "sources": [
+      "1 Chronicles 20",
+      "1 Samuel 11",
+      "Mark 2",
+      "Nehemiah 4",
+      "Amos 7"
+    ]
+  },
+  "BoM:Alma:54": {
+    "book": "Alma",
+    "chapter": 54,
+    "quote_fraction": 0.0213,
+    "covered": 21,
+    "total": 988,
+    "sources": [
+      "Ruth 1",
+      "Genesis 7"
+    ]
+  },
+  "BoM:Alma:55": {
+    "book": "Alma",
+    "chapter": 55,
+    "quote_fraction": 0.074,
+    "covered": 90,
+    "total": 1217,
+    "sources": [
+      "1 Samuel 11",
+      "Jeremiah 41",
+      "Ezekiel 10",
+      "1 Samuel 10",
+      "Mark 2"
+    ]
+  },
+  "BoM:Alma:56": {
+    "book": "Alma",
+    "chapter": 56,
+    "quote_fraction": 0.0423,
+    "covered": 92,
+    "total": 2175,
+    "sources": [
+      "Amos 7",
+      "Ruth 1",
+      "Jeremiah 41",
+      "Genesis 15",
+      "Genesis 12"
+    ]
+  },
+  "BoM:Alma:57": {
+    "book": "Alma",
+    "chapter": 57,
+    "quote_fraction": 0.062,
+    "covered": 94,
+    "total": 1515,
+    "sources": [
+      "Genesis 29",
+      "Exodus 16",
+      "1 Chronicles 20",
+      "Luke 19",
+      "Numbers 17"
+    ]
+  },
+  "BoM:Alma:58": {
+    "book": "Alma",
+    "chapter": 58,
+    "quote_fraction": 0.083,
+    "covered": 145,
+    "total": 1746,
+    "sources": [
+      "Luke 16",
+      "Genesis 12",
+      "Amos 7",
+      "Genesis 19",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Alma:59": {
+    "book": "Alma",
+    "chapter": 59,
+    "quote_fraction": 0.0675,
+    "covered": 33,
+    "total": 489,
+    "sources": [
+      "Ezekiel 1",
+      "Ruth 1",
+      "Mark 2",
+      "Luke 1"
+    ]
+  },
+  "BoM:Alma:60": {
+    "book": "Alma",
+    "chapter": 60,
+    "quote_fraction": 0.0175,
+    "covered": 31,
+    "total": 1772,
+    "sources": [
+      "Mark 2",
+      "Matthew 17",
+      "Deuteronomy 4"
+    ]
+  },
+  "BoM:Alma:61": {
+    "book": "Alma",
+    "chapter": 61,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 852,
+    "sources": []
+  },
+  "BoM:Alma:62": {
+    "book": "Alma",
+    "chapter": 62,
+    "quote_fraction": 0.0998,
+    "covered": 221,
+    "total": 2214,
+    "sources": [
+      "Genesis 12",
+      "Amos 7",
+      "Jeremiah 41",
+      "1 Samuel 11",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Alma:63": {
+    "book": "Alma",
+    "chapter": 63,
+    "quote_fraction": 0.1576,
+    "covered": 98,
+    "total": 622,
+    "sources": [
+      "Genesis 29",
+      "Genesis 8",
+      "Deuteronomy 10",
+      "Leviticus 4",
+      "Genesis 4"
+    ]
+  },
+  "BoM:Helaman:1": {
+    "book": "Helaman",
+    "chapter": 1,
+    "quote_fraction": 0.0404,
+    "covered": 57,
+    "total": 1411,
+    "sources": [
+      "1 Chronicles 26",
+      "Genesis 38",
+      "2 Kings 8",
+      "Genesis 8",
+      "Genesis 19"
+    ]
+  },
+  "BoM:Helaman:2": {
+    "book": "Helaman",
+    "chapter": 2,
+    "quote_fraction": 0.0541,
+    "covered": 32,
+    "total": 591,
+    "sources": [
+      "Genesis 8",
+      "Genesis 38",
+      "Luke 14",
+      "Mark 2"
+    ]
+  },
+  "BoM:Helaman:3": {
+    "book": "Helaman",
+    "chapter": 3,
+    "quote_fraction": 0.1306,
+    "covered": 199,
+    "total": 1524,
+    "sources": [
+      "Exodus 16",
+      "Genesis 8",
+      "Genesis 12",
+      "Luke 16",
+      "2 Kings 12"
+    ]
+  },
+  "BoM:Helaman:4": {
+    "book": "Helaman",
+    "chapter": 4,
+    "quote_fraction": 0.0699,
+    "covered": 75,
+    "total": 1073,
+    "sources": [
+      "Genesis 8",
+      "1 Samuel 11",
+      "1 Samuel 25"
+    ]
+  },
+  "BoM:Helaman:5": {
+    "book": "Helaman",
+    "chapter": 5,
+    "quote_fraction": 0.0975,
+    "covered": 203,
+    "total": 2081,
+    "sources": [
+      "1 Samuel 11",
+      "Matthew 3",
+      "Exodus 16",
+      "Luke 16",
+      "Genesis 29"
+    ]
+  },
+  "BoM:Helaman:6": {
+    "book": "Helaman",
+    "chapter": 6,
+    "quote_fraction": 0.0683,
+    "covered": 123,
+    "total": 1801,
+    "sources": [
+      "Genesis 29",
+      "Genesis 15",
+      "Luke 16",
+      "1 Samuel 11",
+      "Genesis 12"
+    ]
+  },
+  "BoM:Helaman:7": {
+    "book": "Helaman",
+    "chapter": 7,
+    "quote_fraction": 0.0667,
+    "covered": 76,
+    "total": 1140,
+    "sources": [
+      "Ruth 1",
+      "Jeremiah 37",
+      "Exodus 16",
+      "Mark 2",
+      "Genesis 49"
+    ]
+  },
+  "BoM:Helaman:8": {
+    "book": "Helaman",
+    "chapter": 8,
+    "quote_fraction": 0.0373,
+    "covered": 45,
+    "total": 1208,
+    "sources": [
+      "Acts 5",
+      "Luke 19",
+      "Jeremiah 41",
+      "Matthew 6"
+    ]
+  },
+  "BoM:Helaman:9": {
+    "book": "Helaman",
+    "chapter": 9,
+    "quote_fraction": 0.0692,
+    "covered": 102,
+    "total": 1474,
+    "sources": [
+      "1 Samuel 11",
+      "Exodus 16",
+      "Luke 16",
+      "Jeremiah 41",
+      "Luke 19"
+    ]
+  },
+  "BoM:Helaman:10": {
+    "book": "Helaman",
+    "chapter": 10,
+    "quote_fraction": 0.1616,
+    "covered": 116,
+    "total": 718,
+    "sources": [
+      "Matthew 18",
+      "Matthew 21",
+      "2 Kings 8",
+      "Matthew 16",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Helaman:11": {
+    "book": "Helaman",
+    "chapter": 11,
+    "quote_fraction": 0.0814,
+    "covered": 127,
+    "total": 1561,
+    "sources": [
+      "Genesis 29",
+      "Luke 16",
+      "1 Kings 17",
+      "Genesis 12",
+      "Genesis 8"
+    ]
+  },
+  "BoM:Helaman:12": {
+    "book": "Helaman",
+    "chapter": 12,
+    "quote_fraction": 0.0538,
+    "covered": 46,
+    "total": 855,
+    "sources": [
+      "2 Chronicles 6",
+      "Exodus 31",
+      "Deuteronomy 15",
+      "2 Kings 18",
+      "John 5"
+    ]
+  },
+  "BoM:Helaman:13": {
+    "book": "Helaman",
+    "chapter": 13,
+    "quote_fraction": 0.0734,
+    "covered": 136,
+    "total": 1853,
+    "sources": [
+      "Acts 7",
+      "Matthew 23",
+      "Isaiah 22",
+      "Ruth 1",
+      "Genesis 29"
+    ]
+  },
+  "BoM:Helaman:14": {
+    "book": "Helaman",
+    "chapter": 14,
+    "quote_fraction": 0.0774,
+    "covered": 96,
+    "total": 1240,
+    "sources": [
+      "Genesis 4",
+      "Matthew 3",
+      "Ezekiel 47",
+      "Deuteronomy 18",
+      "Joel 2"
+    ]
+  },
+  "BoM:Helaman:15": {
+    "book": "Helaman",
+    "chapter": 15,
+    "quote_fraction": 0.0437,
+    "covered": 36,
+    "total": 824,
+    "sources": [
+      "Deuteronomy 30",
+      "Deuteronomy 28",
+      "Exodus 33",
+      "Matthew 10"
+    ]
+  },
+  "BoM:Helaman:16": {
+    "book": "Helaman",
+    "chapter": 16,
+    "quote_fraction": 0.0107,
+    "covered": 11,
+    "total": 1025,
+    "sources": [
+      "1 Samuel 25"
+    ]
+  },
+  "BoM:3 Nephi:1": {
+    "book": "3 Nephi",
+    "chapter": 1,
+    "quote_fraction": 0.1202,
+    "covered": 161,
+    "total": 1339,
+    "sources": [
+      "Genesis 29",
+      "Mark 2",
+      "Luke 16",
+      "Acts 7",
+      "1 Samuel 11"
+    ]
+  },
+  "BoM:3 Nephi:2": {
+    "book": "3 Nephi",
+    "chapter": 2,
+    "quote_fraction": 0.0598,
+    "covered": 46,
+    "total": 769,
+    "sources": [
+      "Luke 16",
+      "Genesis 8",
+      "Genesis 12"
+    ]
+  },
+  "BoM:3 Nephi:3": {
+    "book": "3 Nephi",
+    "chapter": 3,
+    "quote_fraction": 0.0429,
+    "covered": 58,
+    "total": 1351,
+    "sources": [
+      "1 Samuel 17",
+      "Genesis 29",
+      "Genesis 46",
+      "2 Samuel 4",
+      "Genesis 8"
+    ]
+  },
+  "BoM:3 Nephi:4": {
+    "book": "3 Nephi",
+    "chapter": 4,
+    "quote_fraction": 0.0925,
+    "covered": 140,
+    "total": 1514,
+    "sources": [
+      "Genesis 29",
+      "1 Samuel 11",
+      "Luke 16",
+      "Matthew 22",
+      "Exodus 3"
+    ]
+  },
+  "BoM:3 Nephi:5": {
+    "book": "3 Nephi",
+    "chapter": 5,
+    "quote_fraction": 0.0505,
+    "covered": 47,
+    "total": 931,
+    "sources": [
+      "Amos 7",
+      "Jeremiah 41",
+      "Mark 1",
+      "Joshua 24",
+      "Ezekiel 34"
+    ]
+  },
+  "BoM:3 Nephi:6": {
+    "book": "3 Nephi",
+    "chapter": 6,
+    "quote_fraction": 0.0409,
+    "covered": 49,
+    "total": 1197,
+    "sources": [
+      "Genesis 12",
+      "Joshua 9",
+      "1 Samuel 11",
+      "Exodus 16",
+      "1 Samuel 25"
+    ]
+  },
+  "BoM:3 Nephi:7": {
+    "book": "3 Nephi",
+    "chapter": 7,
+    "quote_fraction": 0.0594,
+    "covered": 67,
+    "total": 1127,
+    "sources": [
+      "1 Samuel 11",
+      "Mark 3",
+      "Genesis 8",
+      "1 Samuel 10",
+      "Luke 16"
+    ]
+  },
+  "BoM:3 Nephi:8": {
+    "book": "3 Nephi",
+    "chapter": 8,
+    "quote_fraction": 0.1083,
+    "covered": 94,
+    "total": 868,
+    "sources": [
+      "Genesis 12",
+      "Exodus 20",
+      "Genesis 8",
+      "Genesis 11",
+      "Genesis 15"
+    ]
+  },
+  "BoM:3 Nephi:9": {
+    "book": "3 Nephi",
+    "chapter": 9,
+    "quote_fraction": 0.0622,
+    "covered": 60,
+    "total": 965,
+    "sources": [
+      "John 14",
+      "Revelation 1",
+      "Exodus 16",
+      "Matthew 17",
+      "Revelation 21"
+    ]
+  },
+  "BoM:3 Nephi:10": {
+    "book": "3 Nephi",
+    "chapter": 10,
+    "quote_fraction": 0.1053,
+    "covered": 85,
+    "total": 807,
+    "sources": [
+      "Matthew 23",
+      "Genesis 29",
+      "Exodus 12",
+      "Exodus 16",
+      "1 Chronicles 20"
+    ]
+  },
+  "BoM:3 Nephi:11": {
+    "book": "3 Nephi",
+    "chapter": 11,
+    "quote_fraction": 0.176,
+    "covered": 252,
+    "total": 1432,
+    "sources": [
+      "Matthew 28",
+      "John 14",
+      "Matthew 3",
+      "Joshua 1",
+      "Matthew 16"
+    ]
+  },
+  "BoM:3 Nephi:12": {
+    "book": "3 Nephi",
+    "chapter": 12,
+    "quote_fraction": 0.5645,
+    "covered": 731,
+    "total": 1295,
+    "sources": [
+      "Matthew 5",
+      "Matthew 13",
+      "John 13",
+      "John 10",
+      "Genesis 12"
+    ]
+  },
+  "BoM:3 Nephi:13": {
+    "book": "3 Nephi",
+    "chapter": 13,
+    "quote_fraction": 0.9005,
+    "covered": 751,
+    "total": 834,
+    "sources": [
+      "Matthew 6",
+      "Matthew 13",
+      "Luke 16",
+      "Jeremiah 41",
+      "John 18"
+    ]
+  },
+  "BoM:3 Nephi:14": {
+    "book": "3 Nephi",
+    "chapter": 14,
+    "quote_fraction": 0.9663,
+    "covered": 603,
+    "total": 624,
+    "sources": [
+      "Matthew 7",
+      "Matthew 3",
+      "Matthew 13",
+      "Jeremiah 41",
+      "John 18"
+    ]
+  },
+  "BoM:3 Nephi:15": {
+    "book": "3 Nephi",
+    "chapter": 15,
+    "quote_fraction": 0.2123,
+    "covered": 155,
+    "total": 730,
+    "sources": [
+      "John 10",
+      "Matthew 13",
+      "Jeremiah 41",
+      "Matthew 7",
+      "1 Samuel 11"
+    ]
+  },
+  "BoM:3 Nephi:16": {
+    "book": "3 Nephi",
+    "chapter": 16,
+    "quote_fraction": 0.146,
+    "covered": 133,
+    "total": 911,
+    "sources": [
+      "Isaiah 52",
+      "Matthew 5",
+      "John 13",
+      "Psalms 67",
+      "John 10"
+    ]
+  },
+  "BoM:3 Nephi:17": {
+    "book": "3 Nephi",
+    "chapter": 17,
+    "quote_fraction": 0.1547,
+    "covered": 136,
+    "total": 879,
+    "sources": [
+      "Matthew 13",
+      "Genesis 12",
+      "Amos 7",
+      "Ezekiel 10",
+      "Acts 28"
+    ]
+  },
+  "BoM:3 Nephi:18": {
+    "book": "3 Nephi",
+    "chapter": 18,
+    "quote_fraction": 0.1087,
+    "covered": 146,
+    "total": 1343,
+    "sources": [
+      "Matthew 13",
+      "Genesis 12",
+      "Luke 22",
+      "John 16",
+      "John 6"
+    ]
+  },
+  "BoM:3 Nephi:19": {
+    "book": "3 Nephi",
+    "chapter": 19,
+    "quote_fraction": 0.1873,
+    "covered": 230,
+    "total": 1228,
+    "sources": [
+      "Matthew 13",
+      "Exodus 16",
+      "Mark 2",
+      "Genesis 12",
+      "John 11"
+    ]
+  },
+  "BoM:3 Nephi:20": {
+    "book": "3 Nephi",
+    "chapter": 20,
+    "quote_fraction": 0.4641,
+    "covered": 712,
+    "total": 1534,
+    "sources": [
+      "Isaiah 52",
+      "Acts 3",
+      "Micah 4",
+      "Micah 5",
+      "Genesis 4"
+    ]
+  },
+  "BoM:3 Nephi:21": {
+    "book": "3 Nephi",
+    "chapter": 21,
+    "quote_fraction": 0.2248,
+    "covered": 259,
+    "total": 1152,
+    "sources": [
+      "Micah 5",
+      "Isaiah 52",
+      "Deuteronomy 18",
+      "Jeremiah 30",
+      "Isaiah 7"
+    ]
+  },
+  "BoM:3 Nephi:22": {
+    "book": "3 Nephi",
+    "chapter": 22,
+    "quote_fraction": 0.9842,
+    "covered": 498,
+    "total": 506,
+    "sources": [
+      "Isaiah 54",
+      "Isaiah 47",
+      "Isaiah 51",
+      "Isaiah 41"
+    ]
+  },
+  "BoM:3 Nephi:23": {
+    "book": "3 Nephi",
+    "chapter": 23,
+    "quote_fraction": 0.2,
+    "covered": 83,
+    "total": 415,
+    "sources": [
+      "Matthew 13",
+      "Jeremiah 41",
+      "Matthew 18",
+      "John 13",
+      "Mark 2"
+    ]
+  },
+  "BoM:3 Nephi:24": {
+    "book": "3 Nephi",
+    "chapter": 24,
+    "quote_fraction": 0.9352,
+    "covered": 577,
+    "total": 617,
+    "sources": [
+      "Malachi 3",
+      "Mark 2",
+      "Joshua 9",
+      "1 Chronicles 20",
+      "Zechariah 1"
+    ]
+  },
+  "BoM:3 Nephi:25": {
+    "book": "3 Nephi",
+    "chapter": 25,
+    "quote_fraction": 1.0,
+    "covered": 183,
+    "total": 183,
+    "sources": [
+      "Malachi 4"
+    ]
+  },
+  "BoM:3 Nephi:26": {
+    "book": "3 Nephi",
+    "chapter": 26,
+    "quote_fraction": 0.0898,
+    "covered": 71,
+    "total": 791,
+    "sources": [
+      "Genesis 19",
+      "Matthew 13",
+      "Jeremiah 41",
+      "Joshua 9",
+      "Mark 2"
+    ]
+  },
+  "BoM:3 Nephi:27": {
+    "book": "3 Nephi",
+    "chapter": 27,
+    "quote_fraction": 0.1571,
+    "covered": 202,
+    "total": 1286,
+    "sources": [
+      "Matthew 7",
+      "John 5",
+      "Matthew 26",
+      "Matthew 3",
+      "John 16"
+    ]
+  },
+  "BoM:3 Nephi:28": {
+    "book": "3 Nephi",
+    "chapter": 28,
+    "quote_fraction": 0.0585,
+    "covered": 85,
+    "total": 1452,
+    "sources": [
+      "Matthew 7",
+      "Genesis 12",
+      "Matthew 13",
+      "2 Corinthians 12",
+      "Matthew 26"
+    ]
+  },
+  "BoM:3 Nephi:29": {
+    "book": "3 Nephi",
+    "chapter": 29,
+    "quote_fraction": 0.0558,
+    "covered": 22,
+    "total": 394,
+    "sources": [
+      "Ezekiel 4",
+      "Isaiah 46"
+    ]
+  },
+  "BoM:3 Nephi:30": {
+    "book": "3 Nephi",
+    "chapter": 30,
+    "quote_fraction": 0.1692,
+    "covered": 22,
+    "total": 130,
+    "sources": [
+      "Matthew 16",
+      "Acts 9"
+    ]
+  },
+  "BoM:4 Nephi:1": {
+    "book": "4 Nephi",
+    "chapter": 1,
+    "quote_fraction": 0.1017,
+    "covered": 198,
+    "total": 1946,
+    "sources": [
+      "Genesis 12",
+      "Luke 16",
+      "Mark 1",
+      "Matthew 15",
+      "Numbers 16"
+    ]
+  },
+  "BoM:Mormon:1": {
+    "book": "Mormon",
+    "chapter": 1,
+    "quote_fraction": 0.0936,
+    "covered": 66,
+    "total": 705,
+    "sources": [
+      "Luke 16",
+      "Jeremiah 13",
+      "1 Samuel 11",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Mormon:2": {
+    "book": "Mormon",
+    "chapter": 2,
+    "quote_fraction": 0.0841,
+    "covered": 106,
+    "total": 1261,
+    "sources": [
+      "Genesis 29",
+      "Genesis 12",
+      "Amos 7",
+      "Deuteronomy 1",
+      "Luke 16"
+    ]
+  },
+  "BoM:Mormon:3": {
+    "book": "Mormon",
+    "chapter": 3,
+    "quote_fraction": 0.1335,
+    "covered": 125,
+    "total": 936,
+    "sources": [
+      "Genesis 29",
+      "Luke 16",
+      "Luke 19",
+      "Joshua 1",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Mormon:4": {
+    "book": "Mormon",
+    "chapter": 4,
+    "quote_fraction": 0.146,
+    "covered": 120,
+    "total": 822,
+    "sources": [
+      "Luke 16",
+      "Genesis 29",
+      "2 Chronicles 6",
+      "Genesis 8",
+      "1 Samuel 11"
+    ]
+  },
+  "BoM:Mormon:5": {
+    "book": "Mormon",
+    "chapter": 5,
+    "quote_fraction": 0.0667,
+    "covered": 71,
+    "total": 1064,
+    "sources": [
+      "Genesis 29",
+      "John 20",
+      "Matthew 16",
+      "Luke 16",
+      "1 Samuel 11"
+    ]
+  },
+  "BoM:Mormon:6": {
+    "book": "Mormon",
+    "chapter": 6,
+    "quote_fraction": 0.0975,
+    "covered": 89,
+    "total": 913,
+    "sources": [
+      "Luke 1",
+      "1 Samuel 11",
+      "Luke 16",
+      "Genesis 12",
+      "Hebrews 10"
+    ]
+  },
+  "BoM:Mormon:7": {
+    "book": "Mormon",
+    "chapter": 7,
+    "quote_fraction": 0.0243,
+    "covered": 11,
+    "total": 453,
+    "sources": [
+      "Acts 9"
+    ]
+  },
+  "BoM:Mormon:8": {
+    "book": "Mormon",
+    "chapter": 8,
+    "quote_fraction": 0.0327,
+    "covered": 56,
+    "total": 1715,
+    "sources": [
+      "Acts 8",
+      "1 Chronicles 20",
+      "Matthew 5",
+      "Matthew 3",
+      "Isaiah 19"
+    ]
+  },
+  "BoM:Mormon:9": {
+    "book": "Mormon",
+    "chapter": 9,
+    "quote_fraction": 0.1277,
+    "covered": 199,
+    "total": 1558,
+    "sources": [
+      "Mark 16",
+      "Exodus 3",
+      "Matthew 22",
+      "Philippians 2",
+      "Isaiah 34"
+    ]
+  },
+  "BoM:Ether:1": {
+    "book": "Ether",
+    "chapter": 1,
+    "quote_fraction": 0.0866,
+    "covered": 78,
+    "total": 901,
+    "sources": [
+      "Luke 16",
+      "Ezekiel 34",
+      "Genesis 41",
+      "Numbers 3",
+      "1 Chronicles 12"
+    ]
+  },
+  "BoM:Ether:2": {
+    "book": "Ether",
+    "chapter": 2,
+    "quote_fraction": 0.1381,
+    "covered": 189,
+    "total": 1369,
+    "sources": [
+      "Luke 16",
+      "Genesis 4",
+      "Joshua 1",
+      "Genesis 8",
+      "Genesis 12"
+    ]
+  },
+  "BoM:Ether:3": {
+    "book": "Ether",
+    "chapter": 3,
+    "quote_fraction": 0.0663,
+    "covered": 83,
+    "total": 1252,
+    "sources": [
+      "Luke 16",
+      "Joshua 1",
+      "Genesis 12",
+      "Genesis 15",
+      "Exodus 33"
+    ]
+  },
+  "BoM:Ether:4": {
+    "book": "Ether",
+    "chapter": 4,
+    "quote_fraction": 0.0978,
+    "covered": 87,
+    "total": 890,
+    "sources": [
+      "Mark 16",
+      "Matthew 25",
+      "Genesis 4",
+      "Exodus 17",
+      "Genesis 2"
+    ]
+  },
+  "BoM:Ether:5": {
+    "book": "Ether",
+    "chapter": 5,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 225,
+    "sources": []
+  },
+  "BoM:Ether:6": {
+    "book": "Ether",
+    "chapter": 6,
+    "quote_fraction": 0.1423,
+    "covered": 149,
+    "total": 1047,
+    "sources": [
+      "1 Samuel 11",
+      "Amos 7",
+      "Luke 16",
+      "Genesis 12",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Ether:7": {
+    "book": "Ether",
+    "chapter": 7,
+    "quote_fraction": 0.0888,
+    "covered": 81,
+    "total": 912,
+    "sources": [
+      "Mark 2",
+      "Genesis 12",
+      "Genesis 5",
+      "Genesis 38",
+      "2 Kings 8"
+    ]
+  },
+  "BoM:Ether:8": {
+    "book": "Ether",
+    "chapter": 8,
+    "quote_fraction": 0.1187,
+    "covered": 146,
+    "total": 1230,
+    "sources": [
+      "Mark 2",
+      "1 Samuel 11",
+      "Amos 7",
+      "Nehemiah 6",
+      "Genesis 12"
+    ]
+  },
+  "BoM:Ether:9": {
+    "book": "Ether",
+    "chapter": 9,
+    "quote_fraction": 0.1628,
+    "covered": 231,
+    "total": 1419,
+    "sources": [
+      "Joshua 15",
+      "1 Kings 15",
+      "Mark 2",
+      "Matthew 13",
+      "Exodus 33"
+    ]
+  },
+  "BoM:Ether:10": {
+    "book": "Ether",
+    "chapter": 10,
+    "quote_fraction": 0.124,
+    "covered": 175,
+    "total": 1411,
+    "sources": [
+      "1 Kings 15",
+      "2 Kings 12",
+      "Genesis 38",
+      "Genesis 5",
+      "Deuteronomy 12"
+    ]
+  },
+  "BoM:Ether:11": {
+    "book": "Ether",
+    "chapter": 11,
+    "quote_fraction": 0.21,
+    "covered": 160,
+    "total": 762,
+    "sources": [
+      "Luke 16",
+      "Exodus 33",
+      "Nehemiah 6",
+      "Genesis 29",
+      "Exodus 16"
+    ]
+  },
+  "BoM:Ether:12": {
+    "book": "Ether",
+    "chapter": 12,
+    "quote_fraction": 0.028,
+    "covered": 43,
+    "total": 1533,
+    "sources": [
+      "Luke 16",
+      "Exodus 17",
+      "Exodus 16",
+      "Joshua 1"
+    ]
+  },
+  "BoM:Ether:13": {
+    "book": "Ether",
+    "chapter": 13,
+    "quote_fraction": 0.0902,
+    "covered": 110,
+    "total": 1219,
+    "sources": [
+      "Genesis 29",
+      "Revelation 21",
+      "Acts 3",
+      "Genesis 11",
+      "Luke 16"
+    ]
+  },
+  "BoM:Ether:14": {
+    "book": "Ether",
+    "chapter": 14,
+    "quote_fraction": 0.0716,
+    "covered": 81,
+    "total": 1131,
+    "sources": [
+      "Luke 16",
+      "Genesis 29",
+      "Jeremiah 46",
+      "1 Samuel 11",
+      "Mark 2"
+    ]
+  },
+  "BoM:Ether:15": {
+    "book": "Ether",
+    "chapter": 15,
+    "quote_fraction": 0.1639,
+    "covered": 215,
+    "total": 1312,
+    "sources": [
+      "Genesis 12",
+      "1 Samuel 11",
+      "Luke 16",
+      "Amos 7",
+      "Mark 2"
+    ]
+  },
+  "BoM:Moroni:1": {
+    "book": "Moroni",
+    "chapter": 1,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 147,
+    "sources": []
+  },
+  "BoM:Moroni:2": {
+    "book": "Moroni",
+    "chapter": 2,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 119,
+    "sources": []
+  },
+  "BoM:Moroni:3": {
+    "book": "Moroni",
+    "chapter": 3,
+    "quote_fraction": 0.0917,
+    "covered": 11,
+    "total": 120,
+    "sources": [
+      "2 Chronicles 29"
+    ]
+  },
+  "BoM:Moroni:4": {
+    "book": "Moroni",
+    "chapter": 4,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 153,
+    "sources": []
+  },
+  "BoM:Moroni:5": {
+    "book": "Moroni",
+    "chapter": 5,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 90,
+    "sources": []
+  },
+  "BoM:Moroni:6": {
+    "book": "Moroni",
+    "chapter": 6,
+    "quote_fraction": 0.0,
+    "covered": 0,
+    "total": 335,
+    "sources": []
+  },
+  "BoM:Moroni:7": {
+    "book": "Moroni",
+    "chapter": 7,
+    "quote_fraction": 0.0544,
+    "covered": 105,
+    "total": 1929,
+    "sources": [
+      "1 Corinthians 13",
+      "1 John 3",
+      "John 16",
+      "Hebrews 1",
+      "Hebrews 10"
+    ]
+  },
+  "BoM:Moroni:8": {
+    "book": "Moroni",
+    "chapter": 8,
+    "quote_fraction": 0.0461,
+    "covered": 49,
+    "total": 1062,
+    "sources": [
+      "1 Kings 6",
+      "Matthew 9",
+      "Acts 8",
+      "1 Chronicles 22",
+      "Mark 2"
+    ]
+  },
+  "BoM:Moroni:9": {
+    "book": "Moroni",
+    "chapter": 9,
+    "quote_fraction": 0.0109,
+    "covered": 11,
+    "total": 1011,
+    "sources": [
+      "Exodus 31"
+    ]
+  },
+  "BoM:Moroni:10": {
+    "book": "Moroni",
+    "chapter": 10,
+    "quote_fraction": 0.0418,
+    "covered": 48,
+    "total": 1148,
+    "sources": [
+      "1 Corinthians 12",
+      "Romans 15"
+    ]
+  }
+}

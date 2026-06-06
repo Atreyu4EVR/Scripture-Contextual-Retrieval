@@ -1,0 +1,1094 @@
+{
+  "run_id": "run_20260606_063143",
+  "scope": "phase_one_internal_voice",
+  "corpus": {
+    "volume": "Book of Mormon",
+    "n_books": 15,
+    "n_chapters": 239,
+    "n_verses": 6604,
+    "narrator_word_totals": {
+      "Nephi": 54504,
+      "Jacob": 9135,
+      "Enos": 1156,
+      "Jarom": 731,
+      "Omni et al.": 1398,
+      "Mormon": 174014,
+      "Moroni": 26000
+    },
+    "narrator_reliability": {
+      "Nephi": {
+        "word_count": 54504,
+        "reliability": "reliable"
+      },
+      "Jacob": {
+        "word_count": 9135,
+        "reliability": "reliable"
+      },
+      "Enos": {
+        "word_count": 1156,
+        "reliability": "report_only"
+      },
+      "Jarom": {
+        "word_count": 731,
+        "reliability": "report_only"
+      },
+      "Omni et al.": {
+        "word_count": 1398,
+        "reliability": "composite_unreliable"
+      },
+      "Mormon": {
+        "word_count": 174014,
+        "reliability": "reliable"
+      },
+      "Moroni": {
+        "word_count": 26000,
+        "reliability": "reliable"
+      }
+    },
+    "speaker_word_totals": {
+      "Nephi": 54504,
+      "Jacob": 9135,
+      "Enos": 1156,
+      "Jarom": 731,
+      "Omni et al.": 1398,
+      "Mormon": 135713,
+      "Benjamin": 5564,
+      "Abinadi": 5010,
+      "Alma the Younger": 11978,
+      "Amulek": 1574,
+      "Jesus Christ": 16248,
+      "Moroni": 23927
+    },
+    "speaker_reliability": {
+      "Nephi": {
+        "word_count": 54504,
+        "reliability": "reliable"
+      },
+      "Jacob": {
+        "word_count": 9135,
+        "reliability": "reliable"
+      },
+      "Enos": {
+        "word_count": 1156,
+        "reliability": "report_only"
+      },
+      "Jarom": {
+        "word_count": 731,
+        "reliability": "report_only"
+      },
+      "Omni et al.": {
+        "word_count": 1398,
+        "reliability": "composite_unreliable"
+      },
+      "Mormon": {
+        "word_count": 135713,
+        "reliability": "reliable"
+      },
+      "Benjamin": {
+        "word_count": 5564,
+        "reliability": "reliable"
+      },
+      "Abinadi": {
+        "word_count": 5010,
+        "reliability": "reliable"
+      },
+      "Alma the Younger": {
+        "word_count": 11978,
+        "reliability": "reliable"
+      },
+      "Amulek": {
+        "word_count": 1574,
+        "reliability": "borderline"
+      },
+      "Jesus Christ": {
+        "word_count": 16248,
+        "reliability": "reliable"
+      },
+      "Moroni": {
+        "word_count": 23927,
+        "reliability": "reliable"
+      }
+    },
+    "segment_counts": {
+      "chapter": 239,
+      "rolling": 270,
+      "narrator_and_speaker": 19,
+      "genre": 5
+    },
+    "chapter_total_words": 266938
+  },
+  "calibration": {
+    "run_id": "run_20260606_063143",
+    "passed": true,
+    "neg_control_ok": true,
+    "summary": "PositiveA(OT/NT) macroF1=0.990 [PASS]; PositiveB(authors) macroF1=0.963 [PASS]; NegativeIsaiah acc=0.470 [OK]",
+    "positive_a_ot_vs_nt": {
+      "accuracy": 0.99,
+      "macro_f1": 0.9899998888876543,
+      "baseline_accuracy": 0.5,
+      "labels": [
+        "New Testament",
+        "Old Testament"
+      ],
+      "n": 300
+    },
+    "positive_b_authors": {
+      "accuracy": 0.9727891156462585,
+      "macro_f1": 0.9631178000743218,
+      "baseline_accuracy": 0.46258503401360546,
+      "labels": [
+        "Johannine",
+        "Pauline",
+        "Synoptic"
+      ],
+      "n": 147
+    },
+    "negative_isaiah_halves": {
+      "accuracy": 0.4696969696969697,
+      "macro_f1": 0.4695752009184845,
+      "baseline_accuracy": 0.5,
+      "labels": [
+        "half_a",
+        "half_b"
+      ],
+      "n": 66
+    },
+    "negative_bom_permutation": {
+      "permuted_mean_acc": 0.5235169491525424,
+      "permuted_std_acc": 0.03009593370390611,
+      "majority_baseline": 0.6228813559322034,
+      "trials": 20
+    },
+    "gates": {
+      "ot_vs_nt_min_macro_f1": 0.85,
+      "authors_min_macro_f1": 0.65
+    }
+  },
+  "unsupervised": {
+    "clusters": [
+      {
+        "method": "kmeans",
+        "k": 3,
+        "silhouette": 0.12520341956820522,
+        "ari_vs": {
+          "claimed_narrator": 0.08489595447124866,
+          "genre": 0.3175001867074757,
+          "editorial_layer": 0.06872450067647921,
+          "quote_status": 0.21613779656101928
+        },
+        "ami_vs": {
+          "claimed_narrator": 0.06032700661771441,
+          "genre": 0.26390214046810795,
+          "editorial_layer": 0.07534946125790676,
+          "quote_status": 0.3435967315692428
+        }
+      },
+      {
+        "method": "kmeans",
+        "k": 4,
+        "silhouette": 0.07911429807212261,
+        "ari_vs": {
+          "claimed_narrator": 0.11811211520924615,
+          "genre": 0.19849386457253546,
+          "editorial_layer": 0.10247751602780097,
+          "quote_status": 0.1315901825153472
+        },
+        "ami_vs": {
+          "claimed_narrator": 0.1237680337337122,
+          "genre": 0.23223609978116386,
+          "editorial_layer": 0.1160326188587779,
+          "quote_status": 0.272995591820193
+        }
+      },
+      {
+        "method": "kmeans",
+        "k": 5,
+        "silhouette": 0.0902572564417512,
+        "ari_vs": {
+          "claimed_narrator": 0.10646205074135939,
+          "genre": 0.12828353197920175,
+          "editorial_layer": 0.0904162496315832,
+          "quote_status": 0.10773917527451819
+        },
+        "ami_vs": {
+          "claimed_narrator": 0.13401201526331802,
+          "genre": 0.21831947151133257,
+          "editorial_layer": 0.11131352717861133,
+          "quote_status": 0.2679985066595406
+        }
+      },
+      {
+        "method": "kmeans",
+        "k": 6,
+        "silhouette": 0.09944613342751575,
+        "ari_vs": {
+          "claimed_narrator": 0.13854205349111967,
+          "genre": 0.21140885977499568,
+          "editorial_layer": 0.12190113924152875,
+          "quote_status": 0.13780349954425647
+        },
+        "ami_vs": {
+          "claimed_narrator": 0.14752244452028432,
+          "genre": 0.25354039925554633,
+          "editorial_layer": 0.13876035084202765,
+          "quote_status": 0.2934096693489883
+        }
+      },
+      {
+        "method": "kmeans",
+        "k": 7,
+        "silhouette": 0.07176209830509125,
+        "ari_vs": {
+          "claimed_narrator": 0.05559247265246509,
+          "genre": 0.1441511896503757,
+          "editorial_layer": 0.060702541065654876,
+          "quote_status": 0.09450906579907553
+        },
+        "ami_vs": {
+          "claimed_narrator": 0.09670420626898045,
+          "genre": 0.25078930975656993,
+          "editorial_layer": 0.1145796403730927,
+          "quote_status": 0.2527549048773168
+        }
+      },
+      {
+        "method": "kmeans",
+        "k": 8,
+        "silhouette": 0.08711058740133681,
+        "ari_vs": {
+          "claimed_narrator": 0.13293516808970865,
+          "genre": 0.14611553757946172,
+          "editorial_layer": 0.12910463689040047,
+          "quote_status": 0.07643842336269538
+        },
+        "ami_vs": {
+          "claimed_narrator": 0.17747595031267274,
+          "genre": 0.22419840603700783,
+          "editorial_layer": 0.16397573484523595,
+          "quote_status": 0.25529533665475906
+        }
+      },
+      {
+        "method": "agglomerative",
+        "k": 3,
+        "silhouette": 0.11732651148693134,
+        "ari_vs": {
+          "claimed_narrator": 0.11611306478927755,
+          "genre": 0.4202192940998592,
+          "editorial_layer": 0.08756866501433605,
+          "quote_status": 0.2193582936919048
+        },
+        "ami_vs": {
+          "claimed_narrator": 0.07073335306241095,
+          "genre": 0.30577799316708343,
+          "editorial_layer": 0.08131179738779258,
+          "quote_status": 0.3272259230252963
+        }
+      }
+    ]
+  },
+  "delta": {
+    "full": {
+      "names": [
+        "Jacob",
+        "Mormon",
+        "Moroni",
+        "Nephi"
+      ],
+      "matrix": [
+        [
+          0.0,
+          0.40506820891291945,
+          0.4108049581890059,
+          0.36727942710792705
+        ],
+        [
+          0.40506820891291945,
+          0.0,
+          0.31835244727589174,
+          0.3468396325687936
+        ],
+        [
+          0.4108049581890059,
+          0.31835244727589174,
+          0.0,
+          0.3142662233905962
+        ],
+        [
+          0.36727942710792705,
+          0.3468396325687936,
+          0.3142662233905962,
+          0.0
+        ]
+      ]
+    },
+    "quote_removed": {
+      "names": [
+        "Jacob",
+        "Mormon",
+        "Moroni",
+        "Nephi"
+      ],
+      "matrix": [
+        [
+          0.0,
+          0.34622001869096325,
+          0.3481504264345117,
+          0.30728508468087606
+        ],
+        [
+          0.34622001869096325,
+          0.0,
+          0.28514763488461037,
+          0.3315534660706714
+        ],
+        [
+          0.3481504264345117,
+          0.28514763488461037,
+          0.0,
+          0.27190497999918617
+        ],
+        [
+          0.30728508468087606,
+          0.3315534660706714,
+          0.27190497999918617,
+          0.0
+        ]
+      ]
+    }
+  },
+  "attribution": {
+    "run_id": "run_20260606_063143",
+    "uncalibrated": false,
+    "calibration_note": "PositiveA(OT/NT) macroF1=0.990 [PASS]; PositiveB(authors) macroF1=0.963 [PASS]; NegativeIsaiah acc=0.470 [OK]",
+    "wordcount_only_accuracy": 0.6228813559322034,
+    "results": [
+      {
+        "condition": "include_quotes|raw|full",
+        "classifier": "logistic",
+        "n_samples": 236,
+        "n_classes": 4,
+        "accuracy": 0.8983050847457628,
+        "macro_f1": 0.639914638076821,
+        "baseline_accuracy": 0.11440677966101695,
+        "per_class_f1": {
+          "Jacob": 0.0,
+          "Mormon": 0.9530201342281879,
+          "Moroni": 0.7083333333333334,
+          "Nephi": 0.8983050847457628
+        },
+        "confusion": [
+          [
+            0,
+            2,
+            1,
+            4
+          ],
+          [
+            0,
+            142,
+            2,
+            3
+          ],
+          [
+            1,
+            6,
+            17,
+            3
+          ],
+          [
+            0,
+            1,
+            1,
+            53
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "include_quotes|raw|full",
+        "classifier": "svc_linear",
+        "n_samples": 236,
+        "n_classes": 4,
+        "accuracy": 0.8771186440677966,
+        "macro_f1": 0.6678771821294653,
+        "baseline_accuracy": 0.11440677966101695,
+        "per_class_f1": {
+          "Jacob": 0.16666666666666666,
+          "Mormon": 0.9403508771929825,
+          "Moroni": 0.6792452830188679,
+          "Nephi": 0.8852459016393442
+        },
+        "confusion": [
+          [
+            1,
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            134,
+            5,
+            7
+          ],
+          [
+            3,
+            3,
+            18,
+            3
+          ],
+          [
+            0,
+            0,
+            1,
+            54
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "include_quotes|narrative_only|full",
+        "classifier": "logistic",
+        "n_samples": 144,
+        "n_classes": 3,
+        "accuracy": 0.9583333333333334,
+        "macro_f1": 0.908080808080808,
+        "baseline_accuracy": 0.75,
+        "per_class_f1": {
+          "Mormon": 0.9818181818181818,
+          "Moroni": 0.8333333333333334,
+          "Nephi": 0.9090909090909091
+        },
+        "confusion": [
+          [
+            108,
+            0,
+            0
+          ],
+          [
+            2,
+            10,
+            2
+          ],
+          [
+            2,
+            0,
+            20
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "include_quotes|narrative_only|full",
+        "classifier": "svc_linear",
+        "n_samples": 144,
+        "n_classes": 3,
+        "accuracy": 0.8680555555555556,
+        "macro_f1": 0.7918477368098801,
+        "baseline_accuracy": 0.75,
+        "per_class_f1": {
+          "Mormon": 0.9207920792079208,
+          "Moroni": 0.6470588235294118,
+          "Nephi": 0.8076923076923077
+        },
+        "confusion": [
+          [
+            93,
+            8,
+            7
+          ],
+          [
+            1,
+            11,
+            2
+          ],
+          [
+            0,
+            1,
+            21
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|raw|full",
+        "classifier": "logistic",
+        "n_samples": 213,
+        "n_classes": 4,
+        "accuracy": 0.8967136150234741,
+        "macro_f1": 0.6343769886725213,
+        "baseline_accuracy": 0.1267605633802817,
+        "per_class_f1": {
+          "Jacob": 0.0,
+          "Mormon": 0.9621993127147767,
+          "Moroni": 0.7111111111111111,
+          "Nephi": 0.8641975308641975
+        },
+        "confusion": [
+          [
+            0,
+            2,
+            0,
+            5
+          ],
+          [
+            0,
+            140,
+            0,
+            1
+          ],
+          [
+            2,
+            7,
+            16,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            35
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|raw|full",
+        "classifier": "svc_linear",
+        "n_samples": 213,
+        "n_classes": 4,
+        "accuracy": 0.8591549295774648,
+        "macro_f1": 0.6179806215290087,
+        "baseline_accuracy": 0.1267605633802817,
+        "per_class_f1": {
+          "Jacob": 0.0,
+          "Mormon": 0.9377289377289377,
+          "Moroni": 0.76,
+          "Nephi": 0.7741935483870968
+        },
+        "confusion": [
+          [
+            0,
+            1,
+            1,
+            5
+          ],
+          [
+            1,
+            128,
+            2,
+            10
+          ],
+          [
+            2,
+            2,
+            19,
+            4
+          ],
+          [
+            0,
+            1,
+            1,
+            36
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|narrative_only|full",
+        "classifier": "logistic",
+        "n_samples": 142,
+        "n_classes": 3,
+        "accuracy": 0.9577464788732394,
+        "macro_f1": 0.9112619406737054,
+        "baseline_accuracy": 0.7605633802816901,
+        "per_class_f1": {
+          "Mormon": 0.9773755656108597,
+          "Moroni": 0.8333333333333334,
+          "Nephi": 0.9230769230769231
+        },
+        "confusion": [
+          [
+            108,
+            0,
+            0
+          ],
+          [
+            3,
+            10,
+            1
+          ],
+          [
+            2,
+            0,
+            18
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|narrative_only|full",
+        "classifier": "svc_linear",
+        "n_samples": 142,
+        "n_classes": 3,
+        "accuracy": 0.8732394366197183,
+        "macro_f1": 0.7990622866061847,
+        "baseline_accuracy": 0.7605633802816901,
+        "per_class_f1": {
+          "Mormon": 0.9253731343283582,
+          "Moroni": 0.6875,
+          "Nephi": 0.7843137254901961
+        },
+        "confusion": [
+          [
+            93,
+            7,
+            8
+          ],
+          [
+            0,
+            11,
+            3
+          ],
+          [
+            0,
+            0,
+            20
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "include_quotes|raw|nopunct",
+        "classifier": "logistic",
+        "n_samples": 236,
+        "n_classes": 4,
+        "accuracy": 0.8898305084745762,
+        "macro_f1": 0.6284198366645175,
+        "baseline_accuracy": 0.11440677966101695,
+        "per_class_f1": {
+          "Jacob": 0.0,
+          "Mormon": 0.9494949494949495,
+          "Moroni": 0.6808510638297872,
+          "Nephi": 0.8833333333333333
+        },
+        "confusion": [
+          [
+            0,
+            3,
+            2,
+            2
+          ],
+          [
+            0,
+            141,
+            1,
+            5
+          ],
+          [
+            1,
+            5,
+            16,
+            5
+          ],
+          [
+            0,
+            1,
+            1,
+            53
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "include_quotes|raw|nopunct",
+        "classifier": "svc_linear",
+        "n_samples": 236,
+        "n_classes": 4,
+        "accuracy": 0.8771186440677966,
+        "macro_f1": 0.6732781303203839,
+        "baseline_accuracy": 0.11440677966101695,
+        "per_class_f1": {
+          "Jacob": 0.2,
+          "Mormon": 0.9436619718309859,
+          "Moroni": 0.6923076923076923,
+          "Nephi": 0.8571428571428571
+        },
+        "confusion": [
+          [
+            1,
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            134,
+            4,
+            8
+          ],
+          [
+            1,
+            2,
+            18,
+            6
+          ],
+          [
+            0,
+            0,
+            1,
+            54
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "include_quotes|narrative_only|nopunct",
+        "classifier": "logistic",
+        "n_samples": 144,
+        "n_classes": 3,
+        "accuracy": 0.9583333333333334,
+        "macro_f1": 0.908080808080808,
+        "baseline_accuracy": 0.75,
+        "per_class_f1": {
+          "Mormon": 0.9818181818181818,
+          "Moroni": 0.8333333333333334,
+          "Nephi": 0.9090909090909091
+        },
+        "confusion": [
+          [
+            108,
+            0,
+            0
+          ],
+          [
+            2,
+            10,
+            2
+          ],
+          [
+            2,
+            0,
+            20
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "include_quotes|narrative_only|nopunct",
+        "classifier": "svc_linear",
+        "n_samples": 144,
+        "n_classes": 3,
+        "accuracy": 0.8888888888888888,
+        "macro_f1": 0.8265068990559187,
+        "baseline_accuracy": 0.75,
+        "per_class_f1": {
+          "Mormon": 0.9313725490196079,
+          "Moroni": 0.7333333333333333,
+          "Nephi": 0.8148148148148148
+        },
+        "confusion": [
+          [
+            95,
+            5,
+            8
+          ],
+          [
+            1,
+            11,
+            2
+          ],
+          [
+            0,
+            0,
+            22
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|raw|nopunct",
+        "classifier": "logistic",
+        "n_samples": 213,
+        "n_classes": 4,
+        "accuracy": 0.8967136150234741,
+        "macro_f1": 0.6771284800171042,
+        "baseline_accuracy": 0.1267605633802817,
+        "per_class_f1": {
+          "Jacob": 0.2,
+          "Mormon": 0.958904109589041,
+          "Moroni": 0.6521739130434783,
+          "Nephi": 0.8974358974358975
+        },
+        "confusion": [
+          [
+            1,
+            3,
+            1,
+            2
+          ],
+          [
+            0,
+            140,
+            1,
+            0
+          ],
+          [
+            2,
+            7,
+            15,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            35
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|raw|nopunct",
+        "classifier": "svc_linear",
+        "n_samples": 213,
+        "n_classes": 4,
+        "accuracy": 0.8403755868544601,
+        "macro_f1": 0.5915087227876277,
+        "baseline_accuracy": 0.1267605633802817,
+        "per_class_f1": {
+          "Jacob": 0.0,
+          "Mormon": 0.9298892988929889,
+          "Moroni": 0.6938775510204082,
+          "Nephi": 0.7422680412371134
+        },
+        "confusion": [
+          [
+            0,
+            0,
+            1,
+            6
+          ],
+          [
+            1,
+            126,
+            3,
+            11
+          ],
+          [
+            1,
+            3,
+            17,
+            6
+          ],
+          [
+            0,
+            1,
+            1,
+            36
+          ]
+        ],
+        "labels": [
+          "Jacob",
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|narrative_only|nopunct",
+        "classifier": "logistic",
+        "n_samples": 142,
+        "n_classes": 3,
+        "accuracy": 0.9647887323943662,
+        "macro_f1": 0.9282983682983682,
+        "baseline_accuracy": 0.7605633802816901,
+        "per_class_f1": {
+          "Mormon": 0.9818181818181818,
+          "Moroni": 0.88,
+          "Nephi": 0.9230769230769231
+        },
+        "confusion": [
+          [
+            108,
+            0,
+            0
+          ],
+          [
+            2,
+            11,
+            1
+          ],
+          [
+            2,
+            0,
+            18
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      },
+      {
+        "condition": "exclude_quotes|narrative_only|nopunct",
+        "classifier": "svc_linear",
+        "n_samples": 142,
+        "n_classes": 3,
+        "accuracy": 0.8802816901408451,
+        "macro_f1": 0.8119285979130252,
+        "baseline_accuracy": 0.7605633802816901,
+        "per_class_f1": {
+          "Mormon": 0.9261083743842364,
+          "Moroni": 0.7096774193548387,
+          "Nephi": 0.8
+        },
+        "confusion": [
+          [
+            94,
+            6,
+            8
+          ],
+          [
+            1,
+            11,
+            2
+          ],
+          [
+            0,
+            0,
+            20
+          ]
+        ],
+        "labels": [
+          "Mormon",
+          "Moroni",
+          "Nephi"
+        ]
+      }
+    ]
+  },
+  "quote_controls": {
+    "2 Nephi 22": {
+      "book": "2 Nephi",
+      "chapter": 22,
+      "quote_fraction": 1.0,
+      "covered": 134,
+      "total": 134,
+      "sources": [
+        "Isaiah 12",
+        "Exodus 15"
+      ]
+    },
+    "2 Nephi 19": {
+      "book": "2 Nephi",
+      "chapter": 19,
+      "quote_fraction": 0.9966,
+      "covered": 584,
+      "total": 586,
+      "sources": [
+        "Isaiah 9",
+        "Isaiah 5",
+        "Numbers 14",
+        "Joshua 17",
+        "2 Kings 19"
+      ]
+    },
+    "Mosiah 14": {
+      "book": "Mosiah",
+      "chapter": 14,
+      "quote_fraction": 0.9898,
+      "covered": 387,
+      "total": 391,
+      "sources": [
+        "Isaiah 53",
+        "Psalms 52"
+      ]
+    },
+    "3 Nephi 25": {
+      "book": "3 Nephi",
+      "chapter": 25,
+      "quote_fraction": 1.0,
+      "covered": 183,
+      "total": 183,
+      "sources": [
+        "Malachi 4"
+      ]
+    },
+    "3 Nephi 13": {
+      "book": "3 Nephi",
+      "chapter": 13,
+      "quote_fraction": 0.9005,
+      "covered": 751,
+      "total": 834,
+      "sources": [
+        "Matthew 6",
+        "Matthew 13",
+        "Luke 16",
+        "Jeremiah 41",
+        "John 18"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "description": "Rule-based book -> claimed-narrator / editorial-layer mapping for the Book of Mormon. 'claimed_narrator' is the voice the text attributes its recordkeeping/abridgement to. 'editorial_layer' distinguishes self-authored small-plates material from Mormon's/Moroni's abridgement. The one intra-book narrator boundary (Mormon 8-9 = Moroni) is handled by 'book_overrides'.",
+  "books": {
+    "1 Nephi":         {"claimed_narrator": "Nephi",  "editorial_layer": "small_plates_self"},
+    "2 Nephi":         {"claimed_narrator": "Nephi",  "editorial_layer": "small_plates_self"},
+    "Jacob":           {"claimed_narrator": "Jacob",  "editorial_layer": "small_plates_self"},
+    "Enos":            {"claimed_narrator": "Enos",   "editorial_layer": "small_plates_self"},
+    "Jarom":           {"claimed_narrator": "Jarom",  "editorial_layer": "small_plates_self"},
+    "Omni":            {"claimed_narrator": "Omni et al.", "editorial_layer": "small_plates_self"},
+    "Words of Mormon": {"claimed_narrator": "Mormon", "editorial_layer": "mormon_self"},
+    "Mosiah":          {"claimed_narrator": "Mormon", "editorial_layer": "mormon_abridgement"},
+    "Alma":            {"claimed_narrator": "Mormon", "editorial_layer": "mormon_abridgement"},
+    "Helaman":         {"claimed_narrator": "Mormon", "editorial_layer": "mormon_abridgement"},
+    "3 Nephi":         {"claimed_narrator": "Mormon", "editorial_layer": "mormon_abridgement"},
+    "4 Nephi":         {"claimed_narrator": "Mormon", "editorial_layer": "mormon_abridgement"},
+    "Mormon":          {"claimed_narrator": "Mormon", "editorial_layer": "mormon_self"},
+    "Ether":           {"claimed_narrator": "Moroni", "editorial_layer": "moroni_abridgement"},
+    "Moroni":          {"claimed_narrator": "Moroni", "editorial_layer": "moroni_self"}
+  },
+  "book_overrides": {
+    "Mormon": {
+      "8": {"claimed_narrator": "Moroni", "editorial_layer": "moroni_self"},
+      "9": {"claimed_narrator": "Moroni", "editorial_layer": "moroni_self"}
+    }
+  },
+  "composite_unreliable_narrators": ["Omni et al."],
+  "minor_small_plates_merge_group": {
+    "merged_label": "small_plates_minor",
+    "members": ["Enos", "Jarom", "Omni et al."]
+  }
+}

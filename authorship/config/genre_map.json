@@ -1,0 +1,30 @@
+{
+  "description": "Rule-based genre assignment for Book of Mormon chapters. Genre precedence during segmentation (highest first): (1) detected biblical_quotation, (2) embedded-speaker span genre, (3) chapter_overrides below, (4) book_default. Genre is intentionally coarse at chapter granularity and is used to CONTROL for the genre confound, not as ground truth.",
+  "genres": ["narrative", "sermon_discourse", "prophecy_revelation", "epistle", "genealogy_record", "biblical_quotation", "poetic_lament", "legal_covenant"],
+  "book_default": {
+    "1 Nephi": "narrative",
+    "2 Nephi": "prophecy_revelation",
+    "Jacob": "sermon_discourse",
+    "Enos": "narrative",
+    "Jarom": "narrative",
+    "Omni": "narrative",
+    "Words of Mormon": "narrative",
+    "Mosiah": "narrative",
+    "Alma": "narrative",
+    "Helaman": "narrative",
+    "3 Nephi": "narrative",
+    "4 Nephi": "narrative",
+    "Mormon": "narrative",
+    "Ether": "narrative",
+    "Moroni": "sermon_discourse"
+  },
+  "chapter_overrides": [
+    {"book": "2 Nephi", "chapters": [1, 2, 3], "genre": "sermon_discourse"},
+    {"book": "2 Nephi", "chapters": [6, 7, 8, 9, 10], "genre": "sermon_discourse"},
+    {"book": "Jacob", "chapters": [5], "genre": "prophecy_revelation"},
+    {"book": "Alma", "chapters": [32, 33], "genre": "sermon_discourse"},
+    {"book": "Mormon", "chapters": [8, 9], "genre": "prophecy_revelation"},
+    {"book": "Ether", "chapters": [12], "genre": "sermon_discourse"},
+    {"book": "Moroni", "chapters": [1, 2, 3, 4, 5, 6, 7], "genre": "legal_covenant"}
+  ]
+}

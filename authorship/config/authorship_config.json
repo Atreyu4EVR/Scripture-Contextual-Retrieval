@@ -1,0 +1,59 @@
+{
+  "description": "Phase-one configuration for the Book of Mormon authorship/production study. Internal multi-voice (H3) and translation-layer (H4) analysis using only in-repo texts (Book of Mormon + KJV control).",
+  "random_seed": 42,
+  "primary_volume": "Book of Mormon",
+  "control_volumes": ["Old Testament", "New Testament"],
+
+  "segmentation": {
+    "rolling_window_size": 1000,
+    "rolling_window_stride": 1000,
+    "rolling_window_overlap_variant_stride": 500
+  },
+
+  "reliability": {
+    "min_word_count_reliable": 4000,
+    "min_word_count_borderline": 1500,
+    "min_segments_for_classification": 4,
+    "merge_minor_small_plates": true
+  },
+
+  "biblical_quotes": {
+    "ngram_n": 7,
+    "verse_quote_threshold": 0.5,
+    "segment_mostly_quote_threshold": 0.6,
+    "span_dilation_words": 2
+  },
+
+  "features": {
+    "function_word_per": 1000,
+    "char_ngram_sizes": [3, 4],
+    "char_ngram_top_k": 500,
+    "word_ngram_sizes": [2, 3],
+    "word_ngram_top_k": 300,
+    "enable_word_ngrams": true,
+    "pos_ngram_sizes": [2, 3],
+    "pos_ngram_top_k": 300,
+    "delta_top_n_words": 150,
+    "mattr_window": 500,
+    "produce_nopunct_variant": true
+  },
+
+  "analysis": {
+    "pca_components": 30,
+    "umap_neighbors": 15,
+    "umap_min_dist": 0.1,
+    "kmeans_k_grid": [3, 4, 5, 6, 7, 8],
+    "classifiers": ["logistic", "svc_linear"],
+    "include_random_forest": false,
+    "quote_conditions": ["include_quotes", "exclude_quotes"],
+    "genre_conditions": ["raw", "narrative_only"]
+  },
+
+  "validation": {
+    "require_calibration": true,
+    "positive_control_ot_vs_nt_min_macro_f1": 0.85,
+    "positive_control_authors_min_macro_f1": 0.65,
+    "negative_control_max_sd_above_baseline": 2.0,
+    "label_permutation_trials": 20
+  }
+}

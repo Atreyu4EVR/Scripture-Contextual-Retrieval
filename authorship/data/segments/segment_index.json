@@ -1,0 +1,116 @@
+{
+  "volume": "Book of Mormon",
+  "n_books": 15,
+  "n_chapters": 239,
+  "n_verses": 6604,
+  "narrator_word_totals": {
+    "Nephi": 54504,
+    "Jacob": 9135,
+    "Enos": 1156,
+    "Jarom": 731,
+    "Omni et al.": 1398,
+    "Mormon": 174014,
+    "Moroni": 26000
+  },
+  "narrator_reliability": {
+    "Nephi": {
+      "word_count": 54504,
+      "reliability": "reliable"
+    },
+    "Jacob": {
+      "word_count": 9135,
+      "reliability": "reliable"
+    },
+    "Enos": {
+      "word_count": 1156,
+      "reliability": "report_only"
+    },
+    "Jarom": {
+      "word_count": 731,
+      "reliability": "report_only"
+    },
+    "Omni et al.": {
+      "word_count": 1398,
+      "reliability": "composite_unreliable"
+    },
+    "Mormon": {
+      "word_count": 174014,
+      "reliability": "reliable"
+    },
+    "Moroni": {
+      "word_count": 26000,
+      "reliability": "reliable"
+    }
+  },
+  "speaker_word_totals": {
+    "Nephi": 54504,
+    "Jacob": 9135,
+    "Enos": 1156,
+    "Jarom": 731,
+    "Omni et al.": 1398,
+    "Mormon": 135713,
+    "Benjamin": 5564,
+    "Abinadi": 5010,
+    "Alma the Younger": 11978,
+    "Amulek": 1574,
+    "Jesus Christ": 16248,
+    "Moroni": 23927
+  },
+  "speaker_reliability": {
+    "Nephi": {
+      "word_count": 54504,
+      "reliability": "reliable"
+    },
+    "Jacob": {
+      "word_count": 9135,
+      "reliability": "reliable"
+    },
+    "Enos": {
+      "word_count": 1156,
+      "reliability": "report_only"
+    },
+    "Jarom": {
+      "word_count": 731,
+      "reliability": "report_only"
+    },
+    "Omni et al.": {
+      "word_count": 1398,
+      "reliability": "composite_unreliable"
+    },
+    "Mormon": {
+      "word_count": 135713,
+      "reliability": "reliable"
+    },
+    "Benjamin": {
+      "word_count": 5564,
+      "reliability": "reliable"
+    },
+    "Abinadi": {
+      "word_count": 5010,
+      "reliability": "reliable"
+    },
+    "Alma the Younger": {
+      "word_count": 11978,
+      "reliability": "reliable"
+    },
+    "Amulek": {
+      "word_count": 1574,
+      "reliability": "borderline"
+    },
+    "Jesus Christ": {
+      "word_count": 16248,
+      "reliability": "reliable"
+    },
+    "Moroni": {
+      "word_count": 23927,
+      "reliability": "reliable"
+    }
+  },
+  "segment_counts": {
+    "chapter": 239,
+    "rolling": 270,
+    "narrator_and_speaker": 19,
+    "genre": 5
+  },
+  "chapter_total_words": 266938
+}
