@@ -29,6 +29,18 @@
       "bytes": 780447,
       "role": "distractor",
       "provenance": "gutenberg.org/ebooks/2048 — The Sketch-Book of Geoffrey Crayon"
+    },
+    {
+      "key": "late_war",
+      "bytes": 381509,
+      "role": "pseudo_biblical_control",
+      "provenance": "archive.org/details/latewarbetween_00hunt — Gilbert J. Hunt, 'The Late War Between the United States and Great Britain', written in KJV style"
+    },
+    {
+      "key": "first_book_napoleon",
+      "bytes": 134296,
+      "role": "pseudo_biblical_control",
+      "provenance": "archive.org/details/firstbooknapole00gruagoog — 'The First Book of Napoleon, the Tyrant of the Earth', written in KJV style"
     }
   ],
   "in_repo": [

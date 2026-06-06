@@ -50,6 +50,22 @@
       "windows": 45,
       "low_support": false
     },
+    "late_war": {
+      "display": "The Late War (Hunt, 1816)",
+      "role": "pseudo_biblical_control",
+      "register": "deliberate_kjv_pastiche",
+      "total_words": 56207,
+      "windows": 45,
+      "low_support": false
+    },
+    "first_book_napoleon": {
+      "display": "First Book of Napoleon (1809)",
+      "role": "pseudo_biblical_control",
+      "register": "deliberate_kjv_pastiche",
+      "total_words": 21520,
+      "windows": 22,
+      "low_support": false
+    },
     "kjv_bible": {
       "display": "KJV Bible (translation control)",
       "role": "translation_control",
@@ -59,5 +75,5 @@
       "low_support": false
     }
   },
-  "total_segments": 311
+  "total_segments": 378
 }

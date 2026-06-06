@@ -24,12 +24,21 @@ confounded by register/production mode. The data do not establish sole authorshi
 
 **H2 — 19th-century source / collaboration.** *Weak-to-moderate lean against, for the
 specific authors tested.* The English text is stylometrically far from Solomon Spalding and
-Ethan Smith; ~73% of Book of Mormon windows are rejected as "none of the above," and where
-the text leans toward a candidate it leans away from these prose authors. Caveats: part of
-this distance is just the scriptural register (any ordinary-prose author would be distant);
-it cannot refute a heavily-rewritten/re-dictated source; and Sidney Rigdon was untested (no
-clean public-domain corpus). So H2 is *not supported* on the tested evidence, with
-qualifications.
+Ethan Smith; ~78% of Book of Mormon windows are rejected as "none of the above," and it leans
+away from these prose authors. Caveats: part of this distance is just the scriptural register
+(any ordinary-prose author would be distant); it cannot refute a heavily-rewritten/re-dictated
+source; and Sidney Rigdon was untested (no clean public-domain corpus). So H2 is *not
+supported* on the tested evidence, with qualifications.
+
+**Register confound — directly tested (added control).** Same-register, known-human-authored
+KJV-pastiche texts (*The Late War*, 1816; *The First Book of Napoleon*, 1809) were added to
+the comparison pool. They absorb a large share of Book of Mormon windows — *The First Book of
+Napoleon* is the single most frequent nearest match by Burrows's Delta, ahead of Joseph
+Smith's dictation. This confirms the Book of Mormon's register sits **inside the space of
+deliberate human biblical pastiche**: a known 19th-century human author is stylometrically as
+close to the text as Joseph Smith's own dictation. The earlier apparent pull toward Joseph
+Smith was substantially a *register* effect, and "the style is too biblical for a human author"
+is not a claim the stylometry supports.
 
 **H3 — internal multi-voice.** *Partially present, but largely explained by confounds.*
 Chapters classify by claimed narrator at ~0.90 accuracy, and the signal survives removing

@@ -61,6 +61,26 @@
       "provenance": "gutenberg.org/ebooks/2048 — The Sketch-Book of Geoffrey Crayon"
     },
     {
+      "key": "late_war",
+      "display": "The Late War (Hunt, 1816)",
+      "role": "pseudo_biblical_control",
+      "register": "deliberate_kjv_pastiche",
+      "source": {"type": "archive_txt", "id": "latewarbetween_00hunt"},
+      "license": "public domain (1816)",
+      "provenance": "archive.org/details/latewarbetween_00hunt — Gilbert J. Hunt, 'The Late War Between the United States and Great Britain', written in KJV style",
+      "note": "Known human-authored text in deliberate biblical-pastiche register; tests whether the Book of Mormon's register is achievable by a 19th-c author."
+    },
+    {
+      "key": "first_book_napoleon",
+      "display": "First Book of Napoleon (1809)",
+      "role": "pseudo_biblical_control",
+      "register": "deliberate_kjv_pastiche",
+      "source": {"type": "archive_txt", "id": "firstbooknapole00gruagoog"},
+      "license": "public domain (1809)",
+      "provenance": "archive.org/details/firstbooknapole00gruagoog — 'The First Book of Napoleon, the Tyrant of the Earth', written in KJV style",
+      "note": "Known human-authored biblical-pastiche text; a same-register control for the Book of Mormon."
+    },
+    {
       "key": "kjv_bible",
       "display": "KJV Bible (translation control)",
       "role": "translation_control",

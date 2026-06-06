@@ -3,14 +3,16 @@
   "open_set": {
     "run_id": "run_20260606_063143",
     "closed_set": {
-      "accuracy": 0.977491961414791,
+      "accuracy": 0.9867724867724867,
       "labels": [
         "Ethan Smith",
+        "First Book of Napoleon (1809)",
         "John Bunyan",
         "Jonathan Edwards",
         "Joseph Smith",
         "KJV Bible (translation control)",
         "Solomon Spalding",
+        "The Late War (Hunt, 1816)",
         "Washington Irving"
       ],
       "confusion": [
@@ -21,54 +23,90 @@
           0,
           0,
           0,
+          0,
+          0,
           0
         ],
         [
+          1,
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
           0,
           45,
           0,
           0,
           0,
           0,
+          0,
           0
         ],
         [
           1,
+          0,
           1,
           43,
           0,
           0,
           0,
-          0
-        ],
-        [
-          1,
-          0,
-          0,
-          43,
-          1,
           0,
           0
         ],
         [
           0,
+          1,
           0,
           0,
-          2,
-          43,
+          44,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          45,
+          0,
           0,
           0
         ],
         [
           1,
+          0,
           0,
           0,
           0,
           0,
           40,
+          0,
           0
         ],
         [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          45,
+          0
+        ],
+        [
+          0,
+          0,
           0,
           0,
           0,
@@ -80,48 +118,57 @@
       ]
     },
     "open_set_calibration": {
-      "threshold": 0.9923907101930803,
-      "unknown_reject_rate": 0.8971061093247589,
-      "known_retain_rate": 0.6077170418006431,
-      "unknown_median_maxprob": 0.783704779068388,
-      "known_median_maxprob": 0.9954866637115259
+      "threshold": 0.9822514143793111,
+      "unknown_reject_rate": 0.8994708994708994,
+      "known_retain_rate": 0.7142857142857143,
+      "unknown_median_maxprob": 0.6934242844174807,
+      "known_median_maxprob": 0.9951510399774931
     },
     "bom_probabilistic_attribution": {
       "n_bom_windows": 270,
-      "rejected_none_of_the_above": 196,
-      "reject_fraction": 0.725925925925926,
+      "rejected_none_of_the_above": 210,
+      "reject_fraction": 0.7777777777777778,
       "predicted_when_not_rejected": {
-        "Joseph Smith": 74
+        "Joseph Smith": 55,
+        "KJV Bible (translation control)": 2,
+        "The Late War (Hunt, 1816)": 2,
+        "First Book of Napoleon (1809)": 1
       },
       "mean_class_probability": {
-        "Ethan Smith": 0.001205787725310439,
-        "John Bunyan": 0.0232423906423228,
-        "Jonathan Edwards": 0.0020657015286285937,
-        "Joseph Smith": 0.8487318011639653,
-        "KJV Bible (translation control)": 0.12327477685407183,
-        "Solomon Spalding": 0.0010412528274384167,
-        "Washington Irving": 0.0004382892582626022
+        "Ethan Smith": 0.0007394983423136654,
+        "First Book of Napoleon (1809)": 0.08083156612495443,
+        "John Bunyan": 0.04595053268800362,
+        "Jonathan Edwards": 0.00030128902433430155,
+        "Joseph Smith": 0.6450732047268019,
+        "KJV Bible (translation control)": 0.14193749870654487,
+        "Solomon Spalding": 0.0015217999370878757,
+        "The Late War (Hunt, 1816)": 0.08354400580743122,
+        "Washington Irving": 0.00010060464252825525
       },
-      "median_max_probability": 0.9677894701533016
+      "median_max_probability": 0.8558136643544438
     },
     "bom_delta_attribution": {
       "nearest_author_distribution": {
-        "Joseph Smith": 107,
-        "KJV Bible (translation control)": 47,
-        "Washington Irving": 39,
-        "Ethan Smith": 45,
-        "Solomon Spalding": 23,
-        "John Bunyan": 5,
-        "Jonathan Edwards": 4
+        "First Book of Napoleon (1809)": 90,
+        "KJV Bible (translation control)": 45,
+        "Washington Irving": 1,
+        "Joseph Smith": 82,
+        "The Late War (Hunt, 1816)": 36,
+        "Ethan Smith": 6,
+        "Solomon Spalding": 4,
+        "Jonathan Edwards": 5,
+        "John Bunyan": 1
       },
       "bom_centroid_distance_to_author": {
-        "KJV Bible (translation control)": 0.4506327846742998,
-        "Joseph Smith": 0.451156493264163,
-        "John Bunyan": 0.5604664817543884,
-        "Ethan Smith": 0.5764129314837236,
-        "Jonathan Edwards": 0.579306067312365,
-        "Solomon Spalding": 0.6113212594004701,
-        "Washington Irving": 0.6275205672942975
+        "KJV Bible (translation control)": 0.43704490208242847,
+        "Joseph Smith": 0.4599849984793495,
+        "First Book of Napoleon (1809)": 0.5151803796568284,
+        "John Bunyan": 0.5617636869605588,
+        "Ethan Smith": 0.5777365032061393,
+        "Jonathan Edwards": 0.5841885936551056,
+        "Solomon Spalding": 0.6182245851170558,
+        "Washington Irving": 0.6308547622329305,
+        "The Late War (Hunt, 1816)": 0.6347151269544262
       }
     },
     "authors": {
@@ -130,8 +177,10 @@
       "Jonathan Edwards": 45,
       "John Bunyan": 45,
       "Washington Irving": 45,
+      "The Late War (Hunt, 1816)": 45,
       "KJV Bible (translation control)": 45,
-      "Solomon Spalding": 41
+      "Solomon Spalding": 41,
+      "First Book of Napoleon (1809)": 22
     }
   },
   "corpus": {
@@ -164,6 +213,16 @@
       "role": "distractor",
       "register": "literary_prose",
       "provenance": "gutenberg.org/ebooks/2048 — The Sketch-Book of Geoffrey Crayon"
+    },
+    "late_war": {
+      "role": "pseudo_biblical_control",
+      "register": "deliberate_kjv_pastiche",
+      "provenance": "archive.org/details/latewarbetween_00hunt — Gilbert J. Hunt, 'The Late War Between the United States and Great Britain', written in KJV style"
+    },
+    "first_book_napoleon": {
+      "role": "pseudo_biblical_control",
+      "register": "deliberate_kjv_pastiche",
+      "provenance": "archive.org/details/firstbooknapole00gruagoog — 'The First Book of Napoleon, the Tyrant of the Earth', written in KJV style"
     },
     "kjv_bible": {
       "role": "translation_control",
