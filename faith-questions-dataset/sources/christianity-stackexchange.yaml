@@ -1,0 +1,18 @@
+# License, permission_status, and redistributable were populated by the
+# project owner: this manifest is copied verbatim from the human-authored
+# example in CLAUDE.md (Source Manifest Format). Per the Taxonomy First
+# gate, no fetcher is written for this source until taxonomy/issues.yaml
+# is human-approved.
+name: christianity-stackexchange
+kind: bulk_dump
+license: CC-BY-SA-4.0
+license_url: https://creativecommons.org/licenses/by-sa/4.0/
+redistributable: true
+attribution_required: true
+permission_status: not_required
+notes: >
+  Internet Archive releases through 2024-04 only. Later dumps carry
+  restrictions incompatible with this use. Filter to LDS and Mormonism tags.
+endpoints:
+  - https://archive.org/details/stackexchange
+rate_limit_seconds: 2

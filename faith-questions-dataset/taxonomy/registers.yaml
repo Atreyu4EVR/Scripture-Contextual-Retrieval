@@ -1,0 +1,75 @@
+# DRAFT REGISTER VOCABULARY, NOT YET HUMAN-APPROVED.
+#
+# Register captures the stance and communicative intent of the question as
+# asked, independent of its topic (issue_id). Machine-seeded for the M0 human
+# checkpoint; a human must review and set `approved: true` before classify
+# assigns registers. Per the record schema, register values on released
+# records are human-reviewed.
+approved: false
+version: 0.1.0-draft
+
+registers:
+  - id: sincere-inquiry
+    label: Sincere inquiry
+    description: >
+      A good-faith request for information or explanation from someone open to
+      an answer, whether member, investigator, or curious outsider.
+    cues:
+      - "Can someone help me understand..."
+      - "What is the Church's position on..."
+  - id: doubt-disclosure
+    label: Doubt disclosure
+    description: >
+      A person voices personal doubt or shaken faith and seeks support,
+      perspective, or resolution rather than debate.
+    cues:
+      - "I just learned about X and I feel blindsided..."
+      - "I want to believe, but..."
+  - id: deconversion-account
+    label: Deconversion account
+    description: >
+      Questions embedded in a narrative of why someone left or is leaving.
+      The question form is extracted; the biography is discarded.
+    cues:
+      - "After twenty years I finally looked into..."
+      - "The thing that broke my shelf was..."
+  - id: polemical-challenge
+    label: Polemical challenge
+    description: >
+      A question posed to argue against truth claims rather than to obtain an
+      answer, often rhetorical or adversarial in form.
+    cues:
+      - "How can anyone still believe X when..."
+      - "Explain why the prophet would..."
+  - id: apologetic-prompt
+    label: Apologetic prompt
+    description: >
+      A question framed to invite a defense or faithful response, as in FAQ
+      collections and formal Q&A indexes.
+    cues:
+      - "How do Latter-day Saints respond to the claim that..."
+      - "What is the faithful answer to..."
+  - id: academic-analytical
+    label: Academic or analytical
+    description: >
+      Neutral scholarly information-seeking about history, doctrine, or
+      practice without a devotional or adversarial stance.
+    cues:
+      - "What do the primary sources say about..."
+      - "How did the historiography of X develop..."
+  - id: pastoral-concern
+    label: Pastoral concern
+    description: >
+      A question asked on behalf of someone else: a spouse, child, friend, or
+      congregant working through the issue.
+    cues:
+      - "My daughter came home asking about..."
+      - "How do I help my friend who read..."
+  - id: practical-navigation
+    label: Practical navigation
+    description: >
+      A how-to question about living within policy and practice: recommends,
+      garments, tithing mechanics, callings, resignation logistics.
+    cues:
+      - "Do I have to ... to keep my recommend?"
+      - "What actually happens when you resign?"

@@ -1,0 +1,17 @@
+# Raw and processed data never enter git (CLAUDE.md rule 5).
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+uv.lock
+
+# Secrets
+.env
