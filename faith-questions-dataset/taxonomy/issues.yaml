@@ -1,0 +1,499 @@
+# Issue taxonomy: the spine of the project (CLAUDE.md, Taxonomy First).
+#
+# Seeded from the publicly documented concern lists the spec names (CES Letter
+# section structure, Gospel Topics Essays, Mormonr Q&A categories, FAIR's
+# answer index) and approved by the project owner on 2026-09-07 at the M0
+# checkpoint. Edit freely; bump `version` when issues are added, merged, or
+# renamed, since records carry issue ids as foreign keys. If classification
+# produces a residual bucket above fifteen percent, revise here before
+# collecting more data.
+#
+# Descriptions state what the questions in each issue are about. They do not
+# take a position on the questions themselves.
+approved: true
+version: 0.1.0
+
+categories:
+  - id: book-of-mormon
+    label: Book of Mormon origins and text
+  - id: book-of-abraham
+    label: Book of Abraham and Pearl of Great Price
+  - id: joseph-smith
+    label: Joseph Smith's life and revelations
+  - id: prophets-and-revelation
+    label: Prophets, succession, and continuing revelation
+  - id: race-and-priesthood
+    label: Race and priesthood and temple restrictions
+  - id: polygamy
+    label: Plural marriage
+  - id: church-history
+    label: Church history events and transparency
+  - id: science-and-scripture
+    label: Science and scripture
+  - id: doctrine-and-theology
+    label: Doctrine and theology
+  - id: temple
+    label: Temple worship and ordinances
+  - id: policy-and-social
+    label: Policy, institution, and social issues
+  - id: epistemology
+    label: Testimony, doubt, and ways of knowing
+  - id: membership-and-culture
+    label: Membership experience and culture
+
+issues:
+  # book-of-mormon
+  - id: bom-historicity
+    category: book-of-mormon
+    label: Archaeological and historical evidence for the Book of Mormon
+    description: >
+      Questions about the presence or absence of archaeological, linguistic, or
+      documentary evidence for Book of Mormon peoples and civilizations.
+    keywords: [archaeology, Nephites, Lamanites, evidence, Mesoamerica, civilizations]
+  - id: bom-dna-ancestry
+    category: book-of-mormon
+    label: DNA studies and Lamanite ancestry
+    description: >
+      Questions about population genetics of Indigenous Americans and how DNA
+      findings relate to statements about Lamanite ancestry.
+    keywords: [DNA, genetics, Lamanites, ancestry, Israelite origin]
+  - id: bom-anachronisms
+    category: book-of-mormon
+    label: Claimed anachronisms in the Book of Mormon
+    description: >
+      Questions about items named in the text (horses, steel, wheat, silk,
+      chariots, coins) said to be absent from the ancient Americas.
+    keywords: [anachronisms, horses, steel, elephants, silk, chariots]
+  - id: bom-geography
+    category: book-of-mormon
+    label: Book of Mormon geography models
+    description: >
+      Questions about where Book of Mormon events took place, including limited
+      geography versus hemispheric models and the Cumorah question.
+    keywords: [geography, Cumorah, limited geography, heartland, Mesoamerican model]
+  - id: bom-translation-method
+    category: book-of-mormon
+    label: Translation method and instruments
+    description: >
+      Questions about the seer stone, the hat, the interpreters, use of the
+      plates during dictation, and how translation accounts differ from
+      traditional depictions.
+    keywords: [seer stone, hat, Urim and Thummim, plates, dictation, translation]
+  - id: bom-witnesses
+    category: book-of-mormon
+    label: Reliability of the Book of Mormon witnesses
+    description: >
+      Questions about the Three and Eight Witnesses, spiritual versus literal
+      viewing, later disaffection, and the consistency of their testimonies.
+    keywords: [Three Witnesses, Eight Witnesses, Martin Harris, David Whitmer, second sight]
+  - id: bom-textual-parallels
+    category: book-of-mormon
+    label: Claimed textual sources and parallels
+    description: >
+      Questions about proposed literary influences on the Book of Mormon,
+      including View of the Hebrews, The Late War, and dependence on the King
+      James Bible including Deutero-Isaiah passages.
+    keywords: [View of the Hebrews, Late War, KJV, Deutero-Isaiah, parallels, plagiarism claims]
+  - id: bom-textual-changes
+    category: book-of-mormon
+    label: Textual changes across editions
+    description: >
+      Questions about edits between Book of Mormon editions, including changes
+      with doctrinal weight such as references to God and the Son of God.
+    keywords: [1830 edition, textual changes, corrections, editions]
+
+  # book-of-abraham
+  - id: boa-papyri-translation
+    category: book-of-abraham
+    label: Book of Abraham and the rediscovered papyri
+    description: >
+      Questions about the relationship between the Joseph Smith Papyri, the
+      Egyptian funerary texts they contain, and the Book of Abraham text.
+    keywords: [papyri, Book of Breathings, Egyptology, Joseph Smith Papyri]
+  - id: boa-facsimiles
+    category: book-of-abraham
+    label: Facsimile interpretations and Abrahamic cosmology
+    description: >
+      Questions about the published facsimiles, their restorations, how the
+      explanations compare with Egyptological readings, and the Kolob
+      cosmology of Abraham 3 and Facsimile 2.
+    keywords: [facsimile, vignettes, restoration, Egyptological interpretation, Kolob, cosmology]
+  - id: boa-translation-theories
+    category: book-of-abraham
+    label: Theories of Book of Abraham translation
+    description: >
+      Questions about proposed models such as catalyst theory, missing scroll
+      theory, and what "translation" meant in this case.
+    keywords: [catalyst theory, missing papyrus, translation model]
+
+  # joseph-smith
+  - id: first-vision-accounts
+    category: joseph-smith
+    label: Differing First Vision accounts
+    description: >
+      Questions about the multiple recorded accounts of the First Vision, their
+      differences, dating, and how the 1838 account became canonical.
+    keywords: [First Vision, 1832 account, 1838 account, differing accounts]
+  - id: js-plural-marriage
+    category: joseph-smith
+    label: Joseph Smith's practice of plural marriage
+    description: >
+      Questions about Joseph Smith's plural marriages, including the ages of
+      some wives, marriages to already-married women, and statements denying
+      the practice.
+    keywords: [polygamy, polyandry, Fanny Alger, Helen Mar Kimball, Nauvoo, denials]
+  - id: js-folk-magic
+    category: joseph-smith
+    label: Treasure seeking and folk practice
+    description: >
+      Questions about Joseph Smith's treasure-seeking activity, use of seer
+      stones before the Book of Mormon, and the 1826 South Bainbridge court
+      appearance.
+    keywords: [treasure digging, money digging, seer stone, 1826 trial, folk magic]
+  - id: js-kinderhook
+    category: joseph-smith
+    label: Kinderhook plates
+    description: >
+      Questions about Joseph Smith's reported partial translation of the
+      Kinderhook plates, later shown to be a hoax.
+    keywords: [Kinderhook plates, hoax, translation claim]
+  - id: js-nauvoo-expositor
+    category: joseph-smith
+    label: Nauvoo Expositor and Carthage
+    description: >
+      Questions about the destruction of the Nauvoo Expositor press, the events
+      leading to Carthage, and how Joseph Smith's death is characterized.
+    keywords: [Nauvoo Expositor, press destruction, Carthage, martyrdom]
+  - id: priesthood-restoration-accounts
+    category: joseph-smith
+    label: Priesthood restoration accounts and dating
+    description: >
+      Questions about when the Aaronic and Melchizedek priesthood restoration
+      events were first recorded and how the accounts developed.
+    keywords: [priesthood restoration, John the Baptist, Peter James and John, retroactive accounts]
+
+  # prophets-and-revelation
+  - id: succession-crisis
+    category: prophets-and-revelation
+    label: Succession after Joseph Smith
+    description: >
+      Questions about the 1844 succession crisis, competing claims, and the
+      basis for apostolic succession.
+    keywords: [succession, Brigham Young, Sidney Rigdon, James Strang, RLDS]
+  - id: adam-god-teaching
+    category: prophets-and-revelation
+    label: Adam-God teaching
+    description: >
+      Questions about Brigham Young's Adam-God statements and their later
+      repudiation.
+    keywords: [Adam-God, Brigham Young, repudiated teaching]
+  - id: prophetic-fallibility
+    category: prophets-and-revelation
+    label: Prophetic fallibility and trust
+    description: >
+      Questions about how prophets can err, what statements count as doctrine,
+      and reconciling "the Lord will never permit the prophet to lead the
+      Church astray" with reversals.
+    keywords: [fallibility, speaking as a man, doctrine versus opinion, lead astray]
+  - id: unfulfilled-prophecy
+    category: prophets-and-revelation
+    label: Claimed unfulfilled prophecies
+    description: >
+      Questions about specific prophecies said to have failed, such as the
+      Independence temple timeline or the Civil War prophecy's scope.
+    keywords: [failed prophecy, Independence temple, this generation, Civil War prophecy]
+  - id: doctrinal-reversals
+    category: prophets-and-revelation
+    label: Doctrinal change and continuing revelation
+    description: >
+      Questions about teachings that changed over time and how continuing
+      revelation distinguishes restoration from revision.
+    keywords: [doctrinal change, continuing revelation, policy versus doctrine]
+
+  # race-and-priesthood
+  - id: priesthood-temple-ban
+    category: race-and-priesthood
+    label: Priesthood and temple restriction before 1978
+    description: >
+      Questions about the origin, duration, and ending of the restriction on
+      Black members holding the priesthood and receiving temple ordinances.
+    keywords: [priesthood ban, "1978", Official Declaration 2, Elijah Abel, origins]
+  - id: race-teachings
+    category: race-and-priesthood
+    label: Past teachings about race
+    description: >
+      Questions about historical explanations for the restriction (curse of
+      Cain, premortal conduct), scriptural passages about skin color, and the
+      Church's disavowal of past theories.
+    keywords: [curse of Cain, skin of blackness, disavowed theories, race essay]
+
+  # polygamy
+  - id: polygamy-doctrine
+    category: polygamy
+    label: Doctrine and Covenants 132 and the doctrine of plural marriage
+    description: >
+      Questions about the revelation on plural marriage, its language of
+      command and destruction, and whether polygamy was ever doctrinally
+      essential.
+    keywords: [D&C 132, new and everlasting covenant, commandment, Emma Smith]
+  - id: utah-polygamy
+    category: polygamy
+    label: Plural marriage in pioneer Utah
+    description: >
+      Questions about the public practice of polygamy under Brigham Young
+      through the 1880s, including its social and legal consequences.
+    keywords: [Brigham Young, plural wives, antipolygamy raids, Reynolds]
+  - id: post-manifesto-polygamy
+    category: polygamy
+    label: Manifesto and post-Manifesto plural marriages
+    description: >
+      Questions about the 1890 Manifesto, plural marriages performed after it,
+      and the Second Manifesto of 1904.
+    keywords: [Manifesto, "1890", post-Manifesto marriages, Second Manifesto, Smoot hearings]
+  - id: eternal-polygamy
+    category: polygamy
+    label: Plural sealing policy today
+    description: >
+      Questions about current sealing policy, such as widowed men being sealed
+      to more than one wife, and what that implies about eternity.
+    keywords: [sealing policy, eternal polygamy, widower sealing, cancellation of sealing]
+
+  # church-history
+  - id: mountain-meadows
+    category: church-history
+    label: Mountain Meadows Massacre
+    description: >
+      Questions about the 1857 massacre, local leadership responsibility, and
+      what Brigham Young knew.
+    keywords: [Mountain Meadows, "1857", John D. Lee, accountability]
+  - id: early-utah-violence
+    category: church-history
+    label: Violence and rhetoric in early Utah
+    description: >
+      Questions about blood atonement rhetoric, the Mormon Reformation, and
+      vigilante violence attributed to the period.
+    keywords: [blood atonement, Mormon Reformation, Danites, violence]
+  - id: kirtland-safety-society
+    category: church-history
+    label: Kirtland Safety Society
+    description: >
+      Questions about the founding and failure of the Kirtland Safety Society
+      and Joseph Smith's role in it.
+    keywords: [Kirtland Safety Society, bank failure, "1837", apostasy period]
+  - id: historical-transparency
+    category: church-history
+    label: Institutional transparency about history
+    description: >
+      Questions about whether the Church has been forthcoming with its history,
+      including correlation-era curriculum, artwork, and the rollout of the
+      Gospel Topics Essays.
+    keywords: [transparency, whitewashing claims, Gospel Topics Essays, curriculum, milk before meat]
+
+  # science-and-scripture
+  - id: evolution-human-origins
+    category: science-and-scripture
+    label: Evolution and human origins
+    description: >
+      Questions about reconciling evolutionary biology with teachings about
+      Adam and Eve, the Fall, and no death before the Fall.
+    keywords: [evolution, Adam and Eve, no death before the Fall, human origins]
+  - id: global-flood-literalism
+    category: science-and-scripture
+    label: Global flood and scriptural literalism
+    description: >
+      Questions about reading the Flood, the Tower of Babel, and the age of the
+      earth literally in light of geology and archaeology.
+    keywords: [Noah, global flood, Tower of Babel, age of the earth, literalism]
+  # doctrine-and-theology
+  - id: nature-of-god
+    category: doctrine-and-theology
+    label: Embodied God and the nature of the Godhead
+    description: >
+      Questions about God having a body, the Godhead as distinct beings, and
+      how Latter-day Saint theology differs from creedal Trinitarianism.
+    keywords: [embodiment, Godhead, Trinity, creeds, social trinitarianism]
+  - id: becoming-like-god
+    category: doctrine-and-theology
+    label: Theosis and the King Follett discourse
+    description: >
+      Questions about humans becoming like God, "as man is God once was," and
+      the doctrinal status of the King Follett discourse.
+    keywords: [exaltation, theosis, King Follett, Lorenzo Snow couplet]
+  - id: heavenly-mother
+    category: doctrine-and-theology
+    label: Heavenly Mother
+    description: >
+      Questions about the doctrine of a Mother in Heaven and the practice of
+      not praying to or teaching much about her.
+    keywords: [Heavenly Mother, Mother in Heaven, sacred silence]
+  - id: one-true-church
+    category: doctrine-and-theology
+    label: Exclusivity and the one true church claim
+    description: >
+      Questions about the claim to exclusive authority, the fate of the
+      unevangelized, and how other faiths' spiritual experiences are explained.
+    keywords: [only true church, exclusivity, authority, other religions]
+  - id: grace-and-works
+    category: doctrine-and-theology
+    label: Grace, works, and salvation
+    description: >
+      Questions, often from other Christian traditions, about the relationship
+      between grace, obedience, and ordinances in Latter-day Saint soteriology.
+    keywords: [grace, works, after all we can do, salvation, justification]
+  - id: baptism-for-the-dead
+    category: doctrine-and-theology
+    label: Ordinances for the dead
+    description: >
+      Questions about vicarious baptism and other proxy ordinances, their
+      biblical basis, and controversies over proxy work for Holocaust victims.
+    keywords: [baptism for the dead, proxy ordinances, 1 Corinthians 15:29, genealogy]
+  - id: scripture-canon
+    category: doctrine-and-theology
+    label: Open canon and scripture reliability
+    description: >
+      Questions about an open canon, the Joseph Smith Translation, and the
+      Article of Faith qualifier "as far as it is translated correctly."
+    keywords: [open canon, Joseph Smith Translation, Eighth Article of Faith, biblical inerrancy]
+
+  # temple
+  - id: temple-masonry
+    category: temple
+    label: Temple ritual and Freemasonry parallels
+    description: >
+      Questions about similarities between the endowment and Masonic ritual and
+      the timing of Joseph Smith's Masonic initiation.
+    keywords: [Freemasonry, endowment, Nauvoo lodge, ritual parallels]
+  - id: temple-ordinance-changes
+    category: temple
+    label: Changes to temple ordinances
+    description: >
+      Questions about modifications to the endowment and other ordinances over
+      time, including elements removed in 1990 and 2019 adjustments.
+    keywords: [endowment changes, penalties, "1990", 2019 changes, second anointing]
+  - id: temple-access
+    category: temple
+    label: Temple recommends and access
+    description: >
+      Questions about worthiness requirements for temple attendance, including
+      family members unable to attend weddings.
+    keywords: [temple recommend, worthiness, wedding exclusion, sealing attendance]
+  - id: garments
+    category: temple
+    label: Temple garments
+    description: >
+      Questions about the purpose, wearing expectations, and cultural weight of
+      temple garments.
+    keywords: [garments, wearing expectations, symbolism]
+
+  # policy-and-social
+  - id: lgbtq-policy
+    category: policy-and-social
+    label: LGBTQ members and Church policy
+    description: >
+      Questions about teachings and policies affecting LGBTQ members, including
+      the 2015 handbook policy and its 2019 reversal, mixed-orientation
+      marriage counsel, and the law of chastity as applied to same-sex couples.
+    keywords: [LGBTQ, same-sex marriage, November 2015 policy, exclusion policy, chastity]
+  - id: women-and-priesthood
+    category: policy-and-social
+    label: Women and priesthood authority
+    description: >
+      Questions about women not being ordained, women's authority in callings
+      and temple contexts, and movements advocating change.
+    keywords: [women, ordination, Ordain Women, Relief Society, priesthood authority]
+  - id: church-finances
+    category: policy-and-social
+    label: Church finances and transparency
+    description: >
+      Questions about the scale of Church reserves, Ensign Peak Advisors, the
+      SEC settlement, City Creek, and the absence of public financial reports.
+    keywords: [Ensign Peak, SEC settlement, City Creek, reserves, financial transparency]
+  - id: tithing-expectations
+    category: policy-and-social
+    label: Tithing expectations
+    description: >
+      Questions about tithing as a commandment and recommend requirement,
+      gross versus net, and paying tithing under financial hardship.
+    keywords: [tithing, ten percent, tithing settlement, hardship]
+  - id: youth-interviews
+    category: policy-and-social
+    label: Worthiness interviews with minors
+    description: >
+      Questions about one-on-one bishop interviews with youth and the
+      appropriateness of sexual worthiness questions.
+    keywords: [bishop interviews, youth, worthiness questions, Protect the Children]
+  - id: abuse-response
+    category: policy-and-social
+    label: Institutional response to abuse
+    description: >
+      Questions about how abuse reports are handled, the help line, clergy
+      confidentiality, and high-profile cases.
+    keywords: [abuse, help line, clergy privilege, mandatory reporting]
+  - id: word-of-wisdom
+    category: policy-and-social
+    label: Word of Wisdom interpretation and enforcement
+    description: >
+      Questions about the Word of Wisdom's history as counsel versus
+      commandment, its selective enforcement, and modern applications.
+    keywords: [Word of Wisdom, coffee, tea, alcohol, hot drinks, recommend question]
+  - id: missionary-program
+    category: policy-and-social
+    label: Missionary program expectations
+    description: >
+      Questions about mission culture, pressure to serve, early returns, and
+      honesty in proselytizing methods.
+    keywords: [mission, missionaries, early return, baptismal pressure]
+
+  # epistemology
+  - id: spiritual-witness
+    category: epistemology
+    label: Reliability of spiritual witness
+    description: >
+      Questions about whether feelings can verify truth claims, given that
+      members of other faiths report similar confirming experiences.
+    keywords: [testimony, burning in the bosom, Moroni's promise, elevation emotion, epistemology]
+  - id: faith-and-evidence
+    category: epistemology
+    label: Weighing faith against historical evidence
+    description: >
+      Questions about how to weigh spiritual conviction against contrary
+      historical or scientific evidence, and whether belief should track
+      evidence at all.
+    keywords: [evidence, faith crisis, epistemology, burden of proof]
+  - id: treatment-of-doubt
+    category: epistemology
+    label: How doubt and doubters are treated
+    description: >
+      Questions about counsel such as "doubt your doubts," labels applied to
+      those who question, and space for open questioning inside the community.
+    keywords: [doubt your doubts, anti-Mormon label, faithful questioning, stigma]
+
+  # membership-and-culture
+  - id: faith-crisis-navigation
+    category: membership-and-culture
+    label: Navigating a faith crisis
+    description: >
+      Questions from people in active faith transition about what to do next,
+      whether to stay, and how to rebuild belief or identity.
+    keywords: [faith crisis, faith transition, stay or leave, reconstruction]
+  - id: mixed-faith-families
+    category: membership-and-culture
+    label: Mixed-faith marriages and families
+    description: >
+      Questions about sustaining marriages and family relationships when one
+      member stops believing or practicing.
+    keywords: [mixed-faith marriage, part-member family, family rupture]
+  - id: resignation-process
+    category: membership-and-culture
+    label: Leaving and records removal
+    description: >
+      Questions about resigning membership, records removal, and social
+      consequences of leaving.
+    keywords: [resignation, name removal, QuitMormon, exit process]
+  - id: perfectionism-culture
+    category: membership-and-culture
+    label: Perfectionism and scrupulosity in Church culture
+    description: >
+      Questions about worthiness culture, scrupulosity, and mental-health
+      effects attributed to high-demand religious practice.
+    keywords: [perfectionism, scrupulosity, worthiness, shame]
