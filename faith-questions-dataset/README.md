@@ -4,25 +4,13 @@ A reproducible pipeline that collects publicly available questions, objections, 
 
 ## Status
 
-M0 is partially complete and paused at its human checkpoint.
-
 | Milestone | State |
 |---|---|
-| M0: taxonomy, schema, one bulk-dump source | Schema and tests done. Taxonomy drafted, awaiting human approval. Source manifest filed. Fetcher intentionally not written yet. |
+| M0: taxonomy, schema, one bulk-dump source | Code complete. Taxonomy approved 2026-09-07. Fetcher and parser for `christianity-stackexchange` in place with an offline end-to-end proof. Awaiting the owner's first live run (data never enters git, so it happens on a local machine). |
 | M1: scrub, extract, classify, review CLI | Not started |
 | M2: second source | Not started |
 | M3: permission-gated forum adapter | Not started |
 | M4: dataset card and private HF push | Not started |
-
-The fetcher for `christianity-stackexchange` is deliberately absent. CLAUDE.md ("Taxonomy First") requires `taxonomy/issues.yaml` to be human-authored before any fetcher is written. The shipped taxonomy is a machine-seeded draft carrying `approved: false`, and `Taxonomy.require_approved()` blocks pipeline stages until a human flips it. Review it, edit it, set `approved: true`, and the fetcher becomes the next unit of work.
-
-## The M0 human checkpoint
-
-Three decisions are waiting on a human:
-
-1. Review and approve (or rewrite) `taxonomy/issues.yaml` and `taxonomy/registers.yaml`, then set `approved: true` in each.
-2. Confirm `christianity-stackexchange` as the M0 bulk-dump source. The manifest was copied verbatim from the human-authored example in CLAUDE.md.
-3. Resolve the attribution tension: rule 8 forbids usernames in `data/parsed/`, while CC BY-SA requires author attribution. The schema currently treats `author_attribution` as the single license-mandated exception to scrubbing (see `src/faithqs/schema.py`). Confirm or change that interpretation.
 
 ## Quickstart
 
@@ -35,24 +23,60 @@ uv run pytest
 uv run ruff check
 ```
 
-The test suite exercises the full record model: license gating of `verbatim_text`, CC BY-SA attribution requirements, UTC normalization, PII storage gating, quarantine of invalid payloads, and referential integrity between records and the taxonomy files.
+Every network request identifies the project and a contact address (CLAUDE.md rule 3), and the address is yours to supply:
+
+```bash
+export FAITHQS_CONTACT_EMAIL=you@example.org   # required before fetch
+export FAITHQS_DATA_DIR=./data                 # optional, this is the default
+
+uv run faithqs fetch christianity-stackexchange   # data/raw/<source>/<sha256>.7z + .meta.json
+uv run faithqs parse christianity-stackexchange   # data/staged/<source>/<sha256>.jsonl + reports
+```
+
+Stages are separate commands on purpose. Re-running `parse` never re-fetches; re-running `fetch` on an unchanged upstream costs one HEAD request.
+
+The parse step also writes `<sha256>.report.json` with tag frequencies across the whole dump and within the selection. Use it to tune `filters.tags` in `sources/christianity-stackexchange.yaml`, then re-run `parse --force`.
+
+## What stops a run
+
+Each gate in CLAUDE.md is enforced in code and surfaces as a `STOP:` line with exit code 2:
+
+- Taxonomy or register file with `approved: false` (Taxonomy First)
+- Manifest with an unresolved license or permission, or a granted permission with no filed correspondence (rule 1)
+- robots.txt disallowing the path, or unreachable (rule 2)
+- Missing `FAITHQS_CONTACT_EMAIL` (rule 3)
+- Any attempt to set a rate limit under two seconds (rule 4)
+- A record reaching `data/parsed/` with `pii_scrubbed: false` (rule 8)
 
 ## Layout
 
 ```
-CLAUDE.md               # project constitution: rules, schema, build order
+CLAUDE.md                 # project constitution: rules, schema, build order, amendment log
 taxonomy/
-  issues.yaml           # DRAFT issue taxonomy (60 issues, 13 categories)
-  registers.yaml        # DRAFT register vocabulary (8 registers)
+  issues.yaml             # approved issue taxonomy (60 issues, 13 categories)
+  registers.yaml          # approved register vocabulary (8 registers)
 sources/
   christianity-stackexchange.yaml   # M0 source manifest, human-resolved license
-  permissions/          # permission correspondence (referenced by permission_ref)
+  permissions/            # permission correspondence (referenced by permission_ref)
 src/faithqs/
-  schema.py             # record model, quarantine, license and PII gates
-  taxonomy.py           # taxonomy loaders, approval gate, FK checks
-tests/
-data/                   # gitignored in full; created at runtime
+  schema.py               # SourceRecord, FaithQuestionRecord, quarantine, license and PII gates
+  taxonomy.py             # taxonomy loaders, approval gate, foreign-key checks
+  manifest.py             # source manifests and the rule 1 gate
+  config.py               # settings from the environment, User-Agent construction
+  storage.py              # content-addressed data/raw and data/staged layout
+  cli.py                  # `faithqs fetch|parse <source>`
+  fetch/polite.py         # httpx client enforcing robots.txt, User-Agent, rate limit, backoff
+  fetch/bulk_dump.py      # generic single-file downloader with ETag skip
+  fetch/christianity_stackexchange.py
+  parse/stackexchange.py  # 7z -> Posts.xml/Users.xml -> SourceRecord JSONL, license per post
+  parse/christianity_stackexchange.py
+tests/                    # 90+ offline tests, including a fetch -> parse -> record proof
+data/                     # gitignored in full; created at runtime
 ```
+
+## Licensing notes for the dataset card
+
+Stack Exchange content is CC BY-SA at the version in force when each post was created (2.5, then 3.0 from 2011-04-08, then 4.0 from 2018-05-02). The parser records the exact version per record from the dump's `ContentLicense` attribute, with a creation-date fallback. A Tier A release will therefore contain a mix of CC BY-SA 3.0 and 4.0 text, each carrying the attribution Stack Exchange requires (author, author link, link to the question). The card must state this per-record licensing rather than a single headline version.
 
 ## Relationship to Scripture-Contextual-Retrieval
 
@@ -60,7 +84,7 @@ This project is independent of the contextual retrieval work and lives in this r
 
 ```bash
 git subtree split --prefix=faith-questions-dataset -b faith-questions-export
-# then push that branch to a new repo and add this directory to the parent's cleanup list
+# then push that branch to a new repo and remove the directory here
 ```
 
 A plain copy of the directory also works, since nothing here imports from or links to the parent project.

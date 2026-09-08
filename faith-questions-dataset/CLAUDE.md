@@ -17,7 +17,7 @@ These are gates, not guidelines. Stop and ask the human rather than working arou
 5. **Raw data never enters git.** `data/` is gitignored in full. Raw archives live on local disk or Azure Blob
 6. **Never push public.** `huggingface_hub` pushes are private-only in code. Visibility is flipped by a human in the HF UI, never by a script
 7. **Verbatim text is conditional.** A record carries `verbatim_text` only when its source has `redistributable: true` and `author_attribution` is populated. Otherwise the record carries the normalized question form alone
-8. **PII scrubbing precedes storage.** No usernames, real names, email addresses, ward or stake identifiers, or specific locations survive into `data/parsed/`
+8. **PII scrubbing precedes storage.** No usernames, real names, email addresses, ward or stake identifiers, or specific locations survive into `data/parsed/`. The single exception is `author_attribution`, which carries only the credit CC BY-SA legally requires (author name and links); scrubbing applies to every other text field
 
 ## Content Sensitivity
 
@@ -47,7 +47,8 @@ src/faithqs/
   package.py            # HF dataset build and push
 data/                   # gitignored
   raw/                  # immutable, content-hashed, never edited in place
-  parsed/
+  staged/               # parse output, unscrubbed, never leaves local disk
+  parsed/               # scrubbed only; nothing enters without pii_scrubbed: true
   reviewed/
   release/
 tests/
@@ -55,16 +56,17 @@ tests/
 
 ## Record Schema
 
-Define in `src/faithqs/schema.py` with pydantic v2. Every field below is required unless marked nullable.
+Define in `src/faithqs/schema.py` with pydantic v2. Every field below is required unless marked nullable. Stages before `classify` cannot populate the taxonomy fields, so `parse` emits the source-side subset as a `SourceRecord` (source identity, license, attribution, raw title and body text, tags); `classify` is the first stage that emits a complete record.
 
 | Field | Type | Notes |
 |---|---|---|
-| `record_id` | str | UUIDv4, stable across runs |
+| `record_id` | str | UUID, stable across runs: v5 derived from `source_name` and `source_record_id` for collected records, v4 for phrasing variants we author |
 | `question_text` | str | Normalized canonical question, our work product |
 | `verbatim_text` | str \| None | Populated only when redistribution is permitted |
 | `issue_id` | str | Foreign key into `taxonomy/issues.yaml` |
 | `issue_category` | str | Denormalized parent category |
 | `register` | str | From `taxonomy/registers.yaml`, human-reviewed |
+| `classifier_confidence` | float \| None | 0 to 1, emitted by `classify` and used to prioritize review; null before classification |
 | `source_name` | str | Matches a file in `sources/` |
 | `source_url` | str \| None | Null where the source is a bulk dump |
 | `source_record_id` | str | Native identifier in the source system |
@@ -73,7 +75,7 @@ Define in `src/faithqs/schema.py` with pydantic v2. Every field below is require
 | `collected_at` | datetime | UTC |
 | `redistributable` | bool | Drives split assignment |
 | `permission_ref` | str \| None | Path under `sources/permissions/` |
-| `pii_scrubbed` | bool | Must be true before a record leaves `parse` |
+| `pii_scrubbed` | bool | Must be true before a record enters `data/parsed/` |
 | `review_status` | enum | `auto`, `human_reviewed`, `quarantined` |
 
 Any record failing validation goes to `data/parsed/quarantine/` with the failure reason attached. Quarantined records never reach a release split.
@@ -91,8 +93,8 @@ The release is split by redistribution rights, decided per source, not per recor
 Each stage is independently runnable and idempotent, reading from the prior stage's output directory.
 
 1. `fetch` writes immutable content-hashed payloads to `data/raw/<source>/`
-2. `parse` runs the source adapter, producing schema-conformant JSONL
-3. `scrub` strips PII and sets `pii_scrubbed`
+2. `parse` runs the source adapter, producing `SourceRecord` JSONL in `data/staged/<source>/`, named by the raw payload hash
+3. `scrub` strips PII from every text field except `author_attribution`, sets `pii_scrubbed`, and is the only stage that writes `data/parsed/<source>/`
 4. `extract` derives the normalized question form from source text, with LLM calls cached on content hash
 5. `classify` assigns `issue_id` and `register` against the taxonomy, emitting confidence
 6. `review` presents low-confidence and sampled-high-confidence records in a CLI for human adjudication
@@ -151,3 +153,7 @@ Stop and ask the human when you encounter any of the following:
 - A parser that would need to defeat rate limiting, bot detection, or a login wall
 - A classification residual bucket exceeding fifteen percent
 - Any request to make a dataset public
+
+## Amendment Log
+
+- 2026-09-07: M0 checkpoint. The project owner approved the taxonomy and register drafts. Rule 8 gained the `author_attribution` exception; `data/staged/` was added so unscrubbed parse output never touches `data/parsed/`; `classifier_confidence` joined the record schema; `record_id` became a source-derived UUIDv5 so ids are stable across runs; `SourceRecord` was named as the `parse` output.

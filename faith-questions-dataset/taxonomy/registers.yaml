@@ -1,12 +1,10 @@
-# DRAFT REGISTER VOCABULARY, NOT YET HUMAN-APPROVED.
+# Register vocabulary: the stance and communicative intent of a question as
+# asked, independent of its topic (issue_id).
 #
-# Register captures the stance and communicative intent of the question as
-# asked, independent of its topic (issue_id). Machine-seeded for the M0 human
-# checkpoint; a human must review and set `approved: true` before classify
-# assigns registers. Per the record schema, register values on released
-# records are human-reviewed.
-approved: false
-version: 0.1.0-draft
+# Approved by the project owner on 2026-09-07 at the M0 checkpoint. Register
+# values on released records are human-reviewed (CLAUDE.md, Record Schema).
+approved: true
+version: 0.1.0
 
 registers:
   - id: sincere-inquiry

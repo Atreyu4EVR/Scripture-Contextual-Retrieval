@@ -7,6 +7,25 @@ import pytest
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
+class FakeClock:
+    """Deterministic monotonic clock; ``sleep`` advances it and records the call."""
+
+    def __init__(self) -> None:
+        self.now = 1000.0
+        self.sleeps: list[float] = []
+
+    def __call__(self) -> float:
+        return self.now
+
+    def sleep(self, seconds: float) -> None:
+        self.sleeps.append(round(seconds, 6))
+        self.now += seconds
+
+
+SOURCE_URL = "https://christianity.stackexchange.com/questions/00001"
+ATTRIBUTION = f"Christianity Stack Exchange contributor, {SOURCE_URL}"
+
+
 def record_payload(**overrides: Any) -> dict[str, Any]:
     """A valid Tier A payload; override fields to probe individual gates."""
     payload: dict[str, Any] = {
@@ -20,18 +39,41 @@ def record_payload(**overrides: Any) -> dict[str, Any]:
         "issue_category": "joseph-smith",
         "register": "sincere-inquiry",
         "source_name": "christianity-stackexchange",
-        "source_url": "https://christianity.stackexchange.com/questions/00001",
+        "source_url": SOURCE_URL,
         "source_record_id": "00001",
         "source_license": "CC-BY-SA-4.0",
-        "author_attribution": (
-            "Christianity Stack Exchange contributor, "
-            "https://christianity.stackexchange.com/questions/00001"
-        ),
+        "author_attribution": ATTRIBUTION,
         "collected_at": datetime(2025, 9, 1, 12, 0, tzinfo=UTC),
         "redistributable": True,
         "permission_ref": None,
         "pii_scrubbed": True,
         "review_status": "auto",
+    }
+    payload.update(overrides)
+    return payload
+
+
+def source_record_payload(**overrides: Any) -> dict[str, Any]:
+    """A valid parse-stage payload for a Tier A source."""
+    payload: dict[str, Any] = {
+        "source_name": "christianity-stackexchange",
+        "source_record_id": "00001",
+        "source_url": SOURCE_URL,
+        "source_license": "CC-BY-SA-4.0",
+        "redistributable": True,
+        "author_attribution": ATTRIBUTION,
+        "permission_ref": None,
+        "collected_at": datetime(2025, 9, 1, 12, 0, tzinfo=UTC),
+        "title": "Why are there several accounts of the First Vision?",
+        "body_text": (
+            "I recently read that there are several accounts of the First Vision "
+            "and they don't all say the same thing. How are these differences "
+            "usually explained?"
+        ),
+        "tags": ["mormonism", "joseph-smith"],
+        "created_at": datetime(2019, 4, 2, 8, 30, tzinfo=UTC),
+        "source_metadata": {"score": 7},
+        "pii_scrubbed": False,
     }
     payload.update(overrides)
     return payload

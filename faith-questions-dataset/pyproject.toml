@@ -11,10 +11,14 @@ dependencies = [
     "selectolax>=0.3.21",
     "pydantic>=2.7",
     "pyyaml>=6.0",
+    "py7zr>=0.22",
     "duckdb>=1.0",
     "datasets>=2.19",
     "huggingface-hub>=0.23",
 ]
+
+[project.scripts]
+faithqs = "faithqs.cli:main"
 
 [dependency-groups]
 dev = [

@@ -1,10 +1,16 @@
 from pathlib import Path
 
 import pytest
+from pydantic import ValidationError
 
 from conftest import record_payload
 from faithqs.schema import FaithQuestionRecord
 from faithqs.taxonomy import (
+    Category,
+    Issue,
+    Register,
+    RegisterVocabulary,
+    Taxonomy,
     TaxonomyNotApprovedError,
     load_registers,
     load_taxonomy,
@@ -16,21 +22,62 @@ def test_shipped_taxonomy_is_structurally_valid(taxonomy_path: Path) -> None:
     # CLAUDE.md (Taxonomy First) expects roughly forty to sixty top-level issues.
     assert 40 <= len(taxonomy.issues) <= 60
     assert taxonomy.categories
+    assert all(issue.keywords for issue in taxonomy.issues)
 
 
-def test_shipped_taxonomy_is_a_draft_and_gate_holds(taxonomy_path: Path) -> None:
+def test_shipped_taxonomy_is_approved(taxonomy_path: Path) -> None:
     taxonomy = load_taxonomy(taxonomy_path)
-    assert taxonomy.approved is False
+    assert taxonomy.approved is True
+    taxonomy.require_approved()
+
+
+def test_unapproved_taxonomy_blocks_pipeline() -> None:
+    draft = Taxonomy(
+        approved=False,
+        version="0.0.1-draft",
+        categories=[Category(id="c", label="C")],
+        issues=[Issue(id="i", category="c", label="I", description="D")],
+    )
     with pytest.raises(TaxonomyNotApprovedError, match="Taxonomy First"):
-        taxonomy.require_approved()
+        draft.require_approved()
 
 
-def test_shipped_registers_load_as_draft(registers_path: Path) -> None:
+def test_taxonomy_rejects_orphan_issue() -> None:
+    with pytest.raises(ValidationError, match="unknown categories"):
+        Taxonomy(
+            version="x",
+            categories=[Category(id="c", label="C")],
+            issues=[Issue(id="i", category="missing", label="I", description="D")],
+        )
+
+
+def test_taxonomy_rejects_duplicate_issue_ids() -> None:
+    with pytest.raises(ValidationError, match="duplicate issue ids"):
+        Taxonomy(
+            version="x",
+            categories=[Category(id="c", label="C")],
+            issues=[
+                Issue(id="i", category="c", label="I", description="D"),
+                Issue(id="i", category="c", label="I2", description="D2"),
+            ],
+        )
+
+
+def test_shipped_registers_are_approved(registers_path: Path) -> None:
     vocabulary = load_registers(registers_path)
     assert len(vocabulary.registers) >= 5
-    assert vocabulary.approved is False
+    assert vocabulary.approved is True
+    vocabulary.require_approved()
+
+
+def test_unapproved_registers_block_pipeline() -> None:
+    draft = RegisterVocabulary(
+        approved=False,
+        version="x",
+        registers=[Register(id="r", label="R", description="D")],
+    )
     with pytest.raises(TaxonomyNotApprovedError):
-        vocabulary.require_approved()
+        draft.require_approved()
 
 
 def test_issue_assignment_checks_foreign_key(taxonomy_path: Path) -> None:

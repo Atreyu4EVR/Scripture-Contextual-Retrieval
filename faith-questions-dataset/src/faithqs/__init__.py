@@ -5,7 +5,9 @@ from faithqs.schema import (
     QuarantineRecord,
     ReleaseTier,
     ReviewStatus,
+    SourceRecord,
     StorageGateError,
+    derive_record_id,
     parse_record,
 )
 from faithqs.taxonomy import (
@@ -24,9 +26,11 @@ __all__ = [
     "RegisterVocabulary",
     "ReleaseTier",
     "ReviewStatus",
+    "SourceRecord",
     "StorageGateError",
     "Taxonomy",
     "TaxonomyNotApprovedError",
+    "derive_record_id",
     "load_registers",
     "load_taxonomy",
     "parse_record",

@@ -1,18 +1,17 @@
-# DRAFT ISSUE TAXONOMY, NOT YET HUMAN-APPROVED.
+# Issue taxonomy: the spine of the project (CLAUDE.md, Taxonomy First).
 #
-# CLAUDE.md ("Taxonomy First") requires this file to be human-authored before
-# any fetcher is written. This draft was machine-seeded from the publicly
-# documented concern lists the spec names (CES Letter section structure,
-# Gospel Topics Essays, Mormonr Q&A categories, FAIR's answer index) so the
-# M0 human checkpoint has a concrete proposal to edit rather than a blank
-# page. It carries `approved: false`, and faithqs.taxonomy.require_approved()
-# refuses to let any pipeline stage run against it until a human reviews it,
-# edits it, and sets `approved: true`.
+# Seeded from the publicly documented concern lists the spec names (CES Letter
+# section structure, Gospel Topics Essays, Mormonr Q&A categories, FAIR's
+# answer index) and approved by the project owner on 2026-09-07 at the M0
+# checkpoint. Edit freely; bump `version` when issues are added, merged, or
+# renamed, since records carry issue ids as foreign keys. If classification
+# produces a residual bucket above fifteen percent, revise here before
+# collecting more data.
 #
 # Descriptions state what the questions in each issue are about. They do not
 # take a position on the questions themselves.
-approved: false
-version: 0.1.0-draft
+approved: true
+version: 0.1.0
 
 categories:
   - id: book-of-mormon

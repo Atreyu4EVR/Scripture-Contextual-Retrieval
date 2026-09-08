@@ -5,15 +5,21 @@ non-negotiable rules are enforced here rather than by convention:
 
 * Rule 7: ``verbatim_text`` is only valid alongside ``redistributable: true``
   and a populated ``author_attribution``.
-* Rule 8: nothing is written outside ``data/raw/`` until ``pii_scrubbed`` is
-  true; callers gate writes with :meth:`FaithQuestionRecord.ensure_storable`.
+* Rule 8: nothing is written to ``data/parsed/`` or beyond until
+  ``pii_scrubbed`` is true; callers gate writes with ``ensure_storable()``.
 
-``author_attribution`` is exempt from PII scrubbing by design: CC BY-SA
-requires crediting the author, so the field carries the license-mandated
-credit (typically username plus source link) while scrubbing applies to
-``question_text`` and ``verbatim_text``. Flagged for human review in the M0
-checkpoint since rule 8 and the CC BY-SA attribution requirement pull in
-opposite directions.
+``author_attribution`` is the one field exempt from PII scrubbing: CC BY-SA
+requires crediting the author, so it carries the license-mandated credit
+(author name plus links) while scrubbing applies to every other text field.
+This exception was approved at the M0 checkpoint (CLAUDE.md, Amendment Log).
+
+Two models cover the pipeline:
+
+* :class:`SourceRecord` is what ``parse`` emits into ``data/staged/``: the
+  source-side subset of the schema, before scrubbing, extraction, or
+  classification. It carries no taxonomy fields because none can be known yet.
+* :class:`FaithQuestionRecord` is the complete record that ``classify`` emits,
+  built from a scrubbed SourceRecord via :meth:`SourceRecord.to_record`.
 
 Payloads that fail validation are wrapped in :class:`QuarantineRecord` with
 the failure reason attached and belong in ``data/parsed/quarantine/``.
@@ -36,6 +42,9 @@ from pydantic import (
     model_validator,
 )
 
+# Namespace for source-derived record ids. Changing it changes every record id.
+FAITHQS_NAMESPACE = uuid.uuid5(uuid.NAMESPACE_DNS, "faithqs.dataset")
+
 
 class ReviewStatus(StrEnum):
     AUTO = "auto"
@@ -54,11 +63,24 @@ class StorageGateError(RuntimeError):
     """Raised when a record would be stored in violation of a non-negotiable rule."""
 
 
-def _is_cc_by_sa(license_id: str) -> bool:
+def is_cc_by_sa(license_id: str) -> bool:
     return license_id.upper().replace(" ", "-").startswith("CC-BY-SA")
 
 
+def derive_record_id(source_name: str, source_record_id: str) -> str:
+    """Stable UUIDv5 for a collected record, keyed on its source identity."""
+    return str(uuid.uuid5(FAITHQS_NAMESPACE, f"{source_name}:{source_record_id}"))
+
+
+def _require_utc(value: datetime) -> datetime:
+    if value.tzinfo is None:
+        raise ValueError("timestamps must be timezone-aware; store UTC")
+    return value.astimezone(UTC)
+
+
 class FaithQuestionRecord(BaseModel):
+    """The complete record, emitted by ``classify`` and carried through release."""
+
     model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
     record_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
@@ -67,6 +89,7 @@ class FaithQuestionRecord(BaseModel):
     issue_id: str = Field(min_length=1)
     issue_category: str = Field(min_length=1)
     register: str = Field(min_length=1)
+    classifier_confidence: float | None = Field(default=None, ge=0.0, le=1.0)
     source_name: str = Field(min_length=1)
     source_url: str | None = None
     source_record_id: str = Field(min_length=1)
@@ -80,21 +103,19 @@ class FaithQuestionRecord(BaseModel):
 
     @field_validator("record_id")
     @classmethod
-    def _require_uuid4(cls, value: str) -> str:
+    def _require_uuid(cls, value: str) -> str:
         try:
             parsed = uuid.UUID(value)
         except ValueError as exc:
             raise ValueError("record_id must be a UUID") from exc
-        if parsed.version != 4:
-            raise ValueError(f"record_id must be UUIDv4, got version {parsed.version}")
+        if parsed.version not in (4, 5):
+            raise ValueError(f"record_id must be UUIDv4 or UUIDv5, got version {parsed.version}")
         return str(parsed)
 
     @field_validator("collected_at")
     @classmethod
-    def _require_utc(cls, value: datetime) -> datetime:
-        if value.tzinfo is None:
-            raise ValueError("collected_at must be timezone-aware; store UTC")
-        return value.astimezone(UTC)
+    def _collected_utc(cls, value: datetime) -> datetime:
+        return _require_utc(value)
 
     @model_validator(mode="after")
     def _enforce_license_gates(self) -> FaithQuestionRecord:
@@ -103,7 +124,7 @@ class FaithQuestionRecord(BaseModel):
                 raise ValueError("verbatim_text requires redistributable=true (CLAUDE.md rule 7)")
             if not self.author_attribution:
                 raise ValueError("verbatim_text requires author_attribution (CLAUDE.md rule 7)")
-        if _is_cc_by_sa(self.source_license) and not self.author_attribution:
+        if is_cc_by_sa(self.source_license) and not self.author_attribution:
             raise ValueError("author_attribution is required when the license is CC BY-SA")
         return self
 
@@ -115,11 +136,104 @@ class FaithQuestionRecord(BaseModel):
         return ReleaseTier.A if self.redistributable else ReleaseTier.B
 
     def ensure_storable(self) -> None:
-        """Gate every write outside ``data/raw/`` (CLAUDE.md rule 8)."""
+        """Gate every write to ``data/parsed/`` and beyond (CLAUDE.md rule 8)."""
         if not self.pii_scrubbed:
             raise StorageGateError(
-                f"record {self.record_id} has pii_scrubbed=false and cannot leave parse"
+                f"record {self.record_id} has pii_scrubbed=false and cannot enter data/parsed/"
             )
+
+
+class SourceRecord(BaseModel):
+    """Parse-stage record: the source-side subset of the schema.
+
+    Emitted by ``parse`` into ``data/staged/<source>/`` before any scrubbing,
+    extraction, or classification. ``to_record`` builds the complete
+    :class:`FaithQuestionRecord` once the later stages have supplied theirs.
+    """
+
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+
+    source_name: str = Field(min_length=1)
+    source_record_id: str = Field(min_length=1)
+    source_url: str | None = None
+    source_license: str = Field(min_length=1)
+    redistributable: bool
+    author_attribution: str | None = None
+    permission_ref: str | None = None
+    collected_at: datetime
+    title: str | None = None
+    body_text: str = Field(min_length=1)
+    tags: list[str] = Field(default_factory=list)
+    created_at: datetime | None = None
+    source_metadata: dict[str, Any] = Field(default_factory=dict)
+    pii_scrubbed: bool = False
+
+    @field_validator("collected_at")
+    @classmethod
+    def _collected_utc(cls, value: datetime) -> datetime:
+        return _require_utc(value)
+
+    @field_validator("created_at")
+    @classmethod
+    def _created_utc(cls, value: datetime | None) -> datetime | None:
+        return None if value is None else _require_utc(value)
+
+    @model_validator(mode="after")
+    def _enforce_attribution(self) -> SourceRecord:
+        if is_cc_by_sa(self.source_license) and not self.author_attribution:
+            raise ValueError("author_attribution is required when the license is CC BY-SA")
+        return self
+
+    @property
+    def record_id(self) -> str:
+        return derive_record_id(self.source_name, self.source_record_id)
+
+    @property
+    def verbatim_text(self) -> str | None:
+        """Source text for Tier A records; None wherever rule 7 forbids it."""
+        if not (self.redistributable and self.author_attribution):
+            return None
+        return f"{self.title}\n\n{self.body_text}" if self.title else self.body_text
+
+    def ensure_storable(self) -> None:
+        """Gate every write to ``data/parsed/`` and beyond (CLAUDE.md rule 8)."""
+        if not self.pii_scrubbed:
+            raise StorageGateError(
+                f"source record {self.source_name}:{self.source_record_id} has "
+                "pii_scrubbed=false and cannot enter data/parsed/"
+            )
+
+    def to_record(
+        self,
+        *,
+        question_text: str,
+        issue_id: str,
+        issue_category: str,
+        register: str,
+        review_status: ReviewStatus = ReviewStatus.AUTO,
+        classifier_confidence: float | None = None,
+    ) -> FaithQuestionRecord:
+        """Build the complete record after ``extract`` and ``classify`` have run."""
+        self.ensure_storable()
+        return FaithQuestionRecord(
+            record_id=self.record_id,
+            question_text=question_text,
+            verbatim_text=self.verbatim_text,
+            issue_id=issue_id,
+            issue_category=issue_category,
+            register=register,
+            classifier_confidence=classifier_confidence,
+            source_name=self.source_name,
+            source_url=self.source_url,
+            source_record_id=self.source_record_id,
+            source_license=self.source_license,
+            author_attribution=self.author_attribution,
+            collected_at=self.collected_at,
+            redistributable=self.redistributable,
+            permission_ref=self.permission_ref,
+            pii_scrubbed=True,
+            review_status=review_status,
+        )
 
 
 class QuarantineRecord(BaseModel):
