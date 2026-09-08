@@ -67,6 +67,56 @@ def test_unapproved_taxonomy_blocks_every_stage(tmp_path: Path, monkeypatch, cap
     assert "Taxonomy First" in capsys.readouterr().err
 
 
+def test_malformed_manifest_becomes_stop_line(tmp_path: Path, capsys) -> None:
+    sources = tmp_path / "sources"
+    sources.mkdir()
+    shipped = (PROJECT_ROOT / "sources" / f"{SOURCE}.yaml").read_text(encoding="utf-8")
+    assert "rate_limit_seconds: 2" in shipped
+    (sources / f"{SOURCE}.yaml").write_text(
+        shipped.replace("rate_limit_seconds: 2", "rate_limit_seconds: 1"), encoding="utf-8"
+    )
+    argv = [
+        "--data-dir",
+        str(tmp_path / "data"),
+        "--sources-dir",
+        str(sources),
+        "--taxonomy-dir",
+        str(TAXONOMY_DIR),
+        "fetch",
+        SOURCE,
+    ]
+    assert cli.main(argv) == cli.EXIT_STOP  # load_manifest fails before any network use
+    err = capsys.readouterr().err
+    assert err.startswith("STOP:")
+    assert "rule 4" in err
+
+
+def test_malformed_taxonomy_becomes_stop_line(tmp_path: Path, capsys) -> None:
+    broken_dir = tmp_path / "taxonomy"
+    broken_dir.mkdir()
+    (broken_dir / "issues.yaml").write_text(
+        "approved: true\nversion: x\ncategories: [{id: c, label: C}]\n"
+        "issues: [{id: i, category: missing, label: I, description: D}]\n",
+        encoding="utf-8",
+    )
+    (broken_dir / "registers.yaml").write_text(
+        "approved: true\nversion: x\nregisters: [{id: r, label: R, description: D}]\n",
+        encoding="utf-8",
+    )
+    argv = [
+        "--data-dir",
+        str(tmp_path / "data"),
+        "--taxonomy-dir",
+        str(broken_dir),
+        "fetch",
+        SOURCE,
+    ]
+    assert cli.main(argv) == cli.EXIT_STOP
+    err = capsys.readouterr().err
+    assert err.startswith("STOP:")
+    assert "unknown categories" in err
+
+
 def test_unknown_source_is_a_usage_error(tmp_path: Path) -> None:
     with pytest.raises(SystemExit) as excinfo:
         cli.main([*base_args(tmp_path), "fetch", "not-a-source"])

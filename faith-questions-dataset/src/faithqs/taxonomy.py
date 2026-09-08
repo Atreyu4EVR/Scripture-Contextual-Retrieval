@@ -12,13 +12,17 @@ from __future__ import annotations
 from pathlib import Path
 
 import yaml
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, ValidationError, model_validator
 
 from faithqs.schema import FaithQuestionRecord
 
 
 class TaxonomyNotApprovedError(RuntimeError):
     """Raised when a pipeline stage runs against an unapproved taxonomy."""
+
+
+class TaxonomyInvalidError(ValueError):
+    """A taxonomy file is malformed: duplicate ids, orphan issues, missing fields."""
 
 
 class Category(BaseModel):
@@ -121,9 +125,17 @@ class RegisterVocabulary(BaseModel):
 
 def load_taxonomy(path: Path) -> Taxonomy:
     with path.open(encoding="utf-8") as handle:
-        return Taxonomy.model_validate(yaml.safe_load(handle))
+        data = yaml.safe_load(handle)
+    try:
+        return Taxonomy.model_validate(data)
+    except ValidationError as exc:
+        raise TaxonomyInvalidError(f"{path} is malformed: {exc}") from exc
 
 
 def load_registers(path: Path) -> RegisterVocabulary:
     with path.open(encoding="utf-8") as handle:
-        return RegisterVocabulary.model_validate(yaml.safe_load(handle))
+        data = yaml.safe_load(handle)
+    try:
+        return RegisterVocabulary.model_validate(data)
+    except ValidationError as exc:
+        raise TaxonomyInvalidError(f"{path} is malformed: {exc}") from exc

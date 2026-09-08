@@ -8,11 +8,11 @@ from faithqs.schema import (
     SourceRecord,
     StorageGateError,
     derive_record_id,
-    parse_record,
 )
 from faithqs.taxonomy import (
     RegisterVocabulary,
     Taxonomy,
+    TaxonomyInvalidError,
     TaxonomyNotApprovedError,
     load_registers,
     load_taxonomy,
@@ -29,9 +29,9 @@ __all__ = [
     "SourceRecord",
     "StorageGateError",
     "Taxonomy",
+    "TaxonomyInvalidError",
     "TaxonomyNotApprovedError",
     "derive_record_id",
     "load_registers",
     "load_taxonomy",
-    "parse_record",
 ]

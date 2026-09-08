@@ -36,12 +36,7 @@ packages = ["src/faithqs"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
-filterwarnings = [
-    # The record schema in CLAUDE.md mandates a field named "register", which
-    # pydantic flags for shadowing a BaseModel attribute. The field works; the
-    # name is not ours to change.
-    'ignore:Field name "register" in "FaithQuestionRecord" shadows an attribute:UserWarning',
-]
+filterwarnings = ["error"]
 
 [tool.ruff]
 line-length = 100

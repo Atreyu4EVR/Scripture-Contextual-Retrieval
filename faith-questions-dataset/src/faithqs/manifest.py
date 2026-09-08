@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_validator
 
 RATE_LIMIT_FLOOR_SECONDS = 2.0
 UNRESOLVED_LICENSE_VALUES = frozenset({"", "unknown", "tbd", "todo", "unresolved", "pending"})
@@ -21,6 +21,10 @@ UNRESOLVED_LICENSE_VALUES = frozenset({"", "unknown", "tbd", "todo", "unresolved
 
 class SourceUnresolvedError(RuntimeError):
     """Rule 1: the manifest does not yet authorize collection. Stop and ask the human."""
+
+
+class ManifestError(ValueError):
+    """A manifest file is malformed, misnamed, or missing a setting a stage needs."""
 
 
 class SourceKind(StrEnum):
@@ -127,7 +131,11 @@ def load_manifest(sources_dir: Path, name: str) -> SourceManifest:
             f"no manifest at {path}; CLAUDE.md rule 1 forbids a fetcher without one"
         )
     with path.open(encoding="utf-8") as handle:
-        manifest = SourceManifest.model_validate(yaml.safe_load(handle))
+        data = yaml.safe_load(handle)
+    try:
+        manifest = SourceManifest.model_validate(data)
+    except ValidationError as exc:
+        raise ManifestError(f"{path} is malformed: {exc}") from exc
     if manifest.name != name:
-        raise ValueError(f"manifest {path} declares name {manifest.name!r}, expected {name!r}")
+        raise ManifestError(f"manifest {path} declares name {manifest.name!r}, expected {name!r}")
     return manifest

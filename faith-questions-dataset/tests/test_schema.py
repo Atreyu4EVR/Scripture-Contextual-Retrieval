@@ -4,7 +4,7 @@ from datetime import UTC, datetime, timedelta, timezone
 import pytest
 from pydantic import ValidationError
 
-from conftest import record_payload, source_record_payload
+from conftest import SOURCE_NAME, SOURCE_RECORD_ID, record_payload, source_record_payload
 from faithqs.schema import (
     FaithQuestionRecord,
     QuarantineRecord,
@@ -13,40 +13,53 @@ from faithqs.schema import (
     SourceRecord,
     StorageGateError,
     derive_record_id,
-    parse_record,
 )
 
 # --- FaithQuestionRecord -----------------------------------------------------
 
 
-def test_valid_record_roundtrips() -> None:
+def test_valid_record_roundtrips_with_derived_id() -> None:
     record = FaithQuestionRecord.model_validate(record_payload())
     restored = FaithQuestionRecord.model_validate_json(record.model_dump_json())
     assert restored == record
-    assert uuid.UUID(record.record_id).version == 4
+    assert record.record_id == derive_record_id(SOURCE_NAME, SOURCE_RECORD_ID)
+    assert uuid.UUID(record.record_id).version == 5
 
 
-def test_record_id_is_stable_when_provided() -> None:
+def test_record_id_is_required() -> None:
+    payload = record_payload()
+    del payload["record_id"]
+    with pytest.raises(ValidationError, match="record_id"):
+        FaithQuestionRecord.model_validate(payload)
+
+
+def test_authored_variant_may_carry_explicit_uuid4() -> None:
     rid = str(uuid.uuid4())
     record = FaithQuestionRecord.model_validate(record_payload(record_id=rid))
     assert record.record_id == rid
 
 
-def test_uuid5_record_id_accepted() -> None:
-    rid = derive_record_id("christianity-stackexchange", "00001")
-    record = FaithQuestionRecord.model_validate(record_payload(record_id=rid))
-    assert record.record_id == rid
-    assert uuid.UUID(rid).version == 5
+def test_uuid5_must_derive_from_source_identity() -> None:
+    foreign = derive_record_id("another-source", SOURCE_RECORD_ID)
+    with pytest.raises(ValidationError, match="does not derive"):
+        FaithQuestionRecord.model_validate(record_payload(record_id=foreign))
+    wrong_namespace = str(uuid.uuid5(uuid.NAMESPACE_URL, f"{SOURCE_NAME}:{SOURCE_RECORD_ID}"))
+    with pytest.raises(ValidationError, match="does not derive"):
+        FaithQuestionRecord.model_validate(record_payload(record_id=wrong_namespace))
 
 
-def test_time_based_uuid_rejected() -> None:
+def test_time_based_and_non_uuid_record_ids_rejected() -> None:
     with pytest.raises(ValidationError, match="UUIDv4 or UUIDv5"):
         FaithQuestionRecord.model_validate(record_payload(record_id=str(uuid.uuid1())))
+    with pytest.raises(ValidationError, match="must be a UUID"):
+        FaithQuestionRecord.model_validate(record_payload(record_id="not-a-uuid"))
 
 
 def test_derive_record_id_is_deterministic_and_source_scoped() -> None:
     a = derive_record_id("christianity-stackexchange", "42")
-    assert a == derive_record_id("christianity-stackexchange", "42")
+    # Golden value: changing FAITHQS_NAMESPACE or the key format changes every record id.
+    assert a == "19df0287-7fd2-5ac6-a1b9-956fad758791"
+    assert uuid.UUID(a).version == 5
     assert a != derive_record_id("another-source", "42")
     assert a != derive_record_id("christianity-stackexchange", "43")
 
@@ -57,6 +70,8 @@ def test_classifier_confidence_bounds() -> None:
     assert ok.classifier_confidence == 0.42
     with pytest.raises(ValidationError):
         FaithQuestionRecord.model_validate(record_payload(classifier_confidence=1.5))
+    with pytest.raises(ValidationError):
+        FaithQuestionRecord.model_validate(record_payload(classifier_confidence=-0.1))
 
 
 def test_verbatim_text_requires_redistributable() -> None:
@@ -127,18 +142,45 @@ def test_unknown_fields_rejected() -> None:
         FaithQuestionRecord.model_validate(record_payload(author_ip="10.0.0.1"))
 
 
-def test_parse_record_quarantines_invalid_payload_with_reason() -> None:
-    bad = record_payload(question_text="")
-    result = parse_record(bad)
-    assert isinstance(result, QuarantineRecord)
-    assert "question_text" in result.failure_reason
-    assert result.payload == bad
-    assert result.quarantined_at.tzinfo is not None
+# --- QuarantineRecord --------------------------------------------------------
+
+SENTINEL = "Bob Jones of the Rexburg 4th Ward, bob@example.org"
 
 
-def test_parse_record_returns_valid_record() -> None:
-    result = parse_record(record_payload())
-    assert isinstance(result, FaithQuestionRecord)
+def test_quarantine_record_carries_identifiers_and_error_locations_only() -> None:
+    bad = record_payload(question_text="", verbatim_text=SENTINEL, pii_scrubbed=False)
+    with pytest.raises(ValidationError) as excinfo:
+        FaithQuestionRecord.model_validate(bad)
+    quarantine = QuarantineRecord.from_validation_error(bad, excinfo.value)
+
+    assert quarantine.source_name == SOURCE_NAME
+    assert quarantine.source_record_id == SOURCE_RECORD_ID
+    assert quarantine.record_id == bad["record_id"]
+    assert ["question_text"] in [e.loc for e in quarantine.errors]
+    serialized = quarantine.model_dump_json()
+    assert SENTINEL not in serialized
+    assert "First Vision" not in serialized
+    assert quarantine.quarantined_at.tzinfo is not None
+
+
+def test_quarantine_record_tolerates_missing_or_malformed_identifiers() -> None:
+    payload = {"source_name": 42, "source_record_id": "9", "question_text": ""}
+    with pytest.raises(ValidationError) as excinfo:
+        FaithQuestionRecord.model_validate(payload)
+    quarantine = QuarantineRecord.from_validation_error(payload, excinfo.value)
+    assert quarantine.source_name is None
+    assert quarantine.source_record_id == "9"
+    assert quarantine.record_id is None  # cannot derive without both identifiers
+    assert quarantine.errors
+
+
+def test_quarantine_record_derives_id_when_payload_lacks_one() -> None:
+    payload = source_record_payload(body_text="")
+    with pytest.raises(ValidationError) as excinfo:
+        SourceRecord.model_validate(payload)
+    quarantine = QuarantineRecord.from_validation_error(payload, excinfo.value)
+    assert quarantine.record_id == derive_record_id(SOURCE_NAME, SOURCE_RECORD_ID)
+    assert [e.loc for e in quarantine.errors] == [["body_text"]]
 
 
 # --- SourceRecord ------------------------------------------------------------
@@ -148,7 +190,7 @@ def test_source_record_roundtrips_and_derives_stable_id() -> None:
     source = SourceRecord.model_validate(source_record_payload())
     restored = SourceRecord.model_validate_json(source.model_dump_json())
     assert restored == source
-    assert source.record_id == derive_record_id("christianity-stackexchange", "00001")
+    assert source.record_id == derive_record_id(SOURCE_NAME, SOURCE_RECORD_ID)
 
 
 def test_source_record_verbatim_composes_title_and_body() -> None:
@@ -162,12 +204,17 @@ def test_source_record_verbatim_composes_title_and_body() -> None:
 
 
 def test_source_record_withholds_verbatim_when_not_redistributable() -> None:
+    # Non-redistributable with attribution present: redistributable alone gates it.
     source = SourceRecord.model_validate(
-        source_record_payload(
-            redistributable=False,
-            source_license="all-rights-reserved",
-            author_attribution=None,
-        )
+        source_record_payload(redistributable=False, source_license="all-rights-reserved")
+    )
+    assert source.verbatim_text is None
+
+
+def test_source_record_withholds_verbatim_without_attribution() -> None:
+    # Redistributable but unattributed (a non CC BY-SA license): attribution alone gates it.
+    source = SourceRecord.model_validate(
+        source_record_payload(source_license="CC0-1.0", author_attribution=None)
     )
     assert source.verbatim_text is None
 

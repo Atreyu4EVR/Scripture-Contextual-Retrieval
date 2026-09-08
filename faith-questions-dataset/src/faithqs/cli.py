@@ -17,23 +17,32 @@ from pathlib import Path
 from faithqs.config import ConfigError, Settings
 from faithqs.fetch import FETCHERS
 from faithqs.fetch.polite import FetchError, RobotsDisallowedError, RobotsUnavailableError
-from faithqs.manifest import SourceUnresolvedError
+from faithqs.manifest import ManifestError, SourceUnresolvedError
 from faithqs.parse import PARSERS
 from faithqs.schema import StorageGateError
 from faithqs.storage import RawStore, StagedStore
-from faithqs.taxonomy import TaxonomyNotApprovedError, load_registers, load_taxonomy
+from faithqs.taxonomy import (
+    TaxonomyInvalidError,
+    TaxonomyNotApprovedError,
+    load_registers,
+    load_taxonomy,
+)
 
 EXIT_OK = 0
 EXIT_USAGE = 1
 EXIT_STOP = 2
 
+# Every project gate and configuration failure a human must resolve. Anything
+# else is a bug and propagates as a traceback on purpose.
 GATE_ERRORS = (
     ConfigError,
+    ManifestError,
     SourceUnresolvedError,
     RobotsDisallowedError,
     RobotsUnavailableError,
     FetchError,
     StorageGateError,
+    TaxonomyInvalidError,
     TaxonomyNotApprovedError,
 )
 

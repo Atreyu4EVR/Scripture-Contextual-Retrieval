@@ -46,9 +46,9 @@ from pydantic import ValidationError
 from selectolax.parser import HTMLParser, Node
 
 from faithqs.config import Settings
-from faithqs.manifest import SourceManifest
+from faithqs.manifest import ManifestError, SourceManifest
 from faithqs.parse import ParseOutcome
-from faithqs.schema import SourceRecord
+from faithqs.schema import QuarantineRecord, SourceRecord
 from faithqs.storage import RawPayload, StagedStore
 
 QUESTION_POST_TYPE = "1"
@@ -217,10 +217,10 @@ def parse_dump(
 ) -> ParseOutcome:
     wanted = {tag.lower() for tag in manifest.filters.get("tags", [])}
     if not wanted:
-        raise ValueError(f"{manifest.name}: manifest filters.tags is empty; nothing to select")
+        raise ManifestError(f"{manifest.name}: manifest filters.tags is empty; nothing to select")
     site_url = str(manifest.filters.get("site_url", "")).rstrip("/")
     if not site_url:
-        raise ValueError(f"{manifest.name}: manifest filters.site_url is required")
+        raise ManifestError(f"{manifest.name}: manifest filters.site_url is required")
     site_name = str(manifest.filters.get("site_name") or urlsplit(site_url).netloc)
 
     collected_at = (
@@ -302,15 +302,11 @@ def parse_dump(
                     record = SourceRecord.model_validate(candidate)
                 except ValidationError as exc:
                     skipped["quarantined"] += 1
-                    # Locations and messages only: never copy field values into a sidecar.
+                    # Identifiers and error locations only; never field values.
                     quarantine.append(
-                        {
-                            "source_record_id": post_id,
-                            "errors": [
-                                {"loc": list(e["loc"]), "msg": e["msg"], "type": e["type"]}
-                                for e in exc.errors(include_input=False, include_url=False)
-                            ],
-                        }
+                        QuarantineRecord.from_validation_error(candidate, exc).model_dump(
+                            mode="json"
+                        )
                     )
                     continue
                 out.write(record.model_dump_json())

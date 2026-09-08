@@ -68,7 +68,7 @@ Define in `src/faithqs/schema.py` with pydantic v2. Every field below is require
 | `register` | str | From `taxonomy/registers.yaml`, human-reviewed |
 | `classifier_confidence` | float \| None | 0 to 1, emitted by `classify` and used to prioritize review; null before classification |
 | `source_name` | str | Matches a file in `sources/` |
-| `source_url` | str \| None | Null where the source is a bulk dump |
+| `source_url` | str \| None | Null only where the source system exposes no per-record URL; Stack Exchange dumps have one, and CC BY-SA credit requires it |
 | `source_record_id` | str | Native identifier in the source system |
 | `source_license` | str | SPDX identifier or explicit enum value |
 | `author_attribution` | str \| None | Required when the license is CC BY-SA |
@@ -78,7 +78,7 @@ Define in `src/faithqs/schema.py` with pydantic v2. Every field below is require
 | `pii_scrubbed` | bool | Must be true before a record enters `data/parsed/` |
 | `review_status` | enum | `auto`, `human_reviewed`, `quarantined` |
 
-Any record failing validation goes to `data/parsed/quarantine/` with the failure reason attached. Quarantined records never reach a release split.
+Any record failing validation is quarantined beside that stage's output (`data/staged/<source>/` for `parse`, `data/parsed/quarantine/` from `scrub` onward) as identifiers and validation error locations only, never field values. Quarantined records never reach a release split.
 
 ## Two-Tier Output
 
@@ -157,3 +157,4 @@ Stop and ask the human when you encounter any of the following:
 ## Amendment Log
 
 - 2026-09-07: M0 checkpoint. The project owner approved the taxonomy and register drafts. Rule 8 gained the `author_attribution` exception; `data/staged/` was added so unscrubbed parse output never touches `data/parsed/`; `classifier_confidence` joined the record schema; `record_id` became a source-derived UUIDv5 so ids are stable across runs; `SourceRecord` was named as the `parse` output.
+- 2026-09-08: Review reconciliation, pending owner ratification. The quarantine sentence in Record Schema previously sent every failed record, payload included, to `data/parsed/quarantine/`, which rule 8 forbids for pre-scrub records. It now says quarantine entries live beside the failing stage's output and carry identifiers and error locations only, never field values, which is what the code does. The `source_url` note previously said bulk dumps have no per-record URL; Stack Exchange dumps do, and the attribution terms require linking it, so the note now says null only where the source system exposes none.

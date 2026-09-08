@@ -5,6 +5,7 @@ from pydantic import ValidationError
 
 from conftest import PROJECT_ROOT
 from faithqs.manifest import (
+    ManifestError,
     PermissionStatus,
     SourceKind,
     SourceManifest,
@@ -69,8 +70,18 @@ def test_manifest_name_must_match_filename(tmp_path: Path) -> None:
         "attribution_required: false\npermission_status: not_required\n",
         encoding="utf-8",
     )
-    with pytest.raises(ValueError, match="declares name"):
+    with pytest.raises(ManifestError, match="declares name"):
         load_manifest(tmp_path, "wrong")
+
+
+def test_malformed_manifest_file_is_a_manifest_error(tmp_path: Path) -> None:
+    (tmp_path / "fast.yaml").write_text(
+        "name: fast\nkind: bulk_dump\nlicense: MIT\nredistributable: true\n"
+        "attribution_required: false\npermission_status: not_required\nrate_limit_seconds: 1\n",
+        encoding="utf-8",
+    )
+    with pytest.raises(ManifestError, match="rule 4"):
+        load_manifest(tmp_path, "fast")
 
 
 @pytest.mark.parametrize("license_value", ["unknown", "TBD", "", "pending"])

@@ -47,11 +47,12 @@ The Internet Archive's Terms of Use grant access "for scholarship and research p
 
 Each gate in CLAUDE.md is enforced in code and surfaces as a `STOP:` line with exit code 2:
 
-- Taxonomy or register file with `approved: false` (Taxonomy First)
-- Manifest with an unresolved license or permission, or a granted permission with no filed correspondence (rule 1)
-- robots.txt disallowing the path, or unreachable (rule 2)
+- Taxonomy or register file with `approved: false` (Taxonomy First), or malformed
+- Manifest with an unresolved license or permission, or a granted permission with no filed correspondence (rule 1); a malformed or misnamed manifest
+- robots.txt disallowing the path, or unreachable after retries, including a persistent 429 (rule 2)
 - Missing `FAITHQS_CONTACT_EMAIL` (rule 3)
 - Any attempt to set a rate limit under two seconds (rule 4)
+- A download whose bytes do not match the manifest's pinned checksums
 - A record reaching `data/parsed/` with `pii_scrubbed: false` (rule 8)
 
 ## Layout

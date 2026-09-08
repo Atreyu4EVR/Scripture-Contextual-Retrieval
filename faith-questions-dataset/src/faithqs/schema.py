@@ -21,14 +21,17 @@ Two models cover the pipeline:
 * :class:`FaithQuestionRecord` is the complete record that ``classify`` emits,
   built from a scrubbed SourceRecord via :meth:`SourceRecord.to_record`.
 
-Payloads that fail validation are wrapped in :class:`QuarantineRecord` with
-the failure reason attached and belong in ``data/parsed/quarantine/``.
-Quarantined records never reach a release split.
+A payload that fails validation is recorded as a :class:`QuarantineRecord`:
+identifiers plus pydantic error locations and messages, never field values,
+so a quarantine sidecar can sit beside any stage's output without carrying
+unscrubbed text. Quarantined records never reach a release split.
 """
 
 from __future__ import annotations
 
 import uuid
+import warnings
+from collections.abc import Mapping
 from datetime import UTC, datetime
 from enum import StrEnum
 from typing import Any
@@ -78,69 +81,94 @@ def _require_utc(value: datetime) -> datetime:
     return value.astimezone(UTC)
 
 
-class FaithQuestionRecord(BaseModel):
-    """The complete record, emitted by ``classify`` and carried through release."""
+with warnings.catch_warnings():
+    # CLAUDE.md names the field `register`; pydantic warns that it shadows a
+    # BaseModel attribute. The field works and the name is not ours to change.
+    warnings.filterwarnings(
+        "ignore",
+        message=r'Field name "register" in "FaithQuestionRecord" shadows an attribute',
+        category=UserWarning,
+    )
 
-    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+    class FaithQuestionRecord(BaseModel):
+        """The complete record, emitted by ``classify`` and carried through release.
 
-    record_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    question_text: str = Field(min_length=1)
-    verbatim_text: str | None = None
-    issue_id: str = Field(min_length=1)
-    issue_category: str = Field(min_length=1)
-    register: str = Field(min_length=1)
-    classifier_confidence: float | None = Field(default=None, ge=0.0, le=1.0)
-    source_name: str = Field(min_length=1)
-    source_url: str | None = None
-    source_record_id: str = Field(min_length=1)
-    source_license: str = Field(min_length=1)
-    author_attribution: str | None = None
-    collected_at: datetime
-    redistributable: bool
-    permission_ref: str | None = None
-    pii_scrubbed: bool
-    review_status: ReviewStatus
+        ``record_id`` is required: collected records carry the UUIDv5 derived from
+        their source identity (checked below); phrasing variants the project
+        authors carry an explicit UUIDv4.
+        """
 
-    @field_validator("record_id")
-    @classmethod
-    def _require_uuid(cls, value: str) -> str:
-        try:
-            parsed = uuid.UUID(value)
-        except ValueError as exc:
-            raise ValueError("record_id must be a UUID") from exc
-        if parsed.version not in (4, 5):
-            raise ValueError(f"record_id must be UUIDv4 or UUIDv5, got version {parsed.version}")
-        return str(parsed)
+        model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
-    @field_validator("collected_at")
-    @classmethod
-    def _collected_utc(cls, value: datetime) -> datetime:
-        return _require_utc(value)
+        record_id: str = Field(min_length=1)
+        question_text: str = Field(min_length=1)
+        verbatim_text: str | None = None
+        issue_id: str = Field(min_length=1)
+        issue_category: str = Field(min_length=1)
+        register: str = Field(min_length=1)
+        classifier_confidence: float | None = Field(default=None, ge=0.0, le=1.0)
+        source_name: str = Field(min_length=1)
+        source_url: str | None = None
+        source_record_id: str = Field(min_length=1)
+        source_license: str = Field(min_length=1)
+        author_attribution: str | None = None
+        collected_at: datetime
+        redistributable: bool
+        permission_ref: str | None = None
+        pii_scrubbed: bool
+        review_status: ReviewStatus
 
-    @model_validator(mode="after")
-    def _enforce_license_gates(self) -> FaithQuestionRecord:
-        if self.verbatim_text is not None:
-            if not self.redistributable:
-                raise ValueError("verbatim_text requires redistributable=true (CLAUDE.md rule 7)")
-            if not self.author_attribution:
-                raise ValueError("verbatim_text requires author_attribution (CLAUDE.md rule 7)")
-        if is_cc_by_sa(self.source_license) and not self.author_attribution:
-            raise ValueError("author_attribution is required when the license is CC BY-SA")
-        return self
+        @field_validator("record_id")
+        @classmethod
+        def _require_uuid(cls, value: str) -> str:
+            try:
+                parsed = uuid.UUID(value)
+            except ValueError as exc:
+                raise ValueError("record_id must be a UUID") from exc
+            if parsed.version not in (4, 5):
+                raise ValueError(
+                    f"record_id must be UUIDv4 or UUIDv5, got version {parsed.version}"
+                )
+            return str(parsed)
 
-    @property
-    def release_tier(self) -> ReleaseTier | None:
-        """Tier A when redistributable, Tier B otherwise, None when quarantined."""
-        if self.review_status is ReviewStatus.QUARANTINED:
-            return None
-        return ReleaseTier.A if self.redistributable else ReleaseTier.B
+        @field_validator("collected_at")
+        @classmethod
+        def _collected_utc(cls, value: datetime) -> datetime:
+            return _require_utc(value)
 
-    def ensure_storable(self) -> None:
-        """Gate every write to ``data/parsed/`` and beyond (CLAUDE.md rule 8)."""
-        if not self.pii_scrubbed:
-            raise StorageGateError(
-                f"record {self.record_id} has pii_scrubbed=false and cannot enter data/parsed/"
-            )
+        @model_validator(mode="after")
+        def _enforce_gates(self) -> FaithQuestionRecord:
+            if self.verbatim_text is not None:
+                if not self.redistributable:
+                    raise ValueError(
+                        "verbatim_text requires redistributable=true (CLAUDE.md rule 7)"
+                    )
+                if not self.author_attribution:
+                    raise ValueError("verbatim_text requires author_attribution (CLAUDE.md rule 7)")
+            if is_cc_by_sa(self.source_license) and not self.author_attribution:
+                raise ValueError("author_attribution is required when the license is CC BY-SA")
+            if uuid.UUID(self.record_id).version == 5 and self.record_id != derive_record_id(
+                self.source_name, self.source_record_id
+            ):
+                raise ValueError(
+                    "record_id is a UUIDv5 that does not derive from source_name and "
+                    "source_record_id; collected records must use derive_record_id()"
+                )
+            return self
+
+        @property
+        def release_tier(self) -> ReleaseTier | None:
+            """Tier A when redistributable, Tier B otherwise, None when quarantined."""
+            if self.review_status is ReviewStatus.QUARANTINED:
+                return None
+            return ReleaseTier.A if self.redistributable else ReleaseTier.B
+
+        def ensure_storable(self) -> None:
+            """Gate every write to ``data/parsed/`` and beyond (CLAUDE.md rule 8)."""
+            if not self.pii_scrubbed:
+                raise StorageGateError(
+                    f"record {self.record_id} has pii_scrubbed=false and cannot enter data/parsed/"
+                )
 
 
 class SourceRecord(BaseModel):
@@ -236,19 +264,50 @@ class SourceRecord(BaseModel):
         )
 
 
+class QuarantineError(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    loc: list[str | int]
+    msg: str
+    type: str
+
+
 class QuarantineRecord(BaseModel):
-    """A payload that failed validation, preserved with its failure reason."""
+    """Why a payload failed validation, without the payload.
+
+    Carries only identifiers and pydantic error locations, so it can be written
+    beside any stage's output (``data/staged/`` for parse, ``data/parsed/`` from
+    scrub onward) without ever moving field values across the rule 8 boundary.
+    """
 
     model_config = ConfigDict(extra="forbid")
 
-    payload: dict[str, Any]
-    failure_reason: str
+    source_name: str | None = None
+    source_record_id: str | None = None
+    record_id: str | None = None
+    errors: list[QuarantineError]
     quarantined_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
+    @classmethod
+    def from_validation_error(
+        cls, payload: Mapping[str, Any], exc: ValidationError
+    ) -> QuarantineRecord:
+        """Build from the failing payload, reading only its identifier fields."""
+        source_name = _str_or_none(payload.get("source_name"))
+        source_record_id = _str_or_none(payload.get("source_record_id"))
+        record_id = _str_or_none(payload.get("record_id"))
+        if record_id is None and source_name and source_record_id:
+            record_id = derive_record_id(source_name, source_record_id)
+        return cls(
+            source_name=source_name,
+            source_record_id=source_record_id,
+            record_id=record_id,
+            errors=[
+                QuarantineError(loc=list(e["loc"]), msg=e["msg"], type=e["type"])
+                for e in exc.errors(include_input=False, include_url=False)
+            ],
+        )
 
-def parse_record(payload: dict[str, Any]) -> FaithQuestionRecord | QuarantineRecord:
-    """Validate a payload, quarantining instead of dropping on failure."""
-    try:
-        return FaithQuestionRecord.model_validate(payload)
-    except ValidationError as exc:
-        return QuarantineRecord(payload=payload, failure_reason=str(exc))
+
+def _str_or_none(value: Any) -> str | None:
+    return value if isinstance(value, str) and value else None

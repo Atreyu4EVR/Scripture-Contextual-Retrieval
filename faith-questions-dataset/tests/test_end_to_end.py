@@ -72,9 +72,13 @@ def test_bulk_dump_flows_to_a_valid_release_record(tmp_path: Path) -> None:
     assert fetched.path.read_bytes() == dump_bytes
     [payload] = RawStore(settings.data_dir).list_payloads(manifest.name)
 
-    # Stage 2: parse stages SourceRecords for wanted tags only.
+    # Stage 2: parse stages SourceRecords for wanted tags only. The fixture holds
+    # four live LDS-tagged questions, one Catholic question, a deleted post, a
+    # watermark row, and an answer; the shipped tag filter must select exactly four.
     outcome = parse(settings, SOURCES_DIR, payload=payload, log=lambda _m: None)
-    assert outcome.records_written >= 1
+    assert outcome.records_written == 4
+    assert outcome.records_skipped == 3
+    assert not (settings.data_dir / "parsed").exists()  # nothing unscrubbed reaches parsed/
     staged = [
         SourceRecord.model_validate_json(line)
         for line in outcome.output_path.read_text(encoding="utf-8").splitlines()
@@ -131,5 +135,7 @@ def test_cli_parse_runs_real_parser_over_fetched_payload(tmp_path: Path, capsys)
     ]
     assert cli.main(argv) == cli.EXIT_OK
     out = capsys.readouterr().out
-    assert "staged" in out
+    summary = [line for line in out.splitlines() if line.startswith("staged")]
+    assert len(summary) == 1 and "4 records (3 skipped)" in summary[0]
+    assert not any(line.startswith("skipped") for line in out.splitlines())
     assert (data_dir / "staged" / "christianity-stackexchange" / ("d" * 64 + ".jsonl")).is_file()

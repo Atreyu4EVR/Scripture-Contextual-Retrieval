@@ -4,6 +4,8 @@ from typing import Any
 
 import pytest
 
+from faithqs.schema import derive_record_id
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -22,13 +24,16 @@ class FakeClock:
         self.now += seconds
 
 
-SOURCE_URL = "https://christianity.stackexchange.com/questions/00001"
-ATTRIBUTION = f"Christianity Stack Exchange contributor, {SOURCE_URL}"
+SOURCE_NAME = "christianity-stackexchange"
+SOURCE_RECORD_ID = "00001"
+SOURCE_URL = f"https://christianity.stackexchange.com/questions/{SOURCE_RECORD_ID}"
+ATTRIBUTION = f"Christianity Stack Exchange contributor, Christianity Stack Exchange, {SOURCE_URL}"
 
 
 def record_payload(**overrides: Any) -> dict[str, Any]:
     """A valid Tier A payload; override fields to probe individual gates."""
     payload: dict[str, Any] = {
+        "record_id": derive_record_id(SOURCE_NAME, SOURCE_RECORD_ID),
         "question_text": "Why do the recorded accounts of the First Vision differ?",
         "verbatim_text": (
             "I recently read that there are several accounts of the First Vision "
@@ -38,9 +43,9 @@ def record_payload(**overrides: Any) -> dict[str, Any]:
         "issue_id": "first-vision-accounts",
         "issue_category": "joseph-smith",
         "register": "sincere-inquiry",
-        "source_name": "christianity-stackexchange",
+        "source_name": SOURCE_NAME,
         "source_url": SOURCE_URL,
-        "source_record_id": "00001",
+        "source_record_id": SOURCE_RECORD_ID,
         "source_license": "CC-BY-SA-4.0",
         "author_attribution": ATTRIBUTION,
         "collected_at": datetime(2025, 9, 1, 12, 0, tzinfo=UTC),
@@ -56,8 +61,8 @@ def record_payload(**overrides: Any) -> dict[str, Any]:
 def source_record_payload(**overrides: Any) -> dict[str, Any]:
     """A valid parse-stage payload for a Tier A source."""
     payload: dict[str, Any] = {
-        "source_name": "christianity-stackexchange",
-        "source_record_id": "00001",
+        "source_name": SOURCE_NAME,
+        "source_record_id": SOURCE_RECORD_ID,
         "source_url": SOURCE_URL,
         "source_license": "CC-BY-SA-4.0",
         "redistributable": True,
@@ -70,7 +75,7 @@ def source_record_payload(**overrides: Any) -> dict[str, Any]:
             "and they don't all say the same thing. How are these differences "
             "usually explained?"
         ),
-        "tags": ["mormonism", "joseph-smith"],
+        "tags": ["lds", "joseph-smith"],
         "created_at": datetime(2019, 4, 2, 8, 30, tzinfo=UTC),
         "source_metadata": {"score": 7},
         "pii_scrubbed": False,
