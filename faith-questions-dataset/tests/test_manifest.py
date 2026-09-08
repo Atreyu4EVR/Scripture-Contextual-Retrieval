@@ -35,6 +35,27 @@ def test_shipped_christianity_manifest_is_resolved() -> None:
     assert manifest.redistributable is True
     assert manifest.permission_status is PermissionStatus.NOT_REQUIRED
     manifest.require_resolved(SOURCES_DIR)
+    [download] = manifest.downloads
+    assert download.url.endswith("christianity.stackexchange.com.7z")
+    assert download.sha1 and download.md5 and download.size  # pinned: the IA file is frozen
+    assert "lds" in manifest.filters["tags"]
+    assert manifest.filters["site_name"] == "Christianity Stack Exchange"
+
+
+def test_bare_download_urls_become_specs() -> None:
+    manifest = SourceManifest.model_validate(
+        manifest_kwargs(downloads=["https://x/a.7z", {"url": "https://x/b.7z", "size": 5}])
+    )
+    assert [d.url for d in manifest.downloads] == ["https://x/a.7z", "https://x/b.7z"]
+    assert manifest.downloads[0].sha1 is None
+    assert manifest.downloads[1].size == 5
+
+
+def test_malformed_checksum_rejected() -> None:
+    with pytest.raises(ValidationError):
+        SourceManifest.model_validate(
+            manifest_kwargs(downloads=[{"url": "https://x/a.7z", "sha1": "not-hex"}])
+        )
 
 
 def test_missing_manifest_is_a_rule_one_stop(tmp_path: Path) -> None:

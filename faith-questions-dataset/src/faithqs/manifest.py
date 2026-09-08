@@ -37,6 +37,22 @@ class PermissionStatus(StrEnum):
     UNRESOLVED = "unresolved"
 
 
+class DownloadSpec(BaseModel):
+    """One file a bulk_dump source fetches, with optional pinned integrity values."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    url: str = Field(min_length=1)
+    sha1: str | None = Field(default=None, pattern=r"^[0-9a-fA-F]{40}$")
+    md5: str | None = Field(default=None, pattern=r"^[0-9a-fA-F]{32}$")
+    size: int | None = Field(default=None, ge=0)
+
+    @field_validator("sha1", "md5")
+    @classmethod
+    def _lowercase(cls, value: str | None) -> str | None:
+        return value.lower() if value else value
+
+
 class SourceManifest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -50,15 +66,22 @@ class SourceManifest(BaseModel):
     permission_ref: str | None = None
     notes: str = ""
     endpoints: list[str] = Field(default_factory=list)
-    downloads: list[str] = Field(
+    downloads: list[DownloadSpec] = Field(
         default_factory=list,
-        description="Direct file URLs fetched by bulk_dump sources.",
+        description="Files fetched by bulk_dump sources; a bare URL string is accepted.",
     )
     rate_limit_seconds: float = RATE_LIMIT_FLOOR_SECONDS
     filters: dict[str, Any] = Field(
         default_factory=dict,
         description="Source-specific selection settings, read by that source's parser.",
     )
+
+    @field_validator("downloads", mode="before")
+    @classmethod
+    def _coerce_download_specs(cls, value: Any) -> Any:
+        if isinstance(value, list):
+            return [{"url": item} if isinstance(item, str) else item for item in value]
+        return value
 
     @field_validator("rate_limit_seconds")
     @classmethod

@@ -1,9 +1,11 @@
 """Fetch stage for ``bulk_dump`` sources: download listed files into ``data/raw/``.
 
-No crawling happens here. Each URL in the manifest's ``downloads`` list is a
+No crawling happens here. Each entry in the manifest's ``downloads`` list is a
 single file. Before downloading, a HEAD request is compared against the ETag
 and size of payloads already stored, so re-running ``fetch`` on an unchanged
-upstream costs one request and no bandwidth.
+upstream costs one request and no bandwidth. When the manifest pins ``sha1``,
+``md5``, or ``size`` for a file, the download is verified against them and a
+mismatch is discarded rather than stored.
 """
 
 from __future__ import annotations
@@ -18,8 +20,8 @@ from urllib.parse import urlsplit
 import httpx
 
 from faithqs.config import Settings
-from faithqs.fetch.polite import FetchError, PoliteClient
-from faithqs.manifest import SourceKind, SourceManifest
+from faithqs.fetch.polite import DownloadResult, FetchError, PoliteClient
+from faithqs.manifest import DownloadSpec, SourceKind, SourceManifest
 from faithqs.storage import RawStore
 
 
@@ -46,6 +48,20 @@ def _already_stored(store: RawStore, source: str, url: str, head: httpx.Response
         if same_etag and same_length:
             return payload.path
     return None
+
+
+def _verify(result: DownloadResult, spec: DownloadSpec) -> None:
+    """Compare the download against values a human pinned in the manifest."""
+    problems: list[str] = []
+    if spec.size is not None and result.size != spec.size:
+        problems.append(f"size {result.size} != expected {spec.size}")
+    if spec.sha1 and result.sha1 != spec.sha1:
+        problems.append(f"sha1 {result.sha1} != expected {spec.sha1}")
+    if spec.md5 and result.md5 != spec.md5:
+        problems.append(f"md5 {result.md5} != expected {spec.md5}")
+    if problems:
+        result.path.unlink(missing_ok=True)
+        raise FetchError(f"{spec.url}: integrity check failed ({'; '.join(problems)}); discarded")
 
 
 def fetch_bulk_dump(
@@ -75,7 +91,8 @@ def fetch_bulk_dump(
         sleep=sleep,
         clock=clock,
     ) as client:
-        for url in manifest.downloads:
+        for spec in manifest.downloads:
+            url = spec.url
             suffix = _suffix_for(url)
             head = client.request("HEAD", url)
             existing = _already_stored(store, manifest.name, url, head)
@@ -93,6 +110,7 @@ def fetch_bulk_dump(
 
             log(f"{manifest.name}: downloading {url}")
             result = client.download(url, store.temp_path(manifest.name, suffix))
+            _verify(result, spec)
             path = store.commit(
                 result.path,
                 source=manifest.name,
@@ -103,9 +121,12 @@ def fetch_bulk_dump(
                     "final_url": result.final_url,
                     "fetched_at": datetime.now(UTC).isoformat(),
                     "size": result.size,
+                    "sha1": result.sha1,
+                    "md5": result.md5,
                     "etag": result.headers.get("etag"),
                     "last_modified": result.headers.get("last-modified"),
                     "content_type": result.headers.get("content-type"),
+                    "verified_against": spec.model_dump(exclude_none=True, exclude={"url"}),
                     "user_agent": client.user_agent,
                     "license": manifest.license,
                 },

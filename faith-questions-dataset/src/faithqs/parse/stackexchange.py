@@ -4,17 +4,28 @@ Site-specific modules (one per source, per CLAUDE.md) supply the manifest and
 call :func:`parse_dump`. Only questions (``PostTypeId="1"``) carrying at least
 one wanted tag are staged; everything else is counted and dropped.
 
-Format notes the parser is defensive about:
+Format facts the parser is built around (verified against the Internet
+Archive's 2024-04 ``christianity.stackexchange.com.7z`` and the published
+schema, 2026-09-08):
 
-* ``Tags`` has been encoded two ways across dump generations: angle brackets
-  (``<a><b>``) and pipes (``|a|b|``). Both are accepted.
-* Recent dumps carry a per-row ``ContentLicense`` attribute. When it is
-  absent, the license is inferred from ``CreationDate`` using Stack Exchange's
-  published cutovers (CC BY-SA 2.5, then 3.0 from 2011-04-08, then 4.0 from
-  2018-05-02).
+* Every XML member starts with a UTF-8 BOM and uses CRLF line endings.
+  ``ElementTree.iterparse`` handles both when given a path.
+* ``Tags`` is encoded two ways across dump generations: angle brackets
+  (``<a><b>``, the normal form) and pipes (``|a|b|``, the form the 2024-04
+  dump shipped with). Both are accepted.
+* Posts carry a per-row ``ContentLicense`` attribute (``CC BY-SA 2.5 / 3.0 /
+  4.0``) reflecting the latest revision's license. When it is absent the
+  license is inferred from ``CreationDate`` using Stack Exchange's published
+  cutovers (3.0 from 2011-04-08, 4.0 from 2018-05-02).
 * Deleted accounts leave ``OwnerUserId`` empty and may leave an
-  ``OwnerDisplayName`` behind. Attribution still names what the dump provides,
-  since CC BY-SA requires the credit the licensor gave.
+  ``OwnerDisplayName`` behind. Attribution names what the dump provides.
+* Dumps since mid-2025 may contain fabricated watermark rows with
+  ``Id >= 1000000000``; defective dumps may contain deleted posts (rows with
+  ``DeletionDate`` and no ``Body``). Both are skipped and counted.
+* Only ``DisplayName`` is read from ``Users.xml`` (for attribution). Location,
+  AboutMe, and the other profile fields are never loaded (Content Sensitivity).
+* Blockquotes are kept: in question bodies they are usually the scripture or
+  statement being asked about, so they are part of the question.
 """
 
 from __future__ import annotations
@@ -28,6 +39,7 @@ from collections.abc import Callable, Iterator
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 import py7zr
 from pydantic import ValidationError
@@ -40,6 +52,7 @@ from faithqs.schema import SourceRecord
 from faithqs.storage import RawPayload, StagedStore
 
 QUESTION_POST_TYPE = "1"
+WATERMARK_ID_FLOOR = 1_000_000_000
 
 # (effective from, SPDX id), newest first. Stack Exchange terms of service.
 LICENSE_CUTOVERS: tuple[tuple[datetime, str], ...] = (
@@ -136,17 +149,18 @@ def html_to_text(html: str) -> str:
 
 
 def iter_rows(xml_path: Path) -> Iterator[dict[str, str]]:
-    """Stream ``<row>`` attribute dicts with bounded memory."""
+    """Stream ``<row>`` attribute dicts with memory bounded regardless of file size."""
     context = ET.iterparse(str(xml_path), events=("start", "end"))
     _, root = next(context)
     for event, elem in context:
         if event == "end" and elem.tag == "row":
             yield dict(elem.attrib)
             elem.clear()
-            root.clear()
+            root.remove(elem)
 
 
 def load_display_names(users_xml: Path) -> dict[str, str]:
+    """Only DisplayName is read; no other profile field leaves Users.xml."""
     names: dict[str, str] = {}
     for row in iter_rows(users_xml):
         user_id, name = row.get("Id"), row.get("DisplayName")
@@ -156,19 +170,34 @@ def load_display_names(users_xml: Path) -> dict[str, str]:
 
 
 def build_attribution(
-    *, site_url: str, post_id: str, owner_id: str | None, owner_name: str | None, spdx: str
+    *,
+    site_url: str,
+    site_name: str,
+    post_id: str,
+    owner_id: str | None,
+    owner_name: str | None,
+    spdx: str,
 ) -> str:
-    """The credit CC BY-SA requires: author, author link, and link to the work."""
+    """The credit Stack Exchange's license terms require.
+
+    Author name, a direct link to the author's profile, the originating site
+    named visibly, a direct link to the original question, and the license.
+    """
     if owner_id and owner_name:
         author = f"{owner_name} ({site_url}/users/{owner_id})"
     elif owner_name:
         author = owner_name
     else:
         author = "Stack Exchange contributor (account removed)"
-    return f"{author}, {site_url}/q/{post_id}, {spdx}"
+    return f"{author}, {site_name}, {site_url}/questions/{post_id}, {spdx}"
 
 
 def extract_members(archive: Path, members: list[str], dest: Path) -> dict[str, Path]:
+    """Extract the named tables to ``dest``.
+
+    Dumps are solid LZMA2 archives, so extracting any member decompresses the
+    whole stream once; asking for the two tables together costs one pass.
+    """
     with py7zr.SevenZipFile(archive, mode="r") as dump:
         available = set(dump.getnames())
         missing = [m for m in members if m not in available]
@@ -192,6 +221,7 @@ def parse_dump(
     site_url = str(manifest.filters.get("site_url", "")).rstrip("/")
     if not site_url:
         raise ValueError(f"{manifest.name}: manifest filters.site_url is required")
+    site_name = str(manifest.filters.get("site_name") or urlsplit(site_url).netloc)
 
     collected_at = (
         (parse_timestamp(payload.meta["fetched_at"]) if "fetched_at" in payload.meta else None)
@@ -204,7 +234,8 @@ def parse_dump(
     quarantine_path = staged.report_path(manifest.name, payload.sha256, "quarantine")
     report_path = staged.report_path(manifest.name, payload.sha256, "report")
 
-    written = skipped = quarantined = 0
+    written = 0
+    skipped: Counter[str] = Counter()
     tag_counts_all: Counter[str] = Counter()
     tag_counts_selected: Counter[str] = Counter()
     license_counts: Counter[str] = Counter()
@@ -220,13 +251,19 @@ def parse_dump(
             for row in iter_rows(tables["Posts.xml"]):
                 if row.get("PostTypeId") != QUESTION_POST_TYPE:
                     continue
+                post_id = row["Id"]
+                if int(post_id) >= WATERMARK_ID_FLOOR:
+                    skipped["watermark"] += 1
+                    continue
+                if row.get("DeletionDate") or not row.get("Body"):
+                    skipped["deleted"] += 1
+                    continue
                 tags = parse_tags(row.get("Tags"))
                 tag_counts_all.update(tags)
                 if not wanted.intersection(tag.lower() for tag in tags):
-                    skipped += 1
+                    skipped["untagged"] += 1
                     continue
 
-                post_id = row["Id"]
                 created_at = parse_timestamp(row["CreationDate"])
                 spdx = license_for(created_at, row.get("ContentLicense"))
                 owner_id = row.get("OwnerUserId") or None
@@ -234,11 +271,12 @@ def parse_dump(
                 candidate = {
                     "source_name": manifest.name,
                     "source_record_id": post_id,
-                    "source_url": f"{site_url}/q/{post_id}",
+                    "source_url": f"{site_url}/questions/{post_id}",
                     "source_license": spdx,
                     "redistributable": manifest.redistributable,
                     "author_attribution": build_attribution(
                         site_url=site_url,
+                        site_name=site_name,
                         post_id=post_id,
                         owner_id=owner_id,
                         owner_name=owner_name,
@@ -247,7 +285,7 @@ def parse_dump(
                     "permission_ref": manifest.permission_ref,
                     "collected_at": collected_at,
                     "title": row.get("Title") or None,
-                    "body_text": html_to_text(row.get("Body", "")),
+                    "body_text": html_to_text(row["Body"]),
                     "tags": tags,
                     "created_at": created_at,
                     "source_metadata": {
@@ -263,7 +301,7 @@ def parse_dump(
                 try:
                     record = SourceRecord.model_validate(candidate)
                 except ValidationError as exc:
-                    quarantined += 1
+                    skipped["quarantined"] += 1
                     # Locations and messages only: never copy field values into a sidecar.
                     quarantine.append(
                         {
@@ -286,25 +324,29 @@ def parse_dump(
     report = {
         "source": manifest.name,
         "payload_sha256": payload.sha256,
+        "site_name": site_name,
         "questions_selected": written,
-        "questions_skipped": skipped,
-        "questions_quarantined": quarantined,
+        "questions_skipped_untagged": skipped["untagged"],
+        "questions_skipped_watermark": skipped["watermark"],
+        "questions_skipped_deleted": skipped["deleted"],
+        "questions_quarantined": skipped["quarantined"],
         "tags_wanted": sorted(wanted),
         "licenses_selected": dict(license_counts),
         "tags_selected": dict(tag_counts_selected.most_common()),
         "tags_overall_top": dict(tag_counts_all.most_common(200)),
     }
     report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    total_skipped = sum(skipped.values())
     log(
-        f"{manifest.name}: staged {written} questions, skipped {skipped}, "
-        f"quarantined {quarantined} -> {output_path}"
+        f"{manifest.name}: staged {written} questions, skipped {total_skipped} "
+        f"({dict(skipped)}) -> {output_path}"
     )
     return ParseOutcome(
         source=manifest.name,
         payload_sha256=payload.sha256,
         output_path=output_path,
         records_written=written,
-        records_skipped=skipped + quarantined,
+        records_skipped=total_skipped,
         report_path=report_path,
     )
 

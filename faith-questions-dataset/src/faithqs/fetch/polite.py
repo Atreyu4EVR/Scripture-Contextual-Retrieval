@@ -48,6 +48,8 @@ class DownloadResult:
     final_url: str
     path: Path
     sha256: str
+    sha1: str
+    md5: str
     size: int
     headers: dict[str, str] = field(default_factory=dict)
 
@@ -218,23 +220,27 @@ class PoliteClient:
         if response.status_code >= 400:
             response.close()
             raise FetchError(f"GET {url} returned {response.status_code}")
-        digest = hashlib.sha256()
+        digests = (hashlib.sha256(), hashlib.sha1(), hashlib.md5())
         size = 0
         dest.parent.mkdir(parents=True, exist_ok=True)
         try:
             with dest.open("wb") as handle:
                 for chunk in response.iter_bytes(chunk_size=self.CHUNK_SIZE):
                     handle.write(chunk)
-                    digest.update(chunk)
+                    for digest in digests:
+                        digest.update(chunk)
                     size += len(chunk)
         finally:
             response.close()
         headers = {k: response.headers[k] for k in KEPT_HEADERS if k in response.headers}
+        sha256, sha1, md5 = (d.hexdigest() for d in digests)
         return DownloadResult(
             url=url,
             final_url=str(response.url),
             path=dest,
-            sha256=digest.hexdigest(),
+            sha256=sha256,
+            sha1=sha1,
+            md5=md5,
             size=size,
             headers=headers,
         )

@@ -128,6 +128,34 @@ def test_manifest_without_downloads_is_an_error(tmp_path: Path) -> None:
         run_fetch(tmp_path, Server(), manifest=make_manifest(downloads=[]))
 
 
+def test_pinned_checksums_are_verified_and_recorded(tmp_path: Path) -> None:
+    spec = {
+        "url": DUMP_URL,
+        "sha1": hashlib.sha1(PAYLOAD).hexdigest().upper(),  # case-insensitive
+        "md5": hashlib.md5(PAYLOAD).hexdigest(),
+        "size": len(PAYLOAD),
+    }
+    [outcome], _ = run_fetch(tmp_path, Server(), manifest=make_manifest(downloads=[spec]))
+    assert outcome.skipped is False
+    [payload] = RawStore(tmp_path / "data").list_payloads("dump-source")
+    assert payload.meta["sha1"] == hashlib.sha1(PAYLOAD).hexdigest()
+    assert payload.meta["md5"] == hashlib.md5(PAYLOAD).hexdigest()
+    assert payload.meta["verified_against"] == {
+        "sha1": hashlib.sha1(PAYLOAD).hexdigest(),
+        "md5": hashlib.md5(PAYLOAD).hexdigest(),
+        "size": len(PAYLOAD),
+    }
+
+
+def test_checksum_mismatch_discards_download(tmp_path: Path) -> None:
+    spec = {"url": DUMP_URL, "sha1": "0" * 40}
+    with pytest.raises(FetchError, match="integrity check failed"):
+        run_fetch(tmp_path, Server(), manifest=make_manifest(downloads=[spec]))
+    raw_dir = tmp_path / "data" / "raw" / "dump-source"
+    assert RawStore(tmp_path / "data").list_payloads("dump-source") == []
+    assert not any(p.suffix == ".7z" for p in raw_dir.iterdir())  # partial removed
+
+
 def test_non_bulk_kind_is_rejected(tmp_path: Path) -> None:
     with pytest.raises(FetchError, match="not a bulk dump"):
         run_fetch(tmp_path, Server(), manifest=make_manifest(kind="crawl"))

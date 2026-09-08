@@ -5,6 +5,7 @@ and the clock is fake, so the test exercises every gate the pipeline enforces
 without touching a real source.
 """
 
+import hashlib
 from pathlib import Path
 
 import httpx
@@ -25,14 +26,30 @@ ROBOTS = "User-agent: *\nDisallow: /search\nAllow: /\n"
 
 
 def test_bulk_dump_flows_to_a_valid_release_record(tmp_path: Path) -> None:
-    manifest = load_manifest(SOURCES_DIR, "christianity-stackexchange")
-    assert manifest.downloads, "manifest must name the dump file to download"
+    shipped = load_manifest(SOURCES_DIR, "christianity-stackexchange")
+    assert shipped.downloads, "manifest must name the dump file to download"
     dump_bytes = build_dump(tmp_path / "fixture.7z").read_bytes()
+    # The shipped manifest pins the real file's checksums; point them at the fixture
+    # so the integrity check runs against what the mock server serves.
+    [spec] = shipped.downloads
+    manifest = shipped.model_copy(
+        update={
+            "downloads": [
+                spec.model_copy(
+                    update={
+                        "sha1": hashlib.sha1(dump_bytes).hexdigest(),
+                        "md5": hashlib.md5(dump_bytes).hexdigest(),
+                        "size": len(dump_bytes),
+                    }
+                )
+            ]
+        }
+    )
 
     def server(request: httpx.Request) -> httpx.Response:
         if request.url.path == "/robots.txt":
             return httpx.Response(200, text=ROBOTS)
-        if str(request.url) == manifest.downloads[0]:
+        if str(request.url) == spec.url:
             headers = {"ETag": '"dump-v1"', "Content-Length": str(len(dump_bytes))}
             if request.method == "HEAD":
                 return httpx.Response(200, headers=headers)

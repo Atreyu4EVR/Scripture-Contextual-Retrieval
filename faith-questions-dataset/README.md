@@ -35,7 +35,13 @@ uv run faithqs parse christianity-stackexchange   # data/staged/<source>/<sha256
 
 Stages are separate commands on purpose. Re-running `parse` never re-fetches; re-running `fetch` on an unchanged upstream costs one HEAD request.
 
-The parse step also writes `<sha256>.report.json` with tag frequencies across the whole dump and within the selection. Use it to tune `filters.tags` in `sources/christianity-stackexchange.yaml`, then re-run `parse --force`.
+The parse step also writes `<sha256>.report.json` with tag frequencies across the whole dump and within the selection. Use it to tune `filters.tags` in `sources/christianity-stackexchange.yaml`, then re-run `parse --force`. The canonical tag on Christianity Stack Exchange is `lds` (597 questions in the archived dump); `mormonism` and `latter-day-saints` are synonyms that never appear as stored tags.
+
+The archived dump is frozen: Stack Exchange stopped uploading to archive.org after the 2024-04 release, so the manifest pins the file's published sha1, md5, and size and the fetcher discards any download that does not match.
+
+## Source terms flagged for owner review
+
+The Internet Archive's Terms of Use grant access "for scholarship and research purposes only" and ask users "not to collect or store personal data about anyone." This project reads only `DisplayName` from `Users.xml`, for the attribution CC BY-SA requires, and never loads location, bio, or website fields. Whether that satisfies the Archive's terms is a judgment for the project owner, recorded in the manifest notes. Stack Exchange's own post-2024 distribution channel adds terms on model training that the archived 2024-04 file does not carry.
 
 ## What stops a run
 
@@ -66,9 +72,10 @@ src/faithqs/
   storage.py              # content-addressed data/raw and data/staged layout
   cli.py                  # `faithqs fetch|parse <source>`
   fetch/polite.py         # httpx client enforcing robots.txt, User-Agent, rate limit, backoff
-  fetch/bulk_dump.py      # generic single-file downloader with ETag skip
+  fetch/bulk_dump.py      # generic single-file downloader: ETag skip, pinned checksum verification
   fetch/christianity_stackexchange.py
-  parse/stackexchange.py  # 7z -> Posts.xml/Users.xml -> SourceRecord JSONL, license per post
+  parse/stackexchange.py  # 7z -> Posts.xml/Users.xml -> SourceRecord JSONL, license per post,
+                          #   both tag encodings, watermark and deleted rows skipped
   parse/christianity_stackexchange.py
 tests/                    # 90+ offline tests, including a fetch -> parse -> record proof
 data/                     # gitignored in full; created at runtime
@@ -76,7 +83,7 @@ data/                     # gitignored in full; created at runtime
 
 ## Licensing notes for the dataset card
 
-Stack Exchange content is CC BY-SA at the version in force when each post was created (2.5, then 3.0 from 2011-04-08, then 4.0 from 2018-05-02). The parser records the exact version per record from the dump's `ContentLicense` attribute, with a creation-date fallback. A Tier A release will therefore contain a mix of CC BY-SA 3.0 and 4.0 text, each carrying the attribution Stack Exchange requires (author, author link, link to the question). The card must state this per-record licensing rather than a single headline version.
+Stack Exchange content is CC BY-SA at the version in force when each post, or its latest revision, was made (2.5, then 3.0 from 2011-04-08, then 4.0 from 2018-05-02). The parser records the exact version per record from the dump's `ContentLicense` attribute, with a creation-date fallback for dumps that lack it. A Tier A release will therefore contain a mix of CC BY-SA 3.0 and 4.0 text. Each record's `author_attribution` carries what Stack Exchange's license terms require: the author's name, a direct link to the author's profile, the originating site named visibly, and a direct link to the original question. The card must state this per-record licensing rather than a single headline version.
 
 ## Relationship to Scripture-Contextual-Retrieval
 

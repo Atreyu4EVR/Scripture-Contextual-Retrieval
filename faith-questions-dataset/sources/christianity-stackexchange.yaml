@@ -4,10 +4,11 @@
 # fetcher and parser for this source exist.
 #
 # Per-post licensing: Stack Exchange content is CC BY-SA at the version in
-# force when the post was created (2.5, 3.0 from 2011-04-08, 4.0 from
-# 2018-05-02). The parser records the exact version per record from the
-# dump's ContentLicense attribute, falling back to the creation date. The
-# `license` here is the headline version; the dataset card must list all.
+# force when the post (or its latest revision) was made: 2.5, 3.0 from
+# 2011-04-08, 4.0 from 2018-05-02. Every post row in this dump carries a
+# ContentLicense attribute and the parser records it per record (this site
+# has only 3.0 and 4.0). `license` below is the headline version; the dataset
+# card must list all versions present.
 name: christianity-stackexchange
 kind: bulk_dump
 license: CC-BY-SA-4.0
@@ -18,20 +19,47 @@ permission_status: not_required
 notes: >
   Internet Archive releases through 2024-04 only. Later dumps carry
   restrictions incompatible with this use. Filter to LDS and Mormonism tags.
+
+  Verified 2026-09-08: the archive.org item stopped receiving Stack Exchange
+  uploads after the 2024-04 dump (data through 2024-03-31, file regenerated
+  2024-04-06) and will not be updated, so the file below is frozen and its
+  checksums are pinned. archive.org/robots.txt permits /download/ and sets no
+  Crawl-delay; mirror hosts reached by redirect return 404 for robots.txt,
+  which the fetcher treats as unrestricted per RFC 9309. FLAGGED FOR OWNER
+  REVIEW: the Internet Archive Terms of Use grant access "for scholarship and
+  research purposes only" and ask users "not to collect or store personal
+  data about anyone"; this project reads only DisplayName from Users.xml, for
+  the attribution CC BY-SA requires. Freshness: the dump holds 597 lds
+  questions against 649 live as of 2026-09-08; a newer source would need its
+  own manifest.
 endpoints:
   - https://archive.org/details/stackexchange
 downloads:
-  - https://archive.org/download/stackexchange/christianity.stackexchange.com.7z
+  - url: https://archive.org/download/stackexchange/christianity.stackexchange.com.7z
+    # From https://archive.org/metadata/stackexchange, verified against a
+    # full download on 2026-09-08. Fixed because the item is frozen.
+    sha1: d61d2c4a25dcb87f3dc5794f44f760cafac9bb54
+    md5: 7b62e98b94e9dd206768b6b596147fd3
+    size: 125197318
 rate_limit_seconds: 2
 filters:
   site_url: https://christianity.stackexchange.com
-  # Questions carrying any of these tags are staged. Tune from the
+  site_name: Christianity Stack Exchange
+  # Questions carrying any of these tags are staged. `lds` is the canonical
+  # tag (597 questions in this dump); `mormonism`, `mormon`, `mormons`, and
+  # `latter-day-saints` are synonyms resolved at posting time and never
+  # appear as stored tags. Excluded on purpose, pending owner review:
+  # `community-of-christ` (a different denomination in the Latter Day Saint
+  # movement) and mixed tags such as `polygamy` and `aaronic-priesthood`,
+  # whose LDS questions are already tagged `lds`. Tune from the
   # tags_overall_top section of the parse report in data/staged/.
   tags:
-    - mormonism
     - lds
-    - latter-day-saints
     - book-of-mormon
     - joseph-smith
     - doctrine-and-covenants
     - pearl-of-great-price
+    - word-of-wisdom
+    - brigham-young
+    - 1-nephi
+    - 2-nephi
